@@ -15,7 +15,7 @@ It is a static site: `index.html` plus the JSON files in `data/`. There is no bu
 The page loads its content from `data/`, so serve the folder with a local web server. Opening `index.html` by double-clicking does not work, because browsers block those file loads.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/mensetsu-dojo.git
+git clone https://github.com/muongi1547/Mensetsu_Dojo.git
 cd mensetsu-dojo
 python3 -m http.server 8000
 ```
