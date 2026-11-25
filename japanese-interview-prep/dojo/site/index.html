@@ -1,0 +1,2272 @@
+<title>Mensetsu Dojo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="8-week Japanese interview speaking plan and practice room for an AI engineer (automotive) application, with FPT company prep.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@700&display=swap">
+<style>
+/* Layout concept: an engineer's interview workbook. Calm spec-sheet panels, ruled answer pads with 字数 counters, dashboard-style pace meters. */
+:root {
+  --paper: #F4F6F9;
+  --surface: #FFFFFF;
+  --surface-2: #EDF0F5;
+  --ink: #141C30;
+  --ink-2: #48536C;
+  --ink-3: #757F97;
+  --line: #D8DDE7;
+  --indigo: #2C4EA0;
+  --indigo-ink: #FFFFFF;
+  --indigo-soft: #E6ECFA;
+  --amber: #D9901F;
+  --amber-soft: #FFF0D2;
+  --green: #2D7F55;
+  --green-soft: #E0F2E8;
+  --red: #B9382A;
+  --red-soft: #FBE6E2;
+  --shadow: 0 1px 2px rgba(20,28,48,.05), 0 6px 18px rgba(20,28,48,.06);
+  --font-ui: "IBM Plex Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-display: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0D121D; --surface: #141B2A; --surface-2: #1B2335; --ink: #E6EAF2; --ink-2: #A8B2C7; --ink-3: #7C869D;
+    --line: #283149; --indigo: #91AAF1; --indigo-ink: #0D121D; --indigo-soft: #1D2843; --amber: #F0B456; --amber-soft: #36290F;
+    --green: #66C893; --green-soft: #12301F; --red: #F08B79; --red-soft: #3B1C17;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0D121D; --surface: #141B2A; --surface-2: #1B2335; --ink: #E6EAF2; --ink-2: #A8B2C7; --ink-3: #7C869D;
+  --line: #283149; --indigo: #91AAF1; --indigo-ink: #0D121D; --indigo-soft: #1D2843; --amber: #F0B456; --amber-soft: #36290F;
+  --green: #66C893; --green-soft: #12301F; --red: #F08B79; --red-soft: #3B1C17;
+  --shadow: 0 1px 2px rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.3); color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 40; background: var(--surface); }
+a { color: var(--indigo); }
+:focus-visible { outline: 2px solid var(--indigo); outline-offset: 2px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.ja { line-height: 1.95; letter-spacing: .02em; }
+h1, h2, h3, h4, h5 { text-wrap: balance; margin: 0; line-height: 1.3; }
+p { margin: 0; }
+ul, ol { margin: 0; padding-left: 1.3em; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+.view-title { font-size: clamp(24px, 3.4vw, 32px); font-weight: 700; letter-spacing: -.01em; }
+.lede { color: var(--ink-2); max-width: 68ch; }
+.view-head { display: flex; flex-direction: column; gap: 8px; }
+.label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+.sub { font-size: 13px; color: var(--ink-3); }
+.muted { color: var(--ink-2); }
+.err { color: var(--red); }
+.grow { flex: 1; }
+
+/* top bar */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar-in { display: flex; align-items: center; gap: 12px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1; }
+.brand-mark { font-family: var(--font-display); font-size: 19px; letter-spacing: .08em; line-height: 1; padding: 7px 8px 6px; border: 1.5px solid var(--ink); border-radius: 6px; white-space: nowrap; }
+.brand-text { display: flex; flex-direction: column; min-width: 0; }
+.brand-title { font-weight: 700; font-size: 15px; line-height: 1.25; }
+.brand-sub { font-size: 12px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.top-actions { display: flex; align-items: center; gap: 10px; flex: none; }
+.sync { font-size: 12px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.sync::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); flex: none; }
+.sync[data-s="synced"]::before { background: var(--green); }
+.sync[data-s="saving"]::before, .sync[data-s="loading"]::before { background: var(--amber); }
+.sync[data-s="offline"]::before, .sync[data-s="error"]::before { background: var(--red); }
+.icon-btn { appearance: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; width: 36px; height: 36px; display: inline-grid; place-items: center; cursor: pointer; }
+.icon-btn[aria-expanded="true"] { background: var(--indigo-soft); border-color: var(--indigo); }
+.tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; border-top: 1px solid var(--line); }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { text-decoration: none; color: var(--ink-2); padding: 10px 12px 9px; font-weight: 500; font-size: 14px; border-bottom: 2px solid transparent; white-space: nowrap; display: inline-flex; align-items: baseline; gap: 6px; }
+.tab-ja { font-size: 11.5px; color: var(--ink-3); }
+.tab:hover { color: var(--ink); }
+.tab[aria-current="page"] { color: var(--ink); border-bottom-color: var(--indigo); }
+.settings { position: absolute; right: max(16px, env(safe-area-inset-right, 0px)); top: calc(100% + 6px); width: min(360px, calc(100vw - 32px)); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 16px; display: flex; flex-direction: column; gap: 12px; z-index: 35; }
+.settings h3 { font-size: 15px; }
+.field { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--ink-2); }
+.field select, .field input[type="date"], .field input[type="search"], .field input[type="text"] { font: inherit; font-size: 14px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 0; }
+.field input[type="range"] { accent-color: var(--indigo); }
+.check { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; color: var(--ink); cursor: pointer; }
+.check input { margin-top: 4px; accent-color: var(--indigo); }
+
+main { padding-block: 24px 72px; }
+.view { display: flex; flex-direction: column; gap: 22px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.card-in { padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card h3 { font-size: 17px; }
+.loading { color: var(--ink-3); padding: 40px 0; }
+
+/* buttons, chips */
+.btn { appearance: none; font: inherit; font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; line-height: 1.25; white-space: nowrap; text-decoration: none; }
+.btn:hover { border-color: var(--ink-3); }
+.btn.primary { background: var(--indigo); border-color: var(--indigo); color: var(--indigo-ink); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; border-color: transparent; color: var(--indigo); padding-inline: 8px; }
+.btn.ghost:hover { background: var(--indigo-soft); }
+.btn.sm { font-size: 13px; padding: 5px 9px; }
+.btn.danger { color: var(--red); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.playing { background: var(--amber-soft); border-color: var(--amber); color: var(--ink); }
+.btn.rec-on { background: var(--red-soft); border-color: var(--red); color: var(--red); }
+.ic { width: 16px; height: 16px; flex: none; }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); white-space: nowrap; line-height: 1.5; }
+button.chip { cursor: pointer; font-family: inherit; font-size: 13px; }
+button.chip:hover { border-color: var(--ink-3); }
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.chip { max-width: 100%; }
+.chip.wrap { white-space: normal; text-align: left; border-radius: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge { font-size: 11.5px; padding: 2px 8px; border-radius: 6px; font-weight: 500; white-space: nowrap; }
+.badge.now { background: var(--indigo); color: var(--indigo-ink); }
+.badge.holiday { background: var(--amber-soft); color: var(--ink); border: 1px solid var(--amber); }
+.badge.high { background: var(--green-soft); color: var(--green); }
+.badge.medium { background: var(--amber-soft); color: var(--ink-2); }
+.badge.low { background: var(--red-soft); color: var(--red); }
+a.qlink { font-family: var(--font-mono); font-size: .9em; text-decoration: none; background: var(--indigo-soft); color: var(--indigo); padding: 1px 5px; border-radius: 4px; white-space: nowrap; }
+a.qlink:hover { text-decoration: underline; }
+.progress { height: 8px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.progress > i { display: block; height: 100%; background: var(--green); border-radius: inherit; transition: width .3s ease; }
+.only-tts, .only-ai, .only-dict { display: none !important; }
+body.has-tts .only-tts { display: inline-flex !important; }
+body.has-ai .only-ai { display: flex !important; }
+body.has-ai span.only-ai, body.has-ai button.only-ai { display: inline-flex !important; }
+body.has-dict .only-dict { display: inline !important; }
+body.has-ai .no-ai, body.has-dict .no-dict { display: none !important; }
+.callout { border-radius: 10px; padding: 12px 14px; background: var(--surface-2); display: flex; flex-direction: column; gap: 4px; }
+.callout.milestone { background: var(--indigo-soft); }
+.callout.light { background: var(--amber-soft); }
+.callout.human { background: var(--green-soft); }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--surface); padding: 10px 16px; border-radius: 10px; font-size: 14px; z-index: 50; max-width: calc(100vw - 32px); box-shadow: var(--shadow); }
+.copy-fallback { width: 100%; min-height: 120px; font-family: var(--font-mono); font-size: 12px; margin-top: 8px; }
+.spinner { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line); border-top-color: var(--indigo); animation: spin .8s linear infinite; flex: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.thinking { display: flex; align-items: center; gap: 10px; color: var(--ink-2); font-size: 14px; flex-wrap: wrap; }
+.inline-confirm { display: inline-flex; gap: 6px; align-items: center; flex-wrap: wrap; font-size: 13px; }
+
+/* plan */
+.plan-hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 860px) { .plan-hero { grid-template-columns: 1fr; } }
+.plan-main { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.plan-controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; }
+.plan-controls strong { color: var(--ink); font-weight: 500; font-size: 14px; }
+.progress-row { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink-2); }
+.progress-row .progress { flex: 1; }
+.tw { border-left: 4px solid var(--indigo); }
+.tw-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.tw-theme { font-family: var(--font-display); font-size: 21px; }
+.phases { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.phase { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.phase.now { border-color: var(--indigo); box-shadow: inset 0 0 0 1px var(--indigo); }
+.phase-ja { font-family: var(--font-display); font-size: 17px; }
+.phase-focus { font-size: 13px; color: var(--ink-2); }
+details.fold > summary { cursor: pointer; font-weight: 500; list-style: none; display: flex; align-items: center; gap: 8px; }
+details.fold > summary::-webkit-details-marker { display: none; }
+details.fold > summary::before { content: ""; width: 7px; height: 7px; border-right: 2px solid var(--ink-3); border-bottom: 2px solid var(--ink-3); transform: rotate(-45deg); transition: transform .15s; flex: none; }
+details.fold[open] > summary::before { transform: rotate(45deg); }
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 12px; }
+.principle { display: flex; flex-direction: column; gap: 4px; }
+.principle b { font-size: 14.5px; }
+.principle span { font-size: 14px; color: var(--ink-2); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
+.seg button { appearance: none; border: 0; background: var(--surface); color: var(--ink-2); font: inherit; font-size: 13px; padding: 6px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.routine-bar { display: flex; height: 36px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.routine-bar span { display: flex; align-items: center; justify-content: center; font-size: 12px; border-right: 1px solid var(--line); min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 6px; font-family: var(--font-mono); }
+.routine-bar span:last-child { border-right: 0; }
+.routine-bar span:nth-child(4n+1) { background: var(--indigo-soft); }
+.routine-bar span:nth-child(4n+2) { background: var(--green-soft); }
+.routine-bar span:nth-child(4n+3) { background: var(--amber-soft); }
+.routine-bar span:nth-child(4n+4) { background: var(--surface-2); }
+.routine-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.routine-list li { display: grid; grid-template-columns: 4.2em 1fr; gap: 10px; }
+.routine-list .mins { font-family: var(--font-mono); color: var(--ink-3); font-size: 13px; padding-top: 2px; }
+.routine-list b { font-weight: 500; }
+.routine-list p { color: var(--ink-2); font-size: 14px; }
+.weeks { display: flex; flex-direction: column; gap: 10px; }
+details.week { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+details.week[open] { box-shadow: var(--shadow); }
+.week-sum { list-style: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 18px; cursor: pointer; }
+.week-sum::-webkit-details-marker { display: none; }
+.week-num { font-size: 22px; font-weight: 500; color: var(--indigo); min-width: 2.1em; }
+.week-titles { display: flex; flex-direction: column; min-width: 0; }
+.week-ja { font-family: var(--font-display); font-size: 19px; }
+.week-en { font-size: 13.5px; color: var(--ink-2); }
+.week-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: flex-end; font-size: 13px; color: var(--ink-2); }
+@media (max-width: 640px) { .week-sum { grid-template-columns: auto minmax(0, 1fr); } .week-meta { grid-column: 1 / -1; justify-content: flex-start; } }
+.week-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--line); }
+.week-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 760px) { .week-cols { grid-template-columns: 1fr; } }
+.goals { display: flex; flex-direction: column; gap: 4px; font-size: 14.5px; }
+.days { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px 22px; }
+.day-group h5 { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; margin-bottom: 2px; }
+.day-group.today h5 { color: var(--indigo); }
+ul.tasks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.task { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+.task:last-child { border-bottom: 0; }
+.task input { width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--green); }
+.task label { display: flex; flex-direction: column; gap: 3px; cursor: pointer; min-width: 0; font-size: 14.5px; }
+.task input:checked + label .task-text { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--ink-3); }
+.task-meta { display: flex; gap: 8px; font-size: 12px; color: var(--ink-3); align-items: center; flex-wrap: wrap; }
+.tchip { font-size: 10.5px; padding: 1px 6px; border-radius: 4px; background: var(--surface-2); color: var(--ink-2); text-transform: uppercase; letter-spacing: .06em; font-weight: 500; }
+textarea.note { width: 100%; min-height: 70px; font: inherit; font-size: 14px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); resize: vertical; }
+
+/* questions */
+.q-toolbar { display: flex; flex-direction: column; gap: 10px; }
+.q-tools-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.q-tools-row .field { flex-direction: row; align-items: center; gap: 6px; }
+.q-search { flex: 1; min-width: 180px; }
+.q-list { display: flex; flex-direction: column; gap: 8px; }
+.q-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); scroll-margin-top: 130px; }
+.q-card.open { box-shadow: var(--shadow); }
+.q-head { appearance: none; border: 0; background: transparent; width: 100%; text-align: left; color: inherit; font: inherit; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px; cursor: pointer; border-radius: var(--r); }
+.q-id { font-size: 13px; color: var(--indigo); font-weight: 500; }
+.q-titles { display: flex; flex-direction: column; min-width: 0; }
+.q-ja { font-size: 16px; font-weight: 500; line-height: 1.6; }
+.q-en { font-size: 13px; color: var(--ink-3); }
+.q-meta { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+@media (max-width: 640px) { .q-head { grid-template-columns: auto minmax(0, 1fr); } .q-meta { grid-column: 1 / -1; justify-content: flex-start; } }
+.dot-ok { width: 8px; height: 8px; border-radius: 50%; background: var(--green); display: inline-block; }
+.stars-mini { font-size: 12px; color: var(--amber); letter-spacing: 1px; }
+.q-body { padding: 4px 16px 18px; display: flex; flex-direction: column; gap: 18px; border-top: 1px solid var(--line); }
+.q-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-top: 12px; }
+.sec { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.sec-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.sec-head h4 { font-size: 15px; }
+.intent { background: var(--surface-2); border-radius: 10px; padding: 10px 14px; display: flex; flex-direction: column; gap: 2px; font-size: 14.5px; }
+ol.structure { display: flex; flex-direction: column; gap: 4px; font-size: 14.5px; }
+ol.structure .en { color: var(--ink-3); font-size: 13px; }
+.guide-approach { max-width: 72ch; }
+.guide-bar span { font-family: var(--font-ui); }
+ol.gsteps { list-style: none; padding: 0; display: flex; flex-direction: column; }
+.gstep { display: grid; grid-template-columns: 6.4em minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+.gstep:last-child { border-bottom: 0; }
+.gstep-time { font-size: 12.5px; color: var(--ink-3); padding-top: 4px; }
+.gstep-main { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.gstep-head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.gstep-ja { font-weight: 700; font-size: 16px; }
+.gstep-en { color: var(--ink-2); font-size: 14px; }
+.gstep-say { font-size: 14.5px; max-width: 72ch; }
+.gstep-line { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.gstep-starter { font-weight: 500; font-size: 15.5px; }
+.gstep-ex { color: var(--ink-2); border-left: 3px solid var(--indigo-soft); padding-left: 10px; }
+@media (max-width: 560px) { .gstep { grid-template-columns: 1fr; gap: 2px; } }
+.answer { font-size: 16.5px; display: flex; flex-direction: column; gap: 8px; }
+.answer.short { font-size: 15.5px; }
+.sent { border-radius: 3px; transition: background .15s; }
+.sent.on { background: var(--indigo-soft); box-shadow: 0 0 0 2px var(--indigo-soft); }
+.ph { background: var(--amber-soft); border-bottom: 2px solid var(--amber); border-radius: 3px; padding: 0 3px; }
+.ph-l { font-size: 10px; color: var(--ink-3); margin-right: 3px; vertical-align: 1px; letter-spacing: 0; }
+.en-gloss { color: var(--ink-2); font-size: 14px; border-left: 3px solid var(--line); padding-left: 10px; }
+.model-inner { display: flex; flex-direction: column; gap: 12px; }
+.tools-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.count { font-size: 12px; color: var(--ink-3); }
+.short-box { border: 1px dashed var(--line); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+ul.phr { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+ul.phr li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+ul.phr .ja { font-weight: 500; }
+ul.phr .en { color: var(--ink-3); font-size: 13px; }
+textarea.answer-pad { width: 100%; min-height: 11em; resize: vertical; font: inherit; font-size: 16px; line-height: 2; padding: 4px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background-color: var(--surface); background-image: linear-gradient(to bottom, transparent calc(2em - 1px), var(--line) calc(2em - 1px)); background-size: 100% 2em; background-attachment: local; background-position: 0 4px; }
+.pad-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pad-foot { font-size: 12px; color: var(--ink-3); }
+.rec { display: flex; flex-direction: column; gap: 8px; }
+.rec-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.rec-clock { font-size: 20px; font-weight: 500; min-width: 3em; }
+.rec-target { color: var(--ink-3); font-family: var(--font-mono); font-size: 13px; }
+.rec-bar { flex: 1; min-width: 90px; height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.rec-bar i { display: block; height: 100%; width: 0; background: var(--indigo); }
+.rec-bar.over i { background: var(--amber); }
+.rec-bar.way-over i { background: var(--red); }
+.rec-live { min-height: 2.2em; padding: 8px 12px; border-radius: 8px; background: var(--surface-2); font-size: 15px; }
+.rec-live .partial { color: var(--ink-3); }
+.rec-note { font-size: 13px; color: var(--ink-2); }
+.result { display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13.5px; color: var(--ink-2); }
+.stats b { color: var(--ink); font-family: var(--font-mono); font-weight: 500; }
+.meter-wrap { display: flex; flex-direction: column; gap: 3px; max-width: 520px; }
+.meter { position: relative; height: 10px; border-radius: 999px; }
+.meter .needle { position: absolute; top: -4px; width: 3px; height: 18px; background: var(--ink); border-radius: 2px; transform: translateX(-50%); }
+.meter-scale { display: flex; justify-content: space-between; font-size: 11px; color: var(--ink-3); font-family: var(--font-mono); }
+.fb { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); }
+.fb-head { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.scores { display: flex; flex-wrap: wrap; gap: 6px; }
+.score { font-size: 12.5px; padding: 3px 9px; border-radius: 6px; background: var(--surface-2); color: var(--ink-2); }
+.score b { font-family: var(--font-mono); color: var(--ink); }
+.score.overall { background: var(--indigo-soft); color: var(--indigo); }
+.fixes { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.fix { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 4px 10px; align-items: start; padding-bottom: 8px; border-bottom: 1px dashed var(--line); }
+.fix:last-child { border-bottom: 0; }
+.fix .from { text-decoration: line-through; text-decoration-color: var(--red); color: var(--ink-2); }
+.fix .to { color: var(--green); font-weight: 500; }
+.fix .arrow { color: var(--ink-3); }
+.fix .why { grid-column: 1 / -1; font-size: 13px; color: var(--ink-2); }
+@media (max-width: 560px) { .fix { grid-template-columns: 1fr; } .fix .arrow { display: none; } }
+ul.follow { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+ul.follow li { display: flex; flex-direction: column; gap: 4px; border-left: 3px solid var(--indigo-soft); padding-left: 12px; }
+.f-q { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.f-q .ja { font-weight: 500; }
+.hint { font-size: 14px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.stars { display: inline-flex; gap: 2px; }
+.stars button { appearance: none; border: 0; background: transparent; font-size: 20px; line-height: 1; color: var(--line); cursor: pointer; padding: 2px; }
+.stars button.on { color: var(--amber); }
+.drill { border: 1px solid var(--indigo); box-shadow: var(--shadow); }
+.drill-q { font-size: 20px; font-weight: 500; }
+.hidden-q { color: var(--ink-3); font-size: 14px; border: 1px dashed var(--line); border-radius: 8px; padding: 10px 12px; }
+
+/* mock */
+.mock-setup .opt-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chat { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.turn { display: flex; flex-direction: column; gap: 4px; max-width: 760px; }
+.turn .who { font-size: 12px; color: var(--ink-3); letter-spacing: .06em; }
+.turn .bubble { padding: 10px 14px; border-radius: 12px; font-size: 16px; }
+.turn.interviewer .bubble { background: var(--surface-2); border-top-left-radius: 4px; }
+.turn.candidate { align-self: flex-end; align-items: flex-end; }
+.turn.candidate .bubble { background: var(--indigo-soft); border-top-right-radius: 4px; }
+.turn .tmeta { font-size: 12px; color: var(--ink-3); font-family: var(--font-mono); }
+.composer { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 14px; }
+.composer textarea { width: 100%; min-height: 84px; font: inherit; font-size: 15.5px; line-height: 1.8; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); resize: vertical; }
+.report-scores { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.rs { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; }
+.rs b { font-family: var(--font-mono); font-size: 22px; font-weight: 500; }
+.rs.big { background: var(--indigo-soft); border-color: transparent; }
+.ans-review { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.ans-review li { display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--line); padding-top: 10px; }
+.history { list-style: none; padding: 0; display: flex; flex-direction: column; }
+.history li { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.history li:last-child { border-bottom: 0; }
+pre.prompt { white-space: pre-wrap; word-break: break-word; background: var(--surface-2); border-radius: 8px; padding: 12px; font-family: var(--font-ui); font-size: 13.5px; line-height: 1.75; margin: 0; max-height: 280px; overflow: auto; }
+
+/* words, tables */
+.subtabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table.tbl { border-collapse: collapse; width: 100%; font-size: 14px; }
+.tbl th, .tbl td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl th { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; background: var(--surface-2); white-space: nowrap; }
+.tbl tr:last-child td { border-bottom: 0; }
+.tbl .ja { font-size: 15px; }
+.tbl .term { font-weight: 500; font-size: 16px; white-space: nowrap; }
+.reading { color: var(--ink-2); font-size: 13px; }
+.hide-reading .reading { color: transparent; background: var(--surface-2); border-radius: 4px; cursor: pointer; }
+.hide-reading .reading:hover, .hide-reading .reading:focus { color: var(--ink-2); background: transparent; }
+.phrase-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 14px; }
+ul.plist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+ul.plist li { display: flex; flex-direction: column; gap: 2px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+ul.plist li:last-child { border-bottom: 0; padding-bottom: 0; }
+.pl-top { display: flex; gap: 8px; align-items: baseline; justify-content: space-between; }
+.pl-ja { font-size: 16px; font-weight: 500; }
+.pl-en { font-size: 13.5px; color: var(--ink-2); }
+.pl-note { font-size: 12.5px; color: var(--ink-3); }
+.wrong { color: var(--red); text-decoration: line-through; text-decoration-color: var(--red); }
+.right { color: var(--green); font-weight: 500; }
+ol.flow { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; counter-reset: step; }
+ol.flow li { display: grid; grid-template-columns: 2.2em 6.5em minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 8px 0; border-bottom: 1px dashed var(--line); counter-increment: step; }
+ol.flow li::before { content: counter(step); font-family: var(--font-mono); color: var(--ink-3); font-size: 13px; }
+ol.flow .spk { font-size: 12px; font-weight: 500; color: var(--ink-2); }
+ol.flow .spk.you { color: var(--indigo); }
+ol.flow .spk.action { color: var(--ink-3); font-style: italic; }
+@media (max-width: 560px) { ol.flow li { grid-template-columns: 2em minmax(0, 1fr); } ol.flow li > :last-child { grid-column: 2; } }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+ul.checklist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+ul.checklist li label { display: flex; gap: 8px; align-items: flex-start; cursor: pointer; font-size: 14.5px; }
+ul.checklist input { margin-top: 4px; accent-color: var(--green); flex: none; }
+ul.plain { display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; }
+
+/* fpt */
+ul.facts { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+ul.facts li { display: flex; flex-direction: column; gap: 3px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+ul.facts li:last-child { border-bottom: 0; padding-bottom: 0; }
+.fact-meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 12.5px; color: var(--ink-3); }
+.fact-ja { font-size: 14.5px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+
+/* tools */
+.bench-table input { width: 5.5em; font: inherit; font-family: var(--font-mono); font-size: 14px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.delta-up { color: var(--green); font-size: 12px; }
+.delta-down { color: var(--red); font-size: 12px; }
+@media (max-width: 560px) { .brand-sub, .sync-t { display: none; } .brand-mark { font-size: 17px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+</style>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <div class="brand">
+      <span class="brand-mark" lang="ja">面接道場</span>
+      <span class="brand-text"><span class="brand-title">Mensetsu Dojo</span><span class="brand-sub">8-week Japanese interview plan · AI engineer (automotive) · target: FPT</span></span>
+    </div>
+    <div class="top-actions">
+      <span class="sync" id="sync" data-s="local" role="status"><span class="sync-t">Saved in this browser</span></span>
+      <button class="icon-btn" id="settings-btn" type="button" aria-expanded="false" aria-controls="settings" title="Voice and display settings"></button>
+    </div>
+  </div>
+  <nav class="wrap tabs" aria-label="Sections">
+    <a class="tab" href="#plan" data-view="plan">Plan<span class="tab-ja" lang="ja">計画</span></a>
+    <a class="tab" href="#questions" data-view="questions">Questions<span class="tab-ja" lang="ja">質問と回答</span></a>
+    <a class="tab" href="#mock" data-view="mock">Mock interview<span class="tab-ja" lang="ja">模擬面接</span></a>
+    <a class="tab" href="#words" data-view="words">Words &amp; phrases<span class="tab-ja" lang="ja">表現</span></a>
+    <a class="tab" href="#fpt" data-view="fpt">FPT prep<span class="tab-ja" lang="ja">企業研究</span></a>
+    <a class="tab" href="#tools" data-view="tools">Tools<span class="tab-ja" lang="ja">記録</span></a>
+  </nav>
+  <div class="settings" id="settings" hidden></div>
+</header>
+
+<main class="wrap">
+  <section class="view" id="view-plan" data-view="plan"><p class="loading">Loading your plan…</p></section>
+  <section class="view" id="view-questions" data-view="questions" hidden></section>
+  <section class="view" id="view-mock" data-view="mock" hidden></section>
+  <section class="view" id="view-words" data-view="words" hidden></section>
+  <section class="view" id="view-fpt" data-view="fpt" hidden></section>
+  <section class="view" id="view-tools" data-view="tools" hidden></section>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(() => {
+'use strict';
+
+/* ================= helpers ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+function h(tag, props, ...kids) {
+  const el = document.createElement(tag);
+  if (props) {
+    for (const k of Object.keys(props)) {
+      const v = props[k];
+      if (v == null || v === false) continue;
+      if (k === 'class') el.className = v;
+      else if (k === 'text') el.textContent = v;
+      else if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
+      else if (v === true) el.setAttribute(k, '');
+      else el.setAttribute(k, String(v));
+    }
+  }
+  for (const kid of kids.flat(Infinity)) {
+    if (kid == null || kid === false || kid === '') continue;
+    el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  }
+  return el;
+}
+const clone = o => (o == null ? o : JSON.parse(JSON.stringify(o)));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const fmtSec = s => { s = Math.max(0, Math.round(s || 0)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+const str = v => (typeof v === 'string' ? v : v == null ? '' : String(v));
+const arr = v => (Array.isArray(v) ? v : []);
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function safeUrl(u) { return typeof u === 'string' && /^https:\/\//i.test(u) ? u : null; }
+function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } }
+
+const ICONS = {
+  speaker: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+  stop: '<rect x="6.5" y="6.5" width="11" height="11" rx="2" fill="currentColor"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+  timer: '<circle cx="12" cy="13" r="7.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 9v4l2.5 2M10 2.5h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+  spark: '<path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z" fill="currentColor"/><path d="M18.5 3.5v3M17 5h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+  copy: '<rect x="8.5" y="8.5" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 8.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7.5a2 2 0 0 0 2 2h2.5" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+  shuffle: '<path d="M4 7h3.5c4.5 0 4.5 10 9 10H20M4 17h3.5c1.6 0 2.6-1.2 3.4-2.8M13.1 9.8C13.9 8.2 14.9 7 16.5 7H20M17.5 4.5 20 7l-2.5 2.5M17.5 14.5 20 17l-2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+  sliders: '<path d="M4 7h9M17 7h3M4 17h3M11 17h9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="15" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+  download: '<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+  send: '<path d="M4 12l16-7-6 16-3-6.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+  play: '<path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/>',
+};
+function icon(name) {
+  const t = document.createElement('template');
+  t.innerHTML = '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (ICONS[name] || '') + '</svg>';
+  return t.content.firstChild;
+}
+function cap(name) {
+  try {
+    if (window.claude && typeof window.claude.use === 'function') return Promise.resolve(window.claude.use(name)).catch(() => null);
+  } catch (e) { /* no viewer */ }
+  return Promise.resolve(null);
+}
+let toastTimer = null;
+function toast(msg) {
+  const el = $('#toast'); if (!el || !msg) return;
+  el.textContent = msg; el.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.hidden = true; }, 4500);
+}
+function copyText(text, anchor) {
+  try {
+    navigator.clipboard.writeText(text).then(() => toast('Copied'), () => fallbackCopy(text, anchor));
+  } catch (e) { fallbackCopy(text, anchor); }
+}
+function fallbackCopy(text, anchor) {
+  const old = anchor && anchor.parentElement && anchor.parentElement.querySelector('.copy-fallback');
+  if (old) old.remove();
+  const ta = h('textarea', {class: 'copy-fallback', readonly: true});
+  ta.value = text;
+  if (anchor) anchor.insertAdjacentElement('afterend', ta); else document.body.append(ta);
+  ta.focus(); ta.select();
+  toast('Text selected. Press Ctrl+C or Cmd+C to copy.');
+}
+function thinking(msg, ctl) {
+  return h('div', {class: 'thinking'}, h('span', {class: 'spinner'}), h('span', {text: msg}),
+    ctl ? h('button', {type: 'button', class: 'btn sm', onclick: () => ctl.abort()}, 'Stop') : null);
+}
+function inlineConfirm(anchorBtn, question, yesLabel, onYes) {
+  const box = h('span', {class: 'inline-confirm'}, h('span', {text: question}));
+  const yes = h('button', {type: 'button', class: 'btn sm danger'}, yesLabel);
+  const no = h('button', {type: 'button', class: 'btn sm'}, 'Cancel');
+  box.append(yes, no);
+  anchorBtn.hidden = true;
+  anchorBtn.insertAdjacentElement('afterend', box);
+  const close = () => { box.remove(); anchorBtn.hidden = false; };
+  no.addEventListener('click', close);
+  yes.addEventListener('click', () => { close(); onYes(); });
+  no.focus();
+}
+
+/* ================= Japanese text helpers ================= */
+const PH_RE = /【([^】]*)】/g;
+function phParts(text) {
+  text = str(text);
+  const out = []; let last = 0; let m;
+  PH_RE.lastIndex = 0;
+  while ((m = PH_RE.exec(text))) {
+    if (m.index > last) out.push({ph: false, t: text.slice(last, m.index)});
+    const inner = m[1]; const i = inner.search(/[：:]/);
+    if (i >= 0) out.push({ph: true, label: inner.slice(0, i), ex: inner.slice(i + 1)});
+    else out.push({ph: true, label: inner, ex: inner});
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push({ph: false, t: text.slice(last)});
+  return out;
+}
+function speechText(t) { return phParts(t).map(p => (p.ph ? p.ex : p.t)).join('').replace(/\s*\n+\s*/g, ' ').trim(); }
+function sentences(text) {
+  const out = []; let buf = ''; let depth = 0;
+  const chars = Array.from(str(text));
+  for (let i = 0; i < chars.length; i++) {
+    const c = chars[i];
+    if (c === '\n') { if (buf.trim()) out.push(buf); buf = ''; if (out.length && out[out.length - 1] !== '\n') out.push('\n'); continue; }
+    buf += c;
+    if (c === '【') depth++; else if (c === '】') depth = Math.max(0, depth - 1);
+    if (depth === 0 && '。！？!?'.includes(c)) {
+      while (i + 1 < chars.length && '」』）)'.includes(chars[i + 1])) buf += chars[++i];
+      out.push(buf); buf = '';
+    }
+  }
+  if (buf.trim()) out.push(buf);
+  return out;
+}
+const speakList = text => sentences(text).filter(s => s !== '\n').map(speechText).filter(Boolean);
+function jaInline(text) {
+  return phParts(text).map(p => (p.ph ? h('span', {class: 'ph', title: 'Swap in your own: ' + p.label}, h('span', {class: 'ph-l', text: p.label}), p.ex) : document.createTextNode(p.t)));
+}
+function jaBlock(text, cls) {
+  const el = h('div', {class: 'ja ' + (cls || ''), lang: 'ja'});
+  let p = h('p'); el.append(p);
+  const said = [];
+  sentences(text).forEach(s => {
+    if (s === '\n') { if (p.childNodes.length) { p = h('p'); el.append(p); } return; }
+    const sp = h('span', {class: 'sent', 'data-i': said.length}, jaInline(s));
+    p.append(sp);
+    said.push(speechText(s));
+  });
+  el._said = said;
+  return el;
+}
+function charCount(t) { return Array.from(speechText(t).replace(/[\s]/g, '')).length; }
+function plainCount(t) { return Array.from(str(t).replace(/\s/g, '')).length; }
+function linkify(text) {
+  const out = []; const re = /\bq(\d{2})\b/g; let last = 0; let m;
+  text = str(text);
+  while ((m = re.exec(text))) {
+    const id = 'q' + m[1];
+    if (m.index > last) out.push(text.slice(last, m.index));
+    if (DATA.qById && DATA.qById[id]) out.push(h('a', {class: 'qlink', href: '#' + id, title: DATA.qById[id].questionJa}, id));
+    else out.push(m[0]);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+function targetSec(t) {
+  t = str(t);
+  const range = /(\d+)\s*[〜~～-]\s*(\d+)\s*分半/.exec(t);
+  if (/分半/.test(t)) { const m = /(\d+)\s*分半/.exec(t); if (m) return (+m[1]) * 60 + 30; }
+  if (range) return (+range[2]) * 60;
+  const mm = /(\d+)\s*分/.exec(t); const ss = /(\d+)\s*秒/.exec(t);
+  if (mm || ss) return (mm ? +mm[1] * 60 : 0) + (ss && !mm ? +ss[1] : 0);
+  return 60;
+}
+const FILLER_RE = /(えーと|えっと|えーっと|あのー|あの(?=[、,\s])|うーん|えー|んー|なんか|まあ)/g;
+function speechMetrics(text, sec) {
+  const chars = Array.from(str(text).replace(/[\s。、，．,.!?！？「」『』（）()・…]/g, '')).length;
+  const fillers = (str(text).match(FILLER_RE) || []).length;
+  const cpm = sec >= 4 && chars ? Math.round(chars / sec * 60) : null;
+  return {chars, fillers, cpm};
+}
+function paceLabel(cpm) {
+  if (cpm == null) return '';
+  if (cpm < 200) return 'slow: keep practising';
+  if (cpm < 260) return 'careful and clear';
+  if (cpm <= 330) return 'natural interview pace';
+  return 'fast: slow down a little';
+}
+
+/* ================= state ================= */
+const DATA = {};
+const Caps = {downloads: null};
+const DEFAULT_START = '2026-11-30';
+const LS = 'mdojo:v1:';
+function defaultState() {
+  return {v: 1, startDate: DEFAULT_START, tasks: {}, ratings: {}, reflections: {}, bench: {}, checks: {}, last: {},
+    settings: {engine: 'auto', voice: '', rate: 0.9, hideModel: false, mockFast: true, mockVoice: true}};
+}
+function S() {
+  const d = defaultState(); const s = Store.docs.state;
+  if (!s || typeof s !== 'object') return d;
+  const out = Object.assign(d, s);
+  out.settings = Object.assign(defaultState().settings, s.settings || {});
+  ['tasks', 'ratings', 'reflections', 'bench', 'checks', 'last'].forEach(k => { if (!out[k] || typeof out[k] !== 'object') out[k] = {}; });
+  return out;
+}
+function setState(mut, delay) { const s = clone(S()); mut(s); Store.put('state', s, delay == null ? 500 : delay); }
+
+const Store = {
+  mode: 'local', col: null, unsub: null, docs: {}, timers: {}, inflight: {}, queued: {}, status: 'local', listeners: [],
+  on(fn) { this.listeners.push(fn); },
+  emit(ids) { this.listeners.forEach(fn => { try { fn(ids); } catch (e) { console.error(e); } }); },
+  setStatus(s) { this.status = s; renderSync(); },
+  get(id) { return this.docs[id]; },
+  ids(prefix) { return Object.keys(this.docs).filter(k => k.startsWith(prefix) && this.docs[k] != null); },
+  loadLocal() {
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith(LS)) { try { this.docs[k.slice(LS.length)] = JSON.parse(localStorage.getItem(k)); } catch (e) { /* skip */ } }
+      }
+    } catch (e) { /* storage blocked */ }
+  },
+  saveLocal(id, data) {
+    try { if (data == null) localStorage.removeItem(LS + id); else localStorage.setItem(LS + id, JSON.stringify(data)); } catch (e) { /* storage blocked */ }
+  },
+  put(id, data, delay) {
+    this.docs[id] = data;
+    this.emit([id]);
+    clearTimeout(this.timers[id]);
+    this.timers[id] = setTimeout(() => this.flush(id), delay == null ? 600 : delay);
+  },
+  remove(id) { this.put(id, null, 50); },
+  busy() { return Object.keys(this.timers).length > 0 || Object.values(this.inflight).some(Boolean); },
+  async flush(id) {
+    if (this.timers[id]) { clearTimeout(this.timers[id]); delete this.timers[id]; }
+    const data = this.docs[id];
+    if (this.mode !== 'db' || !this.col) { this.saveLocal(id, data); if (data == null) delete this.docs[id]; return; }
+    if (this.inflight[id]) { this.queued[id] = true; return; }
+    this.inflight[id] = true; this.setStatus('saving');
+    let err = null;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const ref = this.col.doc(id);
+        if (data == null) await ref.delete(); else await ref.set(clone(data));
+        err = null; break;
+      } catch (e) {
+        err = e || {code: 'unavailable'};
+        if (err.code !== 'unavailable' || attempt) break;
+        await sleep(400 + Math.random() * 900);
+      }
+    }
+    this.inflight[id] = false;
+    if (data == null && !err && this.docs[id] == null) delete this.docs[id];
+    if (err) this.writeFailed(err);
+    else if (!this.busy()) this.setStatus('synced');
+    if (this.queued[id]) { this.queued[id] = false; this.flush(id); }
+  },
+  writeFailed(e) {
+    const c = e && e.code;
+    if (c === 'quota_exceeded') { toast('Your saved data is full. Delete some old mock interviews in the Mock tab.'); this.setStatus('error'); return; }
+    if (['invalid_argument', 'revoked', 'not_granted', 'capability_disabled', 'capability_removed', 'transform_error'].includes(c)) { this.toLocal(); return; }
+    this.setStatus('offline');
+  },
+  toLocal() {
+    this.mode = 'local';
+    try { if (this.unsub) this.unsub(); } catch (e) { /* ignore */ }
+    this.unsub = null; this.col = null;
+    Object.keys(this.docs).forEach(id => this.saveLocal(id, this.docs[id]));
+    this.setStatus('local');
+  },
+  async initDb() {
+    const db = await cap('db');
+    if (!db) { this.setStatus('local'); return; }
+    const user = await cap('user');
+    let uid = null;
+    try { uid = user ? await user.id() : null; } catch (e) { uid = null; }
+    if (!uid) { this.setStatus('local'); return; }
+    let col;
+    try { col = db.collection('data/users/' + uid); } catch (e) { this.setStatus('local'); return; }
+    this.col = col; this.mode = 'db'; this.setStatus('loading');
+    const localDocs = clone(this.docs) || {};
+    let confirmed = false;
+    const timer = setTimeout(() => { if (!confirmed && this.mode === 'db') this.setStatus('offline'); }, 10000);
+    try {
+      this.unsub = col.onSnapshot(snap => {
+        const pending = id => !!(this.timers[id] || this.inflight[id]);
+        const fresh = {};
+        snap.docs.forEach(d => { if (d.exists) fresh[d.id] = d.data(); });
+        if (snap.metadata.fromCache && snap.empty) return;
+        const next = {};
+        Object.keys(fresh).forEach(id => { next[id] = pending(id) ? this.docs[id] : clone(fresh[id]); });
+        Object.keys(this.docs).forEach(id => { if (!(id in next) && pending(id)) next[id] = this.docs[id]; });
+        if (!confirmed && !snap.metadata.fromCache) {
+          confirmed = true; clearTimeout(timer);
+          if (snap.empty && Object.keys(localDocs).length) {
+            this.docs = Object.assign(next, localDocs);
+            this.emit(null);
+            Object.keys(localDocs).forEach(id => this.flush(id));
+            return;
+          }
+          if (!this.busy()) this.setStatus('synced');
+        } else if (!snap.metadata.fromCache && this.status === 'offline' && !this.busy()) {
+          this.setStatus('synced');
+        }
+        this.docs = next;
+        this.emit(null);
+      }, () => { clearTimeout(timer); this.toLocal(); });
+    } catch (e) { clearTimeout(timer); this.toLocal(); }
+  },
+};
+function renderSync() {
+  const el = $('#sync'); if (!el) return;
+  const map = {loading: 'Loading your progress…', synced: 'Saved to your account', saving: 'Saving…', local: 'Saved in this browser', offline: 'Can’t reach saved data yet', error: 'Saving failed'};
+  el.dataset.s = Store.status;
+  $('.sync-t', el).textContent = map[Store.status] || '';
+  el.title = Store.status === 'local' ? 'Progress is kept in this browser only. Open the page in claude.ai while signed in to sync it to your account.' : (map[Store.status] || '');
+}
+
+/* ================= dates ================= */
+const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+function parseDate(v) { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str(v)); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; }
+function toISO(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function addDays(d, n) { const x = new Date(d.getTime()); x.setDate(x.getDate() + n); return x; }
+function mondayOf(d) { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x; }
+function startDate() { return mondayOf(parseDate(S().startDate) || parseDate(DEFAULT_START)); }
+function weekStart(w) { return addDays(startDate(), (w - 1) * 7); }
+function today0() { const t = new Date(); return new Date(t.getFullYear(), t.getMonth(), t.getDate()); }
+function currentWeek() { const diff = Math.round((today0() - startDate()) / 864e5); return diff < 0 ? 0 : Math.floor(diff / 7) + 1; }
+const MD = d => d.toLocaleDateString('en-US', {month: 'short', day: 'numeric'});
+function isNewYearWeek(w) {
+  const a = weekStart(w);
+  for (let i = 0; i < 7; i++) { const d = addDays(a, i); const m = d.getMonth(), day = d.getDate(); if ((m === 11 && day >= 29) || (m === 0 && day <= 3)) return true; }
+  return false;
+}
+function dayDate(w, day) { const i = DAYS.indexOf(day); return i < 0 ? null : addDays(weekStart(w), i); }
+
+/* ================= speech (read aloud) ================= */
+function setPlaying(btn, on) {
+  if (!btn) return;
+  btn.classList.toggle('playing', on);
+  btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  const lab = btn.querySelector('.lbl'); if (lab) lab.textContent = on ? 'Stop' : (btn.dataset.label || 'Listen');
+  const ic = btn.querySelector('svg'); if (ic) ic.replaceWith(icon(on ? 'stop' : 'speaker'));
+}
+const Speech = {
+  claude: null, claudeJa: true, claudeBlocked: false, bvoices: [], current: null, _onLine: null,
+  hasBrowser() { return typeof window.speechSynthesis !== 'undefined' && typeof window.SpeechSynthesisUtterance !== 'undefined'; },
+  async init() {
+    if (this.hasBrowser()) {
+      const load = () => {
+        try { this.bvoices = speechSynthesis.getVoices().filter(v => /^ja([-_]|$)/i.test(v.lang)); } catch (e) { this.bvoices = []; }
+        this.changed();
+      };
+      load();
+      try { speechSynthesis.addEventListener('voiceschanged', load); } catch (e) { try { speechSynthesis.onvoiceschanged = load; } catch (e2) { /* ignore */ } }
+      setTimeout(load, 1200);
+    }
+    const t = await cap('tts');
+    if (t) {
+      this.claude = t;
+      try { const langs = t.languages ? await t.languages().catch(() => undefined) : undefined; this.claudeJa = !Array.isArray(langs) || langs.some(l => /^ja/i.test(l)); } catch (e) { /* keep default */ }
+      try { t.onLine(e => { if (this._onLine) this._onLine(e); }); } catch (e) { /* older runtime */ }
+    }
+    this.changed();
+  },
+  engines() { return {claude: !!this.claude && !this.claudeBlocked, browser: this.bvoices.length > 0}; },
+  pick() {
+    const pref = S().settings.engine || 'auto'; const ok = this.engines();
+    if (pref === 'claude' && ok.claude) return 'claude';
+    if (pref === 'browser' && ok.browser) return 'browser';
+    if (ok.claude && this.claudeJa) return 'claude';
+    if (ok.browser) return 'browser';
+    if (ok.claude) return 'claude';
+    return null;
+  },
+  changed() { document.body.classList.toggle('has-tts', !!this.pick()); renderSettings(); },
+  browserVoice() {
+    const want = S().settings.voice;
+    const v = this.bvoices.find(x => x.voiceURI === want);
+    if (v) return v;
+    for (const name of ['Kyoko', 'O-ren', 'Nanami', 'Google 日本語', 'Haruka', 'Ayumi', 'Otoya', 'Hattori', 'Sayaka', 'Ichiro']) {
+      const f = this.bvoices.find(x => x.name.includes(name)); if (f) return f;
+    }
+    return this.bvoices[0] || null;
+  },
+  play(said, opts) {
+    opts = opts || {};
+    said = arr(said).filter(s => s && s.trim()).slice(0, 100);
+    if (!said.length) { toast('There is nothing to read yet.'); return; }
+    this.stop();
+    const eng = this.pick();
+    if (!eng) { toast('No Japanese voice is available here. Try Chrome or Edge, or add a Japanese voice to your system.'); return; }
+    const rate = Number(S().settings.rate) || 0.9;
+    const cur = {engine: eng, btn: opts.btn || null, block: opts.block || null};
+    this.current = cur;
+    setPlaying(cur.btn, true);
+    const hl = i => {
+      if (this.current !== cur || !cur.block) return;
+      $$('.sent.on', cur.block).forEach(x => x.classList.remove('on'));
+      const el = cur.block.querySelector('.sent[data-i="' + i + '"]'); if (el) el.classList.add('on');
+    };
+    const done = () => { if (this.current === cur) this.endCurrent(); };
+    if (eng === 'claude') {
+      this._onLine = e => { if (e && e.id) hl(Number(String(e.id).slice(1))); };
+      let p;
+      try { p = this.claude.speak(said.map((text, i) => ({text: text.slice(0, 1900), id: 's' + i})), {language: 'ja', rate: Math.min(1.5, Math.max(0.7, rate))}); }
+      catch (e) { p = Promise.reject(e); }
+      Promise.resolve(p).then(done, err => { done(); this.claudeErr(err); });
+    } else {
+      try {
+        const v = this.browserVoice();
+        speechSynthesis.cancel();
+        said.forEach((text, i) => {
+          const u = new SpeechSynthesisUtterance(text);
+          u.lang = (v && v.lang) || 'ja-JP'; if (v) u.voice = v;
+          u.rate = Math.min(1.6, Math.max(0.5, rate));
+          u.onstart = () => hl(i);
+          u.onend = () => { if (i === said.length - 1) done(); };
+          u.onerror = ev => { if (ev && ev.error && !['interrupted', 'canceled'].includes(ev.error)) toast('The browser voice stopped (' + ev.error + ').'); done(); };
+          speechSynthesis.speak(u);
+        });
+      } catch (e) { done(); toast('The browser voice is not available here.'); }
+    }
+  },
+  stop() {
+    const cur = this.current; this.current = null; this._onLine = null;
+    if (cur) this.clearUI(cur);
+    if (cur && cur.engine === 'claude' && this.claude) { try { Promise.resolve(this.claude.stop()).catch(() => {}); } catch (e) { /* ignore */ } }
+    if (this.hasBrowser()) { try { speechSynthesis.cancel(); } catch (e) { /* ignore */ } }
+  },
+  endCurrent() { const cur = this.current; this.current = null; this._onLine = null; if (cur) this.clearUI(cur); },
+  clearUI(cur) { setPlaying(cur.btn, false); if (cur.block) $$('.sent.on', cur.block).forEach(x => x.classList.remove('on')); },
+  claudeErr(err) {
+    const c = err && err.code;
+    if (!c || c === 'stopped') return;
+    if (c === 'not_granted' || c === 'unavailable') { this.claudeBlocked = true; this.changed(); toast(c === 'not_granted' ? 'Reading aloud with the Claude voice is turned off for this page.' : 'The Claude voice is not available right now.'); return; }
+    if (c === 'rate_limited') { toast('Too much reading aloud for now. Try again in a little while.'); return; }
+    if (c === 'no_gesture') { toast('Tap Listen again to start.'); return; }
+    if (c === 'busy') { toast('The microphone is in use. Try again when dictation ends.'); return; }
+    toast('Reading aloud failed. Try again.');
+  },
+};
+function listenBtn(getSaid, opts) {
+  opts = opts || {};
+  const label = opts.label || 'Listen';
+  const b = h('button', {type: 'button', class: 'btn sm listen only-tts' + (opts.ghost ? ' ghost' : ''), 'data-label': label, 'aria-pressed': 'false', title: opts.title || 'Read aloud in Japanese'}, icon('speaker'), h('span', {class: 'lbl', text: label}));
+  b.addEventListener('click', () => {
+    if (Speech.current && Speech.current.btn === b) { Speech.stop(); return; }
+    Speech.play(typeof getSaid === 'function' ? getSaid() : getSaid, {btn: b, block: typeof opts.block === 'function' ? opts.block() : opts.block});
+  });
+  return b;
+}
+
+/* ================= dictation ================= */
+const recorders = new Set();
+const Dict = {
+  d: null, ok: false, jaFailed: false, rec: null,
+  async init() {
+    const d = await cap('dictation');
+    if (!d) return;
+    this.d = d; this.ok = true;
+    try {
+      d.onPartial(e => { if (this.rec) this.rec.partial(str(e && e.text)); });
+      d.onFinal(e => { if (this.rec) this.rec.final(str(e && e.text)); });
+      d.onState(e => { const r = this.rec; if (r) r.stateChange(e || {}); if (e && e.state === 'idle' && this.rec === r) this.rec = null; });
+    } catch (e) { this.ok = false; return; }
+    this.refresh();
+  },
+  usable() { return this.ok && !this.jaFailed; },
+  refresh() { document.body.classList.toggle('has-dict', this.usable()); recorders.forEach(r => { if (r.root.isConnected) r.refresh(); else recorders.delete(r); }); },
+  start(rec) {
+    if (this.rec && this.rec !== rec) this.rec.abandon();
+    this.rec = rec;
+    let p;
+    try { p = this.d.start({language: 'ja'}); } catch (e) { p = Promise.reject({code: 'upstream_error'}); }
+    Promise.resolve(p).catch(err => {
+      if (this.rec === rec) this.rec = null;
+      const c = err && err.code;
+      if (c === 'unavailable' || c === 'not_granted') { this.jaFailed = true; this.refresh(); }
+      rec.failed(err);
+    });
+    Speech.stop();
+  },
+  stop() { return this.d ? Promise.resolve(this.d.stop()).catch(() => {}) : Promise.resolve(); },
+};
+const DICT_MSG = {
+  not_granted: 'Microphone use was declined, so the page will time you instead.',
+  dismissed: 'The microphone question was closed. Press Speak to try again.',
+  unavailable: 'Japanese dictation is not available here, so the page will time you instead.',
+  rate_limited: 'Dictation is busy. Try again in a moment.',
+  upstream_error: 'The microphone or speech service failed. Try again.',
+  no_gesture: 'Press the button again to start.',
+  invalid_argument: 'Dictation could not start. Try again.',
+};
+function makeRecorder(opts) {
+  opts = opts || {};
+  const st = {phase: 'idle', t0: 0, t1: 0, finals: '', partial: '', raf: 0, mode: Dict.usable() ? 'dict' : 'timer', finished: false};
+  const btn = h('button', {type: 'button', class: 'btn primary rec-btn'});
+  const clock = h('span', {class: 'rec-clock mono', text: '0:00'});
+  const target = h('span', {class: 'rec-target', text: opts.targetSec ? '/ ' + fmtSec(opts.targetSec) : ''});
+  const fill = h('i');
+  const bar = h('span', {class: 'rec-bar', 'aria-hidden': 'true'}, fill);
+  const live = h('div', {class: 'rec-live ja', lang: 'ja', hidden: true});
+  const note = h('div', {class: 'rec-note', hidden: true});
+  const root = h('div', {class: 'rec'}, h('div', {class: 'rec-row'}, btn, clock, target, bar), live, note);
+  function paintBtn() {
+    btn.replaceChildren();
+    btn.classList.toggle('rec-on', st.phase !== 'idle');
+    btn.classList.toggle('primary', st.phase === 'idle');
+    if (st.phase === 'idle') btn.append(icon(st.mode === 'dict' ? 'mic' : 'timer'), st.mode === 'dict' ? (opts.speakLabel || 'Speak your answer') : 'Start timer');
+    else if (st.phase === 'starting') btn.append(h('span', {class: 'spinner'}), 'Starting… (tap to cancel)');
+    else if (st.phase === 'finishing') btn.append(h('span', {class: 'spinner'}), 'Finishing…');
+    else btn.append(icon('stop'), st.mode === 'dict' ? 'Stop' : 'Stop timer');
+    btn.disabled = st.phase === 'finishing';
+  }
+  function paintLive() {
+    live.hidden = st.mode !== 'dict' || (!st.finals && !st.partial && st.phase === 'idle');
+    live.replaceChildren(st.finals ? document.createTextNode(st.finals) : '', st.partial ? h('span', {class: 'partial', text: st.partial}) : '');
+    if (!st.finals && !st.partial && st.phase !== 'idle') live.append(h('span', {class: 'partial', text: '…'}));
+  }
+  function tick() {
+    cancelAnimationFrame(st.raf);
+    const loop = () => {
+      if (st.phase !== 'listening') return;
+      const sec = (performance.now() - st.t0) / 1000;
+      clock.textContent = fmtSec(sec);
+      if (opts.targetSec) {
+        fill.style.width = Math.min(100, sec / opts.targetSec * 100) + '%';
+        bar.classList.toggle('over', sec > opts.targetSec);
+        bar.classList.toggle('way-over', sec > opts.targetSec * 1.5);
+      }
+      st.raf = requestAnimationFrame(loop);
+    };
+    st.raf = requestAnimationFrame(loop);
+  }
+  function reset() { st.finals = ''; st.partial = ''; st.t0 = 0; st.t1 = 0; st.finished = false; clock.textContent = '0:00'; fill.style.width = '0'; bar.classList.remove('over', 'way-over'); note.hidden = true; paintLive(); }
+  function finish() {
+    if (st.finished) return; st.finished = true;
+    const end = st.t1 || performance.now();
+    const sec = st.t0 ? (end - st.t0) / 1000 : 0;
+    clock.textContent = fmtSec(sec);
+    const text = (st.finals + (st.partial ? (st.finals ? ' ' : '') + st.partial : '')).trim();
+    st.partial = ''; paintLive();
+    if (opts.onDone && sec > 0.5) opts.onDone(Object.assign({sec, text, mode: st.mode}, speechMetrics(text, sec)));
+  }
+  const api = {
+    root,
+    partial(t) { st.partial = t; paintLive(); },
+    final(t) { st.finals = st.finals ? st.finals + t : t.replace(/^\s+/, ''); st.partial = ''; paintLive(); },
+    stateChange(e) {
+      if (e.state === 'listening' && st.phase !== 'listening') { st.phase = 'listening'; st.t0 = performance.now(); tick(); }
+      else if (e.state === 'finishing') { if (!st.t1 && st.t0) st.t1 = performance.now(); st.phase = 'finishing'; }
+      else if (e.state === 'idle') {
+        const was = st.t0 > 0;
+        if (!st.t1 && was) st.t1 = performance.now();
+        cancelAnimationFrame(st.raf); st.phase = 'idle';
+        if (e.reason && DICT_MSG[e.reason]) { note.textContent = DICT_MSG[e.reason]; note.hidden = false; }
+        if (e.reason === 'unavailable' || e.reason === 'not_granted') { Dict.jaFailed = true; Dict.refresh(); }
+        if (was) setTimeout(finish, 250);
+      }
+      paintBtn();
+    },
+    failed(err) {
+      cancelAnimationFrame(st.raf); st.phase = 'idle';
+      const c = err && err.code;
+      if (c && c !== 'stopped' && DICT_MSG[c]) { note.textContent = DICT_MSG[c]; note.hidden = false; }
+      paintBtn(); paintLive();
+    },
+    abandon() { if (st.phase !== 'idle') { st.t1 = st.t1 || performance.now(); cancelAnimationFrame(st.raf); st.phase = 'idle'; paintBtn(); finish(); } },
+    refresh() { if (st.phase === 'idle') { st.mode = Dict.usable() ? 'dict' : 'timer'; paintBtn(); } },
+  };
+  btn.addEventListener('click', () => {
+    if (st.mode === 'dict') {
+      if (st.phase === 'idle') { reset(); st.phase = 'starting'; paintBtn(); paintLive(); Dict.start(api); }
+      else if (st.phase === 'starting') { st.phase = 'idle'; paintBtn(); Dict.stop(); }
+      else if (st.phase === 'listening') { st.t1 = performance.now(); st.phase = 'finishing'; cancelAnimationFrame(st.raf); paintBtn(); Dict.stop().then(() => { if (st.phase !== 'idle') { st.phase = 'idle'; paintBtn(); } finish(); }); }
+    } else if (st.phase === 'idle') {
+      reset(); Speech.stop(); st.phase = 'listening'; st.t0 = performance.now(); tick(); paintBtn();
+    } else {
+      st.t1 = performance.now(); cancelAnimationFrame(st.raf); st.phase = 'idle'; paintBtn(); finish();
+    }
+  });
+  paintBtn();
+  recorders.add(api);
+  return api;
+}
+function paceMeter(cpm) {
+  const lo = 100, hi = 420, pct = v => ((v - lo) / (hi - lo) * 100).toFixed(1) + '%';
+  const bg = 'linear-gradient(90deg, var(--amber-soft) 0 ' + pct(200) + ', var(--indigo-soft) ' + pct(200) + ' ' + pct(260) + ', var(--green-soft) ' + pct(260) + ' ' + pct(330) + ', var(--red-soft) ' + pct(330) + ' 100%)';
+  const pos = Math.min(hi, Math.max(lo, cpm));
+  return h('div', {class: 'meter-wrap', role: 'img', 'aria-label': 'Speaking pace ' + cpm + ' characters per minute: ' + paceLabel(cpm)},
+    h('div', {class: 'meter', style: 'background:' + bg}, h('span', {class: 'needle', style: 'left:' + pct(pos)})),
+    h('div', {class: 'meter-scale'}, h('span', {text: '100'}), h('span', {text: '200'}), h('span', {text: '260'}), h('span', {text: '330'}), h('span', {text: '420 字/分'})));
+}
+function statsLine(r, targetS) {
+  return h('div', {class: 'stats'},
+    h('span', null, 'Time ', h('b', {text: fmtSec(r.sec)}), targetS ? ' / ' + fmtSec(targetS) : ''),
+    r.mode === 'dict' ? h('span', null, h('b', {text: String(r.chars)}), ' 字') : null,
+    r.cpm ? h('span', null, h('b', {text: String(r.cpm)}), ' 字/分 · ' + paceLabel(r.cpm)) : null,
+    r.mode === 'dict' ? h('span', null, 'Fillers heard ', h('b', {text: String(r.fillers)})) : null);
+}
+
+/* ================= AI (Claude) ================= */
+const AI = {
+  s: null, off: false,
+  async init() { this.s = await cap('sample'); this.refresh(); },
+  ok() { return !!this.s && !this.off; },
+  refresh() { document.body.classList.toggle('has-ai', this.ok()); },
+  err(e) {
+    const c = (e && e.code) || 'upstream_error';
+    if (['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed'].includes(c)) { this.off = true; this.refresh(); return 'AI feedback is not available for this page right now.'; }
+    if (c === 'cancelled') return '';
+    if (c === 'rate_limited') return e.reason === 'usage_limit' ? 'You have reached your Claude usage limit for now.' : 'Too many requests at once. Try again in a minute.';
+    if (c === 'session_expired') return 'Sign in to Claude again, then retry.';
+    if (c === 'refused') return 'Claude could not help with this text. Try rewording it.';
+    if (c === 'invalid_json') return 'The feedback came back in an unexpected format. Try again.';
+    if (c === 'prompt_too_large') return 'That text is too long. Shorten it and try again.';
+    if (c === 'empty_completion') return 'No feedback came back. Try again with a shorter answer.';
+    return 'Something went wrong while asking Claude. Try again.';
+  },
+};
+function aiBtn(label, onClick) {
+  const b = h('button', {type: 'button', class: 'btn sm only-ai'}, icon('spark'), label);
+  b.addEventListener('click', () => onClick(b));
+  return b;
+}
+const CANDIDATE = 'Candidate: an international master\'s student in Japan applying for a new-graduate AI engineer role in the automotive business of FPT (FPT Japan / FPT Automotive). Japanese: JLPT N2 for reading and listening; speaking is around N3.';
+function checkPrompt(q, text, mode, meta) {
+  return [
+    'You are an experienced Japanese new-graduate recruiter (新卒採用の面接官) and a business-Japanese teacher.',
+    CANDIDATE,
+    'Interview question: 「' + q.questionJa + '」 (' + q.questionEn + ')',
+    'What the interviewer is checking: ' + str(q.intentEn),
+    'Target length: ' + str(q.timeTarget) + ' (about 250-300 Japanese characters per minute of speech).',
+    mode === 'spoken'
+      ? 'This is a speech-to-text transcript of the candidate answering aloud for ' + Math.round(meta.sec) + ' seconds (' + meta.chars + ' characters' + (meta.cpm ? ', ' + meta.cpm + ' characters per minute' : '') + '). Punctuation may be missing. Odd or wrong words may be recognition errors caused by pronunciation: point those out as possible pronunciation issues.'
+      : 'This is the answer the candidate wrote to practise saying aloud.',
+    'Candidate\'s answer:', '"""', text.slice(0, 4000), '"""',
+    'Evaluate it as a real interviewer would, then help the candidate improve. Reply with only a JSON object in this shape:',
+    '{"overall":3,"scores":{"content":3,"structure":3,"japanese":3,"keigo":3},"summary":"...","corrected":"...","fixes":[{"original":"...","better":"...","why":"..."}],"contentTips":["..."],"followUp":"..."}',
+    'Rules: scores are integers from 1 to 5 (5 = would impress a Japanese interviewer). summary: 2 short English sentences. corrected: the candidate\'s answer rewritten in natural, speakable interview Japanese (short sentences of 45 characters or fewer, です・ます, correct keigo, 御社 when speaking, conclusion first), keeping the candidate\'s own content and facts and about the target length; keep any 【】 placeholders as they are. fixes: up to 8 of the most important language problems, each quoting the candidate\'s original words exactly, the better wording, and a short English reason. contentTips: up to 3 English tips about content and structure. followUp: one likely 深掘り follow-up question in Japanese.',
+  ].join('\n');
+}
+function cleanFb(r) {
+  r = r && typeof r === 'object' ? r : {};
+  const n = v => { const x = Math.round(Number(v)); return x >= 1 && x <= 5 ? x : null; };
+  const sc = r.scores && typeof r.scores === 'object' ? r.scores : {};
+  return {
+    overall: n(r.overall),
+    scores: {content: n(sc.content), structure: n(sc.structure), japanese: n(sc.japanese), keigo: n(sc.keigo)},
+    summary: str(r.summary).slice(0, 800),
+    corrected: str(r.corrected).slice(0, 3000),
+    fixes: arr(r.fixes).slice(0, 8).map(f => ({original: str(f && f.original).slice(0, 300), better: str(f && f.better).slice(0, 300), why: str(f && f.why).slice(0, 400)})).filter(f => f.original || f.better),
+    contentTips: arr(r.contentTips).slice(0, 3).map(t => str(t).slice(0, 400)).filter(Boolean),
+    followUp: str(r.followUp).slice(0, 300),
+  };
+}
+function scoreChips(o, labels) {
+  return h('div', {class: 'scores'}, Object.keys(labels).filter(k => o[k] != null).map(k => h('span', {class: 'score' + (k === 'overall' ? ' overall' : '')}, labels[k] + ' ', h('b', {text: o[k] + '/5'}))));
+}
+async function runCheck(q, text, mode, meta, box, btn, ta) {
+  text = str(text).trim();
+  if (!text) { toast(mode === 'spoken' ? 'Nothing was transcribed yet.' : 'Write your answer first.'); return; }
+  const sample = AI.s; if (!AI.ok() || !sample) return;
+  const ctl = new AbortController();
+  box.replaceChildren(thinking('Claude is reading your answer. This can take up to a minute.', ctl));
+  if (btn) btn.disabled = true;
+  try {
+    const raw = await sample.json(checkPrompt(q, text, mode, meta || {}), {signal: ctl.signal, modelTier: 'default'});
+    const fb = {at: Date.now(), mode, text: text.slice(0, 4000), meta: meta || null, result: cleanFb(raw)};
+    if (!fb.result.corrected && !fb.result.summary) throw {code: 'invalid_json'};
+    const doc = Object.assign({}, Store.get('a_' + q.id) || {}, {fb});
+    Store.put('a_' + q.id, doc, 100);
+    box.replaceChildren(renderFeedback(fb, q, ta));
+  } catch (e) {
+    const msg = AI.err(e);
+    box.replaceChildren(msg ? h('p', {class: 'err', text: msg}) : '');
+  } finally { if (btn) btn.disabled = false; }
+}
+function renderFeedback(fb, q, ta) {
+  const r = fb.result || {};
+  const corrected = r.corrected ? jaBlock(r.corrected, 'answer') : null;
+  const useBtn = corrected && ta ? h('button', {type: 'button', class: 'btn sm'}, 'Use as my answer') : null;
+  if (useBtn) {
+    useBtn.addEventListener('click', () => inlineConfirm(useBtn, 'Replace your answer with this version?', 'Replace', () => {
+      const doc = Object.assign({}, Store.get('a_' + q.id) || {});
+      doc.prev = ta.value; doc.text = r.corrected; doc.at = Date.now();
+      ta.value = r.corrected; ta.dispatchEvent(new Event('input'));
+      Store.put('a_' + q.id, Object.assign({}, Store.get('a_' + q.id) || {}, {prev: doc.prev, text: r.corrected, at: doc.at}), 100);
+      toast('Replaced. Your old version is kept: use “Restore previous” under your answer.');
+      syncAnswerCard(q.id, true);
+    }));
+  }
+  const when = new Date(fb.at || Date.now()).toLocaleString('en-US', {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'});
+  return h('div', {class: 'fb'},
+    h('div', {class: 'fb-head'}, h('strong', {text: fb.mode === 'spoken' ? 'Feedback on what you said' : 'Feedback on your written answer'}), h('span', {class: 'sub', text: when})),
+    scoreChips(Object.assign({overall: r.overall}, r.scores || {}), {overall: 'Overall', content: 'Content', structure: 'Structure', japanese: 'Japanese', keigo: 'Keigo'}),
+    r.summary ? h('p', {text: r.summary}) : null,
+    corrected ? h('div', {class: 'sec'}, h('div', {class: 'tools-row'}, h('span', {class: 'label', text: 'Better version'}), listenBtn(() => corrected._said, {block: corrected, label: 'Listen & shadow'}), useBtn), corrected) : null,
+    r.fixes && r.fixes.length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Language fixes'}), h('ul', {class: 'fixes'}, r.fixes.map(f => h('li', {class: 'fix'},
+      h('span', {class: 'from ja', lang: 'ja', text: f.original}), h('span', {class: 'arrow', text: '→'}), h('span', {class: 'to ja', lang: 'ja', text: f.better}), f.why ? h('span', {class: 'why', text: f.why}) : null)))) : null,
+    r.contentTips && r.contentTips.length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Content tips'}), h('ul', {class: 'plain'}, r.contentTips.map(t => h('li', {text: t})))) : null,
+    r.followUp ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Likely follow-up question'}), h('div', {class: 'f-q'}, h('span', {class: 'ja', lang: 'ja', text: r.followUp}), listenBtn(() => [r.followUp], {ghost: true}))) : null);
+}
+
+/* ================= chrome: tabs, settings ================= */
+const VIEWS = ['plan', 'questions', 'mock', 'words', 'fpt', 'tools'];
+function route() {
+  const hash = decodeURIComponent((location.hash || '').slice(1));
+  let view = VIEWS.includes(hash) ? hash : 'plan';
+  const qm = /^q\d{2}$/.test(hash) && DATA.qById && DATA.qById[hash];
+  const wm = /^week-(\d)$/.exec(hash);
+  if (qm) view = 'questions';
+  if (wm) view = 'plan';
+  showView(view);
+  if (qm) openQuestion(hash);
+  else if (wm) { const d = $('#week-' + wm[1]); if (d) { d.open = true; d.scrollIntoView({block: 'start'}); } }
+  else window.scrollTo(0, 0);
+}
+function showView(view) {
+  $$('.view').forEach(v => { v.hidden = v.dataset.view !== view; });
+  $$('.tab').forEach(t => { if (t.dataset.view === view) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current'); });
+}
+function wireChrome() {
+  const sb = $('#settings-btn'); sb.append(icon('sliders'));
+  sb.addEventListener('click', () => { const p = $('#settings'); p.hidden = !p.hidden; sb.setAttribute('aria-expanded', String(!p.hidden)); if (!p.hidden) renderSettings(); });
+  document.addEventListener('click', e => {
+    const p = $('#settings');
+    if (!p.hidden && !p.contains(e.target) && !sb.contains(e.target)) { p.hidden = true; sb.setAttribute('aria-expanded', 'false'); }
+    const a = e.target.closest && e.target.closest('a.qlink');
+    if (a) { const id = a.getAttribute('href').slice(1); e.preventDefault(); if (location.hash === '#' + id) route(); else location.hash = id; }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { const p = $('#settings'); if (!p.hidden) { p.hidden = true; sb.setAttribute('aria-expanded', 'false'); e.preventDefault(); sb.focus(); } }
+  });
+}
+function renderSettings() {
+  const p = $('#settings'); if (!p || p.hidden) return;
+  const s = S().settings; const ok = Speech.engines();
+  const eng = h('select', {id: 'set-engine'},
+    h('option', {value: 'auto', selected: s.engine === 'auto' ? true : null}, 'Automatic'),
+    h('option', {value: 'claude', disabled: ok.claude ? null : true, selected: s.engine === 'claude' ? true : null}, 'Claude voice' + (ok.claude ? '' : ' (not available here)')),
+    h('option', {value: 'browser', disabled: ok.browser ? null : true, selected: s.engine === 'browser' ? true : null}, 'Browser voice' + (ok.browser ? '' : ' (no Japanese voice found)')));
+  eng.addEventListener('change', () => setState(st => { st.settings.engine = eng.value; }, 300));
+  const bv = Speech.browserVoice();
+  const voice = h('select', {id: 'set-voice', disabled: ok.browser ? null : true}, Speech.bvoices.map(v => h('option', {value: v.voiceURI, selected: bv && v.voiceURI === bv.voiceURI ? true : null}, v.name)));
+  voice.addEventListener('change', () => setState(st => { st.settings.voice = voice.value; }, 300));
+  const rateOut = h('span', {class: 'mono', text: Number(s.rate).toFixed(2) + '×'});
+  const rate = h('input', {type: 'range', id: 'set-rate', min: '0.6', max: '1.3', step: '0.05', value: String(s.rate)});
+  rate.addEventListener('input', () => { rateOut.textContent = Number(rate.value).toFixed(2) + '×'; });
+  rate.addEventListener('change', () => setState(st => { st.settings.rate = Number(rate.value); }, 300));
+  const hide = h('input', {type: 'checkbox', id: 'set-hide'}); hide.checked = !!s.hideModel;
+  hide.addEventListener('change', () => setState(st => { st.settings.hideModel = hide.checked; }, 300));
+  const which = Speech.pick();
+  p.replaceChildren(
+    h('h3', {text: 'Voice and display'}),
+    h('label', {class: 'field', for: 'set-engine'}, 'Japanese voice', eng),
+    ok.browser ? h('label', {class: 'field', for: 'set-voice'}, 'Browser voice', voice) : null,
+    h('label', {class: 'field', for: 'set-rate'}, h('span', null, 'Reading speed ', rateOut), rate),
+    h('div', {class: 'tools-row'}, listenBtn(() => ['本日はお忙しいところ、お時間をいただきありがとうございます。よろしくお願いいたします。'], {label: 'Test voice'}),
+      h('span', {class: 'sub', text: which ? 'Using the ' + (which === 'claude' ? 'Claude voice' : 'browser voice') : 'No Japanese voice found'})),
+    h('label', {class: 'check', for: 'set-hide'}, hide, h('span', null, 'Hide model answers until I open them (better for recall practice)')),
+    h('p', {class: 'sub', text: 'Synthetic voices sometimes put the pitch accent in the wrong place. Check important words, especially katakana terms, in OJAD’s Suzuki-kun tool.'}),
+    h('p', {class: 'sub', text: 'Dictation and the Claude voice work in Chrome or Edge on claude.ai. Progress syncs to your Claude account when you are signed in.'}));
+}
+
+/* ================= PLAN ================= */
+const TYPE_LABEL = {speak: 'Speak', write: 'Write', listen: 'Listen', vocab: 'Vocab', research: 'Research', mock: 'Mock', feedback: 'Feedback', review: 'Review'};
+function allTasks() { return DATA.plan.weeks.flatMap(w => arr(w.tasks)); }
+let routineMode = 'weekday';
+let renderedStart = null;
+function progressRow(done, total, id) {
+  const pct = total ? Math.round(done / total * 100) : 0;
+  return h('div', {class: 'progress-row', id},
+    h('div', {class: 'progress', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(total), 'aria-valuenow': String(done), 'aria-label': 'Tasks done'}, h('i', {style: 'width:' + pct + '%'})),
+    h('span', {class: 'mono', text: done + ' / ' + total + ' tasks'}));
+}
+function taskRow(t, prefix) {
+  const s = S();
+  const id = (prefix || 'task-') + t.id;
+  const cb = h('input', {type: 'checkbox', id, 'data-task': t.id});
+  cb.checked = !!s.tasks[t.id];
+  cb.addEventListener('change', () => setState(st => { if (cb.checked) st.tasks[t.id] = 1; else delete st.tasks[t.id]; }, 400));
+  return h('li', {class: 'task'}, cb, h('label', {for: id},
+    h('span', {class: 'task-text'}, linkify(t.text)),
+    h('span', {class: 'task-meta'}, h('span', {class: 'tchip', text: TYPE_LABEL[t.type] || t.type}), h('span', {class: 'mono', text: (t.min || 0) + ' min'}))));
+}
+function renderPlan() {
+  const P = DATA.plan; const root = $('#view-plan');
+  const s = S(); const cw = currentWeek();
+  renderedStart = s.startDate;
+  const tasks = allTasks(); const done = tasks.filter(t => s.tasks[t.id]).length;
+  const start = h('input', {type: 'date', id: 'start-date', value: toISO(startDate())});
+  start.addEventListener('change', () => { const d = parseDate(start.value); if (!d) return; setState(st => { st.startDate = toISO(mondayOf(d)); }, 300); renderPlan(); });
+  const ov = P.overview || {};
+  root.replaceChildren(
+    h('section', {class: 'plan-hero'},
+      h('div', {class: 'plan-main'},
+        h('p', {class: 'eyebrow', text: '8-week plan · 面接の日本語'}),
+        h('h1', {class: 'view-title', text: 'From N3 speaking to interview-ready in 8 weeks'}),
+        h('p', {class: 'lede', text: 'A short daily speaking routine, 46 likely questions with step-by-step “what to say” guides, and a measurable milestone every week. The aim: get through a 30 to 60 minute interview in Japanese without notes.'}),
+        h('div', {class: 'plan-controls'},
+          h('label', {class: 'field', for: 'start-date'}, 'Week 1 starts (Monday)', start),
+          h('div', {class: 'field'}, 'Time budget', h('strong', {text: str(ov.weeklyTime).split(':')[0].slice(0, 60)}))),
+        progressRow(done, tasks.length, 'overall-progress')),
+      thisWeekCard(cw)),
+    phasesStrip(arr(ov.phases), cw),
+    h('details', {class: 'card card-in fold'},
+      h('summary', {text: 'How this plan works: the goal, principles and assumptions'}),
+      ov.goal ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'What “interview-ready” means'}), h('p', {class: 'lede', text: str(ov.goal)})) : null,
+      ov.weeklyTime ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Time budget'}), h('p', {class: 'lede', text: str(ov.weeklyTime)})) : null,
+      h('div', {class: 'principles'}, arr(ov.principles).map(p => h('div', {class: 'principle'}, h('b', {text: p.title}), h('span', {text: p.detail})))),
+      arr(ov.assumptions).length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Assumptions'}), h('ul', {class: 'plain'}, arr(ov.assumptions).map(a => h('li', {text: a})))) : null,
+      howToUse()),
+    routineCard(P.dailyRoutine || {}),
+    h('div', {class: 'sec-head'}, h('h2', {text: 'Week by week'}), h('span', {class: 'sub', text: 'Tick tasks as you go. Question ids like q01 open the question.'})),
+    h('section', {class: 'weeks'}, arr(P.weeks).map(w => weekCard(w, cw))));
+}
+function howToUse() {
+  return h('div', {class: 'sec'}, h('span', {class: 'label', text: 'How to use this page'}), h('ol', {class: 'plain'},
+    h('li', {text: 'Set the Monday your Week 1 starts. The page then shows this week and today’s tasks.'}),
+    h('li', {text: 'Questions: read “What to say” for the recommended structure, write your own version in “My answer”, check it with AI, then Listen and shadow it until you can say it without looking.'}),
+    h('li', {text: 'Practise aloud: the page times you and, where dictation works, transcribes you and measures your pace in 字/分.'}),
+    h('li', {text: 'Mock interview: an AI interviewer asks questions and follow-ups in Japanese, then scores you. “How should I answer?” gives you a structure hint for the question you are on.'}),
+    h('li', {text: 'Where a task names a prompt such as ai-correct or ai-hr, you can use the copyable prompts (Tools and Mock tabs) in any AI app, or the built-in buttons: “Check with AI” under My answer, and the Mock interview tab.'}),
+    h('li', {text: 'Tools: log your Week 1, 4 and 8 benchmark recordings to see your progress.'})));
+}
+function thisWeekCard(cw) {
+  const P = DATA.plan;
+  const wn = Math.min(Math.max(cw, 1), 8);
+  const w = P.weeks.find(x => x.week === wn) || P.weeks[0];
+  const dayName = DAYS[(today0().getDay() + 6) % 7];
+  let head;
+  if (cw === 0) head = 'Starts ' + MD(startDate()) + ' · preview of Week 1';
+  else if (cw > 8) head = 'All 8 weeks are behind you · Week 8 shown';
+  else head = 'Week ' + cw + ' of 8 · ' + MD(weekStart(cw)) + ' – ' + MD(addDays(weekStart(cw), 6));
+  const inRange = cw >= 1 && cw <= 8;
+  const todays = inRange ? arr(w.tasks).filter(t => t.day === dayName || t.day === 'Daily') : arr(w.tasks).slice(0, 4);
+  return h('aside', {class: 'card card-in tw'},
+    h('div', {class: 'tw-head'}, h('span', {class: 'label', text: inRange ? 'This week' : 'Up next'}), h('span', {class: 'sub', text: head})),
+    h('div', null, h('div', {class: 'tw-theme', lang: 'ja', text: str(w.themeJa)}), h('div', {class: 'muted', text: str(w.theme)})),
+    h('div', {class: 'callout milestone'}, h('span', {class: 'label', text: 'Milestone'}), h('span', {text: str(w.milestone)})),
+    h('div', {class: 'sec'}, h('span', {class: 'label', text: inRange ? 'Today · ' + dayName + ' ' + MD(today0()) : 'First tasks'}),
+      todays.length ? h('ul', {class: 'tasks'}, todays.map(t => taskRow(t, 'today-'))) : h('p', {class: 'muted', text: 'No fixed task today. Do the daily routine below.'})),
+    h('div', {class: 'chips'}, h('span', {class: 'label', text: 'Focus'}), arr(w.focusQuestions).map(id => linkify(id))),
+    h('a', {class: 'btn sm', href: '#week-' + w.week}, 'Open Week ' + w.week));
+}
+function phasesStrip(phases, cw) {
+  if (!phases.length) return null;
+  return h('section', {class: 'phases', 'aria-label': 'Phases'}, phases.map(p => {
+    const nums = (str(p.weeks).match(/\d+/g) || []).map(Number);
+    const now = nums.length && cw >= Math.min(...nums) && cw <= Math.max(...nums);
+    return h('div', {class: 'phase' + (now ? ' now' : '')},
+      h('span', {class: 'label', text: 'Weeks ' + str(p.weeks)}),
+      h('span', {class: 'phase-ja', lang: 'ja', text: str(p.nameJa)}),
+      h('strong', {text: str(p.name)}),
+      h('span', {class: 'phase-focus', text: str(p.focus)}));
+  }));
+}
+function routineCard(R) {
+  const card = h('section', {class: 'card card-in', id: 'routine'});
+  const paint = () => {
+    const list = arr(R[routineMode]);
+    const total = list.reduce((a, b) => a + (Number(b.min) || 0), 0);
+    const seg = h('div', {class: 'seg', role: 'group', 'aria-label': 'Routine type'}, [['weekday', 'Weekday'], ['weekend', 'Weekend'], ['light', 'Light day']].map(([k, l]) => {
+      const b = h('button', {type: 'button', 'aria-pressed': String(routineMode === k)}, l);
+      b.addEventListener('click', () => { routineMode = k; paint(); });
+      return b;
+    }));
+    card.replaceChildren(
+      h('div', {class: 'sec-head'}, h('h3', {text: 'Daily routine'}), h('span', {class: 'sub mono', text: total + ' min'}), h('span', {class: 'grow'}), seg),
+      h('div', {class: 'routine-bar', 'aria-hidden': 'true'}, list.map(b => h('span', {style: 'flex:' + (Number(b.min) || 1) + ' 1 0', title: b.activity, text: b.min + '′ ' + str(b.activity)}))),
+      h('ol', {class: 'routine-list'}, list.map(b => h('li', null, h('span', {class: 'mins', text: b.min + ' min'}), h('div', null, h('b', {text: str(b.activity)}), h('p', {text: str(b.detail)}))))));
+  };
+  paint();
+  return card;
+}
+function weekCard(w, cw) {
+  const s = S();
+  const a = weekStart(w.week), b = addDays(a, 6);
+  const done = arr(w.tasks).filter(t => s.tasks[t.id]).length;
+  const open = cw === w.week || (cw === 0 && w.week === 1) || (cw > 8 && w.week === 8);
+  const det = h('details', {class: 'week', id: 'week-' + w.week, open: open ? true : null});
+  det.append(h('summary', {class: 'week-sum'},
+    h('span', {class: 'week-num mono', text: 'W' + w.week}),
+    h('span', {class: 'week-titles'}, h('span', {class: 'week-ja', lang: 'ja', text: str(w.themeJa)}), h('span', {class: 'week-en', text: str(w.theme)})),
+    h('span', {class: 'week-meta'},
+      h('span', {text: MD(a) + ' – ' + MD(b)}),
+      cw === w.week ? h('span', {class: 'badge now', text: 'This week'}) : null,
+      isNewYearWeek(w.week) ? h('span', {class: 'badge holiday', lang: 'ja', title: 'New Year holidays: offices close; use the light version if needed', text: '年末年始'}) : null,
+      h('span', {class: 'mono', 'data-week-count': w.week, text: done + '/' + arr(w.tasks).length}))));
+  let built = false;
+  const build = () => { if (built) return; built = true; det.append(weekBody(w, cw)); };
+  if (open) build();
+  det.addEventListener('toggle', () => { if (det.open) build(); });
+  return det;
+}
+function weekBody(w, cw) {
+  const groups = ['Daily'].concat(DAYS).map(day => ({day, tasks: arr(w.tasks).filter(t => t.day === day)})).filter(g => g.tasks.length);
+  const todayName = DAYS[(today0().getDay() + 6) % 7];
+  const refl = h('textarea', {class: 'note', id: 'reflect-w' + w.week, 'data-reflect': w.week, placeholder: 'What improved this week? What still feels hard? What will you change next week?'});
+  refl.value = str(S().reflections['w' + w.week]);
+  let rt = null;
+  refl.addEventListener('input', () => { clearTimeout(rt); rt = setTimeout(() => setState(st => { st.reflections['w' + w.week] = refl.value; }, 200), 700); });
+  return h('div', {class: 'week-body'},
+    h('p', {class: 'lede', text: str(w.summary)}),
+    h('div', {class: 'week-cols'},
+      h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Goals'}), h('ul', {class: 'goals'}, arr(w.goals).map(g => h('li', null, linkify(g))))),
+      h('div', {class: 'sec'},
+        h('div', {class: 'callout milestone'}, h('span', {class: 'label', text: 'End-of-week milestone'}), h('span', null, linkify(w.milestone))),
+        h('div', {class: 'chips'}, h('span', {class: 'label', text: 'New questions'}), arr(w.focusQuestions).map(id => linkify(id))),
+        arr(w.reviewQuestions).length ? h('div', {class: 'chips'}, h('span', {class: 'label', text: 'Review'}), arr(w.reviewQuestions).map(id => linkify(id))) : null)),
+    h('div', {class: 'days'}, groups.map(g => {
+      const d = dayDate(w.week, g.day);
+      const isToday = cw === w.week && g.day === todayName;
+      return h('div', {class: 'day-group' + (isToday ? ' today' : '')},
+        h('h5', {text: g.day === 'Daily' ? 'Every day' : g.day + ' · ' + MD(d) + (isToday ? ' · today' : '')}),
+        h('ul', {class: 'tasks'}, g.tasks.map(t => taskRow(t))));
+    })),
+    h('div', {class: 'week-cols'},
+      w.humanFeedback ? h('div', {class: 'callout human'}, h('span', {class: 'label', text: 'Human feedback this week'}), h('span', null, linkify(w.humanFeedback))) : null,
+      w.lightVersion ? h('div', {class: 'callout light'}, h('span', {class: 'label', text: 'Busy or holiday week: light version'}), h('span', null, linkify(w.lightVersion))) : null),
+    h('label', {class: 'field', for: 'reflect-w' + w.week}, 'Weekly reflection (saved)', refl));
+}
+function syncPlan() {
+  const s = S();
+  if (renderedStart !== s.startDate && document.activeElement && document.activeElement.id !== 'start-date') { renderPlan(); return; }
+  $$('#view-plan input[data-task]').forEach(cb => { cb.checked = !!s.tasks[cb.dataset.task]; });
+  arr(DATA.plan.weeks).forEach(w => { const el = $('[data-week-count="' + w.week + '"]'); if (el) el.textContent = arr(w.tasks).filter(t => s.tasks[t.id]).length + '/' + arr(w.tasks).length; });
+  const tasks = allTasks(); const done = tasks.filter(t => s.tasks[t.id]).length;
+  const old = $('#overall-progress'); if (old) old.replaceWith(progressRow(done, tasks.length, 'overall-progress'));
+  $$('textarea[data-reflect]').forEach(t => { if (document.activeElement !== t) t.value = str(s.reflections['w' + t.dataset.reflect]); });
+}
+
+/* ================= QUESTIONS ================= */
+const CAT = {basic: ['Basics', '基本'], research: ['Research', '研究'], motivation: ['Motivation', '志望動機'], international: ['International', '留学生'], technical: ['Technical', '技術'], closing: ['Closing', '締め'], tricky: ['Tricky', '難問']};
+const qFilter = {cat: 'all', week: 'all', text: ''};
+let drill = null;
+function filteredQuestions() {
+  const t = qFilter.text.trim().toLowerCase();
+  return DATA.questions.filter(q => (qFilter.cat === 'all' || q.category === qFilter.cat) && (qFilter.week === 'all' || String(q.week) === qFilter.week) &&
+    (!t || (q.id + ' ' + q.questionJa + ' ' + q.questionEn + ' ' + arr(q.variantsJa).join(' ')).toLowerCase().includes(t)));
+}
+function starsText(n) { return n ? '★'.repeat(n) + '☆'.repeat(5 - n) : ''; }
+function renderQuestions() {
+  const root = $('#view-questions');
+  const cats = h('div', {class: 'chips', role: 'group', 'aria-label': 'Category'}, [['all', 'All', '']].concat(Object.keys(CAT).map(k => [k, CAT[k][0], CAT[k][1]])).map(([k, en, ja]) => {
+    const b = h('button', {type: 'button', class: 'chip', 'aria-pressed': String(qFilter.cat === k)}, en, ja ? h('span', {lang: 'ja', text: ja}) : null);
+    b.addEventListener('click', () => { qFilter.cat = k; $$('button', cats).forEach(x => x.setAttribute('aria-pressed', String(x === b))); paintQList(); });
+    return b;
+  }));
+  const week = h('select', {id: 'q-week'}, h('option', {value: 'all'}, 'All weeks'), [1, 2, 3, 4, 5, 6, 7].map(n => h('option', {value: String(n), selected: qFilter.week === String(n) ? true : null}, 'Week ' + n)));
+  week.addEventListener('change', () => { qFilter.week = week.value; paintQList(); });
+  const search = h('input', {type: 'search', id: 'q-search', placeholder: 'Search questions', value: qFilter.text});
+  search.addEventListener('input', () => { qFilter.text = search.value; paintQList(); });
+  const drillBtn = h('button', {type: 'button', class: 'btn primary'}, icon('shuffle'), 'Random drill');
+  drillBtn.addEventListener('click', () => startDrill());
+  root.replaceChildren(
+    h('div', {class: 'view-head'}, h('p', {class: 'eyebrow', text: 'Question bank · 想定質問'}), h('h1', {class: 'view-title', text: '46 questions you are likely to hear'}),
+      h('p', {class: 'lede', text: 'Each card has what the interviewer is checking, a model answer for an example persona, a 30-second version, follow-up questions, and your own answer. Swap the highlighted parts for your own facts.'})),
+    h('div', {class: 'q-toolbar card card-in'}, cats,
+      h('div', {class: 'q-tools-row'}, h('label', {class: 'field', for: 'q-week'}, 'Week', week), h('label', {class: 'field q-search', for: 'q-search'}, search), drillBtn)),
+    h('div', {id: 'drill-box'}),
+    h('div', {class: 'q-list', id: 'q-list'}));
+  paintQList();
+}
+function paintQList() {
+  const list = $('#q-list'); if (!list) return;
+  const qs = filteredQuestions();
+  list.replaceChildren(...(qs.length ? qs.map(questionCard) : [h('p', {class: 'muted', text: 'No questions match. Clear the search or pick another category.'})]));
+}
+function questionCard(q) {
+  const s = S(); const doc = Store.get('a_' + q.id);
+  const card = h('article', {class: 'q-card', id: 'card-' + q.id});
+  const body = h('div', {class: 'q-body', hidden: true});
+  const head = h('button', {type: 'button', class: 'q-head', 'aria-expanded': 'false', 'aria-controls': 'body-' + q.id},
+    h('span', {class: 'q-id mono', text: q.id}),
+    h('span', {class: 'q-titles'}, h('span', {class: 'q-ja', lang: 'ja', text: q.questionJa}), h('span', {class: 'q-en', text: q.questionEn})),
+    h('span', {class: 'q-meta'},
+      h('span', {class: 'dot-ok', 'data-has': q.id, title: 'You have written your answer', hidden: doc && str(doc.text).trim() ? null : true}),
+      h('span', {class: 'stars-mini', 'data-stars': q.id, text: starsText(s.ratings[q.id])}),
+      h('span', {class: 'chip', lang: 'ja', text: CAT[q.category] ? CAT[q.category][1] : q.category}),
+      h('span', {class: 'chip mono', text: 'W' + q.week})));
+  body.id = 'body-' + q.id;
+  head.addEventListener('click', () => toggleCard(card, q));
+  card.append(head, body);
+  return card;
+}
+function toggleCard(card, q, forceOpen) {
+  const body = $('.q-body', card); const head = $('.q-head', card);
+  const open = forceOpen || body.hidden;
+  if (open && !body.childNodes.length) buildQBody(q, body);
+  body.hidden = !open; card.classList.toggle('open', open); head.setAttribute('aria-expanded', String(open));
+}
+function openQuestion(id) {
+  let card = $('#card-' + id);
+  if (!card) { qFilter.cat = 'all'; qFilter.week = 'all'; qFilter.text = ''; renderQuestions(); card = $('#card-' + id); }
+  if (!card) return;
+  toggleCard(card, DATA.qById[id], true);
+  card.scrollIntoView({block: 'start'});
+}
+function buildQBody(q, body) {
+  const doc = Store.get('a_' + q.id) || {};
+  const variants = arr(q.variantsJa);
+  body.append(
+    h('div', {class: 'q-row'},
+      listenBtn(() => speakList(q.questionJa), {label: 'Hear the question'}),
+      variants.length ? listenBtn(() => [speechText(variants[Math.floor(Math.random() * variants.length)])], {label: 'Hear it asked another way'}) : null,
+      h('span', {class: 'chip', lang: 'ja', text: '目安 ' + str(q.timeTarget)})),
+    variants.length ? h('details', {class: 'fold'}, h('summary', {text: 'Other ways an interviewer may ask (' + variants.length + ')'}),
+      h('ul', {class: 'phr'}, variants.map(v => h('li', null, h('span', {class: 'ja', lang: 'ja', text: v}), listenBtn(() => [speechText(v)], {ghost: true}))))) : null,
+    h('div', {class: 'intent'}, h('span', {class: 'label', text: 'What they are checking'}), h('span', {text: str(q.intentEn)})),
+    guideSection(q, {examples: !S().settings.hideModel}),
+    modelSection(q),
+    myAnswerSection(q, doc),
+    practiceSection(q),
+    followSection(q),
+    arr(q.pitfallsEn).length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Avoid'}), h('ul', {class: 'plain'}, arr(q.pitfallsEn).map(p => h('li', {text: p})))) : null,
+    ratingRow(q));
+}
+/* "What to say": the recommended structure, step by step */
+function guideSteps(g, opts) {
+  opts = opts || {};
+  let t = 0;
+  return h('ol', {class: 'gsteps'}, arr(g.steps).map(s => {
+    const from = t; t += Number(s.sec) || 0;
+    const timed = Number(s.sec) > 0;
+    return h('li', {class: 'gstep'},
+      h('div', {class: 'gstep-time mono', text: timed ? fmtSec(from) + '–' + fmtSec(t) : ''}),
+      h('div', {class: 'gstep-main'},
+        h('div', {class: 'gstep-head'}, h('span', {class: 'gstep-ja', lang: 'ja', text: str(s.labelJa)}), h('span', {class: 'gstep-en', text: str(s.labelEn)}), timed ? h('span', {class: 'sub mono', text: s.sec + ' sec'}) : null),
+        s.sayEn ? h('p', {class: 'gstep-say', text: s.sayEn}) : null,
+        s.starterJa ? h('div', {class: 'gstep-line'}, h('span', {class: 'label', text: 'Start with'}), h('span', {class: 'ja gstep-starter', lang: 'ja'}, jaInline(s.starterJa)), listenBtn(() => [speechText(s.starterJa)], {ghost: true})) : null,
+        opts.examples && s.exampleJa ? h('div', {class: 'gstep-line gstep-ex'}, h('span', {class: 'label', text: 'In the model answer'}), h('span', {class: 'ja', lang: 'ja'}, jaInline(s.exampleJa))) : null));
+  }));
+}
+function guideSection(q, opts) {
+  opts = opts || {};
+  const g = DATA.gById && DATA.gById[q.id];
+  if (!g || !arr(g.steps).length) {
+    return arr(q.structure).length ? h('section', {class: 'sec'}, h('div', {class: 'sec-head'}, h('h4', {text: 'What to say'}), h('span', {class: 'sub', text: 'Recommended structure'})),
+      h('ol', {class: 'structure'}, arr(q.structure).map(st => h('li', null, h('span', {class: 'ja', lang: 'ja', text: str(st.ja)}), ' ', h('span', {class: 'en', text: str(st.en)}))))) : null;
+  }
+  const total = Number(g.targetSec) || arr(g.steps).reduce((a, s) => a + (Number(s.sec) || 0), 0);
+  const hasEx = arr(g.steps).some(s => s.exampleJa);
+  let showEx = !!opts.examples && hasEx;
+  const holder = h('div');
+  const paint = () => holder.replaceChildren(guideSteps(g, {examples: showEx}));
+  const exBtn = hasEx ? h('button', {type: 'button', class: 'btn ghost sm'}, showEx ? 'Hide the example for each step' : 'Show an example for each step') : null;
+  if (exBtn) exBtn.addEventListener('click', () => { showEx = !showEx; exBtn.textContent = showEx ? 'Hide the example for each step' : 'Show an example for each step'; paint(); });
+  paint();
+  return h('section', {class: 'sec guide'},
+    h('div', {class: 'sec-head'}, h('h4', {text: 'What to say'}), h('span', {class: 'sub', text: 'Recommended structure' + (total ? ' · about ' + fmtSec(total) : '')}), h('span', {class: 'grow'}), exBtn),
+    g.approachEn ? h('p', {class: 'guide-approach', text: g.approachEn}) : null,
+    total ? h('div', {class: 'routine-bar guide-bar', 'aria-hidden': 'true'}, arr(g.steps).map(s => h('span', {style: 'flex:' + (Number(s.sec) || 1) + ' 1 0', lang: 'ja', title: str(s.labelEn), text: str(s.labelJa) + ' ' + (s.sec || '') + '秒'}))) : null,
+    holder,
+    arr(g.thinkFirstEn).length ? h('div', {class: 'callout'}, h('span', {class: 'label', text: 'Think about these first, with your own facts'}), h('ul', {class: 'plain'}, arr(g.thinkFirstEn).map(x => h('li', {text: x})))) : null);
+}
+function skeletonOf(q) {
+  const g = DATA.gById && DATA.gById[q.id];
+  return g ? arr(g.steps).map(s => str(s.starterJa)).filter(Boolean).join('\n') : '';
+}
+function modelSection(q) {
+  const hide = !!S().settings.hideModel;
+  const block = jaBlock(q.modelAnswerJa, 'answer');
+  const en = h('p', {class: 'en-gloss', text: str(q.modelAnswerEn), hidden: true});
+  const enBtn = h('button', {type: 'button', class: 'btn ghost sm'}, 'Show English');
+  enBtn.addEventListener('click', () => { en.hidden = !en.hidden; enBtn.textContent = en.hidden ? 'Show English' : 'Hide English'; });
+  const short = q.shortAnswerJa ? jaBlock(q.shortAnswerJa, 'answer short') : null;
+  const inner = h('div', {class: 'model-inner', hidden: hide ? true : null},
+    h('div', {class: 'tools-row'}, listenBtn(() => block._said, {block, label: 'Listen & shadow'}), enBtn, h('span', {class: 'count mono', text: charCount(q.modelAnswerJa) + '字'})),
+    block, en,
+    short ? h('div', {class: 'short-box'}, h('div', {class: 'tools-row'}, h('span', {class: 'label', text: '30-second version, for when you are nervous'}), listenBtn(() => short._said, {block: short, ghost: true}), h('span', {class: 'count mono', text: charCount(q.shortAnswerJa) + '字'})), short) : null,
+    arr(q.keyPhrases).length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Reusable phrases'}),
+      h('ul', {class: 'phr'}, arr(q.keyPhrases).map(k => h('li', null, h('span', {class: 'ja', lang: 'ja'}, jaInline(k.ja)), listenBtn(() => [speechText(k.ja)], {ghost: true}), h('span', {class: 'en', text: str(k.en)}))))) : null);
+  const toggle = h('button', {type: 'button', class: 'btn sm'}, hide ? 'Show model answer' : 'Hide model answer');
+  toggle.addEventListener('click', () => { inner.hidden = !inner.hidden; toggle.textContent = inner.hidden ? 'Show model answer' : 'Hide model answer'; if (inner.hidden) Speech.stop(); });
+  return h('section', {class: 'sec'}, h('div', {class: 'sec-head'}, h('h4', {text: 'Model answer'}), h('span', {class: 'sub', text: 'Example persona: swap the highlighted parts for your own facts'}), toggle), inner);
+}
+function myAnswerSection(q, doc) {
+  const ta = h('textarea', {class: 'answer-pad ja', lang: 'ja', id: 'my-' + q.id, 'data-my': q.id, placeholder: 'Write your own answer in Japanese. Start from the model, keep sentences short, then check it with AI or a teacher.'});
+  ta.value = str(doc.text);
+  const foot = h('span', {class: 'pad-foot mono'});
+  const paint = () => { const n = plainCount(ta.value); foot.textContent = n + '字 · about ' + fmtSec(n / 270 * 60) + ' at 270字/分 · target ' + str(q.timeTarget); };
+  paint();
+  ta.addEventListener('input', () => { paint(); Store.put('a_' + q.id, Object.assign({}, Store.get('a_' + q.id) || {}, {text: ta.value, at: Date.now()}), 900); markHas(q.id); });
+  const fbBox = h('div', {class: 'fb-box'});
+  if (doc.fb && doc.fb.mode !== 'spoken') fbBox.append(renderFeedback(doc.fb, q, ta));
+  const check = aiBtn('Check with AI', b => runCheck(q, ta.value, 'written', null, fbBox, b, ta));
+  const restore = h('button', {type: 'button', class: 'btn ghost sm', 'data-restore': q.id, hidden: doc.prev ? null : true}, 'Restore previous');
+  restore.addEventListener('click', () => {
+    const d = Object.assign({}, Store.get('a_' + q.id) || {}); if (!d.prev) return;
+    const cur = ta.value; ta.value = d.prev; d.text = d.prev; d.prev = cur; d.at = Date.now();
+    Store.put('a_' + q.id, d, 100); paint(); toast('Restored your previous version. Press again to swap back.');
+  });
+  const skel = skeletonOf(q);
+  const skelBtn = skel ? h('button', {type: 'button', class: 'btn ghost sm'}, 'Start from the step starters') : null;
+  if (skelBtn) skelBtn.addEventListener('click', () => {
+    const apply = () => { ta.value = skel; ta.dispatchEvent(new Event('input')); ta.focus(); toast('Starters added. Replace the highlighted 【 】 parts with your own facts and finish each step.'); };
+    if (ta.value.trim()) inlineConfirm(skelBtn, 'Replace what you wrote with the starters?', 'Replace', apply); else apply();
+  });
+  return h('section', {class: 'sec'},
+    h('div', {class: 'sec-head'}, h('h4', {text: 'My answer'}), h('span', {class: 'sub', text: 'Saved as you type'}), h('span', {class: 'grow'}), skelBtn),
+    ta,
+    h('div', {class: 'pad-row'}, foot, h('span', {class: 'grow'}), restore, listenBtn(() => speakList(ta.value), {label: 'Listen to mine'}), check),
+    fbBox);
+}
+function markHas(id) { const dot = $('[data-has="' + id + '"]'); const d = Store.get('a_' + id); if (dot) dot.hidden = !(d && str(d.text).trim()); }
+function syncAnswerCard(id, force) {
+  const ta = $('#my-' + id); const d = Store.get('a_' + id) || {};
+  if (ta && (force || document.activeElement !== ta) && ta.value !== str(d.text)) { ta.value = str(d.text); ta.dispatchEvent(new Event('input')); }
+  const r = $('[data-restore="' + id + '"]'); if (r) r.hidden = !d.prev;
+  markHas(id);
+}
+function practiceSection(q) {
+  const tgt = targetSec(q.timeTarget);
+  const out = h('div', {class: 'practice-out'});
+  const rec = makeRecorder({targetSec: tgt, onDone: r => showPractice(q, r, out, tgt)});
+  const last = S().last[q.id];
+  return h('section', {class: 'sec'},
+    h('div', {class: 'sec-head'}, h('h4', {text: 'Practise aloud'}),
+      h('span', {class: 'sub only-dict', text: 'Answer without looking. The page transcribes you and measures your pace.'}),
+      h('span', {class: 'sub no-dict', text: 'Answer without looking while the timer runs. Record yourself on your phone to listen back.'})),
+    last && last.cpm ? h('p', {class: 'sub', text: 'Last time: ' + fmtSec(last.sec) + ', ' + last.cpm + ' 字/分, ' + last.fillers + ' fillers (' + new Date(last.at).toLocaleDateString('en-US', {month: 'short', day: 'numeric'}) + ')'}) : null,
+    rec.root, out);
+}
+function showPractice(q, r, out, tgt) {
+  setState(st => { st.last[q.id] = {sec: Math.round(r.sec), chars: r.chars, cpm: r.cpm, fillers: r.fillers, at: Date.now(), mode: r.mode}; }, 300);
+  const fbBox = h('div');
+  const kids = [statsLine(r, tgt)];
+  if (r.cpm) kids.push(paceMeter(r.cpm));
+  if (r.mode === 'dict' && r.text) {
+    const tblock = h('div', {class: 'ja answer', lang: 'ja', text: r.text});
+    const draftBtn = h('button', {type: 'button', class: 'btn sm'}, 'Use as a draft in My answer');
+    draftBtn.addEventListener('click', () => {
+      const ta = $('#my-' + q.id);
+      const apply = () => { if (ta) { ta.value = r.text; ta.dispatchEvent(new Event('input')); toast('Copied into My answer'); } };
+      if (ta && ta.value.trim()) inlineConfirm(draftBtn, 'Replace what is in My answer?', 'Replace', apply); else apply();
+    });
+    kids.push(h('div', {class: 'sec'}, h('span', {class: 'label', text: 'What the page heard'}), tblock,
+      h('div', {class: 'tools-row'}, draftBtn, aiBtn('Get feedback on what I said', b => runCheck(q, r.text, 'spoken', {sec: r.sec, chars: r.chars, cpm: r.cpm}, fbBox, b, $('#my-' + q.id))))));
+    kids.push(h('p', {class: 'sub', text: 'Speech recognition often drops fillers and mishears unclear words. If a word came out wrong, say it again slowly and check its pitch on OJAD.'}));
+  }
+  kids.push(fbBox);
+  out.replaceChildren(h('div', {class: 'result'}, kids));
+}
+function followSection(q) {
+  const f = arr(q.followUps); if (!f.length) return null;
+  return h('section', {class: 'sec'}, h('div', {class: 'sec-head'}, h('h4', {text: 'Follow-up questions (深掘り)'}), h('span', {class: 'sub', text: 'Interviewers dig into your answer. Practise these too.'})),
+    h('ul', {class: 'follow'}, f.map(x => {
+      const hint = h('div', {class: 'hint', hidden: true}, h('span', {class: 'label', text: 'Start like this'}), h('span', {class: 'ja', lang: 'ja'}, jaInline(x.hintJa)), listenBtn(() => [speechText(x.hintJa)], {ghost: true}));
+      const hb = x.hintJa ? h('button', {type: 'button', class: 'btn ghost sm'}, 'Show a way to start') : null;
+      if (hb) hb.addEventListener('click', () => { hint.hidden = !hint.hidden; hb.textContent = hint.hidden ? 'Show a way to start' : 'Hide'; });
+      return h('li', null, h('div', {class: 'f-q'}, h('span', {class: 'ja', lang: 'ja', text: str(x.ja)}), listenBtn(() => [speechText(x.ja)], {ghost: true})),
+        h('span', {class: 'sub', text: str(x.en)}), x.tipEn ? h('span', {class: 'sub', text: 'Tip: ' + x.tipEn}) : null, hb, x.hintJa ? hint : null);
+    })));
+}
+function ratingRow(q) {
+  const wrap = h('div', {class: 'stars', role: 'group', 'aria-label': 'Self-rating'});
+  const paint = () => { const n = S().ratings[q.id] || 0; $$('button', wrap).forEach((b, i) => { b.classList.toggle('on', i < n); b.setAttribute('aria-pressed', String(i < n)); }); };
+  for (let i = 1; i <= 5; i++) {
+    const b = h('button', {type: 'button', title: i + ' of 5', 'aria-label': 'Rate ' + i + ' of 5', text: '★'});
+    b.addEventListener('click', () => { setState(st => { if (st.ratings[q.id] === i) delete st.ratings[q.id]; else st.ratings[q.id] = i; }, 300); setTimeout(paint, 0); });
+    wrap.append(b);
+  }
+  wrap.dataset.rate = q.id; paint();
+  return h('div', {class: 'tools-row'}, h('span', {class: 'label', text: 'How confident are you today?'}), wrap);
+}
+function syncQuestions() {
+  const s = S();
+  $$('[data-stars]').forEach(el => { el.textContent = starsText(s.ratings[el.dataset.stars]); });
+  $$('.stars[data-rate]').forEach(w => { const n = s.ratings[w.dataset.rate] || 0; $$('button', w).forEach((b, i) => b.classList.toggle('on', i < n)); });
+}
+
+/* drill */
+function startDrill() {
+  const qs = filteredQuestions();
+  if (!qs.length) { toast('No questions match the current filter.'); return; }
+  drill = {queue: shuffle(qs.map(q => q.id)), idx: -1, hideText: true, count: 0};
+  nextDrill();
+}
+function nextDrill() {
+  if (!drill) return;
+  drill.idx++; drill.count++;
+  if (drill.idx >= drill.queue.length) { drill.queue = shuffle(drill.queue); drill.idx = 0; }
+  const q = DATA.qById[drill.queue[drill.idx]];
+  const pool = [q.questionJa].concat(arr(q.variantsJa));
+  const said = pool[Math.floor(Math.random() * pool.length)];
+  const box = $('#drill-box');
+  const tgt = targetSec(q.timeTarget);
+  const play = listenBtn(() => [speechText(said)], {label: 'Play the question'});
+  const textEl = h('div', {class: 'drill-q ja', lang: 'ja', text: said, hidden: drill.hideText ? true : null});
+  const hiddenNote = h('div', {class: 'hidden-q', hidden: drill.hideText ? null : true}, 'Listen first, as in a real interview. The text is hidden.');
+  const showBtn = h('button', {type: 'button', class: 'btn sm'}, drill.hideText ? 'Show the text' : 'Hide the text');
+  showBtn.addEventListener('click', () => { drill.hideText = !drill.hideText; textEl.hidden = drill.hideText; hiddenNote.hidden = !drill.hideText; showBtn.textContent = drill.hideText ? 'Show the text' : 'Hide the text'; });
+  const out = h('div');
+  const g = DATA.gById && DATA.gById[q.id];
+  const structBox = h('div', {class: 'sec', hidden: true}, g && arr(g.steps).length
+    ? [h('span', {class: 'label', text: 'What to say'}), g.approachEn ? h('p', {class: 'muted', text: g.approachEn}) : null, guideSteps(g, {examples: false})]
+    : guideSection(q, {}));
+  const structBtn = h('button', {type: 'button', class: 'btn sm'}, 'Show what to say');
+  structBtn.addEventListener('click', () => { structBox.hidden = !structBox.hidden; structBtn.textContent = structBox.hidden ? 'Show what to say' : 'Hide what to say'; });
+  const model = jaBlock(q.modelAnswerJa, 'answer');
+  const modelBox = h('div', {class: 'sec', hidden: true}, h('div', {class: 'tools-row'}, h('span', {class: 'label', text: 'Model answer'}), listenBtn(() => model._said, {block: model, ghost: true})), model);
+  const modelBtn = h('button', {type: 'button', class: 'btn sm'}, 'Show model answer');
+  modelBtn.addEventListener('click', () => { modelBox.hidden = !modelBox.hidden; modelBtn.textContent = modelBox.hidden ? 'Show model answer' : 'Hide model answer'; });
+  const rec = makeRecorder({targetSec: tgt, onDone: r => showPractice(q, r, out, tgt)});
+  const next = h('button', {type: 'button', class: 'btn primary'}, 'Next question');
+  next.addEventListener('click', () => nextDrill());
+  const end = h('button', {type: 'button', class: 'btn ghost sm'}, 'End drill');
+  end.addEventListener('click', () => { Speech.stop(); drill = null; box.replaceChildren(); });
+  box.replaceChildren(h('section', {class: 'card card-in drill'},
+    h('div', {class: 'sec-head'}, h('h3', {text: 'Random drill'}), h('span', {class: 'sub mono', text: '#' + drill.count + ' · ' + q.id + ' · 目安 ' + str(q.timeTarget)}), h('span', {class: 'grow'}), end),
+    h('div', {class: 'tools-row'}, play, showBtn, structBtn, h('a', {class: 'qlink', href: '#' + q.id}, 'open card')),
+    hiddenNote, textEl, structBox, rec.root, out,
+    h('div', {class: 'tools-row'}, modelBtn, ratingRow(q), h('span', {class: 'grow'}), next), modelBox));
+  box.scrollIntoView({block: 'start'});
+  Speech.play([speechText(said)], {btn: play});
+}
+
+/* ================= MOCK INTERVIEW ================= */
+const MOCK_TYPES = {
+  hr: {en: 'HR first interview', ja: '一次面接', role: '人事部の採用担当者 (an HR recruiter)', pool: ['q01', 'q02', 'q03', 'q04', 'q06', 'q20', 'q22', 'q30', 'q31', 'q25', 'q26']},
+  tech: {en: 'Technical interview', ja: '技術面接', role: '車載AIチームのエンジニアリングマネージャー (an engineering manager of the in-vehicle AI team)', pool: ['q10', 'q11', 'q12', 'q40', 'q41', 'q42', 'q43', 'q45', 'q46', 'q47', 'q51', 'q52']},
+  final: {en: 'Final interview', ja: '最終面接', role: '役員 (an executive)', pool: ['q20', 'q21', 'q24', 'q25', 'q32', 'q70', 'q71', 'q72', 'q73', 'q26', 'q61']},
+  deep: {en: 'Follow-up drill', ja: '深掘り練習', role: '人事担当者 (an HR interviewer)', pool: []},
+};
+const mockCfg = {type: 'hr', n: 6, focus: 'q03'};
+let MOCK = null;
+function renderMock() {
+  const root = $('#view-mock');
+  root.replaceChildren(
+    h('div', {class: 'view-head'}, h('p', {class: 'eyebrow', text: 'Mock interview · 模擬面接'}), h('h1', {class: 'view-title', text: 'Practise with an AI interviewer'}),
+      h('p', {class: 'lede', text: 'The interviewer speaks Japanese, asks one question at a time, digs into your answers, and scores you at the end. Answer by voice where dictation works, or type.'})),
+    h('div', {class: 'only-ai', style: 'flex-direction:column;gap:18px'}, mockSetupCard(), h('div', {id: 'mock-live'}), h('div', {id: 'mock-report'})),
+    h('div', {class: 'no-ai card card-in'}, h('h3', {text: 'The built-in AI interviewer is not available in this view'}),
+      h('p', {class: 'muted', text: 'Open this page on claude.ai while signed in to use it. Meanwhile, paste one of the prompts below into any AI assistant that has a voice mode.'})),
+    aiPromptsCard(),
+    h('section', {class: 'card card-in'}, h('h3', {text: 'Past mock interviews'}), h('div', {id: 'mock-history'})));
+  renderMockHistory();
+}
+function mockSetupCard() {
+  const types = h('div', {class: 'opt-row', role: 'group', 'aria-label': 'Interview type'}, Object.keys(MOCK_TYPES).map(k => {
+    const b = h('button', {type: 'button', class: 'chip', 'aria-pressed': String(mockCfg.type === k)}, MOCK_TYPES[k].en, h('span', {lang: 'ja', text: MOCK_TYPES[k].ja}));
+    b.addEventListener('click', () => { mockCfg.type = k; renderMockSetup(); });
+    return b;
+  }));
+  const ns = h('div', {class: 'opt-row', role: 'group', 'aria-label': 'Length'}, [4, 6, 8].map(n => {
+    const b = h('button', {type: 'button', class: 'chip', 'aria-pressed': String(mockCfg.n === n)}, n + (mockCfg.type === 'deep' ? ' follow-ups' : ' questions'));
+    b.addEventListener('click', () => { mockCfg.n = n; renderMockSetup(); });
+    return b;
+  }));
+  const s = S().settings;
+  const fast = h('input', {type: 'checkbox', id: 'mock-fast'}); fast.checked = !!s.mockFast;
+  fast.addEventListener('change', () => setState(st => { st.settings.mockFast = fast.checked; }, 300));
+  const voice = h('input', {type: 'checkbox', id: 'mock-voice'}); voice.checked = !!s.mockVoice;
+  voice.addEventListener('change', () => setState(st => { st.settings.mockVoice = voice.checked; }, 300));
+  const focusSel = h('select', {id: 'mock-focus'}, DATA.questions.map(q => h('option', {value: q.id, selected: q.id === mockCfg.focus ? true : null}, q.id + ' ' + q.questionJa)));
+  focusSel.addEventListener('change', () => { mockCfg.focus = focusSel.value; });
+  const startBtn = h('button', {type: 'button', class: 'btn primary'}, icon('play'), 'Start the interview');
+  startBtn.addEventListener('click', () => startMock());
+  return h('section', {class: 'card card-in mock-setup', id: 'mock-setup'},
+    h('h3', {text: 'Set up'}), types,
+    mockCfg.type === 'deep' ? h('label', {class: 'field', for: 'mock-focus'}, 'Question to dig into', focusSel) : null,
+    ns,
+    h('label', {class: 'check', for: 'mock-voice'}, voice, h('span', null, 'Read the interviewer’s lines aloud')),
+    h('label', {class: 'check', for: 'mock-fast'}, fast, h('span', null, 'Quick replies (a faster model; turn off for more natural follow-ups)')),
+    h('div', {class: 'tools-row'}, startBtn, h('span', {class: 'sub', text: 'Uses your own Claude usage. Your answers are saved to your history below.'})));
+}
+function renderMockSetup() { const old = $('#mock-setup'); if (old) old.replaceWith(mockSetupCard()); }
+function mockRules(sess) {
+  const T = MOCK_TYPES[sess.type];
+  const deepQ = sess.type === 'deep' ? DATA.qById[sess.focus] : null;
+  const pool = T.pool.map(id => DATA.qById[id]).filter(Boolean).map(q => '- ' + q.questionJa);
+  return [
+    'You are role-playing a Japanese job interviewer. Stay in role until the interview is over.',
+    'Setting: a ' + T.ja + ' at FPT Japan (its automotive software business) for a new-graduate AI engineer position working on in-vehicle AI. You are ' + T.role + '.',
+    'The candidate is an international master\'s student in Japan (JLPT N2; speaking is around N3).',
+    'How to run it:',
+    '- Speak natural, polite spoken Japanese as a real interviewer would (です・ます). No romaji, no English, no translations, no stage directions, no speaker labels.',
+    '- Each of your turns is only what you say aloud: 1 to 3 short sentences, with at most one question.',
+    '- Begin with a brief greeting, then ask the first question.',
+    deepQ ? '- This is a follow-up (深掘り) drill. First ask: 「' + deepQ.questionJa + '」. Then ask ' + sess.n + ' follow-up questions, one at a time, each digging into what the candidate just said (なぜ, 具体的には, 数字や結果, 一番の困難, 学んだこと, 当社でどう活かすか).'
+      : '- Cover ' + sess.n + ' main questions, choosing from this pool in a natural order (you may rephrase them):\n' + pool.join('\n'),
+    deepQ ? null : '- After each answer, ask one 深掘り follow-up when the answer is vague, very short or interesting (at most 2 per main question); otherwise acknowledge briefly and move on.',
+    '- Do not give feedback, scores or advice during the interview.',
+    '- If the candidate asks you to repeat or rephrase, do so in simpler words.',
+    deepQ ? '- After the last follow-up, thank the candidate and close.' : '- At the end ask 「最後に、何か質問はありますか。」, answer briefly in general terms (do not invent specific facts or numbers about FPT), then thank the candidate and close.',
+    '- Put [END] at the very end of your final closing turn.',
+  ].filter(Boolean).join('\n');
+}
+function mockInput(sess) {
+  const input = [{role: 'user', content: mockRules(sess) + '\n\n（面接を始めてください。）'}];
+  sess.turns.forEach(t => { if (t.text) input.push({role: t.role === 'interviewer' ? 'assistant' : 'user', content: t.text}); });
+  return input;
+}
+const cleanTurn = t => str(t).replace(/\[END\]/g, '').replace(/^\s*(面接官|Interviewer)\s*[:：]\s*/, '').trim();
+function startMock() {
+  if (!AI.ok()) return;
+  if (MOCK && MOCK.ctl) MOCK.ctl.abort();
+  Speech.stop();
+  MOCK = {id: String(Date.now()), type: mockCfg.type, n: mockCfg.n, focus: mockCfg.type === 'deep' ? mockCfg.focus : null, startedAt: Date.now(), turns: [], ended: false, report: null, ctl: null, pendingMeta: null};
+  $('#mock-report').replaceChildren();
+  renderMockLive();
+  askInterviewer();
+}
+function renderMockLive() {
+  const box = $('#mock-live'); if (!box) return;
+  if (!MOCK) { box.replaceChildren(); return; }
+  const T = MOCK_TYPES[MOCK.type];
+  const chat = h('ol', {class: 'chat', id: 'mock-chat'});
+  MOCK.turns.forEach(t => chat.append(turnEl(t)));
+  const ta = h('textarea', {id: 'mock-text', class: 'ja', lang: 'ja', placeholder: 'Your answer appears here after you speak, or type it. Then press Send.'});
+  const sendBtn = h('button', {type: 'button', class: 'btn primary', id: 'mock-send'}, icon('send'), 'Send answer');
+  sendBtn.addEventListener('click', () => sendAnswer());
+  ta.addEventListener('keydown', e => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); sendAnswer(); } });
+  const rec = makeRecorder({speakLabel: 'Answer by voice', onDone: r => { if (r.mode === 'dict' && r.text) { ta.value = (ta.value.trim() ? ta.value.trim() + ' ' : '') + r.text; } if (MOCK) MOCK.pendingMeta = {sec: r.sec, cpm: r.cpm, voice: r.mode === 'dict'}; ta.focus(); }});
+  const quick = h('div', {class: 'chips'}, h('span', {class: 'label', text: 'Useful lines'}), ['申し訳ございません。もう一度おっしゃっていただけますか。', '少し考えるお時間をいただいてもよろしいでしょうか。', '〜という理解でよろしいでしょうか。'].map(p => {
+    const b = h('button', {type: 'button', class: 'chip wrap', lang: 'ja', text: p});
+    b.addEventListener('click', () => { ta.value = (ta.value ? ta.value + ' ' : '') + p; ta.focus(); });
+    return b;
+  }));
+  const endBtn = h('button', {type: 'button', class: 'btn'}, 'End and get feedback');
+  endBtn.addEventListener('click', () => finishMock());
+  const replay = h('button', {type: 'button', class: 'btn sm', id: 'mock-replay'}, icon('speaker'), 'Hear the last question again');
+  replay.addEventListener('click', () => { const last = MOCK && [...MOCK.turns].reverse().find(t => t.role === 'interviewer' && t.text); if (last) Speech.play(speakList(last.text), {btn: replay}); });
+  const hintBox = h('div', {id: 'mock-hint'});
+  const hintBtn = h('button', {type: 'button', class: 'btn sm', id: 'mock-hint-btn'}, icon('spark'), 'How should I answer?');
+  hintBtn.addEventListener('click', () => mockHint(hintBtn, hintBox));
+  box.replaceChildren(h('section', {class: 'card card-in'},
+    h('div', {class: 'sec-head'}, h('h3', {lang: 'ja', text: T.ja}), h('span', {class: 'sub', id: 'mock-status'}), h('span', {class: 'grow'}), endBtn),
+    chat,
+    h('div', {class: 'composer', id: 'mock-composer'}, h('div', {class: 'tools-row'}, rec.root, replay, hintBtn), hintBox, ta, quick, h('div', {class: 'tools-row'}, sendBtn, h('span', {class: 'sub', text: 'Ctrl or Cmd + Enter sends'})))));
+  updateMockStatus();
+}
+function hintPrompt(sess) {
+  const turns = sess.turns.filter(t => t.text);
+  const last = [...turns].reverse().find(t => t.role === 'interviewer');
+  const idx = turns.indexOf(last);
+  const prev = turns.slice(Math.max(0, idx - 2), idx).map(t => (t.role === 'interviewer' ? '面接官: ' : '候補者: ') + t.text).join('\n');
+  return [
+    'You are a Japanese interview coach for new-graduate interviews.',
+    CANDIDATE,
+    prev ? 'Earlier in this practice interview:\n' + prev.slice(0, 1500) : '',
+    'The interviewer has just said: 「' + last.text + '」',
+    'Do NOT write the answer. Give the recommended structure so that the candidate can answer in their own words.',
+    'Reply with only a JSON object in this shape:',
+    '{"targetSec":45,"steps":[{"labelJa":"結論","labelEn":"Conclusion","sayEn":"...","starterJa":"..."}],"tipEn":"..."}',
+    'Rules: 3 or 4 steps in speaking order, conclusion first. labelJa is a short Japanese step name and labelEn its English name. sayEn: one sentence on what to say in that step for THIS question. starterJa: a short natural Japanese opening for that step (です・ます, 御社 when speaking, at most 30 characters, general enough for any candidate, with 〜 where they fill in their own content). targetSec: a sensible speaking time in seconds. tipEn: one sentence on the most common mistake with this question. If the interviewer only greeted the candidate or closed the interview, give the steps for a short polite reply.',
+  ].filter(Boolean).join('\n');
+}
+function cleanHint(r) {
+  r = r && typeof r === 'object' ? r : {};
+  return {targetSec: Math.min(180, Math.max(0, Math.round(Number(r.targetSec)) || 0)), tipEn: str(r.tipEn).slice(0, 300),
+    steps: arr(r.steps).slice(0, 5).map(s => ({labelJa: str(s && s.labelJa).slice(0, 30), labelEn: str(s && s.labelEn).slice(0, 60), sayEn: str(s && s.sayEn).slice(0, 400), starterJa: str(s && s.starterJa).slice(0, 120), sec: 0})).filter(s => s.labelJa || s.sayEn)};
+}
+async function mockHint(btn, box) {
+  const sess = MOCK; const sample = AI.s;
+  if (!sess || !sample || !AI.ok()) return;
+  if (!sess.turns.some(t => t.role === 'interviewer' && t.text)) { toast('Wait for the interviewer’s question first.'); return; }
+  const ctl = new AbortController();
+  box.replaceChildren(thinking('Working out a structure for this question…', ctl));
+  btn.disabled = true;
+  const lastQ = () => { const t = MOCK === sess ? [...sess.turns].reverse().find(x => x.role === 'interviewer' && x.text) : null; return t ? t.text : null; };
+  const asked = lastQ();
+  try {
+    const g = cleanHint(await sample.json(hintPrompt(sess), {signal: ctl.signal, modelTier: 'quick'}));
+    if (lastQ() !== asked) return;
+    if (!g.steps.length) throw {code: 'invalid_json'};
+    const close = h('button', {type: 'button', class: 'btn ghost sm'}, 'Hide');
+    close.addEventListener('click', () => box.replaceChildren());
+    box.replaceChildren(h('div', {class: 'fb'},
+      h('div', {class: 'fb-head'}, h('strong', {text: 'What to say' + (g.targetSec ? ' · about ' + fmtSec(g.targetSec) : '')}), close),
+      guideSteps(g, {}),
+      g.tipEn ? h('p', {class: 'sub', text: 'Watch out: ' + g.tipEn}) : null));
+  } catch (e) {
+    const msg = AI.err(e);
+    box.replaceChildren(msg ? h('p', {class: 'err', text: msg}) : '');
+  } finally { btn.disabled = false; }
+}
+function turnEl(t) {
+  const isI = t.role === 'interviewer';
+  const block = isI ? jaBlock(t.text || '…', 'bubble') : h('div', {class: 'bubble ja', lang: 'ja', text: t.text});
+  const li = h('li', {class: 'turn ' + (isI ? 'interviewer' : 'candidate')}, h('span', {class: 'who', text: isI ? '面接官 · Interviewer' : 'You'}), block);
+  if (isI) { const lb = listenBtn(() => speakList(t.text), {ghost: true, block: () => li.querySelector('.bubble')}); li.append(lb); li._listen = lb; }
+  else if (t.sec) li.append(h('span', {class: 'tmeta', text: fmtSec(t.sec) + (t.cpm ? ' · ' + t.cpm + ' 字/分' : '') + (t.voice ? ' · spoken' : ' · typed')}));
+  return li;
+}
+function updateMockStatus() {
+  const el = $('#mock-status'); if (!el || !MOCK) return;
+  const answers = MOCK.turns.filter(t => t.role === 'candidate').length;
+  el.textContent = MOCK.ended ? 'Interview finished · ' + answers + ' answers' : (MOCK.ctl ? 'The interviewer is speaking…' : answers + ' answers so far');
+  const send = $('#mock-send'); if (send) send.disabled = !!MOCK.ctl || MOCK.ended;
+}
+async function askInterviewer() {
+  const sess = MOCK; const sample = AI.s;
+  if (!sess || !sample) return;
+  const turn = {role: 'interviewer', text: ''};
+  const input = mockInput(sess);
+  sess.turns.push(turn);
+  const chat = $('#mock-chat'); let li = turnEl(turn); chat.append(li);
+  const bubble = () => li.querySelector('.bubble');
+  bubble().replaceChildren(thinking('Thinking…'));
+  const ctl = new AbortController(); sess.ctl = ctl; updateMockStatus();
+  try {
+    const res = await sample(input, {cache: false, signal: ctl.signal, modelTier: S().settings.mockFast ? 'quick' : 'default',
+      onText: ({text}) => { if (MOCK !== sess) return; const b = bubble(); if (b) { b.replaceChildren(document.createTextNode(cleanTurn(text))); } }});
+    if (MOCK !== sess) return;
+    turn.text = cleanTurn(res.text);
+    if (/\[END\]/.test(res.text)) sess.ended = true;
+    const fresh = turnEl(turn); li.replaceWith(fresh); li = fresh;
+    li.scrollIntoView({block: 'nearest'});
+    const hb = $('#mock-hint'); if (hb) hb.replaceChildren();
+    saveMock(sess);
+    if (S().settings.mockVoice) Speech.play(speakList(turn.text), {btn: li._listen, block: li.querySelector('.bubble')});
+  } catch (e) {
+    if (!turn.text) { const i = sess.turns.indexOf(turn); if (i >= 0) sess.turns.splice(i, 1); li.remove(); }
+    const msg = AI.err(e); if (msg) toast(msg);
+  } finally {
+    if (sess.ctl === ctl) sess.ctl = null;
+    updateMockStatus();
+    if (sess.ended && MOCK === sess) toast('The interview is over. Press “End and get feedback” for your report.');
+  }
+}
+function sendAnswer() {
+  const ta = $('#mock-text'); if (!ta || !MOCK || MOCK.ctl || MOCK.ended) return;
+  const text = ta.value.trim(); if (!text) { toast('Speak or type your answer first.'); return; }
+  const meta = MOCK.pendingMeta || {};
+  const m = meta.sec ? speechMetrics(text, meta.sec) : {};
+  MOCK.turns.push({role: 'candidate', text, sec: meta.sec ? Math.round(meta.sec) : null, cpm: meta.voice ? (m.cpm || meta.cpm || null) : null, voice: !!meta.voice});
+  MOCK.pendingMeta = null; ta.value = '';
+  $('#mock-chat').append(turnEl(MOCK.turns[MOCK.turns.length - 1]));
+  saveMock(MOCK);
+  askInterviewer();
+}
+function mockReportPrompt(sess) {
+  const T = MOCK_TYPES[sess.type];
+  const lines = sess.turns.filter(t => t.text).map(t => t.role === 'interviewer' ? '面接官: ' + t.text
+    : '候補者: ' + t.text + (t.sec ? ' [' + t.sec + 's' + (t.cpm ? ', ' + t.cpm + ' chars/min' : '') + (t.voice ? ', speech-to-text' : ', typed') + ']' : ' [typed]'));
+  return [
+    'You are an experienced Japanese new-graduate recruiter (新卒採用の面接官) and a business-Japanese teacher.',
+    'Below is the transcript of a practice ' + T.ja + ' (' + T.en + ') in Japanese for a new-graduate AI engineer role in FPT\'s automotive business. The candidate is an international master\'s student (JLPT N2; speaking about N3). Candidate turns come from speech-to-text or typing; seconds and characters per minute are shown when known.',
+    'TRANSCRIPT:', lines.join('\n').slice(0, 30000), '',
+    'Write an evaluation the candidate can act on. Reply with only a JSON object in this shape:',
+    '{"overall":3,"scores":{"content":3,"structure":3,"japanese":3,"keigo":3,"fluency":3,"motivation":3},"summary":"...","strengths":["..."],"topFixes":["..."],"answers":[{"question":"...","answer":"...","better":"...","notes":"..."}],"phrases":[{"ja":"...","en":"..."}]}',
+    'Rules: scores are integers from 1 to 5 (5 = would impress a Japanese interviewer). summary: 2 to 3 English sentences. strengths and topFixes: 3 specific English items each. answers: one entry per candidate answer (at most 10); question = the interviewer\'s question in Japanese; answer = the candidate\'s answer shortened to at most 80 characters; better = a natural, speakable improved answer in Japanese (at most 250 characters, short sentences, correct keigo, 御社 when speaking, conclusion first, keeping the candidate\'s own facts); notes = 1 to 2 English sentences. phrases: 5 useful Japanese interview phrases for this candidate, with English. Judge fluency only from answer length, the speed data and coherence.',
+  ].join('\n');
+}
+function cleanReport(r) {
+  r = r && typeof r === 'object' ? r : {};
+  const n = v => { const x = Math.round(Number(v)); return x >= 1 && x <= 5 ? x : null; };
+  const sc = r.scores && typeof r.scores === 'object' ? r.scores : {};
+  const out = {overall: n(r.overall), scores: {}, summary: str(r.summary).slice(0, 1200),
+    strengths: arr(r.strengths).slice(0, 5).map(x => str(x).slice(0, 400)).filter(Boolean),
+    topFixes: arr(r.topFixes).slice(0, 5).map(x => str(x).slice(0, 400)).filter(Boolean),
+    answers: arr(r.answers).slice(0, 10).map(a => ({question: str(a && a.question).slice(0, 300), answer: str(a && a.answer).slice(0, 300), better: str(a && a.better).slice(0, 800), notes: str(a && a.notes).slice(0, 500)})),
+    phrases: arr(r.phrases).slice(0, 8).map(p => ({ja: str(p && p.ja).slice(0, 200), en: str(p && p.en).slice(0, 200)})).filter(p => p.ja)};
+  ['content', 'structure', 'japanese', 'keigo', 'fluency', 'motivation'].forEach(k => { out.scores[k] = n(sc[k]); });
+  return out;
+}
+async function finishMock() {
+  const sess = MOCK; if (!sess) return;
+  if (sess.ctl) sess.ctl.abort();
+  Speech.stop();
+  if (!sess.turns.some(t => t.role === 'candidate')) { toast('Answer at least one question first.'); return; }
+  sess.ended = true; updateMockStatus();
+  const sample = AI.s; if (!sample || !AI.ok()) return;
+  const box = $('#mock-report');
+  const ctl = new AbortController();
+  box.replaceChildren(h('section', {class: 'card card-in'}, thinking('Claude is writing your feedback. This can take up to a minute.', ctl)));
+  box.scrollIntoView({block: 'nearest'});
+  try {
+    const raw = await sample.json(mockReportPrompt(sess), {signal: ctl.signal, modelTier: 'default'});
+    sess.report = cleanReport(raw);
+    saveMock(sess);
+    box.replaceChildren(renderReport(sess));
+  } catch (e) {
+    const msg = AI.err(e);
+    const retry = h('button', {type: 'button', class: 'btn'}, 'Try again');
+    retry.addEventListener('click', () => finishMock());
+    box.replaceChildren(h('section', {class: 'card card-in'}, h('p', {class: msg ? 'err' : 'muted', text: msg || 'Stopped.'}), retry));
+  }
+}
+function renderReport(sess) {
+  const r = sess.report || {}; const T = MOCK_TYPES[sess.type] || MOCK_TYPES.hr;
+  const labels = {content: 'Content', structure: 'Structure', japanese: 'Japanese', keigo: 'Keigo', fluency: 'Fluency', motivation: 'Motivation'};
+  return h('section', {class: 'card card-in'},
+    h('div', {class: 'sec-head'}, h('h3', {text: 'Your report'}), h('span', {class: 'sub', text: T.en + ' · ' + new Date(sess.startedAt).toLocaleString('en-US', {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'})})),
+    h('div', {class: 'report-scores'},
+      h('div', {class: 'rs big'}, h('span', {class: 'label', text: 'Overall'}), h('b', {text: r.overall ? r.overall + '/5' : '–'})),
+      Object.keys(labels).map(k => h('div', {class: 'rs'}, h('span', {class: 'label', text: labels[k]}), h('b', {text: r.scores && r.scores[k] ? r.scores[k] + '/5' : '–'})))),
+    r.summary ? h('p', {text: r.summary}) : null,
+    h('div', {class: 'grid-2'},
+      r.strengths && r.strengths.length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Strengths'}), h('ul', {class: 'plain'}, r.strengths.map(x => h('li', {text: x})))) : null,
+      r.topFixes && r.topFixes.length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Fix next'}), h('ul', {class: 'plain'}, r.topFixes.map(x => h('li', {text: x})))) : null),
+    r.answers && r.answers.length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Answer by answer'}),
+      h('ol', {class: 'ans-review'}, r.answers.map(a => {
+        const better = a.better ? jaBlock(a.better, 'answer short') : null;
+        return h('li', null, h('span', {class: 'ja', lang: 'ja', text: a.question}), h('span', {class: 'sub', lang: 'ja', text: 'You: ' + a.answer}),
+          better ? h('div', {class: 'tools-row'}, h('span', {class: 'label', text: 'Better'}), listenBtn(() => better._said, {block: better, ghost: true})) : null, better,
+          a.notes ? h('span', {class: 'muted', text: a.notes}) : null);
+      }))) : null,
+    r.phrases && r.phrases.length ? h('div', {class: 'sec'}, h('span', {class: 'label', text: 'Phrases to learn'}),
+      h('ul', {class: 'phr'}, r.phrases.map(p => h('li', null, h('span', {class: 'ja', lang: 'ja', text: p.ja}), listenBtn(() => [p.ja], {ghost: true}), h('span', {class: 'en', text: p.en}))))) : null);
+}
+function saveMock(sess) {
+  const doc = {type: sess.type, n: sess.n, focus: sess.focus, startedAt: sess.startedAt, ended: !!sess.ended, report: sess.report || null,
+    turns: sess.turns.filter(t => t.text).map(t => ({role: t.role, text: t.text, sec: t.sec || null, cpm: t.cpm || null, voice: !!t.voice}))};
+  Store.put('m_' + sess.id, doc, 400);
+  const ids = Store.ids('m_').sort((a, b) => (Store.get(b).startedAt || 0) - (Store.get(a).startedAt || 0));
+  ids.slice(40).forEach(id => Store.remove(id));
+}
+function renderMockHistory() {
+  const box = $('#mock-history'); if (!box) return;
+  const ids = Store.ids('m_').sort((a, b) => (Store.get(b).startedAt || 0) - (Store.get(a).startedAt || 0));
+  if (!ids.length) { box.replaceChildren(h('p', {class: 'muted', text: 'No mock interviews yet. Your sessions and reports will be listed here.'})); return; }
+  box.replaceChildren(h('ul', {class: 'history'}, ids.map(id => {
+    const m = Store.get(id); const T = MOCK_TYPES[m.type] || MOCK_TYPES.hr;
+    const answers = arr(m.turns).filter(t => t.role === 'candidate').length;
+    const view = h('button', {type: 'button', class: 'btn sm'}, 'Open');
+    view.addEventListener('click', () => {
+      const sess = Object.assign({}, m, {id: id.slice(2)});
+      const box2 = $('#mock-report');
+      const chat = h('ol', {class: 'chat'}, arr(m.turns).map(t => turnEl(t)));
+      box2.replaceChildren(h('section', {class: 'card card-in'}, h('div', {class: 'sec-head'}, h('h3', {text: 'Transcript'}), h('span', {class: 'sub', lang: 'ja', text: T.ja})), chat), m.report ? renderReport(sess) : h('p', {class: 'muted', text: 'No report was made for this session.'}));
+      box2.scrollIntoView({block: 'start'});
+    });
+    const del = h('button', {type: 'button', class: 'btn ghost sm danger'}, 'Delete');
+    del.addEventListener('click', () => inlineConfirm(del, 'Delete this session?', 'Delete', () => { Store.remove(id); delete Store.docs[id]; renderMockHistory(); }));
+    return h('li', null, h('span', {class: 'mono', text: new Date(m.startedAt).toLocaleString('en-US', {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'})}),
+      h('span', {lang: 'ja', text: T.ja}), h('span', {class: 'sub', text: answers + ' answers'}),
+      m.report && m.report.overall ? h('span', {class: 'score overall'}, 'Overall ', h('b', {text: m.report.overall + '/5'})) : null,
+      h('span', {class: 'grow'}), view, del);
+  })));
+}
+function aiPromptsCard(title) {
+  const P = arr(DATA.plan.aiPrompts); if (!P.length) return null;
+  return h('details', {class: 'card card-in fold'},
+    h('summary', {text: (title || 'Prefer a voice app? Copy a mock-interview prompt') + ' (' + P.length + ')'}),
+    h('p', {class: 'muted', text: 'Paste one into any AI assistant with a voice mode, answer out loud, and ask for feedback at the end.'}),
+    P.map(p => {
+      const pre = h('pre', {class: 'prompt', lang: 'ja', text: str(p.prompt)});
+      const b = h('button', {type: 'button', class: 'btn sm'}, icon('copy'), 'Copy prompt');
+      b.addEventListener('click', () => copyText(str(p.prompt), b));
+      return h('div', {class: 'sec'}, h('div', {class: 'sec-head'}, h('h4', {text: str(p.title)}), p.id ? h('span', {class: 'chip mono', text: str(p.id)}) : null, h('span', {class: 'grow'}), b), h('p', {class: 'sub', text: str(p.use)}), pre);
+    }));
+}
+
+/* ================= WORDS ================= */
+const WORD_TABS = [['phrases', 'Survival phrases'], ['keigo', 'Interview keigo'], ['mistakes', 'Common mistakes'], ['tech', 'Tech vocabulary'], ['work', 'Work vocabulary'], ['flow', 'Interview flow'], ['manners', 'Manners']];
+const PHRASE_CATS = [['clarify', 'Clarify the question', '聞き返す・確認する'], ['time', 'Buy time to think', '考える時間をもらう'], ['recover', 'Recover and correct yourself', '言い直す・立て直す'], ['connect', 'Structure your answer', '話を組み立てる'], ['open', 'Opening and greetings', '挨拶'], ['aizuchi', 'Listening responses', '相づち'], ['reverse', 'Asking your questions', '逆質問の前置き'], ['online', 'Online interviews', 'Web面接'], ['close', 'Closing and thanks', '締めの挨拶']];
+const VOCAB_CATS = {ml: 'ML basics', dl: 'Deep learning', cv: 'Vision', data: 'Data', eval: 'Metrics', edge: 'Edge & speed', auto: 'Automotive', safety: 'Safety & standards', dev: 'Development'};
+let wordsTab = 'phrases';
+const vocabF = {cat: 'all', q: '', hide: false};
+function renderWords() {
+  const root = $('#view-words');
+  const nav = h('div', {class: 'subtabs', role: 'group', 'aria-label': 'Word lists'}, WORD_TABS.map(([k, l]) => {
+    const b = h('button', {type: 'button', class: 'chip', 'aria-pressed': String(wordsTab === k)}, l);
+    b.addEventListener('click', () => { wordsTab = k; renderWords(); });
+    return b;
+  }));
+  const body = h('div', {class: 'view', id: 'words-body'});
+  root.replaceChildren(h('div', {class: 'view-head'}, h('p', {class: 'eyebrow', text: 'Words and phrases · 表現'}), h('h1', {class: 'view-title', text: 'The Japanese you need in the room'}),
+    h('p', {class: 'lede', text: 'Survival phrases keep you going when you do not understand or go blank. Learn them first, then the keigo core and the technical words you will say most.'})), nav, body);
+  ({phrases: wPhrases, keigo: wKeigo, mistakes: wMistakes, tech: wTech, work: wWork, flow: wFlow, manners: wManners})[wordsTab](body, DATA.language);
+}
+function wPhrases(body, L) {
+  const list = arr(L.phrases);
+  body.append(h('div', {class: 'phrase-groups'}, PHRASE_CATS.map(([k, en, ja]) => {
+    const items = list.filter(p => p.cat === k); if (!items.length) return null;
+    return h('section', {class: 'card card-in'}, h('div', {class: 'sec-head'}, h('h3', {text: en}), h('span', {class: 'sub', lang: 'ja', text: ja})),
+      h('ul', {class: 'plist'}, items.map(p => h('li', null,
+        h('div', {class: 'pl-top'}, h('span', {class: 'pl-ja', lang: 'ja'}, jaInline(p.ja)), listenBtn(() => [speechText(p.ja)], {ghost: true})),
+        h('span', {class: 'pl-en', text: str(p.en)}), p.noteEn ? h('span', {class: 'pl-note', text: p.noteEn}) : null))));
+  })));
+}
+function wKeigo(body, L) {
+  body.append(h('p', {class: 'muted', text: 'Only the keigo an interview needs. Master these and use plain です・ます everywhere else; simple and correct beats complex and wrong.'}),
+    h('div', {class: 'tbl-wrap'}, h('table', {class: 'tbl'},
+      h('thead', null, h('tr', null, ['Everyday', 'In the interview', 'Type', 'Example', ''].map(t => h('th', {text: t})))),
+      h('tbody', null, arr(L.keigo).map(k => h('tr', null,
+        h('td', {class: 'ja', lang: 'ja', text: str(k.plain)}), h('td', {class: 'ja term', lang: 'ja', text: str(k.interview)}),
+        h('td', {class: 'ja', lang: 'ja', text: str(k.kind)}),
+        h('td', null, h('span', {class: 'ja', lang: 'ja'}, jaInline(k.exampleJa)), h('br'), h('span', {class: 'sub', text: str(k.en)})),
+        h('td', null, listenBtn(() => [speechText(k.exampleJa)], {ghost: true}))))))));
+}
+function wMistakes(body, L) {
+  body.append(h('div', {class: 'tbl-wrap'}, h('table', {class: 'tbl'},
+    h('thead', null, h('tr', null, ['Avoid', 'Say instead', 'Why'].map(t => h('th', {text: t})))),
+    h('tbody', null, arr(L.mistakes).map(m => h('tr', null,
+      h('td', {class: 'ja wrong', lang: 'ja', text: str(m.wrong)}),
+      h('td', null, h('span', {class: 'ja right', lang: 'ja', text: str(m.right)}), ' ', listenBtn(() => [speechText(m.right)], {ghost: true})),
+      h('td', {text: str(m.whyEn)})))))));
+}
+function vocabTable(rows) {
+  return h('div', {class: 'tbl-wrap' + (vocabF.hide ? ' hide-reading' : ''), id: 'vocab-table'}, h('table', {class: 'tbl'},
+    h('thead', null, h('tr', null, ['Term', 'Reading', 'Meaning', 'Example', ''].map(t => h('th', {text: t})))),
+    h('tbody', null, rows.length ? rows.map(v => h('tr', null,
+      h('td', {class: 'ja term', lang: 'ja', text: str(v.term)}),
+      h('td', null, h('span', {class: 'reading', lang: 'ja', tabindex: vocabF.hide ? '0' : null, text: str(v.reading)})),
+      h('td', {text: str(v.en)}),
+      h('td', {class: 'ja', lang: 'ja', text: str(v.exampleJa)}),
+      h('td', null, listenBtn(() => [speechText(v.term)].concat(v.exampleJa ? [speechText(v.exampleJa)] : []), {ghost: true}))))
+      : [h('tr', null, h('td', {colspan: '5', class: 'muted', text: 'No matches.'}))])));
+}
+function vocabControls(body, rowsFn, withCats) {
+  const search = h('input', {type: 'search', id: 'vocab-search', placeholder: 'Search Japanese or English', value: vocabF.q});
+  const hide = h('input', {type: 'checkbox', id: 'vocab-hide'}); hide.checked = vocabF.hide;
+  const holder = h('div');
+  const paint = () => holder.replaceChildren(vocabTable(rowsFn()));
+  search.addEventListener('input', () => { vocabF.q = search.value; paint(); });
+  hide.addEventListener('change', () => { vocabF.hide = hide.checked; paint(); });
+  const cats = withCats ? h('div', {class: 'chips'}, [['all', 'All']].concat(Object.keys(VOCAB_CATS).map(k => [k, VOCAB_CATS[k]])).map(([k, l]) => {
+    const b = h('button', {type: 'button', class: 'chip', 'aria-pressed': String(vocabF.cat === k)}, l);
+    b.addEventListener('click', () => { vocabF.cat = k; $$('button', cats).forEach(x => x.setAttribute('aria-pressed', String(x === b))); paint(); });
+    return b;
+  })) : null;
+  body.append(h('div', {class: 'card card-in'}, cats, h('div', {class: 'q-tools-row'}, h('label', {class: 'field q-search', for: 'vocab-search'}, search),
+    h('label', {class: 'check', for: 'vocab-hide'}, hide, h('span', null, 'Quiz me: hide readings (hover or focus to reveal)')))), holder);
+  paint();
+}
+const matchQ = v => { const q = vocabF.q.trim().toLowerCase(); return !q || (str(v.term) + ' ' + str(v.reading) + ' ' + str(v.en)).toLowerCase().includes(q); };
+function wTech(body) { vocabControls(body, () => arr(DATA.vocab).filter(v => (vocabF.cat === 'all' || v.cat === vocabF.cat) && matchQ(v)), true); }
+function wWork(body, L) { vocabControls(body, () => arr(L.workVocab).filter(matchQ), false); }
+function wFlow(body, L) {
+  const F = L.flow || {};
+  const one = (title, list) => h('section', {class: 'card card-in'}, h('h3', {text: title}), h('ol', {class: 'flow'}, arr(list).map(s => {
+    const who = s.speaker === 'you' ? 'You' : s.speaker === 'interviewer' ? 'They say' : 'Do';
+    return h('li', null, h('span', {class: 'spk ' + str(s.speaker), text: who}),
+      h('div', null, h('span', {class: 'label', text: str(s.step)}), s.ja ? h('div', {class: 'tools-row'}, h('span', {class: 'ja', lang: 'ja', text: s.ja}), listenBtn(() => [speechText(s.ja)], {ghost: true})) : null, h('div', {class: 'sub', text: str(s.en)})));
+  })));
+  body.append(h('div', {class: 'grid-2'}, one('In person · 対面', F.inPerson), one('Online · Web面接', F.online)));
+}
+function wManners(body, L) {
+  const M = L.manners || {};
+  const block = (t, list) => arr(list).length ? h('section', {class: 'card card-in'}, h('h3', {text: t}), h('ul', {class: 'plain'}, arr(list).map(x => h('li', {text: x})))) : null;
+  body.append(h('div', {class: 'grid-2'}, block('In person', M.inPerson), block('Online', M.online)),
+    h('p', {class: 'muted', text: 'The day-before, on-the-day and after-interview checklists are in Tools, with tick boxes.'}));
+}
+function syncWords() { /* lists are static */ }
+
+/* ================= FPT ================= */
+function renderFpt() {
+  const F = DATA.fpt; const root = $('#view-fpt');
+  const s = S();
+  const conf = c => h('span', {class: 'badge ' + (['high', 'medium', 'low'].includes(c) ? c : 'low'), text: (c || 'low') + ' confidence'});
+  const srcLink = u => { const ok = safeUrl(u); return ok ? h('a', {href: ok, target: '_blank', rel: 'noopener noreferrer', text: hostOf(ok)}) : null; };
+  const verify = arr(F.verifyBeforeInterview);
+  root.replaceChildren(
+    h('div', {class: 'view-head'}, h('p', {class: 'eyebrow', text: 'Company research · 企業研究'}), h('h1', {class: 'view-title', text: 'FPT automotive AI: what to know before you walk in'}),
+      h('p', {class: 'lede', text: 'Compiled from public sources on ' + str(F.updated) + '. Facts, team names and hiring details change, so confirm on official pages before each interview. Confidence shows how well each fact is sourced.'})),
+    arr(F.talkingPoints).length ? h('section', {class: 'card card-in'}, h('h3', {text: 'Lines you can use in 志望動機'}),
+      h('ul', {class: 'plist'}, arr(F.talkingPoints).map(t => h('li', null, h('div', {class: 'pl-top'}, h('span', {class: 'pl-ja', lang: 'ja'}, jaInline(t.ja)), listenBtn(() => [speechText(t.ja)], {ghost: true})), h('span', {class: 'pl-en', text: str(t.angle)}))))) : null,
+    h('div', {class: 'grid-2'}, arr(F.sections).map(sec => h('section', {class: 'card card-in'}, h('h3', {text: str(sec.title)}),
+      h('ul', {class: 'facts'}, arr(sec.facts).map(f => h('li', null, h('span', {text: str(f.text)}),
+        f.ja ? h('div', {class: 'fact-ja'}, h('span', {class: 'ja', lang: 'ja', text: f.ja}), listenBtn(() => [speechText(f.ja)], {ghost: true})) : null,
+        h('div', {class: 'fact-meta'}, conf(f.confidence), f.date ? h('span', {class: 'mono', text: str(f.date)}) : null, srcLink(f.source)))))))),
+    arr(F.reverseQuestions).length ? h('section', {class: 'card card-in'}, h('h3', {text: 'Reverse questions to ask them (逆質問)'}),
+      h('div', {class: 'grid-2'}, ['HR', 'Technical', 'Final'].map(stage => {
+        const qs = arr(F.reverseQuestions).filter(q => q.stage === stage); if (!qs.length) return null;
+        return h('div', {class: 'sec'}, h('span', {class: 'label', text: stage === 'HR' ? 'HR interview' : stage === 'Technical' ? 'Technical interview' : 'Final interview'}),
+          h('ul', {class: 'plist'}, qs.map(q => h('li', null, h('div', {class: 'pl-top'}, h('span', {class: 'ja', lang: 'ja', text: str(q.ja)}), listenBtn(() => [speechText(q.ja)], {ghost: true})), h('span', {class: 'pl-en', text: str(q.en)}), h('span', {class: 'pl-note', text: str(q.why)})))));
+      }))) : null,
+    arr(F.avoidQuestions).length ? h('section', {class: 'card card-in'}, h('h3', {text: 'Questions that backfire'}),
+      h('ul', {class: 'plist'}, arr(F.avoidQuestions).map(q => h('li', null, h('span', {class: 'ja wrong', lang: 'ja', text: str(q.ja)}), h('span', {class: 'pl-en', text: str(q.why)}))))) : null,
+    verify.length ? h('section', {class: 'card card-in'}, h('h3', {text: 'Confirm before your interview'}),
+      h('ul', {class: 'checklist'}, verify.map((v, i) => { const id = 'fv-' + i; const cb = h('input', {type: 'checkbox', id, 'data-check': id}); cb.checked = !!s.checks[id];
+        cb.addEventListener('change', () => setState(st => { if (cb.checked) st.checks[id] = 1; else delete st.checks[id]; }, 400));
+        return h('li', null, h('label', {for: id}, cb, h('span', {text: v}))); }))) : null,
+    arr(F.sources).length ? h('details', {class: 'card card-in fold'}, h('summary', {text: 'Sources (' + arr(F.sources).length + ')'}),
+      h('ul', {class: 'plain'}, arr(F.sources).map(x => { const ok = safeUrl(x.url); return h('li', null, ok ? h('a', {href: ok, target: '_blank', rel: 'noopener noreferrer', text: str(x.title) || hostOf(ok)}) : str(x.title), ok ? h('span', {class: 'sub', text: ' · ' + hostOf(ok)}) : null); }))) : null);
+}
+function syncChecks() { const s = S(); $$('input[data-check]').forEach(cb => { cb.checked = !!s.checks[cb.dataset.check]; }); }
+
+/* ================= TOOLS ================= */
+function renderTools() {
+  const P = DATA.plan; const L = DATA.language; const root = $('#view-tools');
+  const s = S();
+  const exportBtn = h('button', {type: 'button', class: 'btn primary'}, icon('download'), 'Download my answers (.md)');
+  exportBtn.addEventListener('click', () => exportAnswers(exportBtn));
+  const planBtn = h('button', {type: 'button', class: 'btn'}, icon('download'), 'Download the plan (.md)');
+  planBtn.addEventListener('click', () => saveFile('8-week-interview-plan.md', buildPlanMd(), planBtn));
+  const checklist = (title, list, key) => {
+    list = arr(list); if (!list.length) return null;
+    const reset = h('button', {type: 'button', class: 'btn ghost sm'}, 'Clear ticks');
+    reset.addEventListener('click', () => setState(st => { Object.keys(st.checks).filter(k => k.startsWith(key + '-')).forEach(k => delete st.checks[k]); }, 200));
+    return h('section', {class: 'card card-in'}, h('div', {class: 'sec-head'}, h('h3', {text: title}), h('span', {class: 'grow'}), reset),
+      h('ul', {class: 'checklist'}, list.map((x, i) => { const id = key + '-' + i; const cb = h('input', {type: 'checkbox', id, 'data-check': id}); cb.checked = !!s.checks[id];
+        cb.addEventListener('change', () => setState(st => { if (cb.checked) st.checks[id] = 1; else delete st.checks[id]; }, 400));
+        return h('li', null, h('label', {for: id}, cb, h('span', {text: x}))); })));
+  };
+  const M = L.manners || {};
+  root.replaceChildren(
+    h('div', {class: 'view-head'}, h('p', {class: 'eyebrow', text: 'Tools · 記録'}), h('h1', {class: 'view-title', text: 'Measure, check, and keep your work'}),
+      h('p', {class: 'lede', text: 'Record the same three benchmark questions in Weeks 1, 4 and 8. Seeing the numbers move is the best motivation there is.'})),
+    benchCard(),
+    rubricCard(P.rubric),
+    aiPromptsCard('AI prompts to copy into any assistant'),
+    h('div', {class: 'grid-2'}, checklist('Day before the interview', M.dayBefore, 'db'), checklist('On the day', M.onTheDay, 'od'), checklist('After the interview', M.after, 'af')),
+    arr(P.reflection).length ? h('section', {class: 'card card-in'}, h('h3', {text: 'Weekly reflection questions'}), h('ul', {class: 'plain'}, arr(P.reflection).map(x => h('li', {text: x}))), h('p', {class: 'sub', text: 'Write your answers in each week’s reflection box on the Plan tab.'})) : null,
+    resourcesCard(P.resources),
+    h('section', {class: 'card card-in'}, h('h3', {text: 'Keep a copy'}), h('p', {class: 'muted', text: 'Download everything you wrote in “My answer”, with the latest AI-corrected versions, as a Markdown file. Handy for your ES and for a teacher to review. You can also save the whole plan with your ticks.'}), h('div', {class: 'tools-row'}, exportBtn, planBtn)));
+}
+function benchCard() {
+  const B = DATA.plan.benchmark || {}; const weeks = arr(B.weeks).length ? B.weeks : [1, 4, 8]; const metrics = arr(B.metrics);
+  const s = S();
+  const cw = currentWeek(); const nearest = weeks.reduce((a, b) => Math.abs(b - cw) < Math.abs(a - cw) ? b : a, weeks[0]);
+  const card = h('section', {class: 'card card-in'}, h('div', {class: 'sec-head'}, h('h3', {text: 'Benchmark log'}), h('span', {class: 'sub', text: 'Weeks ' + weeks.join(', ')})),
+    arr(B.procedure).length ? h('details', {class: 'fold'}, h('summary', {text: 'How to record a benchmark'}), h('ol', {class: 'plain'}, arr(B.procedure).map(x => h('li', {text: x})))) : null);
+  arr(B.questions).forEach(bq => {
+    const q = DATA.qById[bq.qid]; if (!q) return;
+    const last = s.last[q.id];
+    const val = (w, k) => { const v = ((s.bench['w' + w] || {})[q.id] || {})[k]; return v == null ? '' : String(v); };
+    const rows = metrics.map(m => h('tr', null,
+      h('td', null, h('b', {text: str(m.name)}), h('div', {class: 'sub', text: str(m.how)})),
+      weeks.map((w, i) => {
+        const id = 'bench-' + w + '-' + q.id + '-' + m.key;
+        const inp = h('input', {type: 'number', step: 'any', inputmode: 'decimal', id, 'data-bench': w + '|' + q.id + '|' + m.key, value: val(w, m.key), 'aria-label': str(m.name) + ', week ' + w});
+        inp.addEventListener('change', () => setState(st => { const k = 'w' + w; st.bench[k] = st.bench[k] || {}; st.bench[k][q.id] = st.bench[k][q.id] || {}; if (inp.value === '') delete st.bench[k][q.id][m.key]; else st.bench[k][q.id][m.key] = Number(inp.value); }, 400));
+        const prev = i > 0 ? val(weeks[i - 1], m.key) : '';
+        let delta = null;
+        if (prev !== '' && inp.value !== '') { const d = Number(inp.value) - Number(prev); if (d) delta = h('span', {class: 'mono ' + (((m.key === 'rate' || m.key === 'content') ? d > 0 : d < 0) ? 'delta-up' : 'delta-down'), text: (d > 0 ? ' +' : ' ') + (Math.round(d * 10) / 10)}); }
+        return h('td', null, inp, delta);
+      }),
+      h('td', {class: 'sub', text: str(m.target)})));
+    const fill = last && last.cpm ? h('button', {type: 'button', class: 'btn sm'}, 'Fill Week ' + nearest + ' from last practice (' + last.cpm + ' 字/分, ' + last.fillers + ' fillers)') : null;
+    if (fill) fill.addEventListener('click', () => { setState(st => { const k = 'w' + nearest; st.bench[k] = st.bench[k] || {}; const o = st.bench[k][q.id] = st.bench[k][q.id] || {}; if (metrics.some(m => m.key === 'rate')) o.rate = last.cpm; if (metrics.some(m => m.key === 'fillers')) o.fillers = last.fillers; }, 200); setTimeout(() => { const old = card; old.replaceWith(benchCard()); }, 0); });
+    card.append(h('div', {class: 'sec'}, h('div', {class: 'tools-row'}, linkify(q.id), h('span', {class: 'ja', lang: 'ja', text: q.questionJa})), h('p', {class: 'sub', text: str(bq.why)}),
+      h('div', {class: 'tbl-wrap'}, h('table', {class: 'tbl bench-table'}, h('thead', null, h('tr', null, h('th', {text: 'Metric'}), weeks.map(w => h('th', {text: 'Week ' + w})), h('th', {text: 'Target'}))), h('tbody', null, rows))),
+      fill ? h('div', {class: 'tools-row'}, fill) : null));
+  });
+  card.id = 'bench-card';
+  return card;
+}
+function rubricCard(R) {
+  R = arr(R); if (!R.length) return null;
+  return h('section', {class: 'card card-in'}, h('h3', {text: 'Self-evaluation rubric'}), h('p', {class: 'muted', text: 'Score each recording from 1 to 5. Aim for 3s everywhere before chasing 5s.'}),
+    h('div', {class: 'tbl-wrap'}, h('table', {class: 'tbl'}, h('thead', null, h('tr', null, ['Criterion', '1', '3', '5'].map(t => h('th', {text: t})))),
+      h('tbody', null, R.map(r => h('tr', null, h('td', null, h('b', {text: str(r.criterion)}), h('div', {class: 'sub', lang: 'ja', text: str(r.criterionJa)})), h('td', {text: str(r.l1)}), h('td', {text: str(r.l3)}), h('td', {text: str(r.l5)})))))));
+}
+function resourcesCard(list) {
+  list = arr(list); if (!list.length) return null;
+  return h('section', {class: 'card card-in'}, h('h3', {text: 'Resources'}),
+    h('ul', {class: 'facts'}, list.map(r => { const ok = safeUrl(r.url); return h('li', null,
+      h('div', {class: 'tools-row'}, ok ? h('a', {href: ok, target: '_blank', rel: 'noopener noreferrer', text: str(r.name)}) : h('b', {text: str(r.name)}), h('span', {class: 'chip', text: str(r.type)}), r.cost ? h('span', {class: 'sub', text: str(r.cost)}) : null),
+      h('span', {class: 'muted', text: str(r.use)})); })));
+}
+function syncTools() {
+  const s = S();
+  $$('input[data-bench]').forEach(inp => { if (document.activeElement === inp) return; const [w, q, k] = inp.dataset.bench.split('|'); const v = ((s.bench['w' + w] || {})[q] || {})[k]; inp.value = v == null ? '' : String(v); });
+  syncChecks();
+}
+function buildAnswersMd() {
+  const parts = ['# My interview answers', '', 'Exported ' + new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) + ' from Mensetsu Dojo.', ''];
+  let n = 0;
+  DATA.questions.forEach(q => {
+    const d = Store.get('a_' + q.id); if (!d || !(str(d.text).trim() || (d.fb && d.fb.result && d.fb.result.corrected))) return;
+    n++;
+    parts.push('## ' + q.id + ' ' + q.questionJa, '', '_' + q.questionEn + '_', '');
+    if (str(d.text).trim()) parts.push('### My answer', '', d.text.trim(), '');
+    if (d.fb && d.fb.result && d.fb.result.corrected) parts.push('### AI-corrected version (' + new Date(d.fb.at).toLocaleDateString('en-US', {month: 'short', day: 'numeric'}) + ')', '', d.fb.result.corrected, '');
+  });
+  return n ? parts.join('\n') : '';
+}
+function buildPlanMd() {
+  const P = DATA.plan; const s = S(); const ov = P.overview || {};
+  const out = ['# 8-week Japanese interview plan', '', str(ov.goal), '', 'Time budget: ' + str(ov.weeklyTime), 'Week 1 starts: ' + toISO(startDate()), ''];
+  const R = P.dailyRoutine || {};
+  [['weekday', 'Weekday routine'], ['weekend', 'Weekend routine'], ['light', 'Light-day routine']].forEach(([k, t]) => {
+    if (!arr(R[k]).length) return;
+    out.push('## ' + t, '');
+    arr(R[k]).forEach(b => out.push('- ' + b.min + ' min · ' + str(b.activity) + ': ' + str(b.detail)));
+    out.push('');
+  });
+  arr(P.weeks).forEach(w => {
+    const a = weekStart(w.week);
+    out.push('## Week ' + w.week + ' (' + MD(a) + ' – ' + MD(addDays(a, 6)) + '): ' + str(w.theme) + ' / ' + str(w.themeJa), '', str(w.summary), '');
+    if (arr(w.goals).length) { out.push('Goals:'); arr(w.goals).forEach(g => out.push('- ' + g)); out.push(''); }
+    out.push('Milestone: ' + str(w.milestone), '', 'New questions: ' + arr(w.focusQuestions).join(', '), '');
+    ['Daily'].concat(DAYS).forEach(day => arr(w.tasks).filter(t => t.day === day).forEach(t => out.push('- [' + (s.tasks[t.id] ? 'x' : ' ') + '] ' + day + ' · ' + t.min + ' min · ' + (TYPE_LABEL[t.type] || t.type) + ': ' + str(t.text))));
+    out.push('');
+    if (w.humanFeedback) out.push('Human feedback: ' + str(w.humanFeedback), '');
+    if (w.lightVersion) out.push('Light version: ' + str(w.lightVersion), '');
+  });
+  return out.join('\n');
+}
+function blobSave(filename, text) {
+  try {
+    const url = URL.createObjectURL(new Blob([text], {type: 'text/markdown;charset=utf-8'}));
+    const a = h('a', {href: url, download: filename, hidden: true});
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+    toast('Saved to your downloads');
+    return true;
+  } catch (e) { return false; }
+}
+function saveFile(filename, md, btn) {
+  const dl = Caps.downloads;
+  // Outside claude.ai (a copy on your own host) the browser can download the file directly.
+  if (!dl) { if (!window.claude && blobSave(filename, md)) return; copyText(md, btn); return; }
+  Promise.resolve(dl.save({filename, data: md})).then(r => { if (r && r.status === 'saved') toast('Saved'); }, e => {
+    const c = e && e.code;
+    if (c === 'declined') return;
+    if (c === 'rate_limited') { toast('A save prompt is already open.'); return; }
+    toast('Saving is not available here, so the text is selected for copying instead.');
+    fallbackCopy(md, btn);
+  });
+}
+function exportAnswers(btn) {
+  const md = buildAnswersMd();
+  if (!md) { toast('You have not written any answers yet.'); return; }
+  saveFile('my-interview-answers.md', md, btn);
+}
+
+/* ================= boot ================= */
+function onStoreChange(ids) {
+  if (!DATA.plan) return;
+  const all = !ids;
+  if (all || ids.includes('state')) { syncPlan(); syncQuestions(); syncTools(); syncChecks(); }
+  if (all) DATA.questions.forEach(q => syncAnswerCard(q.id));
+  else ids.filter(id => id.startsWith('a_')).forEach(id => markHas(id.slice(2)));
+  if (all || ids.some(id => id.startsWith('m_'))) renderMockHistory();
+  if (all || ids.includes('state')) { if (!$('#settings').hidden && !$('#settings').contains(document.activeElement)) renderSettings(); }
+}
+async function loadJSON(p) { const r = await fetch(p, {cache: 'no-cache'}); if (!r.ok) throw new Error(p + ': ' + r.status); return r.json(); }
+async function boot() {
+  wireChrome();
+  Store.loadLocal();
+  Store.on(onStoreChange);
+  renderSync();
+  try {
+    const [questions, plan, language, vocab, fpt, guides] = await Promise.all(['data/questions.json', 'data/plan.json', 'data/language.json', 'data/vocab.json', 'data/fpt.json'].map(loadJSON).concat([loadJSON('data/guides.json').catch(() => [])]));
+    Object.assign(DATA, {questions: arr(questions), plan, language, vocab: arr(vocab), fpt});
+    DATA.qById = {}; DATA.questions.forEach(q => { DATA.qById[q.id] = q; });
+    DATA.gById = {}; arr(guides).forEach(g => { if (g && g.id) DATA.gById[g.id] = g; });
+  } catch (e) {
+    $('#view-plan').replaceChildren(h('div', {class: 'card card-in'}, h('strong', {text: 'The plan data did not load.'}), h('p', {class: 'muted', text: 'Reload the page to try again.'})));
+    return;
+  }
+  renderPlan(); renderQuestions(); renderMock(); renderWords(); renderFpt(); renderTools();
+  route();
+  window.addEventListener('hashchange', route);
+  Store.initDb();
+  Speech.init();
+  Dict.init();
+  AI.init();
+  cap('downloads').then(d => { Caps.downloads = d; });
+}
+boot();
+})();
+</script>

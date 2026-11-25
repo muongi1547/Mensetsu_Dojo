@@ -1,0 +1,1833 @@
+{
+ "questions": [
+  {
+   "id": "q40",
+   "category": "technical",
+   "week": 3,
+   "questionJa": "得意なプログラミング言語と、それを使って作ったものを教えてください。",
+   "variantsJa": [
+    "一番得意な言語は何ですか。その言語で、何か作ったことはありますか。",
+    "普段、どの言語で開発していますか。",
+    "これまでに、ご自身で作ったプログラムやアプリがあれば、教えてください。"
+   ],
+   "questionEn": "Your strongest programming language and something you built with it.",
+   "intentEn": "Checks your real hands-on level and whether you can explain what you built, how you built it, and what it made possible. One language with a concrete, honest example beats a long list of languages.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "結論：得意な言語はPython（使った年数）",
+     "en": "Conclusion: Python is my strongest language (years of use)"
+    },
+    {
+     "ja": "作ったもの：研究用の学習・評価プログラム",
+     "en": "What I built: a training and evaluation program for my research"
+    },
+    {
+     "ja": "工夫と成果：設定ファイルで実験を効率化、GitとDockerで再現性",
+     "en": "Key idea and result: config-driven experiments; reproducible with Git and Docker"
+    },
+    {
+     "ja": "正直な補足：C++は基礎レベル、勉強を継続中",
+     "en": "Honest note: C++ is at a basic level, and I keep studying it"
+    }
+   ],
+   "modelAnswerJa": "得意な言語はPythonです。授業と研究で、【年数：3】年ほど使っております。\n作ったものは、夜間の歩行者検出モデルを学習・評価するプログラムです。PyTorchを使い、データの読み込みから学習、評価までを、自動で行えるようにしました。\n工夫した点は、設定ファイルを書き換えるだけで、実験の条件を変えられるようにしたことです。その結果、データ拡張の比較実験を、短期間で【数値：50】回以上行えました。\nまた、Gitでコードを管理し、Dockerで環境をそろえました。そのため、研究室のメンバーも同じ結果を再現できます。\nC++は基礎レベルですが、車載機器での実装に向けて、現在も勉強を続けております。",
+   "modelAnswerEn": "My strongest language is Python. I have used it for about [years: 3] years in my classes and research.\nWhat I built is a program for training and evaluating a night-time pedestrian detection model. Using PyTorch, I made everything from loading the data to training and evaluation run automatically.\nWhat I focused on was making it possible to change the experiment conditions just by editing a config file. As a result, I was able to run more than [number: 50] comparison experiments on data augmentation in a short period.\nI also managed the code with Git and set up the same environment for everyone with Docker. So other lab members can reproduce the same results.\nMy C++ is at a basic level, but I am continuing to study it so that I can implement models on in-vehicle devices.",
+   "shortAnswerJa": "得意な言語はPythonです。授業と研究で、【年数：3】年ほど使っております。PyTorchで、夜間の歩行者検出モデルを学習・評価するプログラムを作りました。設定ファイルだけで条件を変えられるようにして、多くの比較実験を効率よく行いました。C++は基礎レベルで、現在も勉強中です。",
+   "keyPhrases": [
+    {
+     "ja": "得意な言語はPythonです。",
+     "en": "My strongest language is Python."
+    },
+    {
+     "ja": "〜から〜までを、自動で行えるようにしました。",
+     "en": "I made everything from ... to ... run automatically."
+    },
+    {
+     "ja": "設定ファイルを書き換えるだけで",
+     "en": "just by editing a config file"
+    },
+    {
+     "ja": "同じ結果を再現できます。",
+     "en": "(Others) can reproduce the same results."
+    },
+    {
+     "ja": "基礎レベルですが、現在も勉強を続けております。",
+     "en": "It is at a basic level, but I am still studying it."
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "そのプログラムで、一番難しかったところはどこですか。",
+     "en": "What was the hardest part of building that program?",
+     "hintJa": "一番難しかったのは、学習データの読み込みが遅くなる問題でした。",
+     "tipEn": "Pick one real problem, then give the cause you found and your fix (e.g., caching or parallel data loading), with a number if possible."
+    },
+    {
+     "ja": "C++は、どのくらい書けますか。",
+     "en": "How well can you write C++?",
+     "hintJa": "C++は、授業や研究で、簡単なプログラムを書いた程度です。",
+     "tipEn": "Be honest about your level, give one concrete example, and say how you are improving; interviewers may test you."
+    },
+    {
+     "ja": "コードを書くときに、気をつけていることは何ですか。",
+     "en": "What do you pay attention to when you write code?",
+     "hintJa": "他の人が読んでも分かるコードを書くことを、一番大切にしています。",
+     "tipEn": "Name 2-3 concrete habits: clear names, small functions, comments or type hints, and tests."
+    },
+    {
+     "ja": "書いたコードを、GitHubなどで見せてもらうことはできますか。",
+     "en": "Could you show us code you wrote, for example on GitHub?",
+     "hintJa": "研究のコードは公開できませんが、個人で作ったものでしたらお見せできます。",
+     "tipEn": "Research code may be confidential; say so politely and prepare a small public sample in advance."
+    }
+   ],
+   "pitfallsEn": [
+    "Listing many languages without depth; pick one and show something concrete you built.",
+    "Overstating your C++ level; interviewers may ask detailed questions or give a coding test.",
+    "Describing only the tools, not the purpose and the result (what the program made possible)."
+   ]
+  },
+  {
+   "id": "q41",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "過学習とは何ですか。どのように防ぎますか。",
+   "variantsJa": [
+    "過学習について、簡単に説明してもらえますか。",
+    "オーバーフィッティングを防ぐために、何か工夫しましたか。",
+    "学習データでは精度が高いのに、テストでは低い。原因は何だと思いますか。"
+   ],
+   "questionEn": "What is overfitting and how do you prevent it?",
+   "intentEn": "Checks ML fundamentals: a correct definition, how you detect overfitting, and countermeasures you actually used. Linking it to your own research shows real understanding, not memorization.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "定義：学習データに合いすぎて、新しいデータで精度が下がる状態",
+     "en": "Definition: the model fits the training data too closely, so accuracy drops on new data"
+    },
+    {
+     "ja": "見分け方：学習と検証の損失を比べる",
+     "en": "How to detect it: compare training loss and validation loss"
+    },
+    {
+     "ja": "防ぐ方法：データ拡張・正則化・早期終了",
+     "en": "How to prevent it: data augmentation, regularization, early stopping"
+    },
+    {
+     "ja": "経験：夜間画像が少なく起きた過学習への対策と結果",
+     "en": "Experience: what I did when overfitting happened with few night images, and the result"
+    }
+   ],
+   "modelAnswerJa": "過学習とは、学習データに合いすぎて、新しいデータでは精度が下がる状態です。主な原因は、データの量に比べて、モデルが複雑すぎることです。\n過学習かどうかは、学習と検証の損失を比べて判断します。学習の損失は下がるのに、検証の損失が上がり始めたら、過学習のサインです。\n防ぐ方法は、主に3つあります。1つ目は、データ拡張などでデータを増やすことです。2つ目は、ドロップアウトや重み減衰などの正則化です。3つ目は、検証の損失を見て学習を止める、早期終了です。\n私の研究でも、夜間の画像が少なく、過学習が起きました。そこで、データ拡張と早期終了を組み合わせました。その結果、学習と検証の差が小さくなりました。",
+   "modelAnswerEn": "Overfitting is a state where a model fits the training data too closely, so its accuracy drops on new data. The main cause is a model that is too complex for the amount of data.\nTo judge whether a model is overfitting, I compare the training loss and the validation loss. If the training loss goes down but the validation loss starts to rise, that is a sign of overfitting.\nThere are three main ways to prevent it. The first is increasing the data, for example with data augmentation. The second is regularization, such as dropout or weight decay. The third is early stopping, which stops training by watching the validation loss.\nIn my research, too, overfitting happened because we had few night-time images. So I combined data augmentation and early stopping. As a result, the gap between training and validation became smaller.",
+   "shortAnswerJa": "過学習とは、学習データに合いすぎて、新しいデータでは精度が下がる状態です。防ぐ方法は、主に3つです。データ拡張でデータを増やすこと、ドロップアウトなどの正則化、そして早期終了です。研究でも、データ拡張と早期終了で過学習を抑えました。",
+   "keyPhrases": [
+    {
+     "ja": "学習データに合いすぎて",
+     "en": "fitting the training data too closely"
+    },
+    {
+     "ja": "新しいデータでは精度が下がります",
+     "en": "accuracy drops on new data"
+    },
+    {
+     "ja": "検証の損失が上がり始めたら、過学習のサインです",
+     "en": "if the validation loss starts to rise, it is a sign of overfitting"
+    },
+    {
+     "ja": "防ぐ方法は、主に3つあります",
+     "en": "there are three main ways to prevent it"
+    },
+    {
+     "ja": "〜と〜を組み合わせました",
+     "en": "I combined ... and ..."
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "逆に、学習が足りない場合は、どうしますか。",
+     "en": "Conversely, what do you do when the model is underfitting?",
+     "hintJa": "学習データでも精度が低い場合は、まずモデルの大きさと学習の設定を見直します。",
+     "tipEn": "Underfitting means poor results on both training and validation data; try a larger model, longer training, a better learning rate, or better input features."
+    },
+    {
+     "ja": "ドロップアウトは、なぜ過学習を防げるのですか。",
+     "en": "Why does dropout prevent overfitting?",
+     "hintJa": "学習中に一部のニューロンをランダムに無効にし、特定の部分に頼らないようにするからです。",
+     "tipEn": "Give the intuition: during training, random neurons are switched off, so the network cannot rely on a few of them and learns more robust features; it works like averaging many smaller networks."
+    },
+    {
+     "ja": "学習データと検証データは、どのように分けましたか。",
+     "en": "How did you split the training and validation data?",
+     "hintJa": "同じ動画のフレームが両方に入らないように、動画ごとに分けました。",
+     "tipEn": "For driving video, split by sequence or scene, not by random frame; near-duplicate frames leak and make results look too good."
+    }
+   ],
+   "pitfallsEn": [
+    "Listing techniques without explaining how you detect overfitting (the gap between training and validation).",
+    "Confusing validation data and test data, or tuning hyperparameters on the test set.",
+    "Saying 'just add more data' without checking that the new data matches real conditions such as night and rain."
+   ]
+  },
+  {
+   "id": "q42",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "モデルの評価指標は、どのように選びますか。",
+   "variantsJa": [
+    "研究では、どんな指標で評価しましたか。なぜその指標を選んだのですか。",
+    "物体検出では、どの評価指標を使いますか。",
+    "精度を評価するとき、何を基準に指標を決めていますか。"
+   ],
+   "questionEn": "How do you choose evaluation metrics for a model?",
+   "intentEn": "Checks whether you choose metrics from the task's goal and the cost of each type of error, not by habit. In safety-related perception, this judgment is essential.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "結論：目的と「どの間違いが問題か」で選ぶ",
+     "en": "Conclusion: choose by the goal and by which error matters more"
+    },
+    {
+     "ja": "具体例：見逃し→再現率、誤検出→適合率",
+     "en": "Example: missed detections → recall; false detections → precision"
+    },
+    {
+     "ja": "全体と速度：mAPとFPS",
+     "en": "Overall performance and speed: mAP and FPS"
+    },
+    {
+     "ja": "経験：条件ごとの評価で弱点を発見",
+     "en": "Experience: evaluating each condition separately revealed a weakness"
+    }
+   ],
+   "modelAnswerJa": "評価指標は、タスクの目的と、どの間違いがより問題になるかで選びます。\n例えば、歩行者検出では、歩行者を見逃すことが最も危険です。そのため、再現率を重視します。一方で、誤検出が多すぎると、不要なブレーキにつながります。そこで、適合率も一緒に確認します。\n物体検出の総合的な性能は、mAPで比べます。車載では速度も大切なので、FPSや処理時間も測ります。\nまた、全体の平均だけでなく、条件ごとに分けて評価することも大切です。私の研究では、昼、夜、雨の日に分けてmAPを測りました。その結果、夜間の小さな歩行者に弱いことが分かり、改善につながりました。",
+   "modelAnswerEn": "I choose evaluation metrics based on the purpose of the task and on which kind of mistake causes more problems.\nFor example, in pedestrian detection, missing a pedestrian is the most dangerous mistake. So I put priority on recall. On the other hand, too many false detections lead to unnecessary braking. So I also check precision at the same time.\nFor the overall performance of object detection, I compare mAP. Speed also matters in vehicles, so I measure FPS and processing time as well.\nIt is also important to evaluate each condition separately, not just the overall average. In my research, I measured mAP separately for daytime, night and rainy days. As a result, I found that the model was weak at small pedestrians at night, and this led to improvements.",
+   "shortAnswerJa": "評価指標は、タスクの目的と、どの間違いが問題になるかで選びます。歩行者検出では見逃しが最も危険なので、再現率を重視します。ただし、誤検出が多すぎないように、適合率も確認します。全体の比較にはmAPを使い、車載では速度としてFPSも測ります。",
+   "keyPhrases": [
+    {
+     "ja": "どの間違いがより問題になるかで選びます",
+     "en": "I choose based on which mistake causes more problems"
+    },
+    {
+     "ja": "見逃すことが最も危険です",
+     "en": "missing (a pedestrian) is the most dangerous"
+    },
+    {
+     "ja": "不要なブレーキにつながります",
+     "en": "it leads to unnecessary braking"
+    },
+    {
+     "ja": "全体の平均だけでなく、条件ごとに分けて評価します",
+     "en": "I evaluate each condition separately, not just the overall average"
+    },
+    {
+     "ja": "〜ことが分かり、改善につながりました",
+     "en": "I found that ..., and this led to improvements"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "mAPとは何か、簡単に説明してください。",
+     "en": "Briefly explain what mAP is.",
+     "hintJa": "mAPは、適合率と再現率の曲線から求めるAPを、クラスごとに平均した値です。",
+     "tipEn": "Add the IoU threshold (e.g., mAP@0.5 vs. mAP@0.5:0.95) and say that AP is the area under the precision-recall curve."
+    },
+    {
+     "ja": "データが不均衡なとき、正解率だけで評価しないのはなぜですか。",
+     "en": "Why don't you evaluate only with accuracy when the data is imbalanced?",
+     "hintJa": "例えば、99%が背景のデータなら、すべて背景と答えるだけで、正解率が99%になるからです。",
+     "tipEn": "Use a simple numeric example, then name better choices: precision, recall, F1 or precision-recall curves."
+    },
+    {
+     "ja": "時系列データのモデルなら、どの指標を使いますか。",
+     "en": "Which metrics would you use for a time-series model?",
+     "hintJa": "数値を予測するモデルなら、MAEやRMSEで、誤差の大きさを評価します。",
+     "tipEn": "Forecasting: MAE or RMSE (RMSE punishes large errors more); anomaly detection: precision, recall, F1. Split the data by time, never shuffle it randomly."
+    },
+    {
+     "ja": "再現率と適合率のバランスは、どう決めますか。",
+     "en": "How do you decide the balance between recall and precision?",
+     "hintJa": "まず必要な再現率を決めて、それを満たす範囲で、誤検出が最も少ない閾値を選びます。",
+     "tipEn": "Start from the safety requirement, tune the threshold on validation data, then re-check it for each condition such as night and rain."
+    }
+   ],
+   "pitfallsEn": [
+    "Using accuracy by default without considering class imbalance.",
+    "Naming metrics without linking them to the cost of each error in the real task.",
+    "Forgetting speed and latency, which decide whether a model can run in a car.",
+    "Reporting only the average and hiding weak conditions such as night, rain or small objects."
+   ]
+  },
+  {
+   "id": "q43",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "学習データが少ない場合や偏っている場合、どのように対応しますか。",
+   "variantsJa": [
+    "データが足りないときは、どうしますか。",
+    "クラスに偏りがあるデータは、どう扱いますか。",
+    "研究で、データが少なくて困ったことはありますか。どう解決しましたか。"
+   ],
+   "questionEn": "What do you do when training data is scarce or imbalanced?",
+   "intentEn": "Checks practical problem-solving with real-world data: first analyse what is missing, then choose suitable methods. Interviewers want your own experience, not just a list of techniques.",
+   "timeTarget": "1〜1分半",
+   "structure": [
+    {
+     "ja": "結論：まず不足を分析し、方法を組み合わせる",
+     "en": "Conclusion: first analyse what is missing, then combine methods"
+    },
+    {
+     "ja": "少ない場合：データ拡張・転移学習",
+     "en": "Scarce data: data augmentation and transfer learning"
+    },
+    {
+     "ja": "偏りの場合：サンプリング・損失の重み",
+     "en": "Imbalanced data: resampling and loss weighting"
+    },
+    {
+     "ja": "経験：夜や雨の画像の不足への対策と結果",
+     "en": "Experience: handling the lack of night and rain images, and the result"
+    }
+   ],
+   "modelAnswerJa": "まず、データを分析して、何が足りないのかを確認します。そのうえで、主に3つの方法を組み合わせます。\n1つ目は、データ拡張です。画像の明るさを変えたり、ノイズを加えたりして、データを増やします。\n2つ目は、事前学習済みモデルを使う転移学習です。少ないデータでも、学習が安定します。\n3つ目は、偏りへの対策です。少ないクラスのデータを多めに使ったり、そのクラスの損失の重みを大きくしたりします。\n私の研究では、昼に比べて、夜や雨の画像が少ないことが課題でした。そこで、昼の画像を暗くしたり、雨を重ねたりするデータ拡張を行いました。さらに、昼と夜の差を小さくするために、ドメイン適応も使いました。その結果、夜間のmAPが約【数値：8】ポイント上がりました。",
+   "modelAnswerEn": "First, I analyze the data to find out what exactly is missing. Then I combine three main methods.\nThe first is data augmentation. I increase the data by changing image brightness or adding noise.\nThe second is transfer learning with a pretrained model. It makes training stable even with little data.\nThe third is handling the imbalance. I use more samples from the minority classes, or give those classes a larger weight in the loss.\nIn my research, the challenge was that we had fewer night and rainy images than daytime images. So I used data augmentation, such as darkening daytime images and overlaying rain. In addition, I used domain adaptation to reduce the gap between day and night. As a result, night-time mAP improved by about [number: 8] points.",
+   "shortAnswerJa": "まず、何が足りないのかを分析します。データが少ない場合は、データ拡張や、事前学習済みモデルを使う転移学習で対応します。偏りがある場合は、少ないクラスを多めに学習させたり、損失の重みを調整したりします。研究でも、データ拡張とドメイン適応で、夜間画像の不足を補いました。",
+   "keyPhrases": [
+    {
+     "ja": "何が足りないのかを確認します",
+     "en": "I check what exactly is missing"
+    },
+    {
+     "ja": "〜たり、〜たりして、データを増やします",
+     "en": "I increase the data by doing things like ... and ..."
+    },
+    {
+     "ja": "少ないデータでも、学習が安定します",
+     "en": "training is stable even with little data"
+    },
+    {
+     "ja": "少ないクラスのデータを多めに使います",
+     "en": "I use more samples from the minority classes"
+    },
+    {
+     "ja": "〜ことが課題でした",
+     "en": "the challenge was that ..."
+    },
+    {
+     "ja": "差を小さくするために",
+     "en": "in order to reduce the gap"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "データ拡張で、注意すべきことはありますか。",
+     "en": "Is there anything to be careful about with data augmentation?",
+     "hintJa": "はい、現実にはありえない画像を作ると、かえって精度が下がることがあります。",
+     "tipEn": "Augmentations must stay realistic and keep the labels correct (e.g., horizontal flips are fine for pedestrians, not for text on signs); always check on real validation data."
+    },
+    {
+     "ja": "ドメイン適応について、もう少し詳しく説明してください。",
+     "en": "Could you explain domain adaptation in a bit more detail?",
+     "hintJa": "ドメイン適応とは、学習データと条件が違うデータでも、性能が落ちないようにする方法です。",
+     "tipEn": "Name the source (labeled daytime data) and the target (night data with few or no labels), then the one technique you actually used, such as feature alignment or pseudo-labels."
+    },
+    {
+     "ja": "アノテーションの品質は、どのように管理しましたか。",
+     "en": "How did you manage annotation quality?",
+     "hintJa": "まず、アノテーションのルールを文書にして、全員が同じ基準で作業するようにしました。",
+     "tipEn": "Link this to your team story: written rules, double-checking samples, and weekly reviews of disagreements."
+    },
+    {
+     "ja": "合成データやシミュレーションは、使えると思いますか。",
+     "en": "Do you think synthetic data or simulation is useful?",
+     "hintJa": "まれな場面を増やすには有効ですが、実際のデータでの確認が必要だと思います。",
+     "tipEn": "Show balance: very useful for rare or dangerous scenes, but there is a gap between simulation and reality, so always evaluate on real data."
+    }
+   ],
+   "pitfallsEn": [
+    "Jumping to a technique before analysing what is missing (which condition, which class).",
+    "Using unrealistic augmentations that break the labels or create impossible images.",
+    "Checking only the overall score, so minority classes or night scenes still fail unnoticed."
+   ]
+  },
+  {
+   "id": "q44",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "CNNとTransformerの違いを、簡単に説明してください。",
+   "variantsJa": [
+    "CNNとTransformer、それぞれの特徴を教えてください。",
+    "Vision Transformerについて知っていますか。CNNと何が違いますか。",
+    "研究でCNNを選んだのはなぜですか。Transformerは検討しましたか。"
+   ],
+   "questionEn": "Explain the difference between CNNs and Transformers simply.",
+   "intentEn": "Checks whether you understand the core idea of each architecture in plain words, and whether you can choose between them under constraints such as real-time in-vehicle inference.",
+   "timeTarget": "1〜1分半",
+   "structure": [
+    {
+     "ja": "結論：一番の違いは画像の見方",
+     "en": "Conclusion: the key difference is how they look at an image"
+    },
+    {
+     "ja": "CNN：局所的な特徴が得意、計算が比較的軽い",
+     "en": "CNN: good at local features, relatively light computation"
+    },
+    {
+     "ja": "Transformer：画像全体の関係が得意、データと計算が多く必要",
+     "en": "Transformer: good at relationships across the whole image, needs more data and computation"
+    },
+    {
+     "ja": "経験：Jetsonで動かすためCNNを選択、両方の組み合わせに注目",
+     "en": "Experience: chose a CNN to run on Jetson; watching hybrid models"
+    }
+   ],
+   "modelAnswerJa": "画像認識では、一番の違いは、画像の見方です。\nCNNは、小さなフィルターを使って、画像を狭い範囲ごとに見ます。そのため、エッジや形など、局所的な特徴をとらえるのが得意です。計算も比較的軽いので、組込み機器で使いやすいです。\n一方、Transformerは、画像を小さなパッチに分けます。そして、アテンションという仕組みで、すべてのパッチ同士の関係を計算します。これにより、画像の離れた部分の関係も、とらえやすくなります。ただし、一般に、多くの学習データと計算が必要です。\n私の研究では、Jetsonでリアルタイムに動かす必要がありました。そこで、CNNベースのYOLO系モデルを選びました。最近は、両方を組み合わせたモデルも増えています。車載でどこまで使えるか、注目しております。",
+   "modelAnswerEn": "In image recognition, the biggest difference is how they look at an image.\nA CNN uses small filters and looks at the image one small area at a time. So it is good at capturing local features such as edges and shapes. Its computation is also relatively light, so it is easy to use on embedded devices.\nA Transformer, on the other hand, splits the image into small patches. Then, with a mechanism called attention, it calculates the relationships between all the patches. This makes it easier to capture relationships between distant parts of the image. However, it generally needs a lot of training data and computation.\nIn my research, I needed to run the model in real time on a Jetson. So I chose a CNN-based YOLO-family model. Recently, more models combine both approaches. I am watching to see how far they can be used in vehicles.",
+   "shortAnswerJa": "画像認識では、一番の違いは画像の見方です。CNNは、小さなフィルターで局所的な特徴をとらえます。計算が軽く、組込み機器に向いています。一方、Transformerは、アテンションで画像全体の関係をとらえられます。ただし、多くのデータと計算が必要です。研究では、速度を重視してCNNを選びました。",
+   "keyPhrases": [
+    {
+     "ja": "一番の違いは、〜です",
+     "en": "The biggest difference is ..."
+    },
+    {
+     "ja": "局所的な特徴をとらえるのが得意です",
+     "en": "it is good at capturing local features"
+    },
+    {
+     "ja": "離れた部分の関係も、とらえやすくなります",
+     "en": "it becomes easier to capture relationships between distant parts"
+    },
+    {
+     "ja": "一般に、多くのデータと計算が必要です",
+     "en": "it generally needs a lot of data and computation"
+    },
+    {
+     "ja": "〜必要がありました。そこで、〜を選びました",
+     "en": "I needed to ... So I chose ..."
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "アテンションとは、どのような仕組みですか。",
+     "en": "What kind of mechanism is attention?",
+     "hintJa": "アテンションとは、入力のどの部分が重要かを、重みとして計算する仕組みです。",
+     "tipEn": "Keep it simple: each part looks at all the other parts and decides how much to focus on each one; skip formulas unless asked."
+    },
+    {
+     "ja": "車載で使うなら、どちらを選びますか。",
+     "en": "Which would you choose for in-vehicle use?",
+     "hintJa": "速度と精度の要件によりますが、まずはCNNベースのモデルから検討します。",
+     "tipEn": "Answer 'it depends' with clear criteria: latency budget, hardware and TensorRT support, accuracy needs; then give your default choice."
+    },
+    {
+     "ja": "Transformerを軽くする方法を、何か知っていますか。",
+     "en": "Do you know any ways to make Transformers lighter?",
+     "hintJa": "例えば、アテンションを計算する範囲を、近くの領域に限定する方法があります。",
+     "tipEn": "Name one or two ideas (local or window attention, fewer tokens, distillation, quantization) and be honest if you have not tried them."
+    }
+   ],
+   "pitfallsEn": [
+    "Saying one is simply 'better'; the right choice depends on data size, latency and hardware.",
+    "Using heavy jargon (inductive bias, query/key/value) without a plain explanation.",
+    "Claiming hands-on Transformer experience you don't have; interviewers will dig deeper."
+   ]
+  },
+  {
+   "id": "q45",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "車載システム向けに、AIモデルを軽量化・高速化するには、どうしますか。",
+   "variantsJa": [
+    "モデルを車載機器で動かすには、どんな工夫が必要ですか。",
+    "推論を速くするために、何をしましたか。",
+    "量子化について、知っていることを教えてください。"
+   ],
+   "questionEn": "How would you make an AI model lighter and faster for in-vehicle systems?",
+   "intentEn": "Checks deployment awareness, which is core work in ADAS perception: setting targets, measuring bottlenecks, and using quantization, pruning or distillation while protecting accuracy.",
+   "timeTarget": "1〜1分半",
+   "structure": [
+    {
+     "ja": "目標と測定：目標を決め、実際のボードで遅い部分を確認",
+     "en": "Targets and measurement: set targets, find the slow parts on the real board"
+    },
+    {
+     "ja": "方法①：軽いモデル構造・入力サイズの見直し",
+     "en": "Method 1: lightweight architecture, review the input size"
+    },
+    {
+     "ja": "方法②③：量子化（TensorRT）、枝刈り・知識蒸留",
+     "en": "Methods 2-3: quantization (TensorRT), pruning and knowledge distillation"
+    },
+    {
+     "ja": "経験：FP16で目標を達成、INT8は精度低下で見送り",
+     "en": "Experience: reached the target with FP16; dropped INT8 because accuracy fell"
+    },
+    {
+     "ja": "まとめ：速度と精度の両方を必ず確認",
+     "en": "Wrap-up: always check both speed and accuracy"
+    }
+   ],
+   "modelAnswerJa": "まず、目標とする速度とメモリ使用量を決めます。そして、実際のボードで計測して、どこが遅いかを確認します。そのうえで、主に3つの方法を使います。\n1つ目は、軽いモデル構造を選び、入力画像のサイズも見直すことです。\n2つ目は、数値のビット数を減らす量子化です。例えば、TensorRTで、FP32の計算をFP16やINT8に変えます。\n3つ目は、枝刈りや知識蒸留で、モデル自体を小さくすることです。\n私の研究では、YOLO系のモデルをTensorRTに変換し、FP16で動かしました。その結果、Jetson上で【数値：25】FPSを達成しました。INT8も試しましたが、夜間の精度が下がったため、FP16を選びました。\n速度だけでなく、精度の変化も必ず確認することが大切だと考えております。",
+   "modelAnswerEn": "First, I set targets for speed and memory usage. Then I measure on the actual board to find where it is slow. After that, I use three main methods.\nThe first is choosing a lightweight model architecture and reviewing the input image size.\nThe second is quantization, which reduces the number of bits used for numbers. For example, with TensorRT, I change FP32 computation to FP16 or INT8.\nThe third is making the model itself smaller with pruning or knowledge distillation.\nIn my research, I converted a YOLO-family model to TensorRT and ran it in FP16. As a result, I achieved [number: 25] FPS on a Jetson. I also tried INT8, but night-time accuracy dropped, so I chose FP16.\nI believe it is important to always check the change in accuracy, not only the speed.",
+   "shortAnswerJa": "まず目標の速度を決めて、実際のボードでどこが遅いかを測ります。そのうえで、軽いモデル構造を選び、TensorRTでFP16やINT8に量子化します。必要なら、枝刈りや知識蒸留も使います。研究では、FP16にして、Jetson上で【数値：25】FPSを達成しました。精度の変化も必ず確認します。",
+   "keyPhrases": [
+    {
+     "ja": "実際のボードで計測して、どこが遅いかを確認します",
+     "en": "I measure on the actual board and find where it is slow"
+    },
+    {
+     "ja": "数値のビット数を減らす量子化",
+     "en": "quantization, which reduces the number of bits for numbers"
+    },
+    {
+     "ja": "モデル自体を小さくします",
+     "en": "I make the model itself smaller"
+    },
+    {
+     "ja": "〜を達成しました",
+     "en": "I achieved ..."
+    },
+    {
+     "ja": "〜も試しましたが、〜ため、〜を選びました",
+     "en": "I also tried ..., but because ..., I chose ..."
+    },
+    {
+     "ja": "速度だけでなく、精度の変化も必ず確認します",
+     "en": "I always check the change in accuracy, not only the speed"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "INT8で精度を保つには、どうすればよいと思いますか。",
+     "en": "How do you think accuracy can be kept with INT8?",
+     "hintJa": "キャリブレーションに、実際の使用条件に近い夜間の画像を使うことが大切だと考えております。",
+     "tipEn": "Mention calibration data that matches real use (night, rain), checking which layers are sensitive, and quantization-aware training as a next step."
+    },
+    {
+     "ja": "推論が遅いとき、モデル以外に確認するところはありますか。",
+     "en": "When inference is slow, what do you check besides the model?",
+     "hintJa": "はい、前処理や後処理、データの転送にも時間がかかることがあります。",
+     "tipEn": "Profile the whole pipeline: resizing, color conversion, NMS post-processing and CPU-GPU copies can take as long as the model itself."
+    },
+    {
+     "ja": "FPS以外に、車載で大切な指標は何ですか。",
+     "en": "Besides FPS, which metrics matter in a vehicle?",
+     "hintJa": "入力から結果が出るまでのレイテンシ、特に最悪の場合の値が大切だと思います。",
+     "tipEn": "Real-time systems care about deadlines: worst-case latency, memory, power and heat, not only average FPS."
+    }
+   ],
+   "pitfallsEn": [
+    "Listing techniques without first setting a target and measuring the bottleneck.",
+    "Reporting speed gains without checking accuracy, especially in hard conditions such as night.",
+    "Measuring only on a desktop GPU instead of the target board."
+   ]
+  },
+  {
+   "id": "q46",
+   "category": "technical",
+   "week": 6,
+   "questionJa": "自動運転やADASで使うAIの安全性は、どのように確保すべきだと思いますか。",
+   "variantsJa": [
+    "AIを車に使うとき、安全面で何に気をつけるべきですか。",
+    "AIの認識ミスによる事故を防ぐには、どうすればよいと思いますか。",
+    "機能安全について、知っていることはありますか。"
+   ],
+   "questionEn": "How should the safety of AI used in automated driving / ADAS be ensured?",
+   "intentEn": "Checks your safety mindset: that you know AI is never perfect and can name system-level measures (standards, validation, redundancy) at a new-graduate level, without overclaiming.",
+   "timeTarget": "1〜1分半",
+   "structure": [
+    {
+     "ja": "結論：AIだけでなくシステム全体で守る",
+     "en": "Conclusion: ensure safety at the system level, not by AI alone"
+    },
+    {
+     "ja": "規格：ISO 26262（故障）とSOTIF（性能の限界）",
+     "en": "Standards: ISO 26262 (failures) and SOTIF (performance limits)"
+    },
+    {
+     "ja": "データと検証：まれな場面・シミュレーション",
+     "en": "Data and validation: rare scenes, real data and simulation"
+    },
+    {
+     "ja": "冗長性と監視：他のセンサー・安全側に倒す設計",
+     "en": "Redundancy and monitoring: other sensors; falling back to the safe side"
+    },
+    {
+     "ja": "経験と姿勢：研究で限界を経験、実務で学びたい",
+     "en": "Experience and attitude: saw the limits in research; eager to learn in practice"
+    }
+   ],
+   "modelAnswerJa": "AIの判断は、100%正しいとは限りません。そのため、AIだけに頼らず、システム全体で安全を確保すべきだと考えております。ポイントは3つです。\n1つ目は、規格に沿った開発です。電子システムの故障による危険は、ISO 26262の機能安全で扱います。故障がなくても、性能の限界で起きる危険は、SOTIFで考えます。\n2つ目は、データと検証です。夜や雨、まれな場面のデータを集めます。そして、実際の走行データとシミュレーションで、十分にテストします。\n3つ目は、冗長性と監視です。レーダーなど、他のセンサーと組み合わせます。また、AIの信頼度を監視して、低いときは安全側に倒すようにします。\n私も研究で、夜や雨では精度が下がることを経験しました。限界を知ったうえで設計する大切さを、実務でさらに学びたいです。",
+   "modelAnswerEn": "AI decisions are not always 100% correct. So I believe safety should be ensured by the whole system, without relying on AI alone. There are three points.\nThe first is development that follows the standards. Hazards caused by failures in electronic systems are handled by functional safety under ISO 26262. Hazards that come from performance limits, even without any failure, are considered under SOTIF.\nThe second is data and validation. We collect data on night, rain and rare situations. Then we test thoroughly with real driving data and simulation.\nThe third is redundancy and monitoring. We combine the AI with other sensors such as radar. We also monitor the AI's confidence, and make the system fall back to the safe side when the confidence is low.\nIn my research, I also experienced accuracy dropping at night and in rain. I want to learn more in practice about how important it is to design with a clear understanding of these limits.",
+   "shortAnswerJa": "AIは100%正しいとは限らないので、システム全体で安全を確保すべきだと考えております。具体的には、ISO 26262やSOTIFに沿って開発します。また、まれな場面も含めて十分に検証し、他のセンサーと組み合わせて監視します。研究で精度の限界を実感したので、その経験を実務で生かしたいです。",
+   "keyPhrases": [
+    {
+     "ja": "100%正しいとは限りません",
+     "en": "it is not always 100% correct"
+    },
+    {
+     "ja": "システム全体で安全を確保すべきだと考えております",
+     "en": "I believe safety should be ensured by the whole system"
+    },
+    {
+     "ja": "故障がなくても、性能の限界で起きる危険",
+     "en": "hazards caused by performance limits, even without a failure"
+    },
+    {
+     "ja": "信頼度が低いときは、安全側に倒すようにします",
+     "en": "when confidence is low, we make the system fall back to the safe side"
+    },
+    {
+     "ja": "限界を知ったうえで設計する",
+     "en": "to design with a clear understanding of the limits"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "機能安全とSOTIFの違いを、例を使って説明してください。",
+     "en": "Explain the difference between functional safety and SOTIF with an example.",
+     "hintJa": "例えば、カメラの故障は機能安全の問題で、大雨での見逃しはSOTIFの問題です。",
+     "tipEn": "One sentence for each, plus one concrete example; that is enough at new-graduate level."
+    },
+    {
+     "ja": "エッジケースとは、例えばどのようなものですか。",
+     "en": "What would be an example of an edge case?",
+     "hintJa": "例えば、雨の夜に、黒い服を着た人が道路を横断するような場面です。",
+     "tipEn": "Give visual examples from your research area: backlight, umbrellas, partly hidden pedestrians, children, unusual objects."
+    },
+    {
+     "ja": "AIの判断の理由が分からない点は、どう考えますか。",
+     "en": "How do you view the problem that AI decisions are hard to explain?",
+     "hintJa": "完全な説明は難しいですが、根拠を可視化する方法で、ある程度は確認できると思います。",
+     "tipEn": "Mention tools such as Grad-CAM, plus testing by condition; explainability supports validation but does not replace it."
+    },
+    {
+     "ja": "ASILについて、知っていることを教えてください。",
+     "en": "What do you know about ASIL?",
+     "hintJa": "ASILはISO 26262の安全レベルで、AからDまであり、Dが最も厳しいです。",
+     "tipEn": "Add that it is decided by severity, exposure and controllability, and don't go deeper than you really know."
+    }
+   ],
+   "pitfallsEn": [
+    "Claiming AI can be made 100% safe just by improving accuracy.",
+    "Name-dropping ISO 26262 or SOTIF without being able to state the one-line difference.",
+    "Overclaiming industry experience; say you want to learn the real process at work."
+   ]
+  },
+  {
+   "id": "q47",
+   "category": "technical",
+   "week": 6,
+   "questionJa": "センサーフュージョンについて説明してください。",
+   "variantsJa": [
+    "カメラとLiDAR、レーダーを組み合わせるメリットは何ですか。",
+    "複数のセンサーを使う理由を、説明してもらえますか。",
+    "カメラ以外の車載センサーについて、何か知っていますか。"
+   ],
+   "questionEn": "Explain sensor fusion.",
+   "intentEn": "Checks automotive domain knowledge: the strengths and weaknesses of each sensor, and why combining them makes perception more robust and adds redundancy.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "定義：複数のセンサーの情報を組み合わせる",
+     "en": "Definition: combining information from multiple sensors"
+    },
+    {
+     "ja": "センサーごとの得意・不得意（カメラ・レーダー・LiDAR）",
+     "en": "Strengths and weaknesses of each sensor (camera, radar, LiDAR)"
+    },
+    {
+     "ja": "利点：補い合う・1つが故障しても続けられる",
+     "en": "Benefits: they cover each other; recognition continues if one fails"
+    },
+    {
+     "ja": "経験と関心：カメラだけの研究で感じた限界",
+     "en": "Experience and interest: the limits I saw in camera-only research"
+    }
+   ],
+   "modelAnswerJa": "センサーフュージョンとは、複数のセンサーの情報を組み合わせる技術です。そうすることで、周りの状況をより正確にとらえられます。\nセンサーには、それぞれ得意・不得意があります。カメラは、色や形が分かりますが、夜や雨に弱いです。レーダーは、天候に強く、距離と速度を測れますが、形をとらえるのは苦手です。LiDARは、形と距離を細かく測れますが、比較的コストが高いです。\n組み合わせることで、苦手な部分を補い合えます。また、1つのセンサーが故障しても、他のセンサーで認識を続けられます。\n私の研究はカメラだけですが、夜や雨では精度が下がりました。そのため、レーダーとの組み合わせに、強い関心があります。",
+   "modelAnswerEn": "Sensor fusion is a technique that combines information from multiple sensors. By doing so, the vehicle can understand its surroundings more accurately.\nEach sensor has strengths and weaknesses. A camera can see colors and shapes, but it is weak at night and in rain. Radar is robust to weather and can measure distance and speed, but it is poor at capturing shapes. LiDAR can measure shape and distance in detail, but it is relatively expensive.\nBy combining them, the sensors can cover each other's weaknesses. Also, even if one sensor fails, the other sensors can keep the recognition going.\nMy research uses only a camera, and accuracy dropped at night and in rain. That is why I am very interested in combining it with radar.",
+   "shortAnswerJa": "センサーフュージョンとは、複数のセンサーの情報を組み合わせる技術です。例えば、カメラは夜や雨に弱いですが、レーダーは天候に強いです。組み合わせることで、苦手な部分を補い合えます。また、1つが故障しても、認識を続けられます。研究で、カメラだけの限界を感じたので、強い関心があります。",
+   "keyPhrases": [
+    {
+     "ja": "複数のセンサーの情報を組み合わせる技術です",
+     "en": "it is a technique that combines information from multiple sensors"
+    },
+    {
+     "ja": "それぞれ得意・不得意があります",
+     "en": "each one has strengths and weaknesses"
+    },
+    {
+     "ja": "苦手な部分を補い合えます",
+     "en": "they can cover each other's weaknesses"
+    },
+    {
+     "ja": "1つのセンサーが故障しても",
+     "en": "even if one sensor fails"
+    },
+    {
+     "ja": "〜に、強い関心があります",
+     "en": "I am very interested in ..."
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "どの段階で、情報を組み合わせますか。",
+     "en": "At what stage do you combine the information?",
+     "hintJa": "大きく分けると、生のデータ、特徴、検出結果の3つの段階があります。",
+     "tipEn": "Early fusion (raw data: rich but hard to align), middle fusion (features), late fusion (detection results: simpler, robust if one sensor fails); mention one trade-off."
+    },
+    {
+     "ja": "センサーフュージョンで、難しい点は何ですか。",
+     "en": "What is difficult about sensor fusion?",
+     "hintJa": "センサー同士の位置合わせと、時間の同期が難しいと思います。",
+     "tipEn": "Calibration between sensors, time synchronization, conflicting outputs and extra computing cost; say how you would check calibration if you can."
+    },
+    {
+     "ja": "センサーの結果が違ったら、どちらを信じますか。",
+     "en": "If the sensors disagree, which one do you trust?",
+     "hintJa": "条件に応じて信頼度を変え、迷うときは安全側に倒すのが基本だと思います。",
+     "tipEn": "Talk about confidence weighting (e.g., trust radar more in heavy rain), safe-side decisions, and tracking such as a Kalman filter if you know it."
+    }
+   ],
+   "pitfallsEn": [
+    "Giving only a definition without the strengths and weaknesses of each sensor.",
+    "Saying fusion is always better without mentioning calibration, synchronization and cost.",
+    "Pretending to have fusion experience when your research is camera-only; say so and show interest instead."
+   ]
+  },
+  {
+   "id": "q48",
+   "category": "technical",
+   "week": 6,
+   "questionJa": "SDV（ソフトウェア・デファインド・ビークル）について、知っていることを教えてください。",
+   "variantsJa": [
+    "SDVという言葉を、聞いたことはありますか。",
+    "SDVについて、簡単に説明してもらえますか。",
+    "ソフトウェア・デファインド・ビークルによって、車はどう変わると思いますか。"
+   ],
+   "questionEn": "What do you know about software-defined vehicles (SDV)?",
+   "intentEn": "Checks industry awareness and interest in the employer's core strategy (FPT Automotive focuses on SDVs), and whether you understand what SDVs mean for AI work.",
+   "timeTarget": "1〜1分半",
+   "structure": [
+    {
+     "ja": "定義：ソフトウェアで機能が決まり、販売後も更新される車",
+     "en": "Definition: a car whose functions are defined by software and updated after sale"
+    },
+    {
+     "ja": "ポイント①：OTAによる更新",
+     "en": "Point 1: OTA updates"
+    },
+    {
+     "ja": "ポイント②③：ECUの統合、ハードとソフトの分離",
+     "en": "Points 2-3: integrating ECUs; separating hardware and software"
+    },
+    {
+     "ja": "AIとの関係：モデルの継続的な改善と、更新の安全性",
+     "en": "Link to AI: continuous model improvement and the safety of updates"
+    }
+   ],
+   "modelAnswerJa": "SDVとは、ソフトウェアによって機能が決まり、販売後も更新されていく車のことです。ポイントは3つあると理解しております。\n1つ目は、OTA、つまり無線でのソフトウェア更新です。スマートフォンのように、機能の追加や不具合の修正ができます。\n2つ目は、ECUの統合です。これまでの車には、機能ごとに多くのECUがありました。それを、少数の高性能なコンピューターにまとめる流れです。\n3つ目は、ハードウェアとソフトウェアの分離です。ソフトウェアを独立して開発でき、再利用もしやすくなります。\nAIエンジニアにとっては、販売後もモデルを更新できる点が大きいと思います。新しいデータで、認識の性能を上げ続けられるからです。一方で、更新の安全性やセキュリティも、より重要になると考えております。",
+   "modelAnswerEn": "An SDV is a car whose functions are defined by software and keep being updated even after it is sold. My understanding is that there are three key points.\nThe first is OTA, meaning wireless software updates. Like a smartphone, the car can get new functions and bug fixes.\nThe second is integrating ECUs. Until now, cars have had many ECUs, one for each function. The trend is to combine them into a small number of high-performance computers.\nThe third is separating hardware and software. Software can be developed independently, and it becomes easier to reuse.\nFor AI engineers, I think the big point is that models can be updated even after sale, because we can keep improving recognition performance with new data. On the other hand, I believe the safety and security of updates will become even more important.",
+   "shortAnswerJa": "SDVとは、ソフトウェアによって機能が決まり、販売後も更新されていく車のことです。ポイントは3つで、OTAによる更新、ECUの統合、ハードウェアとソフトウェアの分離です。AIのモデルも、販売後に改善し続けられるようになります。一方で、更新の安全性が重要になると考えております。",
+   "keyPhrases": [
+    {
+     "ja": "〜と理解しております",
+     "en": "my understanding is that ..."
+    },
+    {
+     "ja": "販売後も更新されていく",
+     "en": "keeps being updated after sale"
+    },
+    {
+     "ja": "少数の高性能なコンピューターにまとめる流れです",
+     "en": "it is a trend toward combining them into a few high-performance computers"
+    },
+    {
+     "ja": "ハードウェアとソフトウェアの分離",
+     "en": "separation of hardware and software"
+    },
+    {
+     "ja": "〜点が大きいと思います",
+     "en": "I think the big point is that ..."
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "SDVになると、AIエンジニアの仕事はどう変わると思いますか。",
+     "en": "How do you think SDVs will change an AI engineer's work?",
+     "hintJa": "作って終わりではなく、データを集めてモデルを更新し続ける仕事が増えると思います。",
+     "tipEn": "Describe the loop: collect data, retrain, validate, deliver by OTA; and stress stricter validation before every update."
+    },
+    {
+     "ja": "OTAアップデートには、どのようなリスクがありますか。",
+     "en": "What risks do OTA updates have?",
+     "hintJa": "更新の失敗や、外部からの攻撃のリスクがあると思います。",
+     "tipEn": "Mention cybersecurity (e.g., ISO/SAE 21434, and UN R155/R156 if you know them), safe rollback, and re-checking safety after each update."
+    },
+    {
+     "ja": "当社がSDVの分野で取り組んでいることを、何か知っていますか。",
+     "en": "Do you know anything about what our company does in the SDV field?",
+     "hintJa": "はい、御社グループが自動車を重点分野とし、SDVに向けた協業を進められていると拝見しました。",
+     "tipEn": "Then add one or two verified facts with their year, such as FPT Automotive's mission of accelerating SDVs, the DENSO MoU on SDV software for ADAS (Dec 2024) or the Subaru contract (Mar 2025); say 約 for any number."
+    },
+    {
+     "ja": "AUTOSARとは何ですか。",
+     "en": "What is AUTOSAR?",
+     "hintJa": "AUTOSARは、車のECUのソフトウェア構造を標準化した、業界の共通規格です。",
+     "tipEn": "One line is enough: a standard ECU software architecture (Classic for control ECUs, Adaptive for high-performance computers)."
+    }
+   ],
+   "pitfallsEn": [
+    "Defining SDV only as 'a car with a lot of software' without OTA, centralized architecture or hardware-software separation.",
+    "Ignoring the safety and cybersecurity of updates.",
+    "Quoting market numbers without a year or source; say 約 and give the year."
+   ]
+  },
+  {
+   "id": "q49",
+   "category": "technical",
+   "week": 6,
+   "questionJa": "生成AIは、自動車業界でどのように活用できると思いますか。",
+   "variantsJa": [
+    "LLMを車に載せるとしたら、どんな使い方が考えられますか。",
+    "車の開発で、生成AIはどう役に立つと思いますか。",
+    "生成AIを自動車に使うときのリスクは、何だと思いますか。"
+   ],
+   "questionEn": "How do you think generative AI can be used in the automotive industry?",
+   "intentEn": "Checks whether you see realistic, valuable uses of generative AI and understand its risks (hallucination, safety, compute limits) in a safety-critical industry.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "結論：主に3つの分野で活用できる",
+     "en": "Conclusion: three main areas"
+    },
+    {
+     "ja": "車内：LLMを使った音声アシスタント",
+     "en": "In the car: an LLM-based voice assistant"
+    },
+    {
+     "ja": "開発：学習データの生成、コードやテストの作成",
+     "en": "Development: generating training data; writing code and tests"
+    },
+    {
+     "ja": "注意点：もっともらしい間違い→安全に関わる部分は必ず確認",
+     "en": "Caution: it can make plausible mistakes, so safety-related output must always be checked"
+    }
+   ],
+   "modelAnswerJa": "主に3つの分野で、活用できると考えております。\n1つ目は、車内の音声アシスタントです。LLMを使えば、自然な会話で、ナビや車の機能を操作できます。実際に、LLMを使った音声アシスタントの導入も始まっています。\n2つ目は、学習データの生成です。夜の雨など、集めにくい場面の画像を作れます。私の研究でも、夜間データの不足が課題だったため、特に関心があります。\n3つ目は、開発の効率化です。コードやテストケースの作成、仕様書の確認などに使えます。\nただし、生成AIは、もっともらしい間違いをすることがあります。そのため、安全に関わる部分では、人や別の仕組みによる確認が欠かせないと考えております。",
+   "modelAnswerEn": "I think generative AI can be used mainly in three areas.\nThe first is the in-car voice assistant. With an LLM, drivers can control navigation and car functions through natural conversation. In fact, voice assistants using LLMs have already started to be introduced.\nThe second is generating training data. It can create images of scenes that are hard to collect, such as rainy nights. In my research, too, the lack of night-time data was a challenge, so I am especially interested in this.\nThe third is making development more efficient. It can be used to write code and test cases, and to review specifications.\nHowever, generative AI can make mistakes that sound plausible. So I believe that in safety-related areas, checks by people or by other mechanisms are essential.",
+   "shortAnswerJa": "活用できる分野は、主に3つあると考えております。1つ目は、LLMを使った車内の音声アシスタントです。2つ目は、夜の雨など、集めにくい場面の学習データの生成です。3つ目は、コードやテストの作成など、開発の効率化です。ただし、間違えることもあるため、人による確認が大切です。",
+   "keyPhrases": [
+    {
+     "ja": "主に3つの分野で、活用できると考えております",
+     "en": "I think it can be used mainly in three areas"
+    },
+    {
+     "ja": "自然な会話で、〜を操作できます",
+     "en": "you can operate ... through natural conversation"
+    },
+    {
+     "ja": "集めにくい場面の画像を作れます",
+     "en": "it can create images of scenes that are hard to collect"
+    },
+    {
+     "ja": "もっともらしい間違いをすることがあります",
+     "en": "it can make mistakes that sound plausible"
+    },
+    {
+     "ja": "人や別の仕組みによる確認が欠かせません",
+     "en": "checks by people or other mechanisms are essential"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "生成したデータだけで学習しても、大丈夫ですか。",
+     "en": "Is it OK to train only on generated data?",
+     "hintJa": "いいえ、実際のデータとの差があるため、実データと組み合わせるべきだと思います。",
+     "tipEn": "Explain the gap between synthetic and real data; mix the two, and always evaluate on real data only."
+    },
+    {
+     "ja": "車の中でLLMを動かすときの課題は、何ですか。",
+     "en": "What are the challenges of running an LLM inside a car?",
+     "hintJa": "車の中では計算資源とメモリが限られているので、モデルの軽量化が大きな課題です。",
+     "tipEn": "Mention small on-device models plus quantization, response time, working offline, privacy, and splitting the work between the car and the cloud."
+    },
+    {
+     "ja": "ご自身は、生成AIをどのように使っていますか。",
+     "en": "How do you use generative AI yourself?",
+     "hintJa": "コードの下書きやエラーの調査に使っていますが、必ず自分で内容を確認しています。",
+     "tipEn": "Be honest and concrete; show that you verify the output and never paste confidential data."
+    },
+    {
+     "ja": "RAGとは何か、説明できますか。",
+     "en": "Can you explain what RAG is?",
+     "hintJa": "RAGとは、関連する文書を検索して、その内容をもとにLLMに回答させる方法です。",
+     "tipEn": "Add why it helps: fewer hallucinations and up-to-date answers, e.g., answering from a car's manual. FPT's automotive AI engineer posting lists RAG as a plus."
+    }
+   ],
+   "pitfallsEn": [
+    "Talking only about chatbots; also cover data generation and development efficiency.",
+    "Ignoring hallucination and safety; never suggest that generative AI should directly control driving.",
+    "Inventing product names, dates or numbers; keep examples general unless you have verified them."
+   ]
+  },
+  {
+   "id": "q50",
+   "category": "technical",
+   "week": 6,
+   "questionJa": "最近、注目しているAI技術やニュースは何ですか。",
+   "variantsJa": [
+    "最近、気になっている技術はありますか。",
+    "AIの分野で、最近面白いと思ったニュースを教えてください。",
+    "自動運転の分野で、最近注目している動きはありますか。"
+   ],
+   "questionEn": "What AI technology or news have you been following recently?",
+   "intentEn": "Checks curiosity and a habit of continuous learning (FPT values Lifelong Learning), and whether you can explain a trend simply and connect it to the job.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "結論：注目している技術・ニュースの名前",
+     "en": "Conclusion: name the technology or news"
+    },
+    {
+     "ja": "説明：それは何かを1〜2文で",
+     "en": "Explanation: what it is, in one or two sentences"
+    },
+    {
+     "ja": "理由：自分の研究や仕事とのつながり",
+     "en": "Reason: the link to your research or the job"
+    },
+    {
+     "ja": "意見と行動：課題と、今学んでいること",
+     "en": "Opinion and action: the challenges, and how you are learning about it"
+    }
+   ],
+   "modelAnswerJa": "最近注目しているのは、【技術名：エンドツーエンドの自動運転モデル】です。\nこれは、カメラの画像から運転の操作までを、1つのモデルで学習する方法です。これまでは、認識、予測、計画を、別々に作るのが一般的でした。\n注目している理由は、私が研究している歩行者検出が、まさに認識の部分にあたるからです。モデルが1つになると、データの集め方や評価の方法も、大きく変わると感じました。\n一方で、判断の理由が分かりにくく、安全性の検証が難しいという課題もあります。そのため、従来の方法と組み合わせる考え方にも、関心があります。現在は、関連する論文や技術記事を読んで、理解を深めております。",
+   "modelAnswerEn": "What I have been following recently is [technology: end-to-end autonomous driving models].\nThis is an approach that learns everything from camera images to driving controls with a single model. Until now, it was common to build perception, prediction and planning separately.\nThe reason I am interested is that the pedestrian detection I research is exactly the perception part. I felt that if everything becomes one model, the way we collect data and evaluate it will also change a lot.\nOn the other hand, there is also a challenge: the reasons for its decisions are hard to understand, and its safety is hard to verify. So I am also interested in ideas that combine it with conventional methods. I am now deepening my understanding by reading related papers and technical articles.",
+   "shortAnswerJa": "最近注目しているのは、【技術名：エンドツーエンドの自動運転モデル】です。カメラの画像から運転の操作までを、1つのモデルで学習する方法です。私の研究は認識の部分なので、開発や評価の方法がどう変わるかに関心があります。一方で、安全性の検証が課題だと考えております。",
+   "keyPhrases": [
+    {
+     "ja": "最近注目しているのは、〜です",
+     "en": "What I have been following recently is ..."
+    },
+    {
+     "ja": "これまでは、〜のが一般的でした",
+     "en": "Until now, it was common to ..."
+    },
+    {
+     "ja": "まさに〜の部分にあたるからです",
+     "en": "because it is exactly the ... part"
+    },
+    {
+     "ja": "一方で、〜という課題もあります",
+     "en": "on the other hand, there is also the challenge that ..."
+    },
+    {
+     "ja": "理解を深めております",
+     "en": "I am deepening my understanding"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "普段、どのように情報を集めていますか。",
+     "en": "How do you usually gather information?",
+     "hintJa": "主に、論文のサイトや技術系のニュースサイトで、情報を集めています。",
+     "tipEn": "Name your real habits (arXiv, conference papers, Japanese tech media, company tech blogs); interviewers can tell when it is invented."
+    },
+    {
+     "ja": "その技術は、当社の仕事にどう関係すると思いますか。",
+     "en": "How do you think that technology relates to our work?",
+     "hintJa": "御社のADAS開発でも、認識と判断をつなぐ部分で、今後関わってくると考えております。",
+     "tipEn": "Link the trend to FPT's real areas (ADAS perception, SDV, AI-defined mobility) without inventing projects."
+    },
+    {
+     "ja": "そのモデルの安全性は、どう確認すればよいと思いますか。",
+     "en": "How do you think the safety of such a model should be checked?",
+     "hintJa": "シミュレーションで多くの場面を試すことと、途中の出力を確認できる設計が大切だと思います。",
+     "tipEn": "Mention large-scale simulation and scenario testing plus monitoring and fallback; it is fine to say it is still an open problem."
+    }
+   ],
+   "pitfallsEn": [
+    "Naming a buzzword you cannot explain in one sentence.",
+    "Inventing details (dates, companies, numbers) you have not verified; the interviewer may know the news better than you.",
+    "Choosing a topic unrelated to the job; connect it to automotive AI or your research."
+   ]
+  },
+  {
+   "id": "q51",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "AIに詳しくないお客様に、AIの限界をどのように説明しますか。",
+   "variantsJa": [
+    "専門知識のない人に、AIにできないことを、どう説明しますか。",
+    "お客様に「AIなら何でもできるでしょう」と言われたら、どう答えますか。",
+    "AIの精度が100%にならない理由を、分かりやすく説明してください。"
+   ],
+   "questionEn": "How would you explain the limits of AI to a customer who is not an AI expert?",
+   "intentEn": "Checks communication skills for a customer-facing or bridge role: explaining AI's limits honestly and without jargon, while keeping the customer's trust.",
+   "timeTarget": "1分",
+   "structure": [
+    {
+     "ja": "結論：専門用語を使わず、身近な例と数字で",
+     "en": "Conclusion: no jargon; everyday examples and numbers"
+    },
+    {
+     "ja": "限界①：確率なので100%ではない（天気予報の例）",
+     "en": "Limit 1: it works on probability, so it is never 100% (weather forecast example)"
+    },
+    {
+     "ja": "限界②③：データに左右される・まれな状況に弱い",
+     "en": "Limits 2-3: it depends heavily on its data; it is weak in rare situations"
+    },
+    {
+     "ja": "対策も伝える：テストと確認で安心につなげる",
+     "en": "Also explain the countermeasures: testing and checks build trust"
+    }
+   ],
+   "modelAnswerJa": "専門用語を使わずに、身近な例と具体的な数字で説明します。特に、3つの点をお伝えします。\n1つ目は、AIの判断は確率にもとづくので、100%正しいわけではないことです。天気予報で、降水確率が80%でも、雨が降らない日があるのと同じです。\n2つ目は、AIの性能が、学習したデータに大きく左右されることです。例えば、昼の画像だけで学習したAIは、夜の画像が苦手です。実際に、私の研究でも、夜は精度が下がりました。\n3つ目は、まれな状況に弱いことです。そのため、事前のテストと、導入後の確認が必要です。\n最後に、限界をどう補うかも、一緒にお伝えします。そうすることで、お客様に安心していただけると考えております。",
+   "modelAnswerEn": "I would explain without technical terms, using familiar examples and concrete numbers. In particular, I would convey three points.\nFirst, AI decisions are based on probability, so they are not 100% correct. It is the same as a weather forecast: even when the chance of rain is 80%, there are days when it does not rain.\nSecond, AI performance depends heavily on the data it learned from. For example, an AI trained only on daytime images is weak with night images. In fact, in my research too, accuracy dropped at night.\nThird, AI is weak in rare situations. That is why testing beforehand and checking after introduction are necessary.\nFinally, I would also explain how we make up for these limits. I believe that this way, the customer can feel reassured.",
+   "shortAnswerJa": "専門用語を使わずに、身近な例で説明します。例えば、AIは天気予報と同じように確率で判断するため、100%は当たらないとお伝えします。また、学習したデータにない状況には弱いことも説明します。そのうえで、限界をどう補うかも、一緒にお伝えします。",
+   "keyPhrases": [
+    {
+     "ja": "専門用語を使わずに、身近な例で説明します",
+     "en": "I explain with familiar examples, without technical terms"
+    },
+    {
+     "ja": "100%正しいわけではありません",
+     "en": "it is not 100% correct"
+    },
+    {
+     "ja": "〜のと同じです",
+     "en": "it is the same as ..."
+    },
+    {
+     "ja": "学習したデータに大きく左右されます",
+     "en": "it depends heavily on the data it learned from"
+    },
+    {
+     "ja": "限界をどう補うかも、一緒にお伝えします",
+     "en": "I also explain how we make up for the limits"
+    },
+    {
+     "ja": "お客様に安心していただける",
+     "en": "the customer can feel reassured"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "お客様に「精度を100%にしてほしい」と言われたら、どうしますか。",
+     "en": "What would you do if a customer asked for 100% accuracy?",
+     "hintJa": "まず、100%が難しい理由をご説明し、現実的な目標を一緒に決めたいと考えます。",
+     "tipEn": "Don't just say no: explain why, propose a measurable target for each condition, and add safeguards such as human checks or a fallback."
+    },
+    {
+     "ja": "専門外の人に、技術を説明した経験はありますか。",
+     "en": "Have you ever explained technology to non-specialists?",
+     "hintJa": "はい、学会発表のときに、分野が違う方にも分かるように、研究を説明しました。",
+     "tipEn": "Give one real example and what you changed after seeing their reaction (fewer terms, a picture, a number)."
+    },
+    {
+     "ja": "相手が理解しているかどうかは、どのように確認しますか。",
+     "en": "How do you check whether the other person understands?",
+     "hintJa": "説明の区切りごとに、ご不明な点がないかを確認するようにします。",
+     "tipEn": "Check in small steps, watch their reactions, and follow up with a short written summary; these are key skills for a bridge (BrSE) role."
+    }
+   ],
+   "pitfallsEn": [
+    "Using jargon such as precision, recall or overfitting with a non-expert.",
+    "Only listing the limits, which sounds negative; also explain how the limits are managed.",
+    "Using analogies that are inaccurate or childish; keep them simple but professional."
+   ]
+  },
+  {
+   "id": "q52",
+   "category": "technical",
+   "week": 5,
+   "questionJa": "チーム開発の経験はありますか。Gitやコードレビュー、テストはどのように行いましたか。",
+   "variantsJa": [
+    "チームで開発したことはありますか。",
+    "Gitは使えますか。どのように使っていましたか。",
+    "研究室では、コードレビューやテストをどうやっていましたか。"
+   ],
+   "questionEn": "Team development experience: how did you use Git, code review and testing?",
+   "intentEn": "Checks teamwork and basic engineering practice (version control, review, testing), and whether you can fit into a real development team.",
+   "timeTarget": "1〜1分半",
+   "structure": [
+    {
+     "ja": "結論：あり（研究室の4人チーム、リーダー）",
+     "en": "Conclusion: yes, a 4-person lab team that I led"
+    },
+    {
+     "ja": "Git：機能ごとのブランチとプルリクエスト",
+     "en": "Git: a branch for each feature, and pull requests"
+    },
+    {
+     "ja": "コードレビュー：マージ前に必ず1人が確認",
+     "en": "Code review: one member always checks before merging"
+    },
+    {
+     "ja": "テスト：pytestと自動実行",
+     "en": "Testing: pytest, run automatically"
+    },
+    {
+     "ja": "結果と姿勢：ミスが減り予定どおり完成、企業のやり方を学びたい",
+     "en": "Result and attitude: fewer errors, finished on schedule; eager to learn company processes"
+    }
+   ],
+   "modelAnswerJa": "はい、あります。研究室で、夜間画像のデータセットを、4人のチームで作りました。私はリーダーを務めました。また、データの変換や確認に使うツールも、チームで開発しました。\nGitでは、機能ごとにブランチを作り、変更はプルリクエストで取り込みました。\nコードレビューは、マージの前に、必ずほかのメンバー1人が確認するルールにしました。特に、読みやすさとエラー処理を重視しました。\nテストについては、pytestで、データの形式をチェックするテストを書きました。そして、プルリクエストのたびに、自動で実行されるようにしました。\nその結果、データの間違いが減り、予定どおりにデータセットを完成させました。企業での開発は、より大規模だと思います。入社後に、実務のやり方をしっかり学びたいと考えております。",
+   "modelAnswerEn": "Yes, I do. In my lab, a team of four of us built a night-time image dataset. I was the leader. We also developed, as a team, tools to convert and check the data.\nWith Git, we created a branch for each feature and merged changes through pull requests.\nFor code review, we made a rule that one other member must always check the code before merging. We paid particular attention to readability and error handling.\nFor testing, I wrote tests with pytest to check the data format. And I set them up to run automatically for every pull request.\nAs a result, data errors decreased, and we completed the dataset on schedule. I think development at a company is on a larger scale. After joining, I want to properly learn how real projects are run.",
+   "shortAnswerJa": "はい、あります。研究室の4人のチームでリーダーを務め、データセットとツールを開発しました。Gitでは機能ごとにブランチを作り、マージの前に必ず1人がコードレビューをしました。テストはpytestで書き、自動で実行しました。その結果、ミスが減り、予定どおりに完成できました。",
+   "keyPhrases": [
+    {
+     "ja": "機能ごとにブランチを作りました",
+     "en": "we made a branch for each feature"
+    },
+    {
+     "ja": "変更はプルリクエストで取り込みました",
+     "en": "we merged changes through pull requests"
+    },
+    {
+     "ja": "マージの前に、必ず1人が確認するルールにしました",
+     "en": "we made a rule that one person always checks before merging"
+    },
+    {
+     "ja": "自動で実行されるようにしました",
+     "en": "I set it up to run automatically"
+    },
+    {
+     "ja": "予定どおりに完成できました",
+     "en": "we were able to finish on schedule"
+    }
+   ],
+   "followUps": [
+    {
+     "ja": "レビューで意見が分かれたときは、どうしましたか。",
+     "en": "What did you do when opinions differed in a review?",
+     "hintJa": "まず、それぞれの理由を聞いて、目的に合う方法を話し合って決めました。",
+     "tipEn": "Show respect and logic: focus on the goal and the evidence, not on who is right; ask the professor or lead if you cannot agree."
+    },
+    {
+     "ja": "コンフリクトが起きたときは、どう対応しましたか。",
+     "en": "How did you handle merge conflicts?",
+     "hintJa": "変更した本人同士で内容を確認して、手動で解決しました。",
+     "tipEn": "Also say how you reduced conflicts: small, frequent pull requests and pulling the main branch often."
+    },
+    {
+     "ja": "具体的には、どのようなテストを書きましたか。",
+     "en": "Specifically, what kind of tests did you write?",
+     "hintJa": "例えば、アノテーションの座標が、画像の範囲内にあるかを確認するテストです。",
+     "tipEn": "Give one concrete test case and its edge cases (empty labels, wrong class IDs); specifics prove real experience."
+    }
+   ],
+   "pitfallsEn": [
+    "Saying 'yes' without concrete practices (branch rules, review rules, tests).",
+    "Overstating the scale; call it a lab team and show you want to learn company processes.",
+    "Talking only about your own code; the question is about how the team worked together."
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "term": "機械学習",
+   "reading": "きかいがくしゅう",
+   "en": "machine learning",
+   "cat": "ml",
+   "exampleJa": "機械学習を使って、画像から歩行者を見つけます。"
+  },
+  {
+   "term": "過学習",
+   "reading": "かがくしゅう",
+   "en": "overfitting",
+   "cat": "ml",
+   "exampleJa": "データが少ないと、過学習が起きやすくなります。"
+  },
+  {
+   "term": "汎化性能",
+   "reading": "はんかせいのう",
+   "en": "generalization performance",
+   "cat": "ml",
+   "exampleJa": "汎化性能は、学習に使っていないデータで確認します。"
+  },
+  {
+   "term": "正則化",
+   "reading": "せいそくか",
+   "en": "regularization",
+   "cat": "ml",
+   "exampleJa": "正則化を加えて、過学習を防ぎました。"
+  },
+  {
+   "term": "重み減衰",
+   "reading": "おもみげんすい",
+   "en": "weight decay (a regularization that keeps weights small)",
+   "cat": "ml",
+   "exampleJa": "重み減衰は、重みが大きくなりすぎないようにする正則化です。"
+  },
+  {
+   "term": "損失関数",
+   "reading": "そんしつかんすう",
+   "en": "loss function",
+   "cat": "ml",
+   "exampleJa": "損失関数の値が小さくなるように、モデルを学習します。"
+  },
+  {
+   "term": "交差検証",
+   "reading": "こうさけんしょう",
+   "en": "cross-validation",
+   "cat": "ml",
+   "exampleJa": "データが少ないので、交差検証で性能を確かめました。"
+  },
+  {
+   "term": "転移学習",
+   "reading": "てんいがくしゅう",
+   "en": "transfer learning",
+   "cat": "ml",
+   "exampleJa": "転移学習を使うと、少ないデータでも学習が安定します。"
+  },
+  {
+   "term": "早期終了",
+   "reading": "そうきしゅうりょう",
+   "en": "early stopping",
+   "cat": "ml",
+   "exampleJa": "検証の損失が上がり始めたので、学習を早期終了しました。"
+  },
+  {
+   "term": "推論",
+   "reading": "すいろん",
+   "en": "inference (running a trained model)",
+   "cat": "ml",
+   "exampleJa": "学習したモデルを使って、車載ボードで推論します。"
+  },
+  {
+   "term": "説明可能性",
+   "reading": "せつめいかのうせい",
+   "en": "explainability",
+   "cat": "ml",
+   "exampleJa": "車載のAIには、説明可能性も求められます。"
+  },
+  {
+   "term": "深層学習",
+   "reading": "しんそうがくしゅう",
+   "en": "deep learning",
+   "cat": "dl",
+   "exampleJa": "深層学習のモデルを、PyTorchで実装しました。"
+  },
+  {
+   "term": "CNN",
+   "reading": "シーエヌエヌ",
+   "en": "convolutional neural network",
+   "cat": "dl",
+   "exampleJa": "CNNは、画像の局所的な特徴をとらえるのが得意です。"
+  },
+  {
+   "term": "Transformer",
+   "reading": "トランスフォーマー",
+   "en": "Transformer (attention-based neural network)",
+   "cat": "dl",
+   "exampleJa": "Transformerは、画像全体の関係をとらえられます。"
+  },
+  {
+   "term": "アテンション",
+   "reading": "アテンション",
+   "en": "attention mechanism",
+   "cat": "dl",
+   "exampleJa": "アテンションで、重要な部分に大きな重みを付けます。"
+  },
+  {
+   "term": "ドロップアウト",
+   "reading": "ドロップアウト",
+   "en": "dropout",
+   "cat": "dl",
+   "exampleJa": "ドロップアウトは、過学習を防ぐ方法の1つです。"
+  },
+  {
+   "term": "事前学習済みモデル",
+   "reading": "じぜんがくしゅうずみモデル",
+   "en": "pretrained model",
+   "cat": "dl",
+   "exampleJa": "事前学習済みモデルを、夜間の画像で追加学習しました。"
+  },
+  {
+   "term": "ファインチューニング",
+   "reading": "ファインチューニング",
+   "en": "fine-tuning",
+   "cat": "dl",
+   "exampleJa": "自分のデータで、モデルをファインチューニングしました。"
+  },
+  {
+   "term": "大規模言語モデル",
+   "reading": "だいきぼげんごモデル",
+   "en": "large language model (LLM)",
+   "cat": "dl",
+   "exampleJa": "大規模言語モデルを使った音声アシスタントが増えています。"
+  },
+  {
+   "term": "生成AI",
+   "reading": "せいせいエーアイ",
+   "en": "generative AI",
+   "cat": "dl",
+   "exampleJa": "生成AIで、テストケースの下書きを作れます。"
+  },
+  {
+   "term": "RAG",
+   "reading": "ラグ",
+   "en": "retrieval-augmented generation",
+   "cat": "dl",
+   "exampleJa": "RAGを使うと、LLMが車の取扱説明書をもとに回答できます。"
+  },
+  {
+   "term": "ハルシネーション",
+   "reading": "ハルシネーション",
+   "en": "hallucination (plausible but false output)",
+   "cat": "dl",
+   "exampleJa": "生成AIのハルシネーションには、注意が必要です。"
+  },
+  {
+   "term": "エンドツーエンド",
+   "reading": "エンドツーエンド",
+   "en": "end-to-end",
+   "cat": "dl",
+   "exampleJa": "エンドツーエンドでは、入力から出力までを1つのモデルで学習します。"
+  },
+  {
+   "term": "物体検出",
+   "reading": "ぶったいけんしゅつ",
+   "en": "object detection",
+   "cat": "cv",
+   "exampleJa": "物体検出で、歩行者や車の位置を見つけます。"
+  },
+  {
+   "term": "バウンディングボックス",
+   "reading": "バウンディングボックス",
+   "en": "bounding box",
+   "cat": "cv",
+   "exampleJa": "検出結果は、バウンディングボックスで表します。"
+  },
+  {
+   "term": "YOLO",
+   "reading": "ヨーロー／ヨロ",
+   "en": "YOLO (a family of fast one-stage object detectors)",
+   "cat": "cv",
+   "exampleJa": "YOLO系のモデルは、リアルタイムの検出に向いています。"
+  },
+  {
+   "term": "非最大値抑制",
+   "reading": "ひさいだいちよくせい",
+   "en": "non-maximum suppression (NMS)",
+   "cat": "cv",
+   "exampleJa": "重なった検出結果は、非最大値抑制で1つにまとめます。"
+  },
+  {
+   "term": "歩行者検出",
+   "reading": "ほこうしゃけんしゅつ",
+   "en": "pedestrian detection",
+   "cat": "cv",
+   "exampleJa": "夜間の歩行者検出は、特に難しい課題です。"
+  },
+  {
+   "term": "物体追跡",
+   "reading": "ぶったいついせき",
+   "en": "object tracking",
+   "cat": "cv",
+   "exampleJa": "物体追跡で、歩行者の動きを予測しやすくなります。"
+  },
+  {
+   "term": "逆光",
+   "reading": "ぎゃっこう",
+   "en": "backlighting (the camera faces a strong light)",
+   "cat": "cv",
+   "exampleJa": "逆光の場面では、歩行者が見えにくくなります。"
+  },
+  {
+   "term": "オクルージョン",
+   "reading": "オクルージョン",
+   "en": "occlusion (an object being partly hidden)",
+   "cat": "cv",
+   "exampleJa": "オクルージョンで、歩行者の一部が隠れることがあります。"
+  },
+  {
+   "term": "信頼度",
+   "reading": "しんらいど",
+   "en": "confidence (score)",
+   "cat": "cv",
+   "exampleJa": "信頼度が低い検出結果は、閾値で除外します。"
+  },
+  {
+   "term": "学習データ",
+   "reading": "がくしゅうデータ",
+   "en": "training data",
+   "cat": "data",
+   "exampleJa": "学習データには、夜の画像が少ししかありませんでした。"
+  },
+  {
+   "term": "検証データ",
+   "reading": "けんしょうデータ",
+   "en": "validation data",
+   "cat": "data",
+   "exampleJa": "ハイパーパラメータは、検証データで調整します。"
+  },
+  {
+   "term": "テストデータ",
+   "reading": "テストデータ",
+   "en": "test data",
+   "cat": "data",
+   "exampleJa": "テストデータは、最後の評価にだけ使います。"
+  },
+  {
+   "term": "データ拡張",
+   "reading": "データかくちょう",
+   "en": "data augmentation",
+   "cat": "data",
+   "exampleJa": "データ拡張で、雨の日の画像を増やしました。"
+  },
+  {
+   "term": "アノテーション",
+   "reading": "アノテーション",
+   "en": "annotation (labeling data)",
+   "cat": "data",
+   "exampleJa": "アノテーションのルールを、チームで統一しました。"
+  },
+  {
+   "term": "正解ラベル",
+   "reading": "せいかいラベル",
+   "en": "ground-truth label",
+   "cat": "data",
+   "exampleJa": "正解ラベルが間違っていると、正しく学習できません。"
+  },
+  {
+   "term": "不均衡データ",
+   "reading": "ふきんこうデータ",
+   "en": "imbalanced data",
+   "cat": "data",
+   "exampleJa": "不均衡データでは、正解率だけで評価しません。"
+  },
+  {
+   "term": "ドメイン適応",
+   "reading": "ドメインてきおう",
+   "en": "domain adaptation",
+   "cat": "data",
+   "exampleJa": "ドメイン適応で、昼と夜の差を小さくしました。"
+  },
+  {
+   "term": "合成データ",
+   "reading": "ごうせいデータ",
+   "en": "synthetic data",
+   "cat": "data",
+   "exampleJa": "合成データは、まれな場面を増やすのに役立ちます。"
+  },
+  {
+   "term": "前処理",
+   "reading": "まえしょり",
+   "en": "preprocessing",
+   "cat": "data",
+   "exampleJa": "前処理で、画像のサイズと明るさをそろえます。"
+  },
+  {
+   "term": "データリーケージ",
+   "reading": "データリーケージ",
+   "en": "data leakage",
+   "cat": "data",
+   "exampleJa": "同じ動画のフレームが学習とテストの両方に入ると、データリーケージが起きます。"
+  },
+  {
+   "term": "評価指標",
+   "reading": "ひょうかしひょう",
+   "en": "evaluation metric",
+   "cat": "eval",
+   "exampleJa": "評価指標は、タスクの目的に合わせて選びます。"
+  },
+  {
+   "term": "正解率",
+   "reading": "せいかいりつ",
+   "en": "accuracy",
+   "cat": "eval",
+   "exampleJa": "データが偏っていると、正解率だけでは性能が分かりません。"
+  },
+  {
+   "term": "適合率",
+   "reading": "てきごうりつ",
+   "en": "precision",
+   "cat": "eval",
+   "exampleJa": "誤検出が多いと、適合率が下がります。"
+  },
+  {
+   "term": "再現率",
+   "reading": "さいげんりつ",
+   "en": "recall",
+   "cat": "eval",
+   "exampleJa": "歩行者検出では、再現率を特に重視します。"
+  },
+  {
+   "term": "F値",
+   "reading": "エフち",
+   "en": "F-measure (F1 score)",
+   "cat": "eval",
+   "exampleJa": "F値は、適合率と再現率の調和平均で、両方のバランスを表します。"
+  },
+  {
+   "term": "mAP",
+   "reading": "エムエーピー",
+   "en": "mean average precision",
+   "cat": "eval",
+   "exampleJa": "物体検出の性能は、mAPで比べます。"
+  },
+  {
+   "term": "IoU",
+   "reading": "アイオーユー",
+   "en": "intersection over union",
+   "cat": "eval",
+   "exampleJa": "例えば、IoUが0.5以上なら、正しい検出とみなします。"
+  },
+  {
+   "term": "誤検出",
+   "reading": "ごけんしゅつ",
+   "en": "false detection (false positive)",
+   "cat": "eval",
+   "exampleJa": "誤検出が多いと、不要なブレーキにつながります。"
+  },
+  {
+   "term": "見逃し",
+   "reading": "みのがし",
+   "en": "missed detection (false negative)",
+   "cat": "eval",
+   "exampleJa": "歩行者の見逃しは、最も危険な間違いです。"
+  },
+  {
+   "term": "閾値",
+   "reading": "しきいち／いきち",
+   "en": "threshold",
+   "cat": "eval",
+   "exampleJa": "閾値を下げると、見逃しは減りますが、誤検出は増えます。"
+  },
+  {
+   "term": "平均二乗誤差",
+   "reading": "へいきんにじょうごさ",
+   "en": "mean squared error (MSE)",
+   "cat": "eval",
+   "exampleJa": "数値を予測するモデルでは、平均二乗誤差がよく使われます。"
+  },
+  {
+   "term": "軽量化",
+   "reading": "けいりょうか",
+   "en": "making a model lighter (model compression)",
+   "cat": "edge",
+   "exampleJa": "車載向けには、モデルの軽量化が欠かせません。"
+  },
+  {
+   "term": "量子化",
+   "reading": "りょうしか",
+   "en": "quantization",
+   "cat": "edge",
+   "exampleJa": "量子化で、FP32の計算をFP16やINT8に変えます。"
+  },
+  {
+   "term": "枝刈り",
+   "reading": "えだかり",
+   "en": "pruning",
+   "cat": "edge",
+   "exampleJa": "枝刈りで、重要度の低い重みを取り除きます。"
+  },
+  {
+   "term": "知識蒸留",
+   "reading": "ちしきじょうりゅう",
+   "en": "knowledge distillation",
+   "cat": "edge",
+   "exampleJa": "知識蒸留で、大きなモデルの知識を小さなモデルに移します。"
+  },
+  {
+   "term": "レイテンシ",
+   "reading": "レイテンシ",
+   "en": "latency",
+   "cat": "edge",
+   "exampleJa": "車載では、平均だけでなく、最悪の場合のレイテンシも大切です。"
+  },
+  {
+   "term": "FPS",
+   "reading": "エフピーエス",
+   "en": "frames per second",
+   "cat": "edge",
+   "exampleJa": "Jetson上で、25FPSで動作しました。"
+  },
+  {
+   "term": "組込みシステム",
+   "reading": "くみこみシステム",
+   "en": "embedded system",
+   "cat": "edge",
+   "exampleJa": "組込みシステムでは、メモリと電力が限られています。"
+  },
+  {
+   "term": "TensorRT",
+   "reading": "テンソルアールティー",
+   "en": "TensorRT (NVIDIA's inference optimizer)",
+   "cat": "edge",
+   "exampleJa": "TensorRTに変換して、推論を速くしました。"
+  },
+  {
+   "term": "ONNX",
+   "reading": "オニキス",
+   "en": "ONNX (open format for exchanging models)",
+   "cat": "edge",
+   "exampleJa": "PyTorchのモデルを、ONNX形式に変換しました。"
+  },
+  {
+   "term": "Jetson",
+   "reading": "ジェットソン",
+   "en": "NVIDIA Jetson (embedded AI computing board)",
+   "cat": "edge",
+   "exampleJa": "Jetsonで、モデルをリアルタイムに動かしました。"
+  },
+  {
+   "term": "キャリブレーション",
+   "reading": "キャリブレーション",
+   "en": "calibration (for INT8 quantization or for sensors)",
+   "cat": "edge",
+   "exampleJa": "INT8のキャリブレーションには、夜間の画像も使います。"
+  },
+  {
+   "term": "ADAS",
+   "reading": "エーダス",
+   "en": "advanced driver-assistance systems",
+   "cat": "auto",
+   "exampleJa": "ADASは、自動ブレーキなど、運転を支援するシステムです。"
+  },
+  {
+   "term": "自動運転レベル",
+   "reading": "じどううんてんレベル",
+   "en": "levels of driving automation (0-5)",
+   "cat": "auto",
+   "exampleJa": "自動運転レベルは、0から5までの6段階です。"
+  },
+  {
+   "term": "SDV",
+   "reading": "エスディーブイ",
+   "en": "software-defined vehicle",
+   "cat": "auto",
+   "exampleJa": "SDVでは、販売後もソフトウェアの更新で機能が増えます。"
+  },
+  {
+   "term": "OTA",
+   "reading": "オーティーエー",
+   "en": "over-the-air (wireless) update",
+   "cat": "auto",
+   "exampleJa": "OTAで、車のソフトウェアを無線で更新します。"
+  },
+  {
+   "term": "ECU",
+   "reading": "イーシーユー",
+   "en": "electronic control unit",
+   "cat": "auto",
+   "exampleJa": "1台の車には、多くのECUが搭載されています。"
+  },
+  {
+   "term": "E/Eアーキテクチャ",
+   "reading": "イーイーアーキテクチャ",
+   "en": "electrical/electronic (E/E) architecture",
+   "cat": "auto",
+   "exampleJa": "SDVに向けて、E/Eアーキテクチャの集中化が進んでいます。"
+  },
+  {
+   "term": "AUTOSAR",
+   "reading": "オートザー",
+   "en": "AUTOSAR (standard software architecture for automotive ECUs)",
+   "cat": "auto",
+   "exampleJa": "AUTOSARは、ECUのソフトウェア構造を標準化しています。"
+  },
+  {
+   "term": "センサーフュージョン",
+   "reading": "センサーフュージョン",
+   "en": "sensor fusion",
+   "cat": "auto",
+   "exampleJa": "センサーフュージョンで、カメラとレーダーの情報を組み合わせます。"
+  },
+  {
+   "term": "LiDAR",
+   "reading": "ライダー",
+   "en": "LiDAR (laser-based 3D distance sensor)",
+   "cat": "auto",
+   "exampleJa": "LiDARは、周りの形と距離を細かく測れます。"
+  },
+  {
+   "term": "ミリ波レーダー",
+   "reading": "ミリはレーダー",
+   "en": "millimeter-wave radar",
+   "cat": "auto",
+   "exampleJa": "ミリ波レーダーは、雨や霧に強いです。"
+  },
+  {
+   "term": "車載",
+   "reading": "しゃさい",
+   "en": "in-vehicle; automotive",
+   "cat": "auto",
+   "exampleJa": "車載機器では、発熱にも注意が必要です。"
+  },
+  {
+   "term": "OEM",
+   "reading": "オーイーエム",
+   "en": "OEM (in the auto industry: the car maker)",
+   "cat": "auto",
+   "exampleJa": "自動車業界では、完成車メーカーをOEMと呼びます。"
+  },
+  {
+   "term": "Tier1",
+   "reading": "ティアワン",
+   "en": "Tier-1 supplier",
+   "cat": "auto",
+   "exampleJa": "Tier1は、OEMにシステムを直接納める企業です。"
+  },
+  {
+   "term": "HMI",
+   "reading": "エイチエムアイ",
+   "en": "human-machine interface",
+   "cat": "auto",
+   "exampleJa": "HMIは、画面や音声など、運転者と車をつなぐ仕組みのことです。"
+  },
+  {
+   "term": "機能安全",
+   "reading": "きのうあんぜん",
+   "en": "functional safety (ISO 26262)",
+   "cat": "safety",
+   "exampleJa": "機能安全は、電子システムの故障による危険を減らすための考え方です。"
+  },
+  {
+   "term": "SOTIF",
+   "reading": "ソティフ",
+   "en": "safety of the intended functionality (ISO 21448)",
+   "cat": "safety",
+   "exampleJa": "SOTIFでは、故障がなくても起きる危険を扱います。"
+  },
+  {
+   "term": "ASIL",
+   "reading": "アジル／エーシル",
+   "en": "Automotive Safety Integrity Level (A to D)",
+   "cat": "safety",
+   "exampleJa": "ASILはAからDまであり、Dが最も厳しいです。"
+  },
+  {
+   "term": "性能限界",
+   "reading": "せいのうげんかい",
+   "en": "performance limitation",
+   "cat": "safety",
+   "exampleJa": "大雨での見逃しは、センサーの性能限界によるものです。"
+  },
+  {
+   "term": "エッジケース",
+   "reading": "エッジケース",
+   "en": "edge case (rare or unusual situation)",
+   "cat": "safety",
+   "exampleJa": "エッジケースを集めて、重点的にテストします。"
+  },
+  {
+   "term": "冗長性",
+   "reading": "じょうちょうせい",
+   "en": "redundancy",
+   "cat": "safety",
+   "exampleJa": "冗長性を持たせて、1つが故障しても動くようにします。"
+  },
+  {
+   "term": "フェイルセーフ",
+   "reading": "フェイルセーフ",
+   "en": "fail-safe",
+   "cat": "safety",
+   "exampleJa": "フェイルセーフの設計で、故障しても安全な状態にします。"
+  },
+  {
+   "term": "サイバーセキュリティ",
+   "reading": "サイバーセキュリティ",
+   "en": "cybersecurity (ISO/SAE 21434)",
+   "cat": "safety",
+   "exampleJa": "OTAでは、サイバーセキュリティ対策が欠かせません。"
+  },
+  {
+   "term": "安全側",
+   "reading": "あんぜんがわ",
+   "en": "the safe side (failing toward safety)",
+   "cat": "safety",
+   "exampleJa": "判断に迷ったときは、安全側に倒す設計にします。"
+  },
+  {
+   "term": "Automotive SPICE",
+   "reading": "オートモーティブスパイス／エースパイス",
+   "en": "Automotive SPICE (A-SPICE), a process assessment model for automotive software",
+   "cat": "safety",
+   "exampleJa": "Automotive SPICEは、開発プロセスの質を評価する基準です。"
+  },
+  {
+   "term": "ブランチ",
+   "reading": "ブランチ",
+   "en": "branch (Git)",
+   "cat": "dev",
+   "exampleJa": "機能ごとに、ブランチを作って開発しました。"
+  },
+  {
+   "term": "プルリクエスト",
+   "reading": "プルリクエスト",
+   "en": "pull request",
+   "cat": "dev",
+   "exampleJa": "プルリクエストで、変更内容をレビューしてもらいます。"
+  },
+  {
+   "term": "コードレビュー",
+   "reading": "コードレビュー",
+   "en": "code review",
+   "cat": "dev",
+   "exampleJa": "マージの前に、必ずコードレビューを行いました。"
+  },
+  {
+   "term": "単体テスト",
+   "reading": "たんたいテスト",
+   "en": "unit test",
+   "cat": "dev",
+   "exampleJa": "データ変換の関数に、単体テストを書きました。"
+  },
+  {
+   "term": "CI/CD",
+   "reading": "シーアイシーディー",
+   "en": "continuous integration / continuous delivery",
+   "cat": "dev",
+   "exampleJa": "CI/CDで、テストを自動で実行します。"
+  },
+  {
+   "term": "再現性",
+   "reading": "さいげんせい",
+   "en": "reproducibility",
+   "cat": "dev",
+   "exampleJa": "Dockerで環境をそろえて、再現性を高めました。"
+  },
+  {
+   "term": "要件定義",
+   "reading": "ようけんていぎ",
+   "en": "requirements definition",
+   "cat": "dev",
+   "exampleJa": "要件定義では、お客様の目的を正しく理解することが大切です。"
+  },
+  {
+   "term": "不具合",
+   "reading": "ふぐあい",
+   "en": "bug; defect",
+   "cat": "dev",
+   "exampleJa": "テストで、不具合を早く見つけられます。"
+  },
+  {
+   "term": "オフショア開発",
+   "reading": "オフショアかいはつ",
+   "en": "offshore development",
+   "cat": "dev",
+   "exampleJa": "オフショア開発では、仕様を正確に伝えることが大切です。"
+  },
+  {
+   "term": "ブリッジSE",
+   "reading": "ブリッジエスイー",
+   "en": "bridge system engineer (BrSE)",
+   "cat": "dev",
+   "exampleJa": "ブリッジSEは、お客様と海外の開発チームをつなぎます。"
+  },
+  {
+   "term": "PoC",
+   "reading": "ピーオーシー",
+   "en": "proof of concept",
+   "cat": "dev",
+   "exampleJa": "まずPoCで、技術的に実現できるかを確かめます。"
+  }
+ ]
+}

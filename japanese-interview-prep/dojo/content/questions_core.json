@@ -1,0 +1,799 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "category": "basic",
+      "week": 1,
+      "questionJa": "自己紹介をお願いします。",
+      "variantsJa": [
+        "では、まず簡単に自己紹介をお願いできますか。",
+        "1分ほどで、自己紹介をしていただけますか。",
+        "まず、お名前と大学でのご専攻を含めて、自己紹介をお願いします。"
+      ],
+      "questionEn": "Please introduce yourself.",
+      "intentEn": "First impression: can you summarise yourself clearly and politely in about one minute? The keywords you mention (research, part-time job) become the hooks for the next questions.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "挨拶：大学・専攻・名前・出身", "en": "Greeting: university, major, name, home country"},
+        {"ja": "研究：テーマと目標を短く", "en": "Research: topic and goal, briefly"},
+        {"ja": "実績：数字を1つ", "en": "Achievement: one number"},
+        {"ja": "経験：日本でのアルバイト", "en": "Experience: part-time work in Japan"},
+        {"ja": "締め：目指す姿と挨拶", "en": "Close: your goal and a polite closing"}
+      ],
+      "modelAnswerJa": "【大学名：〇〇大学】大学院、【専攻：情報工学専攻】の〇〇と申します。【出身国：〇〇】から参りました。\n大学院では、夜間や雨の日の車載カメラ画像から、歩行者を検出する研究をしております。目標は、暗い画像でも見落としが少なく、速く動くAIを作ることです。これまでに、夜間の検出精度を約【数値：8】ポイント上げ、国内学会で発表いたしました。\nまた、日本料理店で【年数：2】年間、アルバイトを続けております。日本語での接客に加え、新人の教育も担当しております。\n研究で身につけた技術を活かし、自動車の安全に貢献できるAIエンジニアを目指しております。本日はどうぞよろしくお願いいたします。",
+      "modelAnswerEn": "I am 〇〇 from the [major: Information Engineering] program at the graduate school of [university: 〇〇 University]. I come from [home country: 〇〇].\nIn graduate school, I am researching how to detect pedestrians in in-vehicle camera images taken at night and in the rain. My goal is to build AI that rarely misses pedestrians even in dark images and runs fast. So far, I have raised night-time detection accuracy by about [number: 8] points and presented the work at a domestic conference.\nI have also been working part-time at a Japanese restaurant for [years: 2] years. Besides serving customers in Japanese, I am in charge of training new staff.\nUsing the skills from my research, I aim to become an AI engineer who can contribute to automotive safety. Thank you very much for your time today.",
+      "shortAnswerJa": "【大学名：〇〇大学】大学院、【専攻：情報工学専攻】の〇〇と申します。【出身国：〇〇】から参りました。大学院では、夜間や雨の日の車載カメラ画像から、歩行者を検出する研究をしております。自動車の安全に貢献できるAIエンジニアを目指しております。本日はよろしくお願いいたします。",
+      "keyPhrases": [
+        {"ja": "【大学名：〇〇大学】大学院、【専攻：情報工学専攻】の〇〇と申します。", "en": "I am 〇〇 from the [major] program at the graduate school of [university]. (To add your year, say 修士2年の〇〇と申します.)"},
+        {"ja": "【出身国：〇〇】から参りました。", "en": "I come from [home country]. (humble 参る; the standard form in interviews)"},
+        {"ja": "歩行者を検出する研究をしております。", "en": "I am doing research on detecting pedestrians."},
+        {"ja": "日本語での接客に加え、新人の教育も担当しております。", "en": "Besides serving customers in Japanese, I am also in charge of training new staff."},
+        {"ja": "自動車の安全に貢献できるAIエンジニアを目指しております。", "en": "I aim to become an AI engineer who can contribute to automotive safety."},
+        {"ja": "本日はどうぞよろしくお願いいたします。", "en": "Thank you for your time today. (set phrase that closes a self-introduction)"}
+      ],
+      "followUps": [
+        {"ja": "その研究について、もう少し詳しく教えてください。", "en": "Please tell me a little more about that research.", "hintJa": "はい、一言で申し上げますと、暗い画像でも歩行者を見落とさないAIを作る研究です。", "tipEn": "Move into your 1-minute research answer (q10), starting with a one-line summary."},
+        {"ja": "アルバイトでは、どんなことが大変でしたか。", "en": "What was hard about your part-time job?", "hintJa": "働き始めた頃は、お客様の早口の注文を聞き取ることが、一番大変でした。", "tipEn": "Give one difficulty, then the concrete action you took and the result."},
+        {"ja": "なぜAIエンジニアを目指しているのですか。", "en": "Why do you want to become an AI engineer?", "hintJa": "研究で、仮説を立てて検証し、改善する流れに、大きなやりがいを感じたからです。", "tipEn": "Your full answer is q22 (why you want to be an AI engineer); give the same reason here, and keep it consistent with q13 (why this research)."}
+      ],
+      "pitfallsEn": [
+        "Turning it into a long self-PR: one or two points are enough, in about one minute.",
+        "Reading from notes or looking away; look at the interviewer (or at the camera in a web interview).",
+        "Wrong keigo such as 「卒業させていただきました」; plain humble forms like 〜しております are enough.",
+        "Forgetting the polite closing 「本日はよろしくお願いいたします」."
+      ]
+    },
+    {
+      "id": "q02",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "自己PRをしてください。",
+      "variantsJa": [
+        "あなたの強みを教えてください。",
+        "1分程度で、自己PRをお願いできますか。",
+        "ご自身のアピールポイントを、具体的な経験と一緒に教えてください。"
+      ],
+      "questionEn": "Please give your self-PR: tell us what makes you valuable.",
+      "intentEn": "Whether you know your real strength, can prove it with one concrete episode and a number, and can link it to the job you are applying for.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：強みを一言で", "en": "Conclusion: your strength in one phrase"},
+        {"ja": "課題：研究で直面した問題", "en": "Situation: the problem you faced in research"},
+        {"ja": "行動：原因を分けて一つずつ対策", "en": "Action: split the causes and fix them one by one"},
+        {"ja": "結果：数字で示す", "en": "Result: show it with a number"},
+        {"ja": "貢献：入社後にどう活かすか", "en": "Contribution: how you will use it after joining"}
+      ],
+      "modelAnswerJa": "私の強みは、問題の原因を粘り強く分析し、一つずつ改善できることです。\n研究では、夜間の画像で歩行者の見落としが多いという課題がありました。そこで、見落としのあった画像を1枚ずつ確認しました。そして、原因を「暗さ」「雨による反射」「遠くの小さな歩行者」の3つに分けました。次に、暗い画像や雨の画像を人工的に増やすなど、原因ごとに対策を試しました。効果は、毎回数字で確かめました。その結果、夜間の検出精度を約【数値：8】ポイント上げることができました。\n車載AIでも、実際の道路では、予想外の見落としや誤検出が起きると思います。入社後もこの強みを活かし、信頼できるAIの開発に貢献したいと考えております。",
+      "modelAnswerEn": "My strength is that I can patiently analyse the cause of a problem and improve things one step at a time.\nIn my research, the model missed many pedestrians in night-time images. So I checked the images with missed pedestrians one by one. Then I divided the causes into three: darkness, reflections from rain, and small pedestrians far away. Next, I tried a fix for each cause, such as artificially adding more dark and rainy images. I checked the effect with numbers every time. As a result, I was able to raise night-time detection accuracy by about [number: 8] points.\nWith in-vehicle AI too, I think unexpected missed detections and false detections will happen on real roads. After joining, I want to use this strength to contribute to developing AI that people can trust.",
+      "shortAnswerJa": "私の強みは、問題の原因を粘り強く分析し、一つずつ改善できることです。研究では、夜間に歩行者を見落とす原因を3つに分け、対策を一つずつ試しました。その結果、検出精度を約【数値：8】ポイント上げました。入社後もこの強みを活かし、信頼できる車載AIの開発に貢献したいです。",
+      "keyPhrases": [
+        {"ja": "私の強みは、問題の原因を粘り強く分析できることです。", "en": "My strength is that I can patiently analyse the causes of problems."},
+        {"ja": "原因を3つに分けました。", "en": "I divided the causes into three."},
+        {"ja": "効果は、毎回数字で確かめました。", "en": "I checked the effect with numbers every time."},
+        {"ja": "その結果、精度を約【数値：8】ポイント上げることができました。", "en": "As a result, I was able to raise accuracy by about [8] points."},
+        {"ja": "入社後もこの強みを活かし、開発に貢献したいと考えております。", "en": "After joining, I want to use this strength to contribute to development."}
+      ],
+      "followUps": [
+        {"ja": "その強みを、研究以外で発揮した経験はありますか。", "en": "Have you shown this strength anywhere outside your research?", "hintJa": "はい、アルバイトでも、注文ミスの原因を調べ、確認の手順を見直したことがあります。", "tipEn": "Have a second short example ready so the strength looks consistent, not a one-off."},
+        {"ja": "原因は、どのようにして3つに分けたのですか。", "en": "How exactly did you divide the causes into three?", "hintJa": "見落としのあった画像を1枚ずつ見て、共通する特徴ごとに数えて分類しました。", "tipEn": "Describe the concrete process; saying how many images you checked makes it believable."},
+        {"ja": "なぜ、そこまで粘り強く取り組めたのですか。", "en": "What made you keep at it so persistently?", "hintJa": "原因がわからないままにすると、同じ問題がまた起きると考えているからです。", "tipEn": "Interviewers ask this to find your motivation; give your real reason in one sentence."},
+        {"ja": "その強みを、当社でどのように活かせますか。", "en": "How can you use that strength at our company?", "hintJa": "実際の道路で起きる見落としの原因を分析し、改善を重ねることで貢献できると考えております。", "tipEn": "Link it to real tasks: error analysis, testing and quality checks before delivery."}
+      ],
+      "pitfallsEn": [
+        "Listing several strengths with no proof: pick one and prove it with one episode and a number.",
+        "Vague words like 「コミュニケーション能力」 with no concrete action behind them.",
+        "Overselling the result (e.g., 'I solved night-time detection'); say exactly what improved and by how much."
+      ]
+    },
+    {
+      "id": "q03",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "学生時代に最も力を入れたことは何ですか。",
+      "variantsJa": [
+        "学生時代に頑張ったことを教えてください。",
+        "大学院で、一番頑張ったことは何ですか。",
+        "これまでで一番力を注いだ経験について、お聞かせください。"
+      ],
+      "questionEn": "What did you put the most effort into as a student?",
+      "intentEn": "How you tackle problems: your thinking, your actions and your results. Interviewers assume you will work the same way after joining, so the process matters more than the size of the achievement.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：取り組んだことと立場", "en": "Conclusion: what you did and your position"},
+        {"ja": "課題：何が問題だったか", "en": "Problem: what was wrong"},
+        {"ja": "考え：なぜその対策を選んだか", "en": "Thinking: why you chose that approach"},
+        {"ja": "行動：ルール表・確認・進捗管理", "en": "Actions: rule sheet, cross-checks, progress checks"},
+        {"ja": "結果と学び：数字と学んだこと", "en": "Result and lesson: numbers and what you learned"}
+      ],
+      "modelAnswerJa": "最も力を入れたのは、研究室で夜間画像のデータセットを作ったことです。4人のチームで、私はリーダーを務めました。\n課題は、歩行者に枠を付けるアノテーションの基準が、人によって違うことでした。データの質はAIの精度に大きく影響するため、共通のルールが必要だと考えました。\nそこで、まず見本の画像を付けたルール表を作りました。次に、全員が同じ画像で作業し、結果の違いを見てルールを直しました。また、毎週15分の進捗確認を行い、遅れている作業は早めに分担し直しました。\nその結果、約【数値：3,000】枚のデータセットを、予定どおりに完成させました。この経験から、明確なルールと早めの共有の大切さを学びました。",
+      "modelAnswerEn": "What I put the most effort into was building a night-time image dataset in my lab. It was a team of four, and I served as the leader.\nThe problem was that the standards for annotation, the work of drawing boxes around pedestrians, differed from person to person. Data quality strongly affects AI accuracy, so I thought we needed common rules.\nSo first, I made a rule sheet with sample images. Next, everyone worked on the same images, and we revised the rules by looking at the differences in the results. We also held a 15-minute progress check every week and reassigned delayed tasks early.\nAs a result, we completed a dataset of about [number: 3,000] images on schedule. From this experience, I learned the importance of clear rules and sharing early.",
+      "shortAnswerJa": "最も力を入れたのは、研究室で夜間画像のデータセットを作ったことです。4人のチームのリーダーとして、アノテーションのルール表を作り、毎週進捗を確認しました。その結果、約【数値：3,000】枚のデータセットを、予定どおりに完成させました。明確なルールと早めの共有の大切さを学びました。",
+      "keyPhrases": [
+        {"ja": "最も力を入れたのは、データセットを作ったことです。", "en": "What I put the most effort into was building a dataset."},
+        {"ja": "4人のチームで、私はリーダーを務めました。", "en": "It was a team of four, and I served as the leader."},
+        {"ja": "課題は、アノテーションの基準が、人によって違うことでした。", "en": "The problem was that annotation standards differed from person to person."},
+        {"ja": "共通のルールが必要だと考えました。", "en": "I thought we needed common rules."},
+        {"ja": "遅れている作業は、早めに分担し直しました。", "en": "We reassigned delayed tasks early."},
+        {"ja": "明確なルールと早めの共有の大切さを学びました。", "en": "I learned the importance of clear rules and sharing early."}
+      ],
+      "followUps": [
+        {"ja": "なぜ、あなたがリーダーになったのですか。", "en": "Why did you become the leader?", "hintJa": "私の研究で一番使うデータだったため、自分から手を挙げました。", "tipEn": "Show initiative (主体性): you volunteered, and say why."},
+        {"ja": "具体的に、どのようなルールを作ったのですか。", "en": "What kind of rules did you make, specifically?", "hintJa": "例えば、傘や車で体の一部が隠れた人にも、枠を付けるというルールです。", "tipEn": "Give one concrete rule with a real example; details like this prove that you did the work yourself."},
+        {"ja": "メンバーの意見が対立したことはありますか。", "en": "Did the members ever disagree?", "hintJa": "はい、ルールの細かさで意見が分かれましたが、見本の画像を見ながら全員で決めました。", "tipEn": "Show that you listened and decided together using evidence, not that you forced your view."},
+        {"ja": "その経験を、当社でどう活かしますか。", "en": "How will you use this experience at our company?", "hintJa": "海外のチームと開発する場面でも、ルールを明確にして早めに共有し、品質を守りたいと考えております。", "tipEn": "FPT develops with offshore teams; clear rules and early sharing are exactly what that work needs."}
+      ],
+      "pitfallsEn": [
+        "Describing only the task ('we made a dataset') without your own thinking and actions.",
+        "No numbers: give the team size, the data size and the result against the deadline.",
+        "Taking credit for the whole team's work; say what you did as leader and credit the members.",
+        "Having only this one story: if they ask for something outside research (「研究以外で」), use your part-time job episode (q06)."
+      ]
+    },
+    {
+      "id": "q04",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "あなたの長所と短所を教えてください。",
+      "variantsJa": [
+        "ご自身の強みと弱みを教えてください。",
+        "長所と短所を、それぞれ一つずつ教えていただけますか。",
+        "ご自身の短所は、どのようなところだと思いますか。"
+      ],
+      "questionEn": "Please tell us your strengths and weaknesses.",
+      "intentEn": "Objective self-analysis and honesty: whether your strength fits the job, and whether you notice your weakness and are actively improving it.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "長所：結論を一言で", "en": "Strength: one-line conclusion"},
+        {"ja": "根拠：研究での例と数字", "en": "Evidence: a research example with a number"},
+        {"ja": "短所：正直に1つ", "en": "Weakness: one, honestly"},
+        {"ja": "改善：今している工夫", "en": "Improvement: what you do now"},
+        {"ja": "締め：仕事でのバランス", "en": "Close: how you will balance it at work"}
+      ],
+      "modelAnswerJa": "私の長所は、問題の原因を粘り強く分析し、一つずつ改善できることです。研究では、夜間の見落としの原因を丁寧に調べ、検出精度を約【数値：8】ポイント上げました。\n短所は、慎重になりすぎて、作業に時間がかかることです。以前、実験を完璧にしてから報告しようとして、進捗が遅れたことがありました。\nそこで今は、作業ごとに、かける時間の上限を決めています。また、完成度が6割でも先生や先輩に見せて、早めに意見をもらうようにしています。その結果、やり直しが減り、研究も速く進むようになりました。\n入社後も、粘り強さを活かしながら、スピードも意識して仕事を進めたいと考えております。",
+      "modelAnswerEn": "My strength is that I can patiently analyse the cause of a problem and improve things one step at a time. In my research, I looked carefully into the causes of missed pedestrians at night and raised detection accuracy by about [number: 8] points.\nMy weakness is that I become too careful, so my work takes time. Once, I tried to perfect an experiment before reporting it, and my progress fell behind.\nSo now I set an upper limit on the time I spend on each task. I also show my work to my professor and senior students even when it is only 60% complete, to get feedback early. As a result, I redo less work and my research moves faster.\nAfter joining, I want to keep using my persistence while also paying attention to speed in my work.",
+      "shortAnswerJa": "長所は、問題の原因を粘り強く分析し、一つずつ改善できることです。研究では、この力で夜間の検出精度を上げました。短所は、慎重になりすぎて時間がかかることです。今は、作業にかける時間の上限を決め、早めに意見をもらうようにしています。入社後も、スピードを意識して働きたいです。",
+      "keyPhrases": [
+        {"ja": "私の長所は、問題の原因を粘り強く分析できることです。", "en": "My strength is that I can patiently analyse the causes of problems."},
+        {"ja": "短所は、慎重になりすぎて、作業に時間がかかることです。", "en": "My weakness is that I become too careful, so my work takes time."},
+        {"ja": "今は、作業ごとに、かける時間の上限を決めています。", "en": "Now I set an upper limit on the time I spend on each task."},
+        {"ja": "完成度が6割でも、早めに意見をもらうようにしています。", "en": "Even when my work is only 60% complete, I ask for feedback early."},
+        {"ja": "その結果、やり直しが減りました。", "en": "As a result, I redo less work."}
+      ],
+      "followUps": [
+        {"ja": "その短所が原因で、失敗したことはありますか。", "en": "Has that weakness ever caused you to fail at something?", "hintJa": "はい、研究を始めた頃に一人で抱え込み、進捗が遅れたことがあります。", "tipEn": "Tell the short version of your failure story (q05) and what you changed."},
+        {"ja": "時間の上限は、どのように決めていますか。", "en": "How do you decide the time limits?", "hintJa": "作業を小さく分け、それぞれに目安の時間を決めて、超えたら相談するようにしています。", "tipEn": "Give a concrete method: split tasks, set target times, consult when you go over."},
+        {"ja": "周りの人からも、そう言われますか。", "en": "Do people around you say the same?", "hintJa": "はい、先生からは「丁寧だが、もう少し早く相談してほしい」と言われたことがあります。", "tipEn": "Stay consistent with q07; showing that you accept feedback is a plus."}
+      ],
+      "pitfallsEn": [
+        "A weakness that is fatal for the job (e.g., 'I can't work in a team') or a fake one ('I work too hard').",
+        "Stating the weakness with no improvement action.",
+        "A strength or weakness that contradicts your other answers (self-PR, how others describe you)."
+      ]
+    },
+    {
+      "id": "q05",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "これまでで一番大きな失敗や挫折は何ですか。どのように乗り越えましたか。",
+      "variantsJa": [
+        "これまでに一番苦労した経験を教えてください。",
+        "うまくいかなかった経験と、そこから学んだことを教えてください。",
+        "挫折した経験はありますか。"
+      ],
+      "questionEn": "What is your biggest failure or setback so far? How did you overcome it?",
+      "intentEn": "Your problem-solving process and resilience: can you admit a mistake honestly, find its real cause and change your behaviour?",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：失敗を一言で", "en": "Conclusion: the failure in one line"},
+        {"ja": "状況：何が起きたか", "en": "Situation: what happened"},
+        {"ja": "原因と行動：原因と、変えた3つのこと", "en": "Cause and action: the cause and the three things you changed"},
+        {"ja": "結果：どう乗り越えたか", "en": "Result: how you recovered"},
+        {"ja": "学び：仕事に活かすこと", "en": "Lesson: what you will apply at work"}
+      ],
+      "modelAnswerJa": "一番大きな失敗は、研究の最初の半年間、問題を一人で抱え込み、進捗が大きく遅れたことです。\n当時は、結果が完璧になってから、先生に報告しようと考えていました。しかし、中間発表で、先生から「研究の方向がずれている」と指摘されました。実験の多くが、やり直しになりました。\n振り返ると、原因は、相談が遅すぎたことでした。そこで、3つのことを変えました。まず、毎週、短い進捗報告を始めました。次に、丸1日考えてもわからないことは、すぐ先輩に相談するようにしました。最後に、作業ごとに締め切りを決めました。\nその結果、遅れを取り戻し、国内学会で発表できました。この経験から、早めの報告と相談の大切さを学びました。",
+      "modelAnswerEn": "My biggest failure was that, in the first six months of my research, I kept problems to myself and fell far behind.\nAt that time, I planned to report to my professor only after my results were perfect. But at the interim presentation, my professor pointed out that my research was heading in the wrong direction. Many of my experiments had to be redone.\nLooking back, the cause was that I asked for advice too late. So I changed three things. First, I started giving a short progress report every week. Next, I made it a rule to ask a senior student right away about anything I could not solve after a full day of thinking. Finally, I set a deadline for each task.\nAs a result, I caught up and was able to present at a domestic conference. From this experience, I learned the importance of reporting and consulting early.",
+      "shortAnswerJa": "一番大きな失敗は、研究の最初の半年間、進捗が大きく遅れたことです。完璧になってから報告しようとして、問題を一人で抱え込んでいました。そこで、毎週の進捗報告と、早めの相談を始めました。その結果、遅れを取り戻し、国内学会で発表できました。早めの報告と相談の大切さを学びました。",
+      "keyPhrases": [
+        {"ja": "一番大きな失敗は、研究の進捗が大きく遅れたことです。", "en": "My biggest failure was falling far behind in my research."},
+        {"ja": "問題を一人で抱え込んでいました。", "en": "I was keeping problems to myself."},
+        {"ja": "振り返ると、原因は、相談が遅すぎたことでした。", "en": "Looking back, the cause was that I asked for advice too late."},
+        {"ja": "そこで、3つのことを変えました。", "en": "So I changed three things."},
+        {"ja": "その結果、遅れを取り戻すことができました。", "en": "As a result, I was able to catch up."},
+        {"ja": "早めの報告と相談の大切さを学びました。", "en": "I learned the importance of reporting and consulting early."}
+      ],
+      "followUps": [
+        {"ja": "今、同じ状況になったら、どうしますか。", "en": "If the same thing happened now, what would you do?", "hintJa": "まず、問題に気づいた時点で、すぐに上司に状況を報告します。", "tipEn": "Show that the lesson is now a habit: report early and bring possible options."},
+        {"ja": "その学びは、その後どのように活かしていますか。", "en": "How have you used that lesson since then?", "hintJa": "データセット作りのリーダーになったとき、毎週の進捗確認を取り入れました。", "tipEn": "Link it to your ガクチカ (q03) to show growth over time."},
+        {"ja": "先生に指摘されたとき、どう感じましたか。", "en": "How did you feel when your professor pointed it out?", "hintJa": "正直に申し上げますと、とても悔しかったですが、自分を変えるきっかけになりました。", "tipEn": "Be honest about your feelings, then move quickly to what you did."}
+      ],
+      "pitfallsEn": [
+        "A 'failure' that is really a success story, or one with no lesson.",
+        "Blaming others (professor, teammates) instead of analysing your own part.",
+        "Spending most of the time on the failure; at least half should be about recovery and learning."
+      ]
+    },
+    {
+      "id": "q06",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "チームで取り組んだ経験と、その中でのあなたの役割を教えてください。",
+      "variantsJa": [
+        "チームで何かに取り組んだ経験はありますか。",
+        "チームの中では、どのような役割になることが多いですか。",
+        "周りと協力して成果を出した経験を教えてください。"
+      ],
+      "questionEn": "Please tell us about an experience working in a team and your role in it.",
+      "intentEn": "How you work with others and what role you take, and whether you can describe your own contribution rather than only the team's. It also shows how you might fit into a team at the company.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：どんなチームで、どんな役割か", "en": "Conclusion: the team and your role"},
+        {"ja": "課題：チームの問題とその原因", "en": "Problem: the team's issue and its cause"},
+        {"ja": "行動：役割として何をしたか", "en": "Action: what you did in that role"},
+        {"ja": "結果：数字で示す", "en": "Result: show it with a number"},
+        {"ja": "学び：入社後のチームでの姿", "en": "Lesson: how you will work in a team after joining"}
+      ],
+      "modelAnswerJa": "アルバイト先の日本料理店で、接客チームの一員として働いた経験があります。私の役割は、新人の教育でした。\n店では、忙しい時間帯に新人のミスが増え、チーム全体の負担になっていました。新人に話を聞くと、手順を一度に覚えきれないことが原因だとわかりました。\nそこで、店長に相談し、写真入りの簡単な手順表を作りました。そして、最初の1週間は私が隣について、毎日5分の振り返りを行いました。\nその結果、新人が一人で接客できるまでの期間が、約【期間：1か月】から【期間：2週間】に短くなりました。この経験から、仲間を支えることがチームの成果につながると学びました。入社後も、周りを支えるエンジニアとして貢献したいです。",
+      "modelAnswerEn": "I have experience working as a member of the customer-service team at the Japanese restaurant where I work part-time. My role was training new staff.\nAt the restaurant, new staff made more mistakes during busy hours, and this was a burden on the whole team. When I talked with them, I found the cause: they could not memorise all the steps at once.\nSo I consulted the manager and made a simple step-by-step sheet with photos. Then, for their first week, I worked beside them and held a five-minute review every day.\nAs a result, the time until new staff could serve customers on their own fell from about [period: 1 month] to [period: 2 weeks]. From this experience, I learned that supporting teammates leads to results for the whole team. After joining, I want to contribute as an engineer who supports the people around me.",
+      "shortAnswerJa": "アルバイト先の日本料理店で、新人の教育を担当した経験があります。新人のミスが多かったため、写真入りの手順表を作り、毎日5分の振り返りを行いました。その結果、一人で接客できるまでの期間が、約半分になりました。仲間を支えることの大切さを学びました。",
+      "keyPhrases": [
+        {"ja": "私の役割は、新人の教育でした。", "en": "My role was training new staff."},
+        {"ja": "チーム全体の負担になっていました。", "en": "It was a burden on the whole team."},
+        {"ja": "店長に相談し、写真入りの手順表を作りました。", "en": "I consulted the manager and made a step-by-step sheet with photos."},
+        {"ja": "一人で接客できるまでの期間が、約半分になりました。", "en": "The time until they could serve customers alone was cut by about half."},
+        {"ja": "仲間を支えることが、チームの成果につながると学びました。", "en": "I learned that supporting teammates leads to results for the team."},
+        {"ja": "研究室では、4人のチームのリーダーも務めました。", "en": "In my lab, I also led a four-person team (a second example if asked)."}
+      ],
+      "followUps": [
+        {"ja": "チームの中で、意見が合わなかったときはどうしましたか。", "en": "What did you do when you disagreed with someone on the team?", "hintJa": "まず相手の理由を最後まで聞き、お客様にとって一番良い方法を一緒に考えました。", "tipEn": "Show that you listen first, then focus on a shared goal (the customer, quality)."},
+        {"ja": "ご自身は、リーダータイプとサポートタイプのどちらだと思いますか。", "en": "Do you see yourself more as a leader or as a supporter?", "hintJa": "どちらかと言えばサポートタイプですが、研究室ではリーダーも務めました。", "tipEn": "Choose one clearly, then add the other side with a fact: supporter at the restaurant, leader of the lab team."},
+        {"ja": "研究室でのチーム経験も教えてください。", "en": "Please tell me about a team experience in your lab, too.", "hintJa": "はい、研究室では、夜間画像のデータセットを作る4人のチームのリーダーを務めました。", "tipEn": "Use the short version of your ガクチカ (q03)."}
+      ],
+      "pitfallsEn": [
+        "Talking only about what 'we' did; the question asks about YOUR role and actions.",
+        "Repeating your ガクチカ word for word; use another episode or a clearly different angle.",
+        "Saying the team had no problems; interviewers want to see how you handled one."
+      ]
+    },
+    {
+      "id": "q07",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "周りの人からは、どんな人だと言われますか。",
+      "variantsJa": [
+        "友人からは、どんな人だと言われることが多いですか。",
+        "周りの方から、どのように評価されていると思いますか。",
+        "研究室の方からは、どんな人だと言われますか。"
+      ],
+      "questionEn": "How do people around you describe you?",
+      "intentEn": "Whether your self-image matches how others see you, and whether your personality fits the team. It also checks that this answer is consistent with your self-PR and strengths.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：言われることを一言で", "en": "Conclusion: how people describe you"},
+        {"ja": "具体例1：研究室での場面", "en": "Example 1: a scene from the lab"},
+        {"ja": "具体例2：アルバイト先での評価", "en": "Example 2: feedback from your part-time job"},
+        {"ja": "補足：課題と改善", "en": "Note: the related weakness and how you manage it"},
+        {"ja": "締め：仕事でどう活かすか", "en": "Close: how it will help at work"}
+      ],
+      "modelAnswerJa": "周りからは、よく「粘り強くて、頼りになる人」だと言われます。\n例えば研究室では、後輩からプログラムのエラーや環境構築について、よく相談を受けます。私は原因がわかるまで一緒にログを確認し、最後まで付き合います。そのため、「困ったら〇〇さんに聞けば安心だ」と言ってもらえます。\nまた、アルバイト先の店長からは、「仕事が丁寧だ」と言われました。新人の教育も任されるようになりました。\n一方で、丁寧すぎて時間がかかることもあるため、今はスピードも意識しています。入社後も、問題を最後まで解決し、チームに信頼されるエンジニアになりたいです。",
+      "modelAnswerEn": "People around me often say I am 'persistent and reliable.'\nFor example, in my lab, junior students often come to me about program errors and environment setup. I check the logs with them until we find the cause, and I stay with them to the end. So they tell me, 'When I'm stuck, asking 〇〇 puts my mind at ease.'\nAlso, the manager at my part-time job told me, 'Your work is careful.' I have also come to be trusted with training new staff.\nOn the other hand, I am sometimes so careful that I take too long, so I now pay attention to speed as well. After joining, I want to become an engineer who solves problems to the end and is trusted by the team.",
+      "shortAnswerJa": "周りからは、よく「粘り強くて、頼りになる人」だと言われます。研究室では、後輩からエラーの相談をよく受け、原因がわかるまで一緒に調べています。一方で、丁寧すぎて時間がかかることもあるため、今はスピードも意識しています。入社後も、信頼されるエンジニアを目指します。",
+      "keyPhrases": [
+        {"ja": "周りからは、よく「粘り強い人」だと言われます。", "en": "People often say I am a persistent person."},
+        {"ja": "後輩から、エラーについてよく相談を受けます。", "en": "Junior students often come to me about errors."},
+        {"ja": "原因がわかるまで、一緒に確認します。", "en": "I check together with them until we find the cause."},
+        {"ja": "店長からは、「仕事が丁寧だ」と言われました。", "en": "My manager told me, 'Your work is careful.'"},
+        {"ja": "一方で、今はスピードも意識しています。", "en": "On the other hand, I now also pay attention to speed."}
+      ],
+      "followUps": [
+        {"ja": "反対に、周りの人から指摘されたことはありますか。", "en": "On the other hand, has anyone ever pointed out something you should improve?", "hintJa": "はい、先生から、もう少し早めに相談するように言われたことがあります。", "tipEn": "Stay consistent with your weakness (q04) and show that you acted on the feedback."},
+        {"ja": "ご自身では、どんな人だと思いますか。", "en": "How do you see yourself?", "hintJa": "自分でも、一度始めたことは最後までやり切るタイプだと思います。", "tipEn": "Agree with how others see you and add one observation of your own; don't contradict yourself."},
+        {"ja": "後輩に教えるとき、気をつけていることは何ですか。", "en": "What do you keep in mind when teaching junior students?", "hintJa": "答えをすぐに教えるのではなく、一緒に原因を探すようにしています。", "tipEn": "This shows a mentoring attitude, which matters for team fit and bridge roles."}
+      ],
+      "pitfallsEn": [
+        "Only adjectives (優しい, 真面目) with no episode or quote.",
+        "A trait that contradicts your self-PR or strengths answer.",
+        "A trait that does not matter at work (e.g., 'funny'); choose one that helps a team."
+      ]
+    },
+    {
+      "id": "q08",
+      "category": "basic",
+      "week": 2,
+      "questionJa": "ストレスを感じたとき、どのように対処していますか。",
+      "variantsJa": [
+        "ストレス解消法はありますか。",
+        "プレッシャーを感じるのは、どんなときですか。どう乗り越えますか。",
+        "忙しいときや大変なとき、どのように気持ちを切り替えていますか。"
+      ],
+      "questionEn": "How do you deal with stress?",
+      "intentEn": "Self-management and stress tolerance: whether you have healthy ways to cope and also deal with the root cause, so you can keep working well under pressure.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：基本の対処法", "en": "Conclusion: your basic way of coping"},
+        {"ja": "具体例：ストレスを感じた場面", "en": "Example: a stressful situation"},
+        {"ja": "行動と結果：整理・相談・結果", "en": "Action and result: organise, consult, outcome"},
+        {"ja": "気分転換：健康的な習慣", "en": "Refresh: a healthy habit"},
+        {"ja": "締め：仕事での姿勢", "en": "Close: your attitude at work"}
+      ],
+      "modelAnswerJa": "私は、ストレスを感じたときは、まず原因を紙に書き出すようにしています。\n例えば、国内学会の前に、実験と発表準備と授業の課題が重なったことがありました。そのときは、やることをすべて書き出し、締め切りが近い順に並べました。そして、一人では間に合わない作業は、先生に相談して日程を調整しました。その結果、発表の準備を予定どおりに終えることができました。原因が見えると、何から始めればよいかがわかり、気持ちも落ち着きます。\nまた、週末には【趣味：ジョギング】をして、気分を切り替えています。入社後も、一人で抱え込まず、早めに相談しながら、落ち着いて仕事を進めたいと考えております。",
+      "modelAnswerEn": "When I feel stressed, I first write down the causes on paper.\nFor example, before a domestic conference, my experiments, presentation preparation and coursework all overlapped. At that time, I wrote down everything I had to do and put the tasks in order, starting with the nearest deadline. Then, for tasks I could not finish alone in time, I consulted my professor and adjusted the schedule. As a result, I finished preparing my presentation on schedule. Once I can see the causes, I know where to start, and I feel calmer.\nAlso, on weekends I go [hobby: jogging] to refresh myself. After joining, I want to work calmly, consulting others early instead of keeping problems to myself.",
+      "shortAnswerJa": "ストレスを感じたときは、まず原因を書き出し、自分にできることから一つずつ対処します。一人で間に合わないときは、早めに相談します。学会前に作業が重なったときも、この方法で予定どおりに準備を終えました。また、週末には【趣味：ジョギング】をして、気分を切り替えています。",
+      "keyPhrases": [
+        {"ja": "ストレスを感じたときは、まず原因を書き出すようにしています。", "en": "When I feel stressed, I first write down the causes."},
+        {"ja": "やることを、締め切りが近い順に並べました。", "en": "I put my tasks in order, starting with the nearest deadline."},
+        {"ja": "一人では間に合わない作業は、先生に相談しました。", "en": "For tasks I could not finish alone in time, I consulted my professor."},
+        {"ja": "週末には【趣味：ジョギング】をして、気分を切り替えています。", "en": "On weekends I go [jogging] to refresh myself."},
+        {"ja": "一人で抱え込まず、早めに相談します。", "en": "I don't keep problems to myself; I consult early."}
+      ],
+      "followUps": [
+        {"ja": "最近、ストレスを感じたのはどんなときですか。", "en": "When did you last feel stressed?", "hintJa": "最近では、実験で思うような結果が出なかったときに、ストレスを感じました。", "tipEn": "Be honest but choose a normal, work-related stress, then show how you handled it."},
+        {"ja": "仕事で厳しい締め切りが続いても、大丈夫ですか。", "en": "Would you be OK if tight deadlines continued at work?", "hintJa": "はい、優先順位をつけて進めることには慣れておりますので、大丈夫です。", "tipEn": "Answer yes calmly and give your method; one FPT interview report mentions being asked whether a demanding company is OK."},
+        {"ja": "人間関係でストレスを感じたら、どうしますか。", "en": "What do you do if relationships with people cause you stress?", "hintJa": "まず相手の考えを聞いて、誤解がないかを確認するようにしています。", "tipEn": "Show that you talk directly and politely rather than avoid people."}
+      ],
+      "pitfallsEn": [
+        "Saying 'I never feel stress'; it sounds unrealistic or shows little self-awareness.",
+        "Only unhealthy coping (binge eating, late-night gaming, drinking).",
+        "Only refreshing without dealing with the cause; show that you also solve the root problem."
+      ]
+    },
+    {
+      "id": "q10",
+      "category": "research",
+      "week": 3,
+      "questionJa": "研究内容について、1分程度で説明してください。",
+      "variantsJa": [
+        "研究について、簡単に説明していただけますか。",
+        "大学院では、どのような研究をされていますか。",
+        "研究の概要を、1分ほどで教えてください。"
+      ],
+      "questionEn": "Please explain your research in about one minute.",
+      "intentEn": "Whether you can explain purpose, method and results logically and concisely, with numbers. Engineers use this answer to decide where to dig deeper, so every term you use may become a follow-up question.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：研究テーマを1文で", "en": "Conclusion: the topic in one sentence"},
+        {"ja": "背景：なぜ難しいのか", "en": "Background: why it is hard"},
+        {"ja": "方法：2つの手法と軽量モデル", "en": "Method: two techniques and a lightweight model"},
+        {"ja": "結果：精度と速度の数字", "en": "Result: accuracy and speed numbers"},
+        {"ja": "締め：学会での発表", "en": "Close: the conference presentation"}
+      ],
+      "modelAnswerJa": "夜間や雨の日の車載カメラ画像から、歩行者を検出する研究をしております。\n夜や雨の日は、画像が暗く、光の反射も多いため、歩行者の見落としが増えます。また、夜の学習データも不足しています。\nそこで、2つの方法を組み合わせました。1つ目は、昼の画像を暗くしたり雨を重ねたりする、データ拡張です。2つ目は、昼と夜の画像の差を小さくする、ドメイン適応です。モデルには軽量なYOLO系を選び、組込みボードのJetsonで動かしました。\nその結果、検出精度を表すmAPが、夜間で約【数値：8】ポイント上がりました。速度も、Jetson上で【数値：25】FPSを達成しました。この成果は、国内学会で発表いたしました。",
+      "modelAnswerEn": "I am researching how to detect pedestrians in in-vehicle camera images taken at night and in the rain.\nAt night and in the rain, images are dark and have many light reflections, so more pedestrians are missed. Night-time training data is also in short supply.\nSo I combined two methods. The first is data augmentation, which darkens daytime images or overlays rain on them. The second is domain adaptation, which reduces the gap between daytime and night-time images. For the model, I chose a lightweight YOLO-family model and ran it on a Jetson, an embedded board.\nAs a result, mAP, which expresses detection accuracy, rose by about [number: 8] points at night. As for speed, it reached [number: 25] FPS on the Jetson. I presented these results at a domestic conference.",
+      "shortAnswerJa": "夜間や雨の日の車載カメラ画像から、歩行者を検出する研究をしております。データ拡張とドメイン適応で、夜の画像に強いモデルを作りました。その結果、夜間の検出精度が約【数値：8】ポイント上がりました。また、組込みボードのJetson上で、【数値：25】FPSを達成しました。",
+      "keyPhrases": [
+        {"ja": "車載カメラ画像から、歩行者を検出する研究をしております。", "en": "I research detecting pedestrians in in-vehicle camera images."},
+        {"ja": "2つの方法を組み合わせました。", "en": "I combined two methods."},
+        {"ja": "1つ目はデータ拡張、2つ目はドメイン適応です。", "en": "The first is data augmentation; the second is domain adaptation."},
+        {"ja": "モデルには、軽量なYOLO系を選びました。", "en": "For the model, I chose a lightweight YOLO-family model."},
+        {"ja": "mAPが、夜間で約【数値：8】ポイント上がりました。", "en": "mAP rose by about [8] points at night."},
+        {"ja": "この成果は、国内学会で発表いたしました。", "en": "I presented these results at a domestic conference."}
+      ],
+      "followUps": [
+        {"ja": "なぜ、その方法を選んだのですか。", "en": "Why did you choose that method?", "hintJa": "夜間のデータを集めるには時間と費用がかかるため、昼のデータを活かせる方法を選びました。", "tipEn": "Give the reason in terms of constraints (data, cost, time); 'no particular reason' is a weak answer."},
+        {"ja": "mAPとは何ですか。ほかにどんな指標を見ていますか。", "en": "What is mAP? What other metrics do you look at?", "hintJa": "mAPは検出の正確さを総合的に表す指標で、ほかに適合率と再現率、FPSも見ています。", "tipEn": "Explain simply, then add that for pedestrians a missed person (low recall) is the most dangerous error. See q42 for the full answer."},
+        {"ja": "研究の課題や、今後の展望を教えてください。", "en": "What issues remain, and what are your next steps?", "hintJa": "課題は、強い雨や逆光など、まだ精度が低い場面が残っていることです。", "tipEn": "Admit the limits honestly and give one concrete next step."},
+        {"ja": "その研究の中で、ご自身のアイデアはどの部分ですか。", "en": "Which part of that research was your own idea?", "hintJa": "【自分の工夫：雨の反射を再現するデータ拡張】は、私が考えて実装した部分です。", "tipEn": "Separate clearly what you proposed and built yourself from what your professor or lab provided; honest boundaries build trust."}
+      ],
+      "pitfallsEn": [
+        "Starting with long background or theory; give the topic and goal in the first sentence.",
+        "Too much jargon for an HR interviewer; watch their reaction and switch to the q11 version if needed.",
+        "Numbers without meaning; say what each number measures (accuracy at night, speed on the board).",
+        "Overclaiming; state the exact improvement and its conditions, and credit your lab where due."
+      ]
+    },
+    {
+      "id": "q11",
+      "category": "research",
+      "week": 3,
+      "questionJa": "専門外の人にもわかるように、研究内容を説明していただけますか。",
+      "variantsJa": [
+        "その研究を、一般のエンジニアにもわかるように説明してください。",
+        "私は専門外なので、わかりやすく教えていただけますか。",
+        "その研究を、一般の方向けにかみ砕いて説明していただけますか。"
+      ],
+      "questionEn": "Could you explain your research so that a non-specialist can understand it?",
+      "intentEn": "Whether you truly understand your work and can explain it to customers or non-technical colleagues, a core skill for a bridge role. A similar question (explain it so a general engineer can understand) has been reported from an FPT Japan new-graduate interview.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：一言で何の研究か", "en": "Conclusion: the research in one plain sentence"},
+        {"ja": "身近な例：人の目と同じ", "en": "Everyday comparison: just like human eyes"},
+        {"ja": "工夫：練習用の写真とたとえ話", "en": "What I did: practice photos plus an analogy"},
+        {"ja": "結果と意義：何が良くなり、何に役立つか", "en": "Result and meaning: what improved and why it matters"}
+      ],
+      "modelAnswerJa": "一言で申し上げますと、夜や雨の日でも、車のカメラが人を見落とさないようにする研究です。\n人の目でも、暗い場所や雨の中では、歩行者が見えにくくなります。AIも同じで、暗い画像や光の反射が多い画像では、人を見落としやすくなります。\nそこで、昼の写真を夜や雨のように加工して、AIの練習用の写真を増やしました。たとえると、昼の道しか知らない運転手に、夜の道でも練習してもらうようなものです。また、車に載せる小さなコンピューターでも速く動くように、AIを軽くしました。\nその結果、夜に人を見つける精度が、約【数値：8】ポイント上がりました。将来は、夜の交通事故を減らす技術につなげたいと考えております。",
+      "modelAnswerEn": "To put it in one sentence, my research helps a car's camera avoid missing people, even at night or in the rain.\nEven for human eyes, pedestrians are hard to see in dark places or in the rain. AI is the same: in dark images or images with a lot of light reflection, it tends to miss people.\nSo I edited daytime photos to look like night or rain, and increased the AI's practice photos. It is like having a driver who only knows daytime roads practise on night roads as well. I also made the AI lighter so that it runs fast even on a small computer carried in a car.\nAs a result, the accuracy of finding people at night rose by about [number: 8] points. In the future, I want to connect this to technology that reduces traffic accidents at night.",
+      "shortAnswerJa": "一言で申し上げますと、夜や雨の日でも、車のカメラが人を見落とさないようにする研究です。昼の写真を夜や雨のように加工して、AIの練習用の写真を増やしました。その結果、夜に人を見つける精度が上がりました。車に載せる小さなコンピューターでも、速く動きます。",
+      "keyPhrases": [
+        {"ja": "一言で申し上げますと、人を見落とさないようにする研究です。", "en": "To put it in one sentence, it is research to avoid missing people."},
+        {"ja": "人の目でも、暗い場所では見えにくくなります。", "en": "Even for human eyes, things are hard to see in dark places."},
+        {"ja": "AIの練習用の写真を増やしました。", "en": "I increased the AI's practice photos."},
+        {"ja": "たとえると、夜の道でも練習してもらうようなものです。", "en": "It is like having someone practise on night roads as well."},
+        {"ja": "将来は、夜の交通事故を減らす技術につなげたいと考えております。", "en": "In the future, I want to connect it to technology that reduces traffic accidents at night."}
+      ],
+      "followUps": [
+        {"ja": "AIの練習用の写真は、どうやって増やしたのですか。", "en": "How did you increase the practice photos?", "hintJa": "昼の写真を暗くしたり、雨粒のような模様を加えたりして作りました。", "tipEn": "Keep it simple and visual; use technical names only if they ask."},
+        {"ja": "その技術は、今の車でも使われているのですか。", "en": "Is that kind of technology used in today's cars?", "hintJa": "はい、歩行者を見つけてブレーキを助ける機能は、すでに多くの車に搭載されています。", "tipEn": "Answer generally and accurately; do not suggest that your own model is in products."},
+        {"ja": "一番難しかったところを、わかりやすく教えてください。", "en": "Please explain the hardest part in simple terms.", "hintJa": "AIを軽くすると、人を見つける力が下がってしまう点が、一番難しかったです。", "tipEn": "It is the same story as q12, told in everyday words: a trade-off between speed and accuracy."}
+      ],
+      "pitfallsEn": [
+        "Using jargon (mAP, domain adaptation, FPS); every word should make sense to a family member.",
+        "An analogy that is longer than the explanation; one short analogy is enough.",
+        "Forgetting why it matters to society (safety, fewer accidents)."
+      ]
+    },
+    {
+      "id": "q12",
+      "category": "research",
+      "week": 3,
+      "questionJa": "研究で一番苦労したことは何ですか。どのように解決しましたか。",
+      "variantsJa": [
+        "研究で大変だったことは何ですか。",
+        "研究がうまくいかなかったとき、どうしましたか。",
+        "研究で一番の壁は何でしたか。それをどう乗り越えましたか。"
+      ],
+      "questionEn": "What was the hardest part of your research? How did you solve it?",
+      "intentEn": "Your technical problem-solving: how you found the cause, what options you tried and what you learned. Engineers also check that you are honest about your own part of the work.",
+      "timeTarget": "1〜1分半",
+      "structure": [
+        {"ja": "結論：一番苦労したこと", "en": "Conclusion: the hardest part"},
+        {"ja": "状況：問題と目標を数字で", "en": "Situation: the problem and the target, in numbers"},
+        {"ja": "分析：どこが遅いかを測った", "en": "Analysis: measured which part was slow"},
+        {"ja": "解決：対策と新しい問題への対応", "en": "Solution: fixes, and handling the new problem"},
+        {"ja": "結果と学び：最終的な数字と教訓", "en": "Result and lesson: final numbers and what you learned"}
+      ],
+      "modelAnswerJa": "一番苦労したのは、精度と速度を両立させることです。\n最初のモデルは、精度は高かったのですが、Jetson上では【数値：10】FPSしか出ませんでした。目標は、【数値：20】FPS以上でした。\nそこで、まず処理時間を細かく測り、どこが遅いかを調べました。その結果、モデルの計算が一番の原因だとわかりました。\n次に、軽いYOLO系のモデルに変え、入力画像も小さくしました。しかし、遠くの小さな歩行者の見落としが増えました。対策として、画像のサイズを元に戻し、TensorRTでFP16に変換しました。INT8も試しましたが、夜間の精度が下がったため、FP16を選びました。\n最終的に、精度をほぼ保ったまま、【数値：25】FPSを達成しました。この経験から、制約の中で最適なバランスを探す大切さを学びました。",
+      "modelAnswerEn": "The hardest part was achieving both accuracy and speed.\nMy first model was accurate, but it only reached [number: 10] FPS on the Jetson. My target was at least [number: 20] FPS.\nSo first, I measured the processing time in detail to find out which part was slow. I found that the model's computation was the main cause.\nNext, I switched to a lighter YOLO-family model and also made the input images smaller. However, the model then missed more small pedestrians far away. To fix this, I restored the image size and converted the model to FP16 with TensorRT. I also tried INT8, but night-time accuracy dropped, so I chose FP16.\nIn the end, I reached [number: 25] FPS while keeping almost the same accuracy. From this experience, I learned the importance of finding the best balance within constraints.",
+      "shortAnswerJa": "一番苦労したのは、精度と速度の両立です。最初のモデルは、Jetson上で【数値：10】FPSしか出ませんでした。そこで、処理時間を測って原因を調べ、軽いモデルに変えました。さらに、TensorRTでFP16に変換しました。最終的に、精度をほぼ保ったまま、【数値：25】FPSを達成しました。",
+      "keyPhrases": [
+        {"ja": "一番苦労したのは、精度と速度を両立させることです。", "en": "The hardest part was achieving both accuracy and speed."},
+        {"ja": "Jetson上では、【数値：10】FPSしか出ませんでした。", "en": "It only reached [10] FPS on the Jetson."},
+        {"ja": "まず処理時間を細かく測り、どこが遅いかを調べました。", "en": "First, I measured the processing time in detail to find which part was slow."},
+        {"ja": "しかし、遠くの小さな歩行者の見落としが増えました。", "en": "However, it missed more small pedestrians far away."},
+        {"ja": "INT8も試しましたが、夜間の精度が下がったため、FP16を選びました。", "en": "I also tried INT8, but night-time accuracy dropped, so I chose FP16."},
+        {"ja": "制約の中で、最適なバランスを探す大切さを学びました。", "en": "I learned the importance of finding the best balance within constraints."}
+      ],
+      "followUps": [
+        {"ja": "ほかに、速くする方法は考えましたか。", "en": "Did you consider other ways to make it faster?", "hintJa": "はい、枝刈りや知識蒸留も調べましたが、再学習が必要なため、今回は使いませんでした。", "tipEn": "Stay consistent with q45: you used FP16 with TensorRT and dropped INT8. Show that you also know pruning (枝刈り) and knowledge distillation (知識蒸留), and say why you did not use them."},
+        {"ja": "なぜ、その目標にしたのですか。", "en": "Why did you set that target?", "hintJa": "歩行者の動きに遅れずに反応するには、毎秒【数値：20】枚程度の処理が必要だと考えたからです。", "tipEn": "Base it on the use case; if it was your professor's guideline, say so honestly."},
+        {"ja": "見落としが増えた原因は、どのように確認しましたか。", "en": "How did you confirm why the misses increased?", "hintJa": "見落としのあった画像を1枚ずつ確認し、遠くの小さな歩行者が多いことに気づきました。", "tipEn": "Walk through your error-analysis steps; this is your core strength."},
+        {"ja": "軽いモデルに変えたとき、精度はどのくらい下がりましたか。", "en": "How much did accuracy drop when you switched to the lighter model?", "hintJa": "mAPで約【数値：2】ポイント下がりましたが、データ拡張などで夜間の精度を補いました。", "tipEn": "Have your own before-and-after numbers ready. If you do not remember the exact value, say 「正確な数値は確認が必要ですが」 and give an approximate one."}
+      ],
+      "pitfallsEn": [
+        "Only saying 'it was hard'; give numbers: before, target and after.",
+        "Skipping the analysis step; interviewers want to see how you found the cause.",
+        "Hiding help from your professor or seniors; say honestly who helped and what you did yourself."
+      ]
+    },
+    {
+      "id": "q13",
+      "category": "research",
+      "week": 3,
+      "questionJa": "なぜその研究テーマを選んだのですか。",
+      "variantsJa": [
+        "その研究テーマを選んだ理由を教えてください。",
+        "なぜ、そのテーマに興味を持ったのですか。",
+        "その研究を始めたきっかけは何ですか。"
+      ],
+      "questionEn": "Why did you choose that research topic?",
+      "intentEn": "Your motivation and initiative: whether you chose the topic with a purpose of your own, and whether that purpose connects to the job you are applying for.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：理由は2つ", "en": "Conclusion: two reasons"},
+        {"ja": "理由1：個人的なきっかけ", "en": "Reason 1: a personal trigger"},
+        {"ja": "理由2：まだ解決されていない課題", "en": "Reason 2: an unsolved problem"},
+        {"ja": "締め：選んだ結論と将来の目標", "en": "Close: restate your choice and link it to your career goal"}
+      ],
+      "modelAnswerJa": "理由は2つあります。\n1つ目は、技術で人の命を守る研究がしたいと考えたからです。日本に来てから、夜の暗い道で、車から自分が見えているか不安になったことがあります。調べてみると、夜間は歩行者の重大な事故が多いと知りました。\n2つ目は、まだ解決されていない課題に挑戦したかったからです。昼間の歩行者検出は、すでに高い精度が出ています。一方で、夜や雨の日は、まだ精度が低いと先生から教わりました。\nこの2つの理由から、このテーマを選びました。この研究を通して、自動車の安全に関わるAIエンジニアを目指すようになりました。",
+      "modelAnswerEn": "There are two reasons.\nThe first is that I wanted to do research that protects people's lives with technology. Since coming to Japan, I have sometimes felt uneasy on dark roads at night, wondering whether drivers could see me. When I looked into it, I learned that serious pedestrian accidents are common at night.\nThe second is that I wanted to take on a problem that is not yet solved. Daytime pedestrian detection already achieves high accuracy. On the other hand, my professor taught me that accuracy at night and in the rain is still low.\nFor these two reasons, I chose this topic. Through this research, I came to aim at becoming an AI engineer who works on automotive safety.",
+      "shortAnswerJa": "理由は2つあります。1つ目は、夜間に多い歩行者の事故を、技術で減らしたいと考えたからです。2つ目は、夜や雨の日の検出は、まだ精度が低く、挑戦したい課題だと感じたからです。研究を通して、自動車の安全に関わるAIエンジニアを目指すようになりました。",
+      "keyPhrases": [
+        {"ja": "理由は2つあります。", "en": "There are two reasons."},
+        {"ja": "技術で人の命を守る研究がしたいと考えたからです。", "en": "Because I wanted to do research that protects lives with technology."},
+        {"ja": "まだ解決されていない課題に挑戦したかったからです。", "en": "Because I wanted to take on a problem that is not yet solved."},
+        {"ja": "この2つの理由から、このテーマを選びました。", "en": "For these two reasons, I chose this topic."},
+        {"ja": "この研究を通して、AIエンジニアを目指すようになりました。", "en": "Through this research, I came to aim at becoming an AI engineer."}
+      ],
+      "followUps": [
+        {"ja": "そのテーマは、ご自身で決めたのですか。それとも、先生からの提案ですか。", "en": "Did you decide on the topic yourself, or did your professor suggest it?", "hintJa": "大きな方向は先生と相談して決め、夜間や雨に絞ったのは私の提案です。", "tipEn": "Be honest about your professor's role and make clear which part was your own idea."},
+        {"ja": "もし今からテーマを選び直せるとしたら、何を選びますか。", "en": "If you could choose your topic again now, what would you choose?", "hintJa": "同じテーマを選びますが、次はカメラ以外のセンサーとの組み合わせにも挑戦したいです。", "tipEn": "Show continued interest and growth; combining sensors (camera plus LiDAR or radar) is a natural next step."},
+        {"ja": "研究を通して、一番学んだことは何ですか。", "en": "What is the most important thing you learned through your research?", "hintJa": "精度だけでなく、実際に使える速さや安全性も考える大切さを学びました。", "tipEn": "Link it to the practical engineering mindset that companies value."}
+      ],
+      "pitfallsEn": [
+        "Saying 'my professor gave me the topic' and stopping there; add what motivated you to continue.",
+        "Only saying AI is popular or interesting; give a personal or social reason.",
+        "Quoting statistics you cannot source; keep facts general unless you know where they come from."
+      ]
+    },
+    {
+      "id": "q14",
+      "category": "research",
+      "week": 3,
+      "questionJa": "研究で得た知識や経験を、入社後どのように活かせると思いますか。",
+      "variantsJa": [
+        "研究の経験を、仕事でどう活かしたいですか。",
+        "大学院で学んだことは、当社の業務にどう役立つと思いますか。",
+        "研究で身につけたスキルを、入社後どう活かせますか。"
+      ],
+      "questionEn": "How do you think you can apply the knowledge and experience from your research after joining?",
+      "intentEn": "Whether you understand the job well enough to map your skills onto it, while staying realistic about what a new graduate still needs to learn.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：活かせる点は3つ", "en": "Conclusion: three things you can apply"},
+        {"ja": "1つ目：画像認識の知識", "en": "First: image-recognition knowledge"},
+        {"ja": "2つ目：精度と速度の両立", "en": "Second: balancing accuracy and speed"},
+        {"ja": "3つ目：データの品質の管理", "en": "Third: managing data quality"},
+        {"ja": "謙虚さ：これから学ぶこと", "en": "Humility: what you still need to learn"}
+      ],
+      "modelAnswerJa": "3つの点で活かせると考えております。\n1つ目は、画像認識の知識です。物体検出のモデルを作り、評価してきた経験は、ADASの認識機能の開発に役立つと思います。\n2つ目は、精度と速度を両立させた経験です。モデルを軽量化し、Jetson上で【数値：25】FPSを達成しました。限られた計算資源でAIを動かす、車載の開発に活かせます。\n3つ目は、データの品質を管理した経験です。データセット作りでは、アノテーションのルールを作り、チームで品質をそろえました。\nもちろん、実務では機能安全や品質のプロセスなど、学ぶことが多いと理解しております。まずは基礎を早く身につけ、現場で役立つエンジニアになりたいです。",
+      "modelAnswerEn": "I believe I can apply it in three ways.\nThe first is knowledge of image recognition. I think my experience building and evaluating object-detection models will be useful for developing ADAS perception functions.\nThe second is my experience of achieving both accuracy and speed. I made the model lighter and reached [number: 25] FPS on a Jetson. I can use this in in-vehicle development, where AI must run on limited computing resources.\nThe third is my experience of managing data quality. When building the dataset, I created annotation rules and kept quality consistent across the team.\nOf course, I understand that there is much to learn in real work, such as functional safety and quality processes. First, I want to learn the basics quickly and become an engineer who is useful in the field.",
+      "shortAnswerJa": "3つの点で活かせると考えております。画像認識の知識、精度と速度を両立させた経験、そしてデータの品質を管理した経験です。特に、組込みボードでモデルを速く動かした経験は、ADASの開発に役立つと思います。実務に必要な知識も、早く身につけたいと考えております。",
+      "keyPhrases": [
+        {"ja": "3つの点で活かせると考えております。", "en": "I believe I can apply it in three ways."},
+        {"ja": "ADASの認識機能の開発に役立つと思います。", "en": "I think it will be useful for developing ADAS perception functions."},
+        {"ja": "限られた計算資源でAIを動かす、車載の開発に活かせます。", "en": "I can use it in in-vehicle development, where AI must run on limited computing resources."},
+        {"ja": "チームで品質をそろえました。", "en": "We kept the quality consistent across the team."},
+        {"ja": "実務では、学ぶことが多いと理解しております。", "en": "I understand that there is much to learn in real work."},
+        {"ja": "まずは基礎を早く身につけたいです。", "en": "First, I want to learn the basics quickly."}
+      ],
+      "followUps": [
+        {"ja": "研究と実務では、何が一番違うと思いますか。", "en": "What do you think is the biggest difference between research and real work?", "hintJa": "実務では、精度だけでなく、安全性や品質、納期も守る必要がある点だと思います。", "tipEn": "Show a realistic view: safety standards, quality processes, deadlines and customers. Your full answer is q74."},
+        {"ja": "画像認識以外の仕事に配属されたら、どうしますか。", "en": "What would you do if you were assigned to work other than image recognition?", "hintJa": "まずはその仕事に全力で取り組み、AIの知識が活かせる場面を探したいと考えております。", "tipEn": "Show flexibility; 'what if you are placed in a department you did not choose' is a standard question for international students (see q72)."},
+        {"ja": "機能安全について、知っていることはありますか。", "en": "What do you know about functional safety?", "hintJa": "電子システムの故障による危険を、許容できる程度まで減らす考え方だと理解しております。", "tipEn": "Give a short, correct definition (the standard is ISO 26262) and admit you are still learning; mention SOTIF only if you can explain it."},
+        {"ja": "生成AIやLLMにも興味はありますか。", "en": "Are you also interested in generative AI and LLMs?", "hintJa": "はい、車内の音声アシスタントなど、生成AIの活用が進んでいることに関心があります。", "tipEn": "FPT's automotive AI-engineer postings stress LLMs and RAG; show interest and mention one thing you have actually tried."}
+      ],
+      "pitfallsEn": [
+        "Claiming you can contribute to everything immediately; new graduates should show realism and learning ability.",
+        "Listing skills without linking each one to a real task at the company.",
+        "Forgetting automotive requirements such as safety and quality; show that you know they matter."
+      ]
+    },
+    {
+      "id": "q30",
+      "category": "international",
+      "week": 1,
+      "questionJa": "なぜ日本で働きたいのですか。",
+      "variantsJa": [
+        "日本で就職しようと思った理由は何ですか。",
+        "なぜ母国ではなく、日本で働きたいのですか。",
+        "日本で働くことを選んだ理由を教えてください。"
+      ],
+      "questionEn": "Why do you want to work in Japan?",
+      "intentEn": "HR uses this to judge motivation and whether you will stay long term. They want career reasons (what drew you to Japan and how you want to contribute here), not just that you like living in Japan.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：理由は2つ", "en": "Conclusion: two reasons"},
+        {"ja": "理由1：専門を日本の自動車産業で活かす", "en": "Reason 1: use your specialty in Japan's automotive industry"},
+        {"ja": "理由2：働き方が合う（経験から）", "en": "Reason 2: the work style suits you (from experience)"},
+        {"ja": "将来：日本で長く働き、つなぐ役割へ", "en": "Future: a long career in Japan and a bridging role"}
+      ],
+      "modelAnswerJa": "理由は2つあります。\n1つ目は、研究で学んだ車載AIの技術を、自動車産業が盛んな日本で活かしたいからです。日本の自動車メーカーは、世界で高く評価されています。安全や品質への意識も、非常に高いと感じます。私も研究で、車の安全を守るAIに取り組んできました。\n2つ目は、日本の仕事の進め方が、自分に合っていると感じたからです。【年数：2】年間のアルバイトで、事前の準備や確認を大切にする働き方を学びました。この丁寧さは、安全が第一の車載開発にも必要だと思います。\n日本で長く経験を積みたいと考えております。将来は、日本のお客様と海外の開発チームをつなぐエンジニアになりたいです。",
+      "modelAnswerEn": "There are two reasons.\nThe first is that I want to use the in-vehicle AI technology I learned in my research in Japan, where the automotive industry is strong. Japanese carmakers are highly regarded worldwide. I also feel that their awareness of safety and quality is very high. In my research, I too have worked on AI that protects safety in cars.\nThe second is that I feel the Japanese way of working suits me. Through [years: 2] years of part-time work, I learned a way of working that values preparation and checking in advance. I think this carefulness is also necessary for in-vehicle development, where safety comes first.\nI want to gain experience in Japan over the long term. In the future, I want to become an engineer who connects Japanese customers with overseas development teams.",
+      "shortAnswerJa": "理由は2つあります。1つ目は、研究で学んだ車載AIの技術を、自動車産業が盛んな日本で活かしたいからです。2つ目は、準備や確認を大切にする日本の働き方が、自分に合っていると感じたからです。日本で長く経験を積み、自動車の安全に貢献したいと考えております。",
+      "keyPhrases": [
+        {"ja": "研究で学んだ技術を、自動車産業が盛んな日本で活かしたいからです。", "en": "Because I want to use the technology I learned in my research in Japan, where the automotive industry is strong."},
+        {"ja": "安全や品質への意識も、非常に高いと感じます。", "en": "I also feel that awareness of safety and quality is very high."},
+        {"ja": "日本の仕事の進め方が、自分に合っていると感じたからです。", "en": "Because I feel the Japanese way of working suits me."},
+        {"ja": "日本で長く経験を積みたいと考えております。", "en": "I want to gain experience in Japan over the long term."},
+        {"ja": "日本とベトナムのチームをつなぐ役割も担いたいと考えております。", "en": "Optional, for Vietnamese speakers only: I would also like to bridge Japanese and Vietnamese teams (keep your main reason technical)."}
+      ],
+      "followUps": [
+        {"ja": "なぜ、日本に留学しようと思ったのですか。", "en": "Why did you decide to study in Japan?", "hintJa": "日本では自動車や画像処理の研究が進んでいると知り、日本で学びたいと考えたからです。", "tipEn": "Keep one consistent story: studying in Japan, then research, then working in Japan."},
+        {"ja": "母国で働くことは考えませんでしたか。", "en": "Didn't you consider working in your home country?", "hintJa": "考えましたが、自動車の安全技術に深く関わるには、日本で働くことが一番だと判断しました。", "tipEn": "Never criticise your home country; frame Japan as the best place for this specific goal."},
+        {"ja": "日本の働き方で、大変だと思うことはありますか。", "en": "Is there anything about the Japanese way of working that you find hard?", "hintJa": "最初は確認の多さに驚きましたが、今はミスを防ぐために大切だと理解しております。", "tipEn": "Be honest but positive, and show how you adapted."}
+      ],
+      "pitfallsEn": [
+        "Reasons about living rather than working (food, anime, safe streets); give career reasons first.",
+        "Negative comparisons between Japan and your home country, in either direction.",
+        "A reason that would fit any country or company; connect it to automotive AI and your research."
+      ]
+    },
+    {
+      "id": "q31",
+      "category": "international",
+      "week": 1,
+      "questionJa": "日本語で仕事をすることに、不安はありませんか。",
+      "variantsJa": [
+        "日本語での業務に、不安な点はありますか。",
+        "ご自身の日本語力について、どう評価していますか。",
+        "敬語を使ってお客様とやり取りすることは、できそうですか。"
+      ],
+      "questionEn": "Do you have any worries about working in Japanese?",
+      "intentEn": "Honest self-awareness about your Japanese, and whether you have concrete strategies so that language gaps do not cause problems at work. Careful listening and confirming matter more to interviewers than perfect grammar.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：課題を正直に認める", "en": "Conclusion: honestly admit the gap"},
+        {"ja": "根拠：今ある力（N2、接客経験）", "en": "Evidence: what you can already do (N2, customer service)"},
+        {"ja": "対策：毎日の練習", "en": "Action: daily practice"},
+        {"ja": "仕事での工夫：言い換えて確認し、文字でも残す", "en": "At work: rephrase to confirm, and keep a written record"},
+        {"ja": "締め：これからの目標", "en": "Close: your next goal"}
+      ],
+      "modelAnswerJa": "正直に申し上げますと、話す力には、まだ課題があると感じております。特に、敬語で速く話す場面では、言葉がすぐに出ないことがあります。\nただ、仕事に必要な基礎は身につけております。日本語能力試験のN2に合格し、読むことと聞くことには自信があります。また、【年数：2】年間、アルバイトで日本語の接客を続けてまいりました。\n現在は、毎日の音読と、自分の回答を録音して直す練習を続けております。仕事では、相手の話を自分の言葉で言い換えて、必ず確認いたします。大切な内容は、メールやチャットでも残すようにいたします。\n入社後も勉強を続け、【目標：N1合格】を目指します。",
+      "modelAnswerEn": "To be honest, I feel I still have room to improve in speaking. In particular, when I have to speak quickly in keigo, the words sometimes do not come out right away.\nHowever, I have the basics needed for work. I have passed N2 of the Japanese-Language Proficiency Test, and I am confident in reading and listening. I have also been serving customers in Japanese at my part-time job for [years: 2] years.\nAt present, I keep practising every day by reading aloud and by recording my own answers and correcting them. At work, I will always rephrase what the other person said in my own words to confirm it. I will also keep important points in writing, by email or chat.\nAfter joining, I will keep studying and aim to [goal: pass N1].",
+      "shortAnswerJa": "正直に申し上げますと、敬語で速く話すことには、まだ課題があります。ただ、N2に合格し、【年数：2】年間、日本語で接客を続けてまいりました。仕事では、相手の話を自分の言葉で言い換えて、必ず確認いたします。入社後も勉強を続け、【目標：N1合格】を目指します。",
+      "keyPhrases": [
+        {"ja": "正直に申し上げますと、話す力には、まだ課題があると感じております。", "en": "To be honest, I feel I still have room to improve in speaking."},
+        {"ja": "読むことと聞くことには自信があります。", "en": "I am confident in reading and listening."},
+        {"ja": "明日の15時まで、ということでよろしいでしょうか。", "en": "So, by 3 p.m. tomorrow; is that correct? (a paraphrase check)"},
+        {"ja": "恐れ入りますが、もう一度おっしゃっていただけますか。", "en": "I'm sorry, could you say that once more?"},
+        {"ja": "大切な内容は、メールやチャットでも残すようにいたします。", "en": "I will also keep important points in writing, by email or chat."},
+        {"ja": "入社後も、勉強を続けてまいります。", "en": "I will keep studying after joining."}
+      ],
+      "followUps": [
+        {"ja": "敬語で困ったことはありますか。", "en": "Have you ever had trouble with keigo?", "hintJa": "はい、アルバイトを始めた頃は、お客様への言葉づかいで迷うことがよくありました。", "tipEn": "Give a real example and what you did about it (learned set phrases, asked co-workers)."},
+        {"ja": "会議で話が理解できなかったら、どうしますか。", "en": "What will you do if you cannot follow a meeting?", "hintJa": "その場で確認できる場合は質問し、難しい場合は会議の後にすぐ確認します。", "tipEn": "Show that you never leave things unclear, and that you follow up in writing."},
+        {"ja": "N1は受験する予定ですか。", "en": "Do you plan to take N1?", "hintJa": "はい、【時期：次回】の試験での合格を目指して勉強しております。", "tipEn": "Say this only if it is true, and add the date and how you study."},
+        {"ja": "英語での仕事は大丈夫ですか。", "en": "Are you OK working in English?", "hintJa": "はい、英語の論文を日常的に読んでおり、メールや簡単な会議にも対応できます。", "tipEn": "FPT works with overseas teams and has asked this; be honest about your level."}
+      ],
+      "pitfallsEn": [
+        "Saying 'no worries at all'; it sounds unrealistic. Admit one gap, then show your actions.",
+        "Only listing weaknesses; balance them with evidence (N2, two years of customer service).",
+        "Promising N1 or other goals that you are not actually working towards.",
+        "Optional, for Vietnamese speakers: drill long vowels and small っ (e.g., 実験, 報告), because hearing and saying them is a common, documented difficulty."
+      ]
+    },
+    {
+      "id": "q32",
+      "category": "international",
+      "week": 1,
+      "questionJa": "将来、母国に帰る予定はありますか。日本ではどのくらい働くつもりですか。",
+      "variantsJa": [
+        "日本でずっと働くつもりですか。",
+        "いずれは母国に帰りたいと考えていますか。",
+        "長期的なキャリアプランを教えてください。日本で働き続ける予定ですか。"
+      ],
+      "questionEn": "Do you plan to return to your home country in the future? How long do you intend to work in Japan?",
+      "intentEn": "Whether you will stay long enough to justify training and placement. HR wants a sincere, long-term career plan in Japan; employers are even advised to check this point with international candidates.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：帰国予定と働く期間", "en": "Conclusion: return plans and how long"},
+        {"ja": "理由：長く働きたい理由", "en": "Reason: why you want to stay long term"},
+        {"ja": "キャリア：5年後と10年後の姿", "en": "Career: where you want to be in 5 and 10 years"},
+        {"ja": "締め：以前からの考えと貢献", "en": "Close: your long-held plan and your contribution"}
+      ],
+      "modelAnswerJa": "今のところ、帰国する予定はございません。日本で、【期間：できるだけ長く】働きたいと考えております。\n理由は、車載AIの技術者として一人前になるには、長い時間が必要だからです。技術に加えて、安全や品質の考え方、そしてお客様との信頼も欠かせません。\nまずは日本の現場で、基礎をしっかり身につけます。5年後には、日本のお客様と海外の開発チームをつなぐ役割を担いたいです。10年後には、プロジェクト全体を任されるエンジニアになることが目標です。\n日本で働くことは、留学を決めたときから考えておりました。御社で長く働き、日本の自動車業界に貢献したいと考えております。",
+      "modelAnswerEn": "At the moment, I have no plans to return home. I would like to work in Japan [period: for as long as possible].\nThe reason is that it takes a long time to become a fully competent engineer in in-vehicle AI. Besides technology, an understanding of safety and quality, and the trust of customers, are also essential.\nFirst, I will build a solid foundation on site in Japan. In five years, I want to take on the role of connecting Japanese customers with overseas development teams. In ten years, my goal is to be an engineer who is entrusted with a whole project.\nI have been thinking about working in Japan since I decided to study here. I want to work at your company for a long time and contribute to Japan's automotive industry.",
+      "shortAnswerJa": "今のところ、帰国する予定はございません。日本で、【期間：できるだけ長く】働きたいと考えております。車載AIは、一人前になるまでに時間がかかる分野だからです。まずは現場で経験を積みます。将来は、日本のお客様と海外の開発チームをつなぐエンジニアになりたいです。",
+      "keyPhrases": [
+        {"ja": "今のところ、帰国する予定はございません。", "en": "At the moment, I have no plans to return home."},
+        {"ja": "日本で、【期間：できるだけ長く】働きたいと考えております。", "en": "I would like to work in Japan [for as long as possible]. (Swap in your honest answer, e.g. 少なくとも10年は.)"},
+        {"ja": "一人前になるには、長い時間が必要だからです。", "en": "Because it takes a long time to become fully competent."},
+        {"ja": "家族も、日本で働くことを応援してくれています。", "en": "My family also supports my working in Japan (say this only if it is true)."},
+        {"ja": "日本とベトナムの開発チームをつなぐエンジニアになりたいです。", "en": "Optional, for Vietnamese speakers only: I want to become an engineer who connects Japanese and Vietnamese development teams."}
+      ],
+      "followUps": [
+        {"ja": "ご家族は、日本で働くことに賛成されていますか。", "en": "Does your family agree with you working in Japan?", "hintJa": "はい、家族も私の目標を理解し、応援してくれています。", "tipEn": "Answer honestly; if it is complicated, say that you have discussed it with them and made your decision."},
+        {"ja": "将来、海外の拠点で働く可能性もありますが、大丈夫ですか。", "en": "You might work at an overseas office in the future; is that OK?", "hintJa": "はい、必要であれば、海外の拠点での勤務にも柔軟に対応いたします。", "tipEn": "FPT has offices in many countries; show flexibility while keeping your focus on a career in Japan."},
+        {"ja": "10年後、どんなエンジニアになっていたいですか。", "en": "What kind of engineer do you want to be in 10 years?", "hintJa": "10年後は、SDV向けAIの提案から開発までをリードできるエンジニアになりたいです。", "tipEn": "Keep it consistent with your career-plan answer (q25): concrete roles and skills, tied to the company's direction (SDV, AI)."}
+      ],
+      "pitfallsEn": [
+        "Saying 'only three years' or 'until I save money'; HR uses this answer for long-term placement.",
+        "Promising 'I will never go back', or a number of years you do not mean; 「今のところ帰国の予定はなく、できるだけ長く」 is honest and enough.",
+        "Talking only about private life; connect the plan to your career and the company."
+      ]
+    },
+    {
+      "id": "q33",
+      "category": "international",
+      "week": 6,
+      "questionJa": "日本と母国で、働き方や文化の違いを感じることはありますか。",
+      "variantsJa": [
+        "日本で生活していて、母国との違いを感じることはありますか。",
+        "日本の働き方について、どう思いますか。",
+        "日本の職場文化で、驚いたことはありますか。"
+      ],
+      "questionEn": "Do you notice differences in work style or culture between Japan and your home country?",
+      "intentEn": "Cultural adaptability and open-mindedness: whether you understand Japanese work habits such as 報連相 and respect both cultures without criticising either.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：感じる違いを1つ", "en": "Conclusion: one difference you notice"},
+        {"ja": "具体例：日本での経験", "en": "Example: your experience in Japan"},
+        {"ja": "気づき：その良さを理解した", "en": "Insight: why you came to value it"},
+        {"ja": "比較：母国の良さも前向きに", "en": "Comparison: your home country's strength, said positively"},
+        {"ja": "締め：両方の理解を活かす", "en": "Close: use your understanding of both"}
+      ],
+      "modelAnswerJa": "はい、あります。一番大きな違いは、仕事の進め方です。\n日本では、事前の準備や確認を、とても丁寧に行うと感じます。アルバイト先でも、開店前に全員で予定を確認し、小さなことでもすぐに報告します。最初は時間がかかると思いましたが、ミスが減り、お客様の満足につながると気づきました。この経験から、報告・連絡・相談の大切さを学びました。\n一方で、母国では、【母国の特徴：まず行動して、速く進めること】を大切にする職場が多いと聞いています。\nどちらにも良さがあると思います。両方を理解していることを、日本と海外のチームをつなぐ場面で活かしたいと考えております。",
+      "modelAnswerEn": "Yes, I do. The biggest difference is how work is carried out.\nIn Japan, I feel that preparation and checking are done very carefully in advance. At my part-time job, too, everyone checks the plan together before opening, and we report even small things right away. At first I thought it took time, but I realised it reduces mistakes and leads to customer satisfaction. From this experience, I learned the importance of reporting, informing and consulting.\nOn the other hand, I hear that many workplaces in my home country value [home-country trait: acting first and moving fast].\nI think both have their strengths. I want to use my understanding of both when connecting Japanese and overseas teams.",
+      "shortAnswerJa": "はい、あります。一番大きな違いは、仕事の進め方です。日本では、事前の準備や確認を、とても丁寧に行うと感じます。最初は時間がかかると思いましたが、ミスが減ることに気づきました。どちらの働き方にも良さがあるので、両方を大切にして働きたいです。",
+      "keyPhrases": [
+        {"ja": "一番大きな違いは、仕事の進め方です。", "en": "The biggest difference is how work is carried out."},
+        {"ja": "最初は時間がかかると思いましたが、ミスが減ると気づきました。", "en": "At first I thought it took time, but I realised it reduces mistakes."},
+        {"ja": "母国では、スピードを大切にする職場が多いと聞いています。", "en": "I hear that many workplaces in my home country value speed."},
+        {"ja": "どちらにも良さがあると思います。", "en": "I think both have their strengths."},
+        {"ja": "両方を理解していることを、チームをつなぐ場面で活かしたいです。", "en": "I want to use my understanding of both when connecting teams."}
+      ],
+      "followUps": [
+        {"ja": "日本の働き方で、慣れるのに苦労したことはありますか。", "en": "Was there anything about Japanese work habits that was hard to get used to?", "hintJa": "はい、最初は、はっきり言わない表現の意味を理解するのが難しかったです。", "tipEn": "Give a mild, honest example and how you adapted (asking, confirming)."},
+        {"ja": "考え方の違う人と働くとき、何に気をつけますか。", "en": "What do you pay attention to when working with people who think differently?", "hintJa": "まず相手のやり方の理由を聞き、目的を共有するようにしております。", "tipEn": "Relevant to FPT's multinational teams: listen first, share the goal, agree on rules."},
+        {"ja": "当社にはベトナム出身の社員が多いですが、一緒に働くことに抵抗はありませんか。", "en": "Many of our employees are from Vietnam; are you comfortable working with them?", "hintJa": "抵抗はまったくなく、さまざまな国の方と働けることを、とても楽しみにしております。", "tipEn": "FPT interviews have asked this; show genuine openness, and Vietnamese speakers may add one line about bridging."}
+      ],
+      "pitfallsEn": [
+        "Criticising either country (e.g., 'Japanese meetings waste time' or 'people at home are careless').",
+        "Stereotyping a whole nation; speak from your own experience ('I felt', 'I heard').",
+        "Stopping at the difference; always say how you adapt and what you will bring.",
+        "Optional, for Vietnamese speakers: you may add one line that understanding both cultures helps in FPT's mixed Japanese and Vietnamese teams, but keep the main answer neutral."
+      ]
+    },
+    {
+      "id": "q34",
+      "category": "international",
+      "week": 6,
+      "questionJa": "勤務地や転勤、海外出張について、希望や制約はありますか。",
+      "variantsJa": [
+        "全国転勤の可能性がありますが、大丈夫ですか。",
+        "勤務地の希望はありますか。",
+        "お客様先への常駐や、海外出張は可能ですか。"
+      ],
+      "questionEn": "Do you have any preferences or constraints regarding work location, relocation or overseas business trips?",
+      "intentEn": "Flexibility for placement (regional offices, client sites, business trips) and honesty about any real constraints before an offer is made. HR uses the answer to plan where you can be assigned.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：制約の有無を最初に", "en": "Conclusion: say first whether you have constraints"},
+        {"ja": "前向きな理由：現場に近い勤務の価値", "en": "Positive reason: the value of working close to the field"},
+        {"ja": "海外出張：英語と海外チーム", "en": "Overseas trips: English and overseas teams"},
+        {"ja": "締め：どこでも全力で", "en": "Close: full effort wherever you are"}
+      ],
+      "modelAnswerJa": "勤務地や転勤について、特に制約はございません。御社の各拠点でも、お客様先でも、柔軟に対応いたします。\nむしろ、自動車メーカーの近くで働くことは、大きな成長の機会だと考えております。研究でも、実際の道路の画像を見て、初めてわかる課題が多くありました。そのため、お客様の現場に近い場所で、実際の開発を学びたいです。【地域：名古屋】など、自動車産業が集まる地域での勤務も、ぜひ経験したいです。\n海外出張も、問題ございません。英語も使えますので、海外の開発チームと直接話せる、良い機会だと考えております。\nどの勤務地でも、まずはその場所で信頼されるよう、全力で取り組みます。",
+      "modelAnswerEn": "I have no particular constraints regarding work location or relocation. I can work flexibly at any of your offices or at client sites.\nIn fact, I think working near carmakers is a great opportunity to grow. In my research, too, there were many problems I only understood after looking at real road images. So I want to learn real development at a place close to the customer's site. I would very much like to work in a region where the automotive industry is concentrated, such as [area: Nagoya].\nOverseas business trips are no problem either. Since I can also use English, I see them as a good chance to talk directly with overseas development teams.\nWherever I work, I will do my best to earn trust there first.",
+      "shortAnswerJa": "勤務地や転勤について、特に制約はございません。お客様先での勤務や海外出張にも、柔軟に対応いたします。むしろ、自動車メーカーの近くで働くことは、現場を学ぶ良い機会だと考えております。どの勤務地でも、信頼されるよう全力で取り組みます。",
+      "keyPhrases": [
+        {"ja": "勤務地や転勤について、特に制約はございません。", "en": "I have no particular constraints regarding location or relocation."},
+        {"ja": "お客様先でも、柔軟に対応いたします。", "en": "I can also work flexibly at client sites."},
+        {"ja": "大きな成長の機会だと考えております。", "en": "I see it as a great opportunity to grow."},
+        {"ja": "海外出張も、問題ございません。", "en": "Overseas business trips are no problem either."},
+        {"ja": "1点だけ、お伝えしたいことがございます。【事情：家族の事情】のため、【期間：最初の1年】は【地域：関東】での勤務を希望しております。", "en": "Only if you have a real constraint: 'There is one thing I would like to mention. Because of [reason], I would like to work in [area] for [period].'"},
+        {"ja": "それ以外は、柔軟に対応いたします。", "en": "Apart from that, I can be flexible."}
+      ],
+      "followUps": [
+        {"ja": "地方の拠点や、お客様先に長く常駐することになっても大丈夫ですか。", "en": "Would it be OK to be based at a regional office or at a client site for a long time?", "hintJa": "はい、お客様の近くで働くほうが多くを学べると考えておりますので、問題ございません。", "tipEn": "FPT's automotive roles are spread across many cities and often at client sites; answer positively."},
+        {"ja": "希望の勤務地はありますか。", "en": "Do you have a preferred work location?", "hintJa": "特にございませんが、強いて申し上げるなら、自動車関連のお客様が多い地域を希望いたします。", "tipEn": "Give a soft preference linked to your career goal, not to lifestyle."},
+        {"ja": "入社後の研修が、海外の拠点で行われる場合も大丈夫ですか。", "en": "Is it OK if training after joining takes place at an overseas office?", "hintJa": "はい、海外の開発チームを理解する良い機会になると考えております。", "tipEn": "A recent FPT automotive new-graduate programme trained mainly in Vietnam; show flexibility and ask about details in your reverse questions."}
+      ],
+      "pitfallsEn": [
+        "Saying 'anywhere is fine' when it is not true; a constraint revealed after the offer damages trust.",
+        "Stating a constraint without a reason or time frame; keep it short, honest and specific.",
+        "Giving lifestyle reasons for preferences (big city, near friends); link any preference to your work."
+      ]
+    },
+    {
+      "id": "q35",
+      "category": "international",
+      "week": 6,
+      "questionJa": "日本人のお客様や同僚とコミュニケーションをとるとき、どんなことに気をつけていますか。",
+      "variantsJa": [
+        "日本人とコミュニケーションをとるときに、心がけていることはありますか。",
+        "お客様と話すときに、気をつけていることは何ですか。",
+        "職場で円滑にコミュニケーションをとるために、何が大切だと思いますか。"
+      ],
+      "questionEn": "What do you pay attention to when communicating with Japanese customers and colleagues?",
+      "intentEn": "Whether you have concrete communication habits (conclusion first, confirming, 報連相) that will work with Japanese customers and teams. This matters even more in a bridge role between customers and developers.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：気をつけていることは3つ", "en": "Conclusion: three things"},
+        {"ja": "1つ目：結論から短く", "en": "First: conclusion first, briefly"},
+        {"ja": "2つ目：言い換えて確認", "en": "Second: rephrase to confirm"},
+        {"ja": "3つ目：悪い情報ほど早く報告", "en": "Third: report bad news early"},
+        {"ja": "締め：入社後の場面につなげる", "en": "Close: link it to your work after joining"}
+      ],
+      "modelAnswerJa": "私が気をつけていることは、3つあります。\n1つ目は、結論から短く話すことです。相手の時間を大切にするため、まず結論を伝え、その後に理由を説明します。\n2つ目は、理解したことを自分の言葉で言い換えて、確認することです。アルバイトでは、お客様の注文を、必ず繰り返して確認していました。その結果、注文の間違いがほとんどなくなりました。\n3つ目は、悪い情報ほど早く報告することです。研究で、問題を一人で抱えて失敗した経験から、早めの報告・連絡・相談を心がけております。\n入社後は、お客様と開発チームの間に立つ場面も多いと思います。この3つを徹底し、信頼されるエンジニアになりたいです。",
+      "modelAnswerEn": "There are three things I pay attention to.\nThe first is speaking briefly, starting with the conclusion. To respect the other person's time, I state the conclusion first and then explain the reasons.\nThe second is rephrasing what I understood in my own words to confirm it. At my part-time job, I always repeated customers' orders back to them to check. As a result, order mistakes almost disappeared.\nThe third is reporting bad news as early as possible. Because I once failed in my research by keeping a problem to myself, I make a point of reporting, informing and consulting early.\nAfter joining, I think I will often stand between customers and the development team. I want to practise these three things thoroughly and become a trusted engineer.",
+      "shortAnswerJa": "私が気をつけていることは、3つあります。1つ目は、結論から短く話すことです。2つ目は、理解したことを言い換えて確認することです。3つ目は、悪い情報ほど早く報告することです。入社後も、この3つを徹底し、お客様に信頼されるエンジニアを目指します。",
+      "keyPhrases": [
+        {"ja": "結論から申し上げますと、予定どおり進んでおります。", "en": "To give you the conclusion first, it is on schedule."},
+        {"ja": "念のため、確認してもよろしいでしょうか。", "en": "Just to be sure, may I confirm?"},
+        {"ja": "悪い情報ほど、早く報告するようにしております。", "en": "The worse the news, the sooner I report it."},
+        {"ja": "お客様と開発チームの間に立つ場面も多いと思います。", "en": "I expect to often stand between customers and the development team."},
+        {"ja": "日本語とベトナム語の両方で、チームをつなぐことができます。", "en": "Optional, for Vietnamese speakers only: I can connect the team in both Japanese and Vietnamese."}
+      ],
+      "followUps": [
+        {"ja": "お客様の要望が、技術的に難しい場合はどうしますか。", "en": "What would you do if a customer's request is technically difficult?", "hintJa": "まず要望の目的を確認し、実現できる代わりの案をいくつか提案します。", "tipEn": "Bridge-role thinking: confirm the purpose, offer alternatives, and never just say no."},
+        {"ja": "日本人の同僚が、はっきり言わないときはどうしますか。", "en": "What do you do when a Japanese colleague does not say things directly?", "hintJa": "相手の意図を推測するだけでなく、失礼のないように具体的に確認します。", "tipEn": "Show respect for indirect communication plus polite confirmation."},
+        {"ja": "メールやチャットで、気をつけていることはありますか。", "en": "Is there anything you pay attention to in email or chat?", "hintJa": "件名と最初の1文で要点がわかるように書き、期限もはっきり書くようにしております。", "tipEn": "Written communication is key with offshore teams; mention clarity and deadlines."},
+        {"ja": "ご自身の日本語が伝わらなかったときは、どうしますか。", "en": "What do you do when your Japanese is not understood?", "hintJa": "別の言葉で言い直したり、図や文章で示したりして、伝わったかを確認します。", "tipEn": "Show practical strategies rather than anxiety."}
+      ],
+      "pitfallsEn": [
+        "Only general words like 「敬語を正しく使う」; give concrete actions and an example.",
+        "Saying you avoid asking questions to be polite; in Japanese workplaces, confirming is valued.",
+        "Forgetting 'bad news early'; it is the heart of 報連相."
+      ]
+    }
+  ]
+}

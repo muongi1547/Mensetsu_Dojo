@@ -1,0 +1,518 @@
+{
+  "questions": [
+    {
+      "id": "q20",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "当社を志望する理由を教えてください。",
+      "variantsJa": ["なぜ当社を志望されたのですか。", "当社を選んだ理由を聞かせてください。", "数ある会社の中で、なぜ当社なんですか。"],
+      "questionEn": "Why do you want to join our company?",
+      "intentEn": "Checks whether your reasons are specific to this company and consistent with your career axis. It also shows whether you are likely to stay and contribute.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：御社を志望する理由を一言で", "en": "Conclusion: your reason in one sentence"},
+        {"ja": "軸：就活の軸を2つ", "en": "Axis: your two job-hunting axes"},
+        {"ja": "根拠：御社ならではの事実", "en": "Evidence: one or two facts specific to FPT from your research"},
+        {"ja": "貢献：研究の経験をどう生かすか", "en": "Contribution: how you will use your research experience"},
+        {"ja": "将来：目指す姿で締める", "en": "Future: close with the engineer you want to become"}
+      ],
+      "modelAnswerJa": "御社を志望する理由は、車載AIの開発で、日本と海外をつなぐ仕事ができるからです。\n私の就職活動の軸は、AIで人の安全を支えることと、多様なチームで成果を出すことです。\n御社グループは2024年に、AIや自動車を重点分野にすると発表されました。また、日本とベトナムの技術者が連携して開発していると拝見しました。この2点が、私の軸と重なります。\n私は研究で、夜間の歩行者検出の精度を約【数値：8】ポイント上げました。モデルも軽量化し、Jetson上で【数値：25】FPSで動かしました。この経験を生かし、安全な車載AIの開発に貢献したいです。将来は、お客様と開発チームをつなぐエンジニアになりたいです。",
+      "modelAnswerEn": "The reason I want to join your company is that I can develop in-vehicle AI in a role that connects Japan and other countries.\nMy job-hunting axes are supporting people's safety with AI and producing results in a diverse team.\nIn 2024, your group announced that it would make areas such as AI and automotive its focus areas. I also read that engineers in Japan and Vietnam work together on development. These two points match my axes.\nIn my research, I raised the accuracy of night-time pedestrian detection by about [8] points. I also made the model lighter and ran it at [25] FPS on a Jetson. Using this experience, I want to contribute to developing safe in-vehicle AI. In the future, I want to become an engineer who connects customers and development teams.",
+      "shortAnswerJa": "御社を志望する理由は、車載AIの開発で、日本と海外をつなぐ仕事ができるからです。御社グループはAIや自動車を重点分野とし、日本とベトナムの技術者が連携して開発しています。研究で得た歩行者検出と軽量化の経験を生かし、安全な車載AIの開発に貢献したいです。",
+      "keyPhrases": [
+        {"ja": "御社を志望する理由は、〜からです。", "en": "The reason I want to join your company is that ..."},
+        {"ja": "私の就職活動の軸は、〜と〜です。", "en": "My job-hunting axes are ... and ..."},
+        {"ja": "御社グループは〜年に、〜と発表されました。", "en": "In (year), your group announced that ..."},
+        {"ja": "この2点が、私の軸と重なります。", "en": "These two points match my axes."},
+        {"ja": "この経験を生かし、〜に貢献したいです。", "en": "Using this experience, I want to contribute to ..."}
+      ],
+      "followUps": [
+        {"ja": "当社の事業で、特に関心があるのはどの分野ですか。", "en": "Which of our businesses interests you most?", "hintJa": "特に関心があるのは、ADAS向けの画像認識の開発です。", "tipEn": "Name one area and link it to your pedestrian-detection research."},
+        {"ja": "同じような会社は、ほかにもあるのではないですか。", "en": "Aren't there other companies like us?", "hintJa": "おっしゃるとおりですが、AIと自動車の両方に力を入れている点が、御社を選ぶ決め手です。", "tipEn": "Agree calmly, then give one FPT-specific point; never criticise other companies."},
+        {"ja": "その情報は、どこで知りましたか。", "en": "Where did you learn that information?", "hintJa": "御社のニュースリリースや採用ページで拝見しました。", "tipEn": "Name official sources and know the year of each fact; this proves real research."},
+        {"ja": "入社後、具体的にどう貢献できますか。", "en": "Specifically, how can you contribute after joining?", "hintJa": "まずは画像認識モデルの評価や軽量化で、研究の経験を生かせると考えております。", "tipEn": "Give a concrete first-year task, not a vague promise."}
+      ],
+      "pitfallsEn": [
+        "Giving reasons that fit any IT company ('global', 'growing') without one FPT-specific, verified fact.",
+        "Reciting many numbers or client names; use one or two facts with the year, and update them from the FPT Prep tab before each interview. The 2024 focus-area announcement was made by the FPT group, so say 御社グループ.",
+        "Talking only about what you will gain (training, growth) instead of what you will contribute.",
+        "For Vietnamese speakers: making 'a bridge between Japan and Vietnam' your main reason; add it in one sentence at most and keep the main reason technical."
+      ]
+    },
+    {
+      "id": "q21",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "なぜ自動車業界、特に車載AIの分野を選んだのですか。",
+      "variantsJa": ["自動車業界を志望する理由は何ですか。", "数ある業界の中で、なぜ車載AIなんですか。", "AIを生かせる業界はほかにもありますが、なぜ自動車なのですか。"],
+      "questionEn": "Why did you choose the automotive industry, and in-vehicle AI in particular?",
+      "intentEn": "Checks whether your interest comes from real experience rather than a general liking for cars, and whether you understand where the industry is going (SDV, ADAS).",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：車載AIを選んだ理由を一言で", "en": "Conclusion: your reason in one sentence"},
+        {"ja": "きっかけ：研究での気づき", "en": "Trigger: what you noticed in your research"},
+        {"ja": "魅力：車載AIならではの難しさとやりがい", "en": "Appeal: the challenge unique to in-vehicle AI"},
+        {"ja": "業界の動き：SDVによる変化", "en": "Industry trend: the change brought by SDVs"},
+        {"ja": "まとめ：この分野で専門性を高めたい", "en": "Close: you want to build expertise in this field"}
+      ],
+      "modelAnswerJa": "車載AIを選んだ理由は、AIの力で人の命を直接守れる分野だからです。\nきっかけは、車載カメラで歩行者を検出する研究です。夜や雨の日の画像を集める中で、人の目でも歩行者が見えにくい場面が多いと実感しました。こうした場面でAIが運転者を助ければ、事故を減らせると考えました。\nまた、車載AIには、限られた計算資源で、リアルタイムに動くことが求められます。研究でも、Jetson上での精度と速度の両立に、難しさとやりがいを感じました。\nさらに今後は、ソフトウェアで機能を更新するSDVが広がっていきます。その中で、AIの役割はますます大きくなると考えております。だからこそ、この分野で専門性を高めたいです。",
+      "modelAnswerEn": "I chose in-vehicle AI because it is a field where AI can directly protect people's lives.\nThe trigger was my research on detecting pedestrians with in-vehicle cameras. While collecting images taken at night and on rainy days, I realised that in many scenes even the human eye can hardly see pedestrians. I thought that if AI helps the driver in such scenes, we can reduce accidents.\nAlso, in-vehicle AI must run in real time with limited computing resources. In my research, too, I found balancing accuracy and speed on a Jetson both difficult and rewarding.\nFurthermore, SDVs, whose functions are updated through software, will keep spreading. As that happens, I believe the role of AI will become ever larger. That is exactly why I want to build my expertise in this field.",
+      "shortAnswerJa": "車載AIを選んだのは、AIの力で人の命を直接守れる分野だからです。歩行者検出の研究で、夜や雨の日は人の目でも歩行者が見えにくいと実感しました。限られた計算資源で動かす難しさにも、やりがいを感じております。SDVが広がる中で、この分野の専門性を高めたいです。",
+      "keyPhrases": [
+        {"ja": "〜を選んだ理由は、〜だからです。", "en": "The reason I chose ... is that ..."},
+        {"ja": "きっかけは、〜です。", "en": "The trigger was ..."},
+        {"ja": "〜と実感しました。", "en": "I really felt that ..."},
+        {"ja": "精度と速度を両立させる", "en": "balance accuracy and speed"},
+        {"ja": "〜が求められます。", "en": "... is required."},
+        {"ja": "だからこそ、〜たいです。", "en": "That is exactly why I want to ..."}
+      ],
+      "followUps": [
+        {"ja": "運転支援や自動運転で、今の課題は何だと思いますか。", "en": "What do you think the current challenges are in driver assistance and autonomous driving?", "hintJa": "夜間や悪天候など、認識の性能が下がる条件への対応が、大きな課題の一つだと考えております。", "tipEn": "Link the answer to your research and stay modest about your expertise."},
+        {"ja": "SDVとは何ですか。簡単に説明してください。", "en": "What is an SDV? Please explain it simply.", "hintJa": "SDVとは、ソフトウェアによって機能が決まり、販売後も更新されていく車のことです。", "tipEn": "Give the same one-sentence definition as in your SDV answer (q48), then one example of what changes for AI engineers."},
+        {"ja": "車の仕事は安全への責任が重いですが、大丈夫ですか。", "en": "Work on cars carries heavy responsibility for safety. Are you okay with that?", "hintJa": "はい、責任が重いからこそ、やりがいがあると考えております。", "tipEn": "Show you take safety seriously and want to learn standards such as ISO 26262."}
+      ],
+      "pitfallsEn": [
+        "Saying only that you like cars or that the industry is big; give a reason linked to your own experience.",
+        "Using SDV, ADAS or 'level 3' without being able to explain each in one simple sentence.",
+        "Talking about the industry in general and forgetting to say what you want to do in it."
+      ]
+    },
+    {
+      "id": "q22",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "なぜAIエンジニアになりたいのですか。",
+      "variantsJa": ["AIエンジニアを目指したきっかけは何ですか。", "どうしてAIの仕事がしたいと思ったんですか。", "AIエンジニアという職種を選んだ理由を教えてください。"],
+      "questionEn": "Why do you want to become an AI engineer?",
+      "intentEn": "Checks whether you understand what the job involves and whether your motivation comes from real experience, so that you will keep learning in a fast-changing field.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：AIエンジニアになりたい理由", "en": "Conclusion: why you want this job"},
+        {"ja": "経験：研究で感じたやりがい", "en": "Experience: what you enjoyed in your research"},
+        {"ja": "強み：自分の強みとの相性", "en": "Fit: how the job suits your strength"},
+        {"ja": "将来：社会で使われるAIを作りたい", "en": "Future: you want to build AI that society uses"}
+      ],
+      "modelAnswerJa": "AIエンジニアになりたい理由は、試行錯誤の成果が、数字ではっきり見える仕事だからです。\n研究では、夜間の歩行者検出の精度が低いという課題がありました。原因を調べると、夜の学習データが少ないことが分かりました。そこで、データ拡張とドメイン適応を試し、精度を約【数値：8】ポイント上げました。仮説を立て、検証し、改善する流れに、大きなやりがいを感じました。\nこの仕事では、原因を一つずつ分析する私の強みも生かせると考えております。\nまた、AIは製品として使われて初めて、本当の価値が生まれます。そのため、社会で実際に使われるAIを作るエンジニアになりたいです。",
+      "modelAnswerEn": "I want to become an AI engineer because it is a job where the results of trial and error show clearly in numbers.\nIn my research, the problem was low accuracy in night-time pedestrian detection. When I looked into the cause, I found that there was little night-time training data. So I tried data augmentation and domain adaptation, and raised accuracy by about [8] points. I found the cycle of forming a hypothesis, testing it and improving very rewarding.\nIn this job, I believe I can also use my strength of analysing causes one by one.\nAlso, AI creates real value only once it is used as a product. That is why I want to become an engineer who builds AI that is actually used in society.",
+      "shortAnswerJa": "AIエンジニアになりたいのは、試行錯誤の成果が、数字ではっきり見える仕事だからです。研究では、夜の学習データ不足という原因を見つけ、精度を約【数値：8】ポイント上げました。原因を一つずつ分析する私の強みも生かせます。将来は、社会で実際に使われるAIを作りたいと考えております。",
+      "keyPhrases": [
+        {"ja": "原因を調べると、〜ことが分かりました。", "en": "When I looked into the cause, I found that ..."},
+        {"ja": "そこで、〜を試しました。", "en": "So I tried ..."},
+        {"ja": "仮説を立て、検証し、改善する", "en": "form a hypothesis, test it and improve"},
+        {"ja": "〜に、大きなやりがいを感じました。", "en": "I found ... very rewarding."},
+        {"ja": "〜て初めて、本当の価値が生まれます。", "en": "... creates real value only once ..."}
+      ],
+      "followUps": [
+        {"ja": "AIエンジニアに必要な能力は何だと思いますか。", "en": "What abilities do you think an AI engineer needs?", "hintJa": "データを正しく見る力と、結果を分かりやすく説明する力だと考えております。", "tipEn": "Give two abilities and one example of how you are building each."},
+        {"ja": "最近、注目しているAIの技術はありますか。", "en": "Is there an AI technology you are paying attention to recently?", "hintJa": "はい、【技術名：エンドツーエンドの自動運転モデル】に注目しております。", "tipEn": "Name the same technology as in your 'recent AI technology' answer (q50) and say why in one sentence; a different topic in each answer looks inconsistent."},
+        {"ja": "AIの進化は速いですが、どのように学び続けていますか。", "en": "AI changes fast. How do you keep learning?", "hintJa": "【学習方法：論文を読み、気になった手法をコードで試すこと】を続けております。", "tipEn": "Be concrete and truthful: what you read, how often, and one method you tried recently."}
+      ],
+      "pitfallsEn": [
+        "Saying 'AI is the future' or 'AI is popular'; that sounds like following a trend.",
+        "Describing only your research topic and forgetting to say why the engineer job (building products) suits you.",
+        "Overstating your role; say clearly which parts of the research you did yourself."
+      ]
+    },
+    {
+      "id": "q23",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "当社について、知っていることを教えてください。",
+      "variantsJa": ["当社のことを、どれくらいご存じですか。", "当社について、どんなことを調べてきましたか。", "当社の事業について、知っている範囲で説明してください。"],
+      "questionEn": "What do you know about our company?",
+      "intentEn": "Checks how seriously you researched the company, including its business in Japan, not just the group name. It also tests whether you can summarise facts briefly and accurately.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：3つの点に注目していると伝える", "en": "Conclusion: say you will cover three points"},
+        {"ja": "1つ目：日本での実績", "en": "Point 1: track record in Japan (history and scale)"},
+        {"ja": "2つ目：自動車分野の取り組み", "en": "Point 2: automotive work"},
+        {"ja": "3つ目：AIへの投資", "en": "Point 3: investment in AI"},
+        {"ja": "まとめ：最も魅力を感じた点", "en": "Close: what attracts you most"}
+      ],
+      "modelAnswerJa": "御社について、特に3つの点に注目しております。\n1つ目は、日本での実績です。2005年から日本で事業を続け、37の国籍の社員が働いています。2026年には、日本での売上高が1,000億円に達したと発表されました。\n2つ目は、自動車分野です。グループ全体で、車載ソフトウェアの技術者が約5,000人います。デンソーやスバルとの協業も、発表されています。\n3つ目は、AIへの投資です。日本で、NVIDIAのGPUを使ったAIファクトリーを運営されています。2025年6月には、スーパーコンピューターの世界ランキングで36位に入りました。\n特に、AIと自動車の両方に力を入れている点に、魅力を感じております。",
+      "modelAnswerEn": "There are three points about your company that I am paying particular attention to.\nThe first is your track record in Japan. You have done business in Japan since 2005, and employees of 37 nationalities work for you. In 2026, you announced that your revenue in Japan had reached 100 billion yen.\nThe second is the automotive field. The group as a whole has about 5,000 automotive software engineers. You have also announced collaborations with DENSO and Subaru.\nThe third is investment in AI. You run an AI Factory in Japan that uses NVIDIA GPUs. In June 2025, it ranked 36th in the world ranking of supercomputers.\nIn particular, I am attracted by the fact that you are putting effort into both AI and automotive.",
+      "shortAnswerJa": "御社は2005年から日本で事業を続け、37の国籍の社員が働いています。自動車分野では、デンソーやスバルとの協業を発表されています。また、御社グループは日本でAIファクトリーを運営されています。AIと自動車の両方に力を入れている点に、魅力を感じております。",
+      "keyPhrases": [
+        {"ja": "御社について、特に3つの点に注目しております。", "en": "There are three points about your company that I am paying particular attention to."},
+        {"ja": "〜と拝見しました。", "en": "I read that ... (humble)"},
+        {"ja": "〜を発表されています。", "en": "You have announced ..."},
+        {"ja": "特に、〜点に魅力を感じております。", "en": "In particular, I am attracted by ..."},
+        {"ja": "約〜人／〜年には", "en": "about ... people / in (year)"}
+      ],
+      "followUps": [
+        {"ja": "当社の課題は何だと思いますか。", "en": "What do you think our challenges are?", "hintJa": "急成長の中で、日本語と技術の両方に強い人材を増やすことが、課題の一つだと考えております。", "tipEn": "Frame it as a challenge you can help solve, never as criticism."},
+        {"ja": "競合と比べて、当社の強みは何ですか。", "en": "Compared with competitors, what is our strength?", "hintJa": "AIの基盤から車載ソフトウェアまで、グループで幅広く対応できる点だと考えております。", "tipEn": "Name one strength backed by a verified fact; do not criticise competitors."},
+        {"ja": "その数字は、いつの情報ですか。", "en": "When is that figure from?", "hintJa": "2026年11月に御社が発表されたニュースリリースで拝見しました。", "tipEn": "Know the year of every number you say; numbers change quickly."}
+      ],
+      "pitfallsEn": [
+        "Listing facts like an encyclopedia without saying which one attracts you and why.",
+        "Using old or wrong numbers, or confusing FPT with FPT Industrial (an unrelated Italian engine maker); check the FPT Prep tab before each interview.",
+        "Making a partnership sound bigger than announced (the DENSO deal is an MoU, a 覚書, not a contract), or calling group-wide figures such as the 5,000 automotive engineers Japan-only.",
+        "Saying the AI Factory 'is ranked 36th' today: that rank is from the June 2025 list and later lists rank it lower, so always say 2025年6月."
+      ]
+    },
+    {
+      "id": "q24",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "入社後、どのような仕事に挑戦したいですか。",
+      "variantsJa": ["入社したら、どんな仕事がしたいですか。", "当社で実現したいことは何ですか。", "希望する業務内容を教えてください。"],
+      "questionEn": "What kind of work do you want to take on after joining?",
+      "intentEn": "Checks whether you understand the real work at FPT (ADAS perception, deployment on in-vehicle chips, bridge roles) and whether your wishes are realistic for a new graduate.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：挑戦したい仕事を一言で", "en": "Conclusion: the work you want, in one sentence"},
+        {"ja": "理由：研究とのつながり", "en": "Reason: the link to your research"},
+        {"ja": "最初の一歩：新人としての取り組み", "en": "First step: what you will do as a new hire"},
+        {"ja": "次の目標：ブリッジ役への挑戦", "en": "Next goal: taking on the bridge role"}
+      ],
+      "modelAnswerJa": "入社後は、ADAS向けの画像認識モデルの開発に挑戦したいと考えております。\n特に、モデルを軽量化し、車載のSoCで動かす仕事に関心があります。研究で、Jetson上で【数値：25】FPSを実現した経験を生かせるからです。\nまずは研修で基礎を固め、機能安全や品質プロセスも学びます。そのうえで、モデルの評価やデータの整備を、一つずつ確実に進めたいです。\nまた、御社の研修は、1年以内にお客様と開発チームの架け橋になることが目標だと拝見しました。私も、日本のお客様の要望を正しく理解し、海外のチームに分かりやすく伝えたいです。",
+      "modelAnswerEn": "After joining, I would like to take on developing image-recognition models for ADAS.\nI am especially interested in making models lighter and running them on in-vehicle SoCs, because I can use my experience of achieving [25] FPS on a Jetson in my research.\nFirst, I will build a foundation in training and also learn functional safety and quality processes. After that, I want to carry out model evaluation and data preparation reliably, one by one.\nAlso, I read that the goal of your training is for new employees to become a bridge between customers and the development team within one year. I, too, want to understand Japanese customers' requests correctly and explain them clearly to overseas teams.",
+      "shortAnswerJa": "ADAS向けの画像認識モデルの開発、特に軽量化して車載機器で動かす仕事に挑戦したいです。研究で、Jetson上で【数値：25】FPSを出した経験を生かせます。まずは評価やデータ整備を、確実に進めます。将来は、日本のお客様と海外のチームをつなぐ役割にも挑戦したいです。",
+      "keyPhrases": [
+        {"ja": "〜に挑戦したいと考えております。", "en": "I would like to take on ..."},
+        {"ja": "特に、〜に関心があります。", "en": "I am especially interested in ..."},
+        {"ja": "〜を、一つずつ確実に進めたいです。", "en": "I want to carry out ... reliably, one by one."},
+        {"ja": "そのうえで、〜", "en": "On that basis, ..."},
+        {"ja": "お客様の要望を正しく理解し、チームに分かりやすく伝える", "en": "understand the customer's requests correctly and explain them clearly to the team"}
+      ],
+      "followUps": [
+        {"ja": "希望の仕事ができなかったら、どうしますか。", "en": "What will you do if you cannot do the work you want?", "hintJa": "まずは任された仕事で成果を出し、その中で車載AIにつながる力を磨きます。", "tipEn": "Stay flexible; use the same logic as the assignment question (q72)."},
+        {"ja": "ブリッジエンジニアの仕事を、どう理解していますか。", "en": "How do you understand the work of a bridge engineer?", "hintJa": "お客様と開発チームの間に立ち、要求を正しく伝えて品質を守る役割だと理解しております。", "tipEn": "Mention requirements, progress reports and quality checks; FPT's automotive AI-engineer posting lists these duties."},
+        {"ja": "量子化とは何ですか。", "en": "What is quantization?", "hintJa": "量子化とは、数値のビット数を減らして、モデルを小さく速くする手法です。", "tipEn": "Give a one-line definition, add your own example (FP32 to FP16 with TensorRT; INT8 lowered night-time accuracy) and mention the trade-off with accuracy."},
+        {"ja": "生成AIやLLMの仕事にも興味はありますか。", "en": "Are you also interested in work with generative AI or LLMs?", "hintJa": "はい、車内の音声アシスタントなど、LLMを使った機能にも関心があります。", "tipEn": "FPT Japan's automotive AI-engineer posting asks for LLM and prompt-engineering skills, so show openness."}
+      ],
+      "pitfallsEn": [
+        "Naming only a dream job (e.g. 'lead autonomous driving') with no realistic first step for a new graduate.",
+        "Saying you want to do only research; FPT's automotive roles are delivery and customer-facing work.",
+        "Forgetting the bridge role; the new-graduate page says training aims to make new hires a customer–developer bridge within a year."
+      ]
+    },
+    {
+      "id": "q25",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "5年後、10年後のキャリアプランを教えてください。",
+      "variantsJa": ["将来、どのようなエンジニアになりたいですか。", "10年後、当社でどんな仕事をしていたいですか。", "中長期的なキャリアの目標を聞かせてください。"],
+      "questionEn": "What is your career plan for five and ten years from now?",
+      "intentEn": "Checks whether your vision fits the company's strategy and whether you plan to stay and grow there. It also shows whether you can set concrete, step-by-step goals.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：目指す姿を一言で", "en": "Conclusion: your goal in one sentence"},
+        {"ja": "5年後：技術と役割", "en": "In 5 years: skills and role"},
+        {"ja": "10年後：リーダーとしての姿", "en": "In 10 years: your role as a leader"},
+        {"ja": "会社とのつながり：御社の目標と重ねる", "en": "Link: connect your plan to the company's goal"},
+        {"ja": "今の努力：そのために続けていること", "en": "Now: what you are doing to get there"}
+      ],
+      "modelAnswerJa": "私の目標は、車載AIの分野で、お客様に信頼される技術リーダーになることです。\n5年後には、モデル開発から車載機器への実装まで、一人で担当できるようになりたいです。また、お客様と海外のチームをつなぐ役割も担いたいです。研究室で4人のチームをまとめた経験を生かし、小さなチームのリーダーも務めたいです。\n10年後には、SDV向けAIの提案から開発までをリードし、若手の育成にも関わりたいです。\n御社は、【御社の目標：2033年までに日本のIT企業トップ13に入ること】を目指されています。その成長を、車載AIの面から支えたいです。\nそのために、今は【勉強：機能安全の基礎とビジネス日本語】を学んでおります。",
+      "modelAnswerEn": "My goal is to become a technical leader trusted by customers in the field of in-vehicle AI.\nIn five years, I want to be able to handle everything from model development to implementation on in-vehicle devices on my own. I also want to take on the role of connecting customers and overseas teams. Using my experience of leading a team of four in my lab, I also want to lead a small team.\nIn ten years, I want to lead AI work for SDVs, from proposal to development, and also help train younger engineers.\nYour company aims [to be among the top 13 IT companies in Japan by 2033]. I want to support that growth from the in-vehicle AI side.\nTo get there, I am now studying [the basics of functional safety and business Japanese].",
+      "shortAnswerJa": "目標は、車載AIの分野で信頼される技術リーダーになることです。5年後には、モデル開発から車載機器への実装まで、一人で担当したいです。お客様と海外のチームをつなぐ役割も担います。10年後には、SDV向けAIの提案から開発までをリードし、若手の育成にも関わりたいです。",
+      "keyPhrases": [
+        {"ja": "私の目標は、〜になることです。", "en": "My goal is to become ..."},
+        {"ja": "5年後には、〜できるようになりたいです。", "en": "In five years, I want to be able to ..."},
+        {"ja": "10年後には、〜をリードしたいです。", "en": "In ten years, I want to lead ..."},
+        {"ja": "その成長を、〜の面から支えたいです。", "en": "I want to support that growth from the ... side."},
+        {"ja": "そのために、今は〜を学んでおります。", "en": "To get there, I am now studying ..."}
+      ],
+      "followUps": [
+        {"ja": "マネジメントと技術、どちらの道に進みたいですか。", "en": "Which path do you want: management or technical?", "hintJa": "まずは技術を深め、そのうえでチームをまとめる役割にも挑戦したいと考えております。", "tipEn": "Show a sequence (technical depth first, then leadership) instead of an either/or choice."},
+        {"ja": "そのキャリアプランは、当社でなければ実現できませんか。", "en": "Can that career plan only be achieved at our company?", "hintJa": "AIと車載の両方に力を入れている御社が、最も実現しやすい環境だと考えております。", "tipEn": "Avoid saying 'only here'; say it is the best fit and why."},
+        {"ja": "将来、母国に帰る予定はありますか。", "en": "Do you plan to return to your home country in the future?", "hintJa": "現時点では帰国の予定はなく、日本で長く働きたいと考えております。", "tipEn": "Answer honestly; HR asks this for placement planning. If true, show a long-term plan in Japan, and avoid vague words such as 当面 (for now)."}
+      ],
+      "pitfallsEn": [
+        "Plans that do not need this company (e.g. starting your own business or going back to research).",
+        "Being vague ('I want to grow a lot'); give a concrete role and skills for each stage.",
+        "Mentioning study you are not really doing; interviewers often ask 'What exactly are you studying now?'",
+        "Quoting the company's goal from memory: the 2033 top-13 goal comes from FPT's English release of November 2026, so check the latest wording in the FPT Prep tab before you use it."
+      ]
+    },
+    {
+      "id": "q26",
+      "category": "motivation",
+      "week": 4,
+      "questionJa": "他社の選考状況を教えてください。当社は第一志望ですか。",
+      "variantsJa": ["今、就職活動はどのような状況ですか。", "ほかにどのような企業を受けていますか。", "内定が出たら、当社に入社していただけますか。"],
+      "questionEn": "Please tell us about your status with other companies. Are we your first choice?",
+      "intentEn": "Checks whether your job-search axis is consistent and how likely you are to accept an offer. Interviewers also check honesty, so the other companies should share the same axis.",
+      "timeTarget": "30秒",
+      "structure": [
+        {"ja": "状況：業界・社数・段階", "en": "Status: industry, number of companies and stage"},
+        {"ja": "軸：共通する就活の軸", "en": "Axis: the axis they have in common"},
+        {"ja": "結論：御社が第一志望である理由", "en": "Conclusion: why FPT comes first"}
+      ],
+      "modelAnswerJa": "車載ソフトウェアやAI開発の企業を中心に、【社数：3】社の選考を受けております。そのうち【社数：1】社は、二次面接まで進んでおります。\nどの企業も、AIで人の安全を支えるという軸で選びました。中でも、日本と海外のチームが連携して開発する御社が、私の軸に最も合います。そのため、御社が第一志望です。",
+      "modelAnswerEn": "I am in the selection process at [3] companies, mainly companies that develop in-vehicle software and AI. At [1] of them, I have reached the second interview.\nI chose all of them based on my axis of supporting people's safety with AI. Among them, your company, where teams in Japan and overseas work together on development, fits my axes best. So your company is my first choice.",
+      "shortAnswerJa": "現在は、車載ソフトウェアやAI開発の企業を中心に、【社数：3】社の選考を受けております。そのうち【社数：1】社は、二次面接まで進んでおります。どの企業も、AIで人の安全を支えるという軸で選びました。その中でも、私の軸に最も合う御社が第一志望です。",
+      "keyPhrases": [
+        {"ja": "〜を中心に、〜社の選考を受けております。", "en": "I am in the selection process at ... companies, mainly ..."},
+        {"ja": "〜まで進んでおります。", "en": "I have reached ..."},
+        {"ja": "どの企業も、〜という軸で選びました。", "en": "I chose all of them based on the axis of ..."},
+        {"ja": "中でも、〜御社が、私の軸に最も合います。", "en": "Among them, your company, which ..., fits my axes best."},
+        {"ja": "御社を強く志望しております。", "en": "I strongly wish to join your company. (honest option if you cannot say 第一志望)"}
+      ],
+      "followUps": [
+        {"ja": "他社から先に内定が出たら、どうしますか。", "en": "What will you do if another company gives you an offer first?", "hintJa": "御社が第一志望ですので、御社の選考結果を待って決めたいと考えております。", "tipEn": "Do not promise anything you cannot keep; calmly restate that FPT comes first and that you would like to wait for its result."},
+        {"ja": "なぜ他社ではなく、当社が第一志望なのですか。", "en": "Why are we your first choice rather than the others?", "hintJa": "AIと自動車の両方に力を入れ、日本と海外のチームが連携して開発している点が決め手です。", "tipEn": "Give one decisive reason in one sentence; the full version is q71."},
+        {"ja": "差し支えなければ、社名を教えてください。", "en": "If you don't mind, please tell us the company names.", "hintJa": "はい、【企業名：〇〇】と【企業名：〇〇】の選考を受けております。", "tipEn": "You may name them if asked; they should share your axis. Naming the industry and stage is also acceptable."}
+      ],
+      "pitfallsEn": [
+        "Saying 第一志望 when it is not true and contradicting yourself later; if FPT is one of several top choices, say 「御社を強く志望しております」 and give the reason.",
+        "Listing unrelated companies (banks, trading companies) that break your axis.",
+        "Giving a long list or every detail; summarise by industry, number of companies and stage."
+      ]
+    },
+    {
+      "id": "q60",
+      "category": "closing",
+      "week": 7,
+      "questionJa": "最後に、何か質問はありますか。",
+      "variantsJa": ["逆に、何か聞いておきたいことはありますか。", "では最後に、質問があればどうぞ。", "当社について、何か気になることはありますか。"],
+      "questionEn": "Finally, do you have any questions for us? (reverse questions)",
+      "intentEn": "Checks your motivation and research, and whether you can ask clearly and listen to the answer. Having no question is rated lowest.",
+      "timeTarget": "30秒",
+      "structure": [
+        {"ja": "前置き：お礼と、質問してよいかの確認", "en": "Lead-in: thanks and asking permission"},
+        {"ja": "前提：調べたことを一言", "en": "Context: one thing you researched"},
+        {"ja": "質問：一つに絞って聞く", "en": "Question: ask one clear question"},
+        {"ja": "お礼：回答へのお礼と一言の感想", "en": "Thanks: thank them and add a short reaction"}
+      ],
+      "modelAnswerJa": "ありがとうございます。1点、伺ってもよろしいでしょうか。\n御社では、日本とベトナムの技術者が連携して開発していると拝見しました。車載AIのプロジェクトでは、新入社員はどのような役割から始めることが多いのでしょうか。\nご説明いただき、ありがとうございます。入社後の働き方が、具体的にイメージできました。",
+      "modelAnswerEn": "Thank you. May I ask one question?\nI read that at your company, engineers in Japan and Vietnam work together on development. In in-vehicle AI projects, what role do new employees usually start with?\n[After the interviewer answers] Thank you for explaining. I can now picture concretely how I would work after joining.",
+      "shortAnswerJa": "ありがとうございます。1点、伺ってもよろしいでしょうか。車載AIのプロジェクトでは、新入社員はどのような役割から始めることが多いのでしょうか。ご丁寧にご説明いただき、ありがとうございました。入社後の働き方がよく分かり、とても参考になりました。",
+      "keyPhrases": [
+        {"ja": "1点、伺ってもよろしいでしょうか。", "en": "May I ask one question?"},
+        {"ja": "〜と拝見したのですが、", "en": "I read that ..., and ..."},
+        {"ja": "差し支えなければ、〜を教えていただけますか。", "en": "If you don't mind, could you tell me ...?"},
+        {"ja": "〜について、もう少し詳しく伺ってもよろしいでしょうか。", "en": "May I ask a little more about ...?"},
+        {"ja": "最後にもう1点だけ、よろしいでしょうか。", "en": "May I ask just one more thing?"}
+      ],
+      "followUps": [
+        {"ja": "ほかに質問はありますか。", "en": "Do you have any other questions?", "hintJa": "では、もう1点だけよろしいでしょうか。", "tipEn": "Ask a second prepared question only if time allows; otherwise thank them and finish."},
+        {"ja": "その質問をしたのは、なぜですか。", "en": "Why did you ask that question?", "hintJa": "入社後に早く貢献するため、最初の仕事を具体的に知りたいと考えたからです。", "tipEn": "Link the question to your goal of contributing quickly."},
+        {"ja": "質問は以上でよろしいですか。", "en": "Is that all your questions?", "hintJa": "はい、本日は丁寧にお答えいただき、ありがとうございました。", "tipEn": "End with thanks; never answer the first question with 「特にありません」."}
+      ],
+      "pitfallsEn": [
+        "Saying 「特にありません」; prepare 5–6 questions (see the FPT Prep tab) and ask 1–2.",
+        "Asking things the website already answers, or asking about salary and holidays in a first interview.",
+        "Packing several questions into one long sentence; ask one, listen, then thank them.",
+        "Not reacting to the answer; one short thank-you sentence shows you listened."
+      ]
+    },
+    {
+      "id": "q61",
+      "category": "closing",
+      "week": 7,
+      "questionJa": "最後に、何かアピールしたいことはありますか。",
+      "variantsJa": ["最後に、言い残したことはありますか。", "最後に一言、何かあればどうぞ。", "ほかに伝えておきたいことはありますか。"],
+      "questionEn": "Finally, is there anything else you would like to tell us?",
+      "intentEn": "Gives you a last chance to leave a clear impression. Interviewers check enthusiasm and whether you can sum up your value briefly.",
+      "timeTarget": "30秒",
+      "structure": [
+        {"ja": "前置き：今日の面接で強まった気持ち", "en": "Lead-in: how today strengthened your wish to join"},
+        {"ja": "強み：一番伝えたい強みと根拠", "en": "Strength: your one key strength and its evidence"},
+        {"ja": "貢献：御社での貢献", "en": "Contribution: what you will do at FPT"},
+        {"ja": "締め：お礼", "en": "Close: thanks"}
+      ],
+      "modelAnswerJa": "はい。本日のお話を伺い、御社で働きたいという気持ちが、一層強くなりました。\n私の強みは、原因を一つずつ分析し、改善を続ける粘り強さです。研究では、夜間の歩行者検出の精度を約【数値：8】ポイント上げました。\nこの粘り強さを生かし、安全な車載AIの開発に貢献いたします。本日はありがとうございました。",
+      "modelAnswerEn": "Yes. Hearing your talk today made my wish to work at your company even stronger.\nMy strength is the persistence to analyse causes one by one and keep improving. In my research, I raised the accuracy of night-time pedestrian detection by about [8] points.\nUsing this persistence, I will contribute to developing safe in-vehicle AI. Thank you very much for today.",
+      "shortAnswerJa": "本日のお話を伺い、御社で働きたい気持ちが一層強くなりました。私の強みは、原因を分析し、改善を続ける粘り強さです。研究でも、この姿勢で精度を上げました。この強みを生かし、安全な車載AIの開発に貢献いたします。本日はありがとうございました。",
+      "keyPhrases": [
+        {"ja": "本日のお話を伺い、〜という気持ちが、一層強くなりました。", "en": "Hearing your talk today made my wish to ... even stronger."},
+        {"ja": "最後に、1点お伝えしたいことがございます。", "en": "Finally, there is one thing I would like to tell you."},
+        {"ja": "私の強みは、〜です。", "en": "My strength is ..."},
+        {"ja": "〜を生かし、〜に貢献いたします。", "en": "Using ..., I will contribute to ..."},
+        {"ja": "本日は貴重なお時間をいただき、ありがとうございました。", "en": "Thank you for your valuable time today."}
+      ],
+      "followUps": [
+        {"ja": "今日の面接で、うまく伝えられなかったことはありますか。", "en": "Is there anything you could not explain well in today's interview?", "hintJa": "はい、研究の目的について、1点だけ補足させてください。", "tipEn": "Use this to fix one weak answer briefly, not to repeat everything."},
+        {"ja": "その強みを、仕事でどう生かしますか。", "en": "How will you use that strength at work?", "hintJa": "不具合や精度の低下が起きたときに、原因を一つずつ切り分けて、改善につなげます。", "tipEn": "Give one concrete work scene (a bug, a drop in accuracy) where the strength helps."},
+        {"ja": "では、結果は1週間ほどでご連絡します。", "en": "We will contact you with the result in about a week.", "hintJa": "はい、ご連絡をお待ちしております。", "tipEn": "Reply with this line or 承知いたしました, thank them, and wait for the interviewer to end the meeting or call."}
+      ],
+      "pitfallsEn": [
+        "Saying 「特にありません」; always prepare a 20–30 second closing appeal.",
+        "Repeating your whole self-PR; pick one strength and one piece of evidence.",
+        "Speaking too long; stop at about 30 seconds and end with thanks."
+      ]
+    },
+    {
+      "id": "q70",
+      "category": "tricky",
+      "week": 7,
+      "questionJa": "あなたを採用するメリットは何ですか。",
+      "variantsJa": ["あなたを採用すると、当社にどのようなメリットがありますか。", "ほかの学生ではなく、あなたを選ぶ理由は何ですか。", "あなたが当社に貢献できることは何ですか。"],
+      "questionEn": "What is the benefit to us of hiring you?",
+      "intentEn": "Checks whether you understand what the company needs and can match your strengths to it with evidence, confidently but without arrogance.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：貢献できる点は2つと伝える", "en": "Conclusion: say there are two ways you can contribute"},
+        {"ja": "1つ目：AIを作り、ボードで動かした経験", "en": "Benefit 1: you have built AI and run it on a real board"},
+        {"ja": "2つ目：多様な人と協力して成果を出す力", "en": "Benefit 2: producing results with diverse people"},
+        {"ja": "貢献：御社の仕事にどうつながるか", "en": "Contribution: how this fits FPT's work"}
+      ],
+      "modelAnswerJa": "私が御社に貢献できる点は、2つあると考えております。\n1つ目は、AIモデルを作るだけでなく、組込みボードで実際に動かした経験です。研究では、歩行者検出モデルを軽量化し、Jetson上で【数値：25】FPSで動かしました。\n2つ目は、多様な人と協力して、成果を出せることです。研究室では4人のチームをまとめ、データセットを予定どおりに完成させました。また、日本語での接客を【年数：2】年間続け、お客様の要望をくみ取る力を身につけました。母語と英語も使えるため、海外のメンバーとも円滑に協力できます。\nこの2つを生かし、日本のお客様と開発チームをつなぐAIエンジニアとして、貢献いたします。",
+      "modelAnswerEn": "I believe there are two ways in which I can contribute to your company.\nThe first is my experience of not only building an AI model but also actually running it on an embedded board. In my research, I made a pedestrian-detection model lighter and ran it at [25] FPS on a Jetson.\nThe second is that I can produce results by working with diverse people. In my lab, I led a team of four and completed a dataset on schedule. Also, through [2] years of customer service in Japanese, I learned to understand customers' needs. Because I can also use my native language and English, I can work smoothly with overseas members.\nUsing these two strengths, I will contribute as an AI engineer who connects Japanese customers and development teams.",
+      "shortAnswerJa": "貢献できる点は、2つあると考えております。1つ目は、歩行者検出モデルを軽量化し、組込みボードで実際に動かした経験です。2つ目は、多様な人と協力して成果を出す力です。研究室では、4人のチームをまとめました。この2つを生かし、お客様と開発チームをつなぐ役割で貢献いたします。",
+      "keyPhrases": [
+        {"ja": "私が御社に貢献できる点は、2つあると考えております。", "en": "I believe there are two ways in which I can contribute to your company."},
+        {"ja": "〜だけでなく、実際に〜した経験です。", "en": "my experience of not only ... but actually ..."},
+        {"ja": "予定どおりに完成させました。", "en": "I completed it on schedule."},
+        {"ja": "お客様の要望をくみ取る", "en": "grasp the customer's needs"},
+        {"ja": "〜として、貢献いたします。", "en": "I will contribute as ..."}
+      ],
+      "followUps": [
+        {"ja": "同じような経験の学生は、ほかにもいると思いますが。", "en": "I think other students have similar experience, though.", "hintJa": "おっしゃるとおりですが、精度と速度の両方を、実際のボードで確かめた点が私の強みです。", "tipEn": "Stay calm; name the one detail that makes your experience specific."},
+        {"ja": "逆に、あなたを採用するリスクは何ですか。", "en": "Conversely, what is the risk of hiring you?", "hintJa": "慎重になりすぎて、作業に時間がかかることがある点です。", "tipEn": "Use your weakness answer, then say how you manage it (time limits, early feedback)."},
+        {"ja": "入社後すぐに、どんなことができますか。", "en": "What can you do right after joining?", "hintJa": "PythonとPyTorchを使ったモデルの評価なら、すぐにお役に立てると考えております。", "tipEn": "Name concrete tasks and tools (Python, PyTorch, Git, Docker), not general promises."}
+      ],
+      "pitfallsEn": [
+        "Sounding arrogant ('I am the best'); talk about what you can contribute (「貢献できる点」), use 「〜と考えております」 and give evidence.",
+        "Listing strengths with no link to FPT's work (ADAS, edge AI, bridge roles).",
+        "Claiming you can contribute like an experienced engineer, or implying your model ran in a real car; promise solid basics and fast learning instead."
+      ]
+    },
+    {
+      "id": "q71",
+      "category": "tricky",
+      "week": 7,
+      "questionJa": "日本の大手自動車メーカーやサプライヤーではなく、なぜ当社なのですか。",
+      "variantsJa": ["車載AIなら、メーカーやティアワンの方が良いのではないですか。", "メーカーではなく、IT企業の当社を選ぶ理由は何ですか。", "自動車メーカーは受けていないんですか。"],
+      "questionEn": "Why us instead of a large Japanese automaker or supplier?",
+      "intentEn": "Checks whether you understand FPT's position as an IT-services and engineering partner, and whether choosing FPT is a real decision rather than a backup.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：御社を選ぶ理由を一言で", "en": "Conclusion: your reason in one sentence"},
+        {"ja": "敬意：メーカーの魅力も認める", "en": "Respect: acknowledge the appeal of automakers"},
+        {"ja": "理由1：多くのお客様と幅広い技術", "en": "Reason 1: many customers and a wide range of technology"},
+        {"ja": "理由2：日本と海外をつなぐ体制", "en": "Reason 2: teams that connect Japan and overseas"},
+        {"ja": "まとめ：成長分野で挑戦できる", "en": "Close: you can take on challenges in a growing field"}
+      ],
+      "modelAnswerJa": "御社を選ぶ理由は、多くのお客様の車載開発に関わり、日本と海外をつなぐ役割を担えるからです。\n自動車メーカーやサプライヤーには、自社の製品を深く開発できる魅力があると思います。一方で、御社グループの自動車事業は、150社以上のお客様とお取引があると拝見しました。ADASからコックピットまで、幅広い技術に挑戦できる環境だと考えております。\nまた、御社には、日本とベトナムの技術者が連携して開発を進める体制があります。多様なチームで成果を出すという私の軸に、最も合うのが御社です。\nさらに、AIと自動車は、御社グループの重点分野です。そのため、若手のうちから、成長分野で挑戦できると考えました。",
+      "modelAnswerEn": "I chose your company because I can work on in-vehicle development for many customers and take on a role that connects Japan and other countries.\nI think automakers and suppliers have the appeal of developing their own products in depth. On the other hand, I read that your group's automotive business works with more than 150 customers. I think it is an environment where I can take on a wide range of technology, from ADAS to the cockpit.\nAlso, your company has a structure in which engineers in Japan and Vietnam work together on development. Your company fits best with my axis of producing results in a diverse team.\nFurthermore, AI and automotive are focus areas of your group. So I believe I can take on challenges in a growing field while still young.",
+      "shortAnswerJa": "多くのお客様の車載開発に関わり、日本と海外をつなぐ役割を担えるからです。メーカーの仕事にも魅力を感じております。ただ、御社では幅広い技術に挑戦でき、日本とベトナムの技術者が連携して開発しています。多様なチームで成果を出すという私の軸に、最も合うのが御社です。",
+      "keyPhrases": [
+        {"ja": "〜には、〜できる魅力があると思います。一方で、〜", "en": "I think ... have the appeal of being able to ...; on the other hand, ..."},
+        {"ja": "〜という私の軸に、最も合うのが御社です。", "en": "Your company fits best with my axis of ..."},
+        {"ja": "幅広い技術に挑戦できる環境", "en": "an environment where I can take on a wide range of technology"},
+        {"ja": "若手のうちから、成長分野で挑戦できる", "en": "take on challenges in a growing field while still young"},
+        {"ja": "〜とお取引があると拝見しました。", "en": "I read that you do business with ..."}
+      ],
+      "followUps": [
+        {"ja": "メーカーの選考も受けていますか。", "en": "Are you also applying to automakers?", "hintJa": "はい、【社数：1】社の選考を受けておりますが、私の軸に最も合うのは御社です。", "tipEn": "Be honest; staying consistent with q26 matters more than the number."},
+        {"ja": "受託開発では、自社製品を持てないことをどう思いますか。", "en": "In contract development you don't have your own product. What do you think about that?", "hintJa": "多くのお客様の製品に関われることは、技術者として大きな成長の機会だと考えております。", "tipEn": "Turn it into a positive: variety, many products and learning from many customers."},
+        {"ja": "当社の仕事は、メーカーの仕事と何が違うと思いますか。", "en": "How do you think our work differs from an automaker's?", "hintJa": "お客様の要求を理解し、国をまたぐチームで形にする点が、大きな違いだと考えております。", "tipEn": "Show you understand the partner role: requirements, delivery, quality and communication."}
+      ],
+      "pitfallsEn": [
+        "Criticising automakers or suppliers ('slow', 'too traditional'); show respect first, then give your positive reason.",
+        "Saying FPT is easier to enter or more relaxed; that sounds like a backup choice.",
+        "Ignoring the partner-business model; FPT builds software for many OEMs, Tier 1 suppliers and chipmakers, so show that you like this variety.",
+        "Fill 【】 parts only with true facts, and re-check FPT numbers (such as '150+ customers', a group-wide figure from FPT Automotive's site) in the FPT Prep tab."
+      ]
+    },
+    {
+      "id": "q72",
+      "category": "tricky",
+      "week": 7,
+      "questionJa": "希望と違う部署やプロジェクトに配属されたら、どうしますか。",
+      "variantsJa": ["希望しない部署に配属されても大丈夫ですか。", "AI以外の開発を担当することになったら、どう思いますか。", "配属の希望が通らなかった場合、どうしますか。"],
+      "questionEn": "What would you do if assigned to a team or project different from what you wanted?",
+      "intentEn": "Checks flexibility, stress tolerance and whether you would stay motivated. It also checks whether you can see the value in any assignment.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：まずは配属先で全力を尽くす", "en": "Conclusion: give your best where you are placed"},
+        {"ja": "理由：どの仕事も車載AIにつながる", "en": "Reason: every job connects to in-vehicle AI"},
+        {"ja": "経験：地道な役割から学んだ例", "en": "Experience: what you learned from unglamorous work"},
+        {"ja": "今後：成果を出しながら希望も伝える", "en": "Next: share your wishes while producing results"}
+      ],
+      "modelAnswerJa": "まずは配属された部署で、チームの一員として、任された仕事に全力で取り組みます。\nどの仕事にも、将来の車載AIにつながる学びがあると考えるからです。例えば、テストや検証の仕事なら、車載ソフトウェアの品質の考え方を身につけられます。組込みの仕事なら、ハードウェアの制約を深く理解できます。\n研究室でも、データセット作りという地道な仕事で、リーダーを務めました。その経験から、データの質が精度を大きく左右すると学びました。この学びは、その後のモデルの改善にも役立ちました。\nそのうえで、成果を出しながら、車載AIへの希望も面談などで上司に伝えていきます。",
+      "modelAnswerEn": "First, in the department I am assigned to, I would give my best to the work I am given, as one member of that team.\nThis is because I believe every job has lessons that lead to in-vehicle AI in the future. For example, in testing and validation work, I could learn how quality is handled in in-vehicle software. In embedded work, I could deeply understand hardware constraints.\nIn my lab, too, I led the unglamorous work of building a dataset. From that experience, I learned that data quality greatly affects accuracy. This lesson also helped me improve my model later.\nOn that basis, while producing results, I would also tell my manager about my wish to work on in-vehicle AI, for example in regular meetings.",
+      "shortAnswerJa": "まずは配属先で、任された仕事に全力で取り組みます。テストや組込みの仕事にも、車載AIにつながる学びがあると考えるからです。研究室でも、地道なデータセット作りから多くを学びました。成果を出しながら、車載AIへの希望も、上司に伝えていきます。",
+      "keyPhrases": [
+        {"ja": "まずは〜に全力で取り組みます。", "en": "First, I will give my best to ..."},
+        {"ja": "どの仕事にも、〜につながる学びがあると考えております。", "en": "I believe every job has lessons that lead to ..."},
+        {"ja": "例えば、〜なら、〜を身につけられます。", "en": "For example, in ..., I could learn ..."},
+        {"ja": "成果を出しながら、希望も伝えていきます。", "en": "While producing results, I will also share my wishes."}
+      ],
+      "followUps": [
+        {"ja": "希望の部署に、ずっと行けなかったらどうしますか。", "en": "What if you can never move to the team you want?", "hintJa": "その部署で専門性を高め、車載AIと組み合わせられる強みにしたいと考えております。", "tipEn": "Show long-term commitment; never hint that you would quit."},
+        {"ja": "勤務地が地方やお客様先になることもありますが、大丈夫ですか。", "en": "You may work in a regional city or at a client site. Is that okay?", "hintJa": "はい、自動車産業の現場に近い場所で働けることは、良い経験になると考えております。", "tipEn": "FPT's automotive division lists many locations and client-site work; answer positively, but if you truly cannot relocate, say so honestly and briefly."},
+        {"ja": "AIの仕事ができなくても、当社に入社しますか。", "en": "Would you still join us even if you could not do AI work?", "hintJa": "はい、まずは御社の一員として、任された仕事で成果を出したいと考えております。", "tipEn": "Calmly separate your long-term goal from your short-term commitment."}
+      ],
+      "pitfallsEn": [
+        "Saying 'I will do anything' with no reason; it sounds as if you have no goal.",
+        "Insisting only on AI work; it sounds inflexible for a new graduate.",
+        "Showing frustration or hinting that you would change jobs."
+      ]
+    },
+    {
+      "id": "q73",
+      "category": "tricky",
+      "week": 7,
+      "questionJa": "残業や急な対応が必要になることもありますが、大丈夫ですか。",
+      "variantsJa": ["忙しい時期もありますが、問題ありませんか。", "お客様の都合で、急な対応をお願いすることもあります。対応できますか。", "ハードな環境でも頑張れますか。"],
+      "questionEn": "Sometimes overtime or urgent work is needed. Is that okay?",
+      "intentEn": "Checks stress tolerance, sense of responsibility and self-management. A good answer shows willingness without promising unlimited overtime.",
+      "timeTarget": "30秒",
+      "structure": [
+        {"ja": "結論：「大丈夫です」と答え、必要な時は責任を持って対応する", "en": "Conclusion: say yes, and that you will respond responsibly when needed"},
+        {"ja": "経験：締め切り前の対応経験", "en": "Experience: how you handled a deadline"},
+        {"ja": "自己管理：普段の工夫と体調管理", "en": "Self-management: daily habits and health"}
+      ],
+      "modelAnswerJa": "はい、大丈夫です。必要な時は、責任を持って対応いたします。\n研究でも、学会の締め切り前に、集中して実験を進めました。その際は、時間を区切って作業し、早めに先生に相談しました。その結果、期限内に発表の準備を終えました。\n仕事でも、優先順位を上司と確認し、体調管理にも努めて、急な対応に備えます。",
+      "modelAnswerEn": "Yes, that is fine. When it is needed, I will handle it responsibly.\nIn my research, too, I worked intensively on experiments before a conference deadline. At that time, I worked in fixed time blocks and consulted my professor early. As a result, I finished preparing my presentation on time.\nAt work as well, I will check priorities with my manager, take care of my health, and be ready for urgent work.",
+      "shortAnswerJa": "はい、大丈夫です。必要な時は、責任を持って対応いたします。研究でも、学会の締め切り前に、時間を区切って集中して取り組みました。早めに先生に相談し、期限内に準備を終えました。仕事でも、優先順位を上司と確認し、体調管理にも努めて、急な対応に備えます。",
+      "keyPhrases": [
+        {"ja": "必要な時は、責任を持って対応いたします。", "en": "When it is needed, I will handle it responsibly."},
+        {"ja": "時間を区切って作業する", "en": "work in fixed time blocks"},
+        {"ja": "早めに相談する", "en": "consult early"},
+        {"ja": "優先順位を上司と確認する", "en": "check priorities with my manager"},
+        {"ja": "体調管理に努めます。", "en": "I will take care of my health."}
+      ],
+      "followUps": [
+        {"ja": "どのくらいの残業なら大丈夫ですか。", "en": "How much overtime is acceptable for you?", "hintJa": "時期によると思いますが、繁忙期にはチームの一員として必要な対応をいたします。", "tipEn": "Do not give a number or say 'any amount'; focus on responsibility and planning."},
+        {"ja": "ストレスを感じたとき、どう解消していますか。", "en": "How do you relieve stress?", "hintJa": "まず原因を紙に書き出して整理し、週末は【趣味：ジョギング】で気分を切り替えております。", "tipEn": "Give the same method as in your stress answer (q08): how you deal with the cause, plus a healthy way to refresh; avoid answers such as late-night gaming."},
+        {"ja": "急な仕様変更があったら、どう対応しますか。", "en": "How would you handle a sudden change in specifications?", "hintJa": "まず影響範囲を確認し、優先順位を上司と相談したうえで対応いたします。", "tipEn": "Show a calm process: check the impact, report and consult (報連相), then act."}
+      ],
+      "pitfallsEn": [
+        "Promising unlimited overtime (「何時間でも大丈夫です」); it sounds unrealistic and unhealthy.",
+        "Hesitating, or reacting with a question about overtime pay; ask about working style later in the process if needed.",
+        "Answering only 「はい、大丈夫です」 with no evidence of how you manage pressure."
+      ]
+    },
+    {
+      "id": "q74",
+      "category": "tricky",
+      "week": 7,
+      "questionJa": "研究と実際の業務は違いますが、そのことについてどう考えていますか。",
+      "variantsJa": ["大学の研究と会社の仕事の違いは、何だと思いますか。", "研究と同じようにはいかないと思いますが、大丈夫ですか。", "研究で学んだことは、仕事でどう生かせると思いますか。"],
+      "questionEn": "Research and real work are different. What do you think about that?",
+      "intentEn": "Checks whether you have a realistic view of industry work (customers, safety, quality, deadlines, teamwork) and whether you can transfer your research skills instead of clinging to research.",
+      "timeTarget": "1分",
+      "structure": [
+        {"ja": "結論：違いを理解していると伝える", "en": "Conclusion: show you understand the difference"},
+        {"ja": "違い：目的・お客様・安全・期限", "en": "Differences: goal, customer, safety and deadlines"},
+        {"ja": "共通点：研究で身につけた生かせる力", "en": "What transfers: skills from research"},
+        {"ja": "姿勢：入社後に学ぶこと", "en": "Attitude: what you will learn after joining"}
+      ],
+      "modelAnswerJa": "はい、研究と業務には大きな違いがあると考えております。\n一番の違いは、目的です。研究では、データセットでの精度を上げることが中心でした。一方、業務では、お客様の要求を満たし、安全に動く製品を期限内に届けることが目的です。特に車載AIでは、機能安全や品質のプロセスも欠かせません。\nただ、研究で身につけた力も生かせると考えております。例えば、原因を分析して改善する姿勢や、Jetson上で精度と速度を両立させた経験です。\n入社後は、お客様の要求や品質の考え方を一から学びます。そのうえで、研究の経験を製品づくりに生かしたいです。",
+      "modelAnswerEn": "Yes, I believe there are big differences between research and work.\nThe biggest difference is the goal. In research, my focus was raising accuracy on a dataset. At work, on the other hand, the goal is to meet the customer's requirements and deliver a product that runs safely, on time. Especially in in-vehicle AI, functional safety and quality processes are also essential.\nHowever, I believe I can also use the skills I gained in research. For example, my habit of analysing causes and improving, and my experience of balancing accuracy and speed on a Jetson.\nAfter joining, I will learn customers' requirements and the approach to quality from scratch. On that basis, I want to use my research experience in building products.",
+      "shortAnswerJa": "はい、大きな違いがあると考えております。研究は精度を上げることが中心でした。一方、業務の目的は、お客様の要求を満たす安全な製品を、期限内に届けることです。特に車載AIでは、機能安全が欠かせません。原因を分析して改善する力は生かしつつ、品質の考え方を一から学びます。",
+      "keyPhrases": [
+        {"ja": "一番の違いは、〜です。", "en": "The biggest difference is ..."},
+        {"ja": "〜が中心でした。一方、業務では〜", "en": "... was the focus. At work, on the other hand, ..."},
+        {"ja": "〜も欠かせません。", "en": "... is also essential."},
+        {"ja": "研究で身につけた力も生かせると考えております。", "en": "I believe I can also use the skills I gained in research."},
+        {"ja": "一から学びます。", "en": "I will learn from scratch."}
+      ],
+      "followUps": [
+        {"ja": "研究のやり方が通用しなかったら、どうしますか。", "en": "What will you do if your research approach doesn't work at the job?", "hintJa": "まずは先輩のやり方を素直に学び、その中で研究の経験を生かせる部分を探します。", "tipEn": "Show openness (素直さ) first, then how you will still contribute."},
+        {"ja": "機能安全とは何か、簡単に説明してください。", "en": "Please explain functional safety simply.", "hintJa": "機能安全とは、電子システムが故障しても、危険な状態にならないようにする考え方です。", "tipEn": "One sentence is enough; mention ISO 26262 only if you can explain it."},
+        {"ja": "研究の成果は、そのまま製品に使えると思いますか。", "en": "Do you think your research results can be used in products as they are?", "hintJa": "いいえ、そのままでは難しく、安全性の確認と、さまざまな条件での検証が必要だと考えます。", "tipEn": "Mention validation in many conditions (night, rain, new places) and safety checks; this shows realism."}
+      ],
+      "pitfallsEn": [
+        "Saying research and work are the same, or that your research can be used as it is.",
+        "Being negative about research; show that it gave you transferable skills.",
+        "Only listing differences without saying what you will do about them."
+      ]
+    }
+  ]
+}

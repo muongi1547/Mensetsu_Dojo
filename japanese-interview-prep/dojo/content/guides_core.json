@@ -1,0 +1,987 @@
+{
+  "guides": [
+    {
+      "id": "q01",
+      "targetSec": 60,
+      "approachEn": "Interviewers use the self-introduction to get a first impression and to find keywords for their next questions. Choose three things you want to be asked about (your research, one experience in Japan, the engineer you aim to become) and give each of them one to three short sentences. The most important thing is to keep it a one-minute summary with a polite closing: do not turn it into your self-PR or tell a long story.",
+      "thinkFirstEn": [
+        "Can you say your graduate school, major and name smoothly in one breath, and your home country in a second short sentence?",
+        "What is your research theme in one plain sentence, its goal in another, and one result with a number?",
+        "Which one experience outside your research do you most want the interviewer to ask about?",
+        "What kind of engineer do you aim to become, in one sentence that links your research to the job?"
+      ],
+      "steps": [
+        {
+          "labelJa": "所属・名前",
+          "labelEn": "Who you are",
+          "sec": 10,
+          "sayEn": "Give your graduate school, major and full name in one sentence ending in 〜と申します, then add your home country in a short second sentence (〜から参りました). Look at the interviewer, or at the camera in a web interview, and say your name slowly and clearly, because an unfamiliar name is hard to catch.",
+          "starterJa": "【大学名：〇〇大学】大学院、【専攻：情報工学専攻】の〇〇と申します。",
+          "exampleJa": "【大学名：〇〇大学】大学院、【専攻：情報工学専攻】の〇〇と申します。【出身国：〇〇】から参りました。"
+        },
+        {
+          "labelJa": "研究と成果",
+          "labelEn": "Research and one result",
+          "sec": 24,
+          "sayEn": "Say your research theme in one plain sentence ending in 〜しております, add its goal in a second short sentence, then give one result with a number and, if you have one, an outside result such as a conference presentation. Do not explain the method here: these are only hooks so that the interviewer asks about your research next.",
+          "starterJa": "大学院では、【研究テーマ：夜間の歩行者検出】の研究をしております。",
+          "exampleJa": "大学院では、夜間や雨の日の車載カメラ画像から、歩行者を検出する研究をしております。目標は、暗い画像でも見落としが少なく、速く動くAIを作ることです。これまでに、夜間の検出精度を約【数値：8】ポイント上げ、国内学会で発表いたしました。"
+        },
+        {
+          "labelJa": "経験を1つ",
+          "labelEn": "One experience",
+          "sec": 12,
+          "sayEn": "Add ONE experience outside your research that shows what kind of person you are, such as a long part-time job where you serve customers in Japanese: say where and how long, then what you do there. Give facts only and keep the story for later questions; in a shorter self-introduction, this is the first step to drop.",
+          "starterJa": "また、【勤務先：日本料理店】で【年数：2】年間、アルバイトを続けております。",
+          "exampleJa": "また、日本料理店で【年数：2】年間、アルバイトを続けております。日本語での接客に加え、新人の教育も担当しております。"
+        },
+        {
+          "labelJa": "目指す姿",
+          "labelEn": "The engineer you aim to be",
+          "sec": 9,
+          "sayEn": "Say in one sentence what kind of engineer you aim to become, linked to your research (for example, an AI engineer who can contribute to automotive safety). Stop at one sentence, because your reasons belong to the 志望動機 question.",
+          "starterJa": "研究で身につけた技術を活かし、【目標：車の安全を支えるAIエンジニア】を目指しております。",
+          "exampleJa": "研究で身につけた技術を活かし、自動車の安全に貢献できるAIエンジニアを目指しております。"
+        },
+        {
+          "labelJa": "挨拶",
+          "labelEn": "Closing greeting",
+          "sec": 5,
+          "sayEn": "Close with this set greeting and a small bow, so the interviewer knows you have finished. Do not add any new information after it.",
+          "starterJa": "本日はどうぞよろしくお願いいたします。",
+          "exampleJa": "本日はどうぞよろしくお願いいたします。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "targetSec": 60,
+      "approachEn": "Interviewers want one clear strength, proof that it is real, and a picture of how it will help their team. Choose the strength you can prove best with a story that contains a number, and that matters for an AI engineer, such as finding out why a model fails. The most important thing is one strength and one story: listing several strengths with no proof is the most common mistake.",
+      "thinkFirstEn": [
+        "Which single strength can you prove with a real story from your research, a team project or a part-time job?",
+        "In that story, what exactly did you do yourself, step by step (three or four actions, in order)?",
+        "What number shows that it worked, and can you say exactly what improved and by how much?",
+        "In which situation in an AI engineer's daily work would this strength be useful?"
+      ],
+      "steps": [
+        {
+          "labelJa": "強み",
+          "labelEn": "Your strength",
+          "sec": 7,
+          "sayEn": "Name one strength in a short phrase that describes how you work, for example that you patiently analyse the cause of a problem and improve things one step at a time. Do not list several strengths, and avoid vague words such as 'communication skills' with no concrete action behind them.",
+          "starterJa": "私の強みは、【強み：問題の原因を粘り強く分析し、一つずつ改善できること】です。",
+          "exampleJa": "私の強みは、問題の原因を粘り強く分析し、一つずつ改善できることです。"
+        },
+        {
+          "labelJa": "課題",
+          "labelEn": "Situation and problem",
+          "sec": 7,
+          "sayEn": "Name the setting and the problem in one sentence (for example, in your research the model missed many pedestrians in night-time images). Keep the background this short, because a long explanation of the research wastes your minute.",
+          "starterJa": "研究では、【課題：夜間の画像で歩行者の見落としが多い】という課題がありました。",
+          "exampleJa": "研究では、夜間の画像で歩行者の見落としが多いという課題がありました。"
+        },
+        {
+          "labelJa": "行動",
+          "labelEn": "What you did",
+          "sec": 24,
+          "sayEn": "Describe three or four things you did yourself, in order, with そこで, そして and 次に, so that the listener can see the strength in action: for example, checking the failed images one by one, grouping the causes into three, trying a fix for each cause and checking the effect with numbers each time. Keep every action to one short sentence.",
+          "starterJa": "そこで、【行動：見落としのあった画像を1枚ずつ確認し】ました。",
+          "exampleJa": "そこで、見落としのあった画像を1枚ずつ確認しました。そして、原因を「暗さ」「雨による反射」「遠くの小さな歩行者」の3つに分けました。次に、暗い画像や雨の画像を人工的に増やすなど、原因ごとに対策を試しました。効果は、毎回数字で確かめました。"
+        },
+        {
+          "labelJa": "結果",
+          "labelEn": "Result",
+          "sec": 7,
+          "sayEn": "Give the result in one sentence: exactly what improved and by how much (for example, night-time detection accuracy rose by about 8 points). Do not oversell it, and explain how the number was measured only if you are asked.",
+          "starterJa": "その結果、【指標：夜間の検出精度】を約【数値：8】ポイント上げることができました。",
+          "exampleJa": "その結果、夜間の検出精度を約【数値：8】ポイント上げることができました。"
+        },
+        {
+          "labelJa": "入社後の貢献",
+          "labelEn": "How you will contribute",
+          "sec": 15,
+          "sayEn": "First name a situation in the job where this strength will be needed (for example, in-vehicle AI on real roads will produce unexpected misses and false detections). Then say in one sentence that you will use the strength there after joining, for example to help develop AI that people can trust.",
+          "starterJa": "【分野：車載AI】でも、【問題：予想外の見落としや誤検出】が起きると思います。",
+          "exampleJa": "車載AIでも、実際の道路では、予想外の見落としや誤検出が起きると思います。入社後もこの強みを活かし、信頼できるAIの開発に貢献したいと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "targetSec": 60,
+      "approachEn": "Interviewers ask this to see whether the way you face a problem will repeat at work, so your process matters more than the size of the result. Choose one activity with a real difficulty that you thought about and acted on yourself; a lab team project works well for a graduate student, and you should keep a second story ready (for example, your part-time job) in case they ask for something outside research. The most important thing is to say why you chose your approach before you list your actions, because the next question is almost always 'Why did you do that?'",
+      "thinkFirstEn": [
+        "Which activity took the most effort and had a clear difficulty in the middle?",
+        "What was that difficulty, and why did it matter for the goal?",
+        "What two or three actions did you take yourself, and what was your reason for choosing them?",
+        "What numbers show the result (team size, amount of data, deadline met), and what one lesson did you learn?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論と役割",
+          "labelEn": "What you did and your role",
+          "sec": 10,
+          "sayEn": "Name the activity in one sentence (for example, building a night-time image dataset in your lab), then add the team size and your role in a second short sentence. Do not start with background: the interviewer should know your topic within the first five seconds.",
+          "starterJa": "最も力を入れたのは、【活動：研究室で夜間画像のデータセットを作ったこと】です。",
+          "exampleJa": "最も力を入れたのは、研究室で夜間画像のデータセットを作ったことです。4人のチームで、私はリーダーを務めました。"
+        },
+        {
+          "labelJa": "課題",
+          "labelEn": "The difficulty",
+          "sec": 8,
+          "sayEn": "State the one difficulty that made the work hard, in a sentence starting with 課題は (for example, each member drew the annotation boxes by a different standard). If you use a technical word such as アノテーション, add a few plain words to explain it, and choose a difficulty that you acted on yourself.",
+          "starterJa": "課題は、【課題：アノテーションの基準が、人によって違うこと】でした。",
+          "exampleJa": "課題は、歩行者に枠を付けるアノテーションの基準が、人によって違うことでした。"
+        },
+        {
+          "labelJa": "考え",
+          "labelEn": "Your thinking",
+          "sec": 8,
+          "sayEn": "Say why the difficulty mattered and what you decided was needed, in one sentence ending in 〜と考えました (for example, data quality strongly affects AI accuracy, so the team needed common rules). This 'why' is what interviewers listen for, so do not jump straight to the actions.",
+          "starterJa": "【理由：データの質は精度に影響する】ため、【対策：共通のルール】が必要だと考えました。",
+          "exampleJa": "データの質はAIの精度に大きく影響するため、共通のルールが必要だと考えました。"
+        },
+        {
+          "labelJa": "行動",
+          "labelEn": "Your actions",
+          "sec": 20,
+          "sayEn": "Give two or three things you did, in order, with まず, 次に and また (for example, making a rule sheet with sample images, having everyone label the same images and fixing the rules, then holding a 15-minute progress check every week). Use concrete nouns and numbers, and say what you did as leader without taking credit for the members' work.",
+          "starterJa": "そこで、まず【行動：見本の画像を付けたルール表を作り】ました。",
+          "exampleJa": "そこで、まず見本の画像を付けたルール表を作りました。次に、全員が同じ画像で作業し、結果の違いを見てルールを直しました。また、毎週15分の進捗確認を行い、遅れている作業は早めに分担し直しました。"
+        },
+        {
+          "labelJa": "結果と学び",
+          "labelEn": "Result and lesson",
+          "sec": 14,
+          "sayEn": "Give the result with numbers and facts (how many images, finished on schedule), then one lesson in a sentence starting with この経験から. Do not make the result bigger than it was, and give one lesson only, because a list of lessons sounds memorised.",
+          "starterJa": "その結果、【成果：約3,000枚のデータセットを、予定どおりに完成させ】ました。",
+          "exampleJa": "その結果、約【数値：3,000】枚のデータセットを、予定どおりに完成させました。この経験から、明確なルールと早めの共有の大切さを学びました。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "targetSec": 60,
+      "approachEn": "Interviewers check whether you see yourself objectively and whether your character fits the job. Use a strength you can prove with one short example, and a real weakness that you are already working on and that is not fatal for an engineer (so not 'I cannot work in a team', and not a fake one such as 'I work too hard'). The most important part is the weakness: say it honestly, then spend more time on what you do about it.",
+      "thinkFirstEn": [
+        "Is your strength here the same as, or consistent with, the one in your self-PR and in how others describe you?",
+        "What one-sentence example with a number proves that strength?",
+        "What weakness has really caused you a problem, and what happened that time?",
+        "What concrete habits do you use now to control that weakness, and what has changed as a result?"
+      ],
+      "steps": [
+        {
+          "labelJa": "長所",
+          "labelEn": "Strength",
+          "sec": 7,
+          "sayEn": "Name one strength in a short phrase, the same one as in your self-PR or one that fits with it, because interviewers compare your answers. Start directly with 私の長所は and do not repeat the question.",
+          "starterJa": "私の長所は、【長所：問題の原因を粘り強く分析し、一つずつ改善できること】です。",
+          "exampleJa": "私の長所は、問題の原因を粘り強く分析し、一つずつ改善できることです。"
+        },
+        {
+          "labelJa": "長所の例",
+          "labelEn": "Proof of the strength",
+          "sec": 10,
+          "sayEn": "Prove it in one sentence with what you did and a number (for example, you looked carefully into the causes of missed pedestrians at night and raised detection accuracy by about 8 points). Do not retell your whole self-PR story: this is the short version.",
+          "starterJa": "研究では、【行動：見落としの原因を丁寧に調べ】、【成果：検出精度を約8ポイント上げ】ました。",
+          "exampleJa": "研究では、夜間の見落としの原因を丁寧に調べ、検出精度を約【数値：8】ポイント上げました。"
+        },
+        {
+          "labelJa": "短所と例",
+          "labelEn": "Weakness and an example",
+          "sec": 14,
+          "sayEn": "State one real weakness plainly in one sentence, ideally the other side of your strength (for example, being so careful that work takes too long), then add one short past case where it caused a problem. Do not say you have no weakness, and do not dress up a strength as a weakness, such as 'I work too hard'.",
+          "starterJa": "短所は、【短所：慎重になりすぎて、作業に時間がかかること】です。",
+          "exampleJa": "短所は、慎重になりすぎて、作業に時間がかかることです。以前、実験を完璧にしてから報告しようとして、進捗が遅れたことがありました。"
+        },
+        {
+          "labelJa": "改善の工夫",
+          "labelEn": "What you do about it",
+          "sec": 20,
+          "sayEn": "Give one or two concrete habits you use now (for example, setting a time limit for each task, and showing your work at 60% to get feedback early), then a small sign that they work, such as less rework. This step decides the impression, so give it more time than the weakness itself.",
+          "starterJa": "そこで今は、【対策：作業ごとに、かける時間の上限を決めて】います。",
+          "exampleJa": "そこで今は、作業ごとに、かける時間の上限を決めています。また、完成度が6割でも先生や先輩に見せて、早めに意見をもらうようにしています。その結果、やり直しが減り、研究も速く進むようになりました。"
+        },
+        {
+          "labelJa": "まとめ",
+          "labelEn": "Closing",
+          "sec": 9,
+          "sayEn": "Finish with one sentence on how you will balance the two at work: keep using the strength while watching the weak point (for example, staying persistent while also paying attention to speed). Keep it short, and do not add a second weakness.",
+          "starterJa": "入社後も、【長所：粘り強さ】を活かしながら、【課題：スピード】も意識して仕事を進めたいです。",
+          "exampleJa": "入社後も、粘り強さを活かしながら、スピードも意識して仕事を進めたいと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "targetSec": 60,
+      "approachEn": "Interviewers are not judging the failure itself; they want to see how you analyse what went wrong and how you change your behaviour afterwards. Choose a real failure where part of the cause was your own action and where you can show a clear change, and avoid both tiny mistakes and anything that would make people doubt your honesty. The most important thing is to name the cause in yourself and to give at least half of the minute to what you changed and learned: without the cause, the recovery sounds like luck.",
+      "thinkFirstEn": [
+        "Which failure really changed the way you study or work?",
+        "What part of the cause was your own behaviour or way of thinking?",
+        "What did you do differently afterwards, and what result shows that it worked?",
+        "If you are asked 'What would you do differently now?', what is your one-sentence answer?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "The failure",
+          "sec": 9,
+          "sayEn": "Say the failure in one sentence: when it was, what you did and what went wrong (for example, in the first six months of your research you kept problems to yourself and fell far behind). Do not begin with excuses or a long background.",
+          "starterJa": "一番大きな失敗は、【失敗：問題を一人で抱え込み、進捗が大きく遅れたこと】です。",
+          "exampleJa": "一番大きな失敗は、研究の最初の半年間、問題を一人で抱え込み、進捗が大きく遅れたことです。"
+        },
+        {
+          "labelJa": "起きたこと",
+          "labelEn": "What happened",
+          "sec": 18,
+          "sayEn": "Give the facts in order: what you were thinking at the time, the moment the problem came out, and how big the damage was (for example, you waited for perfect results, your professor said at the interim presentation that the research was off course, and many experiments had to be redone). Stay with facts, and do not blame other people or bad luck.",
+          "starterJa": "当時は、【考え：結果が完璧になってから、先生に報告しよう】と考えていました。",
+          "exampleJa": "当時は、結果が完璧になってから、先生に報告しようと考えていました。しかし、中間発表で、先生から「研究の方向がずれている」と指摘されました。実験の多くが、やり直しになりました。"
+        },
+        {
+          "labelJa": "原因",
+          "labelEn": "Root cause",
+          "sec": 5,
+          "sayEn": "Name the cause in your own behaviour in one short sentence starting with 振り返ると (for example, you asked for advice too late). This is the part interviewers listen for most, so do not skip it and do not put the cause on anyone else.",
+          "starterJa": "振り返ると、原因は、【原因：相談が遅すぎたこと】でした。",
+          "exampleJa": "振り返ると、原因は、相談が遅すぎたことでした。"
+        },
+        {
+          "labelJa": "変えたこと",
+          "labelEn": "What you changed",
+          "sec": 18,
+          "sayEn": "Announce how many things you changed, then give each one in a short sentence with まず, 次に and 最後に (for example, a short progress report every week, asking a senior student about anything still unclear after a full day, and a deadline for each task). Give concrete new habits, not feelings such as 'I tried harder'.",
+          "starterJa": "そこで、【数：3】つのことを変えました。",
+          "exampleJa": "そこで、3つのことを変えました。まず、毎週、短い進捗報告を始めました。次に、丸1日考えてもわからないことは、すぐ先輩に相談するようにしました。最後に、作業ごとに締め切りを決めました。"
+        },
+        {
+          "labelJa": "結果と学び",
+          "labelEn": "Result and lesson",
+          "sec": 10,
+          "sayEn": "Give the result in one sentence (for example, you caught up and presented at a domestic conference), then one lesson starting with この経験から. Choose the lesson that answers the cause you named, such as reporting and consulting early, which also matters at work.",
+          "starterJa": "その結果、【結果：遅れを取り戻し、国内学会で発表でき】ました。",
+          "exampleJa": "その結果、遅れを取り戻し、国内学会で発表できました。この経験から、早めの報告と相談の大切さを学びました。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to know how you behave inside a team: what role you naturally take and how you work with other people, which is close to the 'One team' value in your FPT Prep tab. Choose a team and a role you can name clearly; the role does not have to be leader, and it is best to use a different episode from your ガクチカ, as the model does with the part-time job. The most important thing is to make your own actions visible, because 'we all worked hard together' tells them nothing about you.",
+      "thinkFirstEn": [
+        "Which team, ideally not the one in your ガクチカ, gave you a role that you can name in a few words?",
+        "What problem did the team have, and how did you find out its cause?",
+        "What did you do yourself for the team, and what number shows the result?",
+        "What did you learn about teamwork, and how will you act on it in a team at work?"
+      ],
+      "steps": [
+        {
+          "labelJa": "チームと役割",
+          "labelEn": "Team and your role",
+          "sec": 10,
+          "sayEn": "Answer both parts of the question at the start: which team it was, in one sentence, then your role in a second short sentence starting with 私の役割は (for example, training new staff in the customer-service team at your part-time job). Do not call yourself the leader if you were not, because a clear supporting role is just as good.",
+          "starterJa": "【場所：アルバイト先の店】で、【チーム：接客チーム】の一員として働いた経験があります。",
+          "exampleJa": "アルバイト先の日本料理店で、接客チームの一員として働いた経験があります。私の役割は、新人の教育でした。"
+        },
+        {
+          "labelJa": "課題と原因",
+          "labelEn": "The team's problem and its cause",
+          "sec": 15,
+          "sayEn": "Describe the problem the team had in one sentence, then how you found its cause (for example, new staff made more mistakes at busy times, and when you asked them, you learned that they could not memorise all the steps at once). Do not say the team had no problems: interviewers want to see how you handled one.",
+          "starterJa": "【場所：店】では、【問題：新人のミスが増え】、チーム全体の負担になっていました。",
+          "exampleJa": "店では、忙しい時間帯に新人のミスが増え、チーム全体の負担になっていました。新人に話を聞くと、手順を一度に覚えきれないことが原因だとわかりました。"
+        },
+        {
+          "labelJa": "役割での行動",
+          "labelEn": "What you did in your role",
+          "sec": 13,
+          "sayEn": "Give two things you did yourself in your role, with numbers, and say who you consulted (for example, after talking to the manager you made a simple step sheet with photos, then stayed beside each newcomer for the first week with a five-minute review every day). Say 私が for your own actions, because the question asks about YOUR role, not only what 'we' did.",
+          "starterJa": "そこで、【相手：店長】に相談し、【行動：写真入りの簡単な手順表を作り】ました。",
+          "exampleJa": "そこで、店長に相談し、写真入りの簡単な手順表を作りました。そして、最初の1週間は私が隣について、毎日5分の振り返りを行いました。"
+        },
+        {
+          "labelJa": "結果",
+          "labelEn": "Result",
+          "sec": 10,
+          "sayEn": "Give the team's result as a before-and-after number in one sentence (for example, the time until a newcomer could serve customers alone fell from about one month to two weeks, about half). Use a number you can explain if they ask how you know it.",
+          "starterJa": "その結果、【指標：新人が一人で接客できるまでの期間】が、約半分になりました。",
+          "exampleJa": "その結果、新人が一人で接客できるまでの期間が、約【期間：1か月】から【期間：2週間】に短くなりました。"
+        },
+        {
+          "labelJa": "学びと入社後",
+          "labelEn": "Lesson and how you will work",
+          "sec": 12,
+          "sayEn": "State one lesson about teamwork starting with この経験から (for example, supporting teammates leads to results for the whole team), then say in one sentence how you will work in a team after joining. Keep the same idea in both sentences, so the lesson and your future role fit together.",
+          "starterJa": "この経験から、【学び：仲間を支えることがチームの成果につながる】と学びました。",
+          "exampleJa": "この経験から、仲間を支えることがチームの成果につながると学びました。入社後も、周りを支えるエンジニアとして貢献したいです。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "targetSec": 60,
+      "approachEn": "Interviewers ask this to see whether you know how other people see you, and whether that matches the strengths you described yourself. Use words that real people have actually said to you, from two different places if you can (your lab and your part-time job), together with the scene behind them, and make sure they fit your self-PR and your weakness answer. The most important thing is the concrete 'who said it and when': without it, the answer is only your own opinion again.",
+      "thinkFirstEn": [
+        "What words have your lab members, your professor or your part-time manager actually used about you?",
+        "In what situation did they say it, and what were you doing at the time?",
+        "Does it match the strength and the weakness you give in your other answers?",
+        "How does that side of you help a team at work?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "What people say",
+          "sec": 7,
+          "sayEn": "Give one or two words that other people really use about you, as a quotation (〜だと言われます). Choose words that help a team and fit the strength you gave earlier, because a surprising new personality here makes your other answers look less true.",
+          "starterJa": "周りからは、よく「【言葉：粘り強くて、頼りになる人】」だと言われます。",
+          "exampleJa": "周りからは、よく「粘り強くて、頼りになる人」だと言われます。"
+        },
+        {
+          "labelJa": "研究室の例",
+          "labelEn": "Example 1: in the lab",
+          "sec": 24,
+          "sayEn": "Show one scene behind those words in three short sentences: the situation, what you do, and what people say to you, as a quotation (for example, junior students bring you program errors, you check the logs with them until the cause is found, and they say that asking you puts their mind at ease). Pick a work-like scene, not a private one with friends.",
+          "starterJa": "例えば【場所：研究室】では、【相手：後輩】から、よく相談を受けます。",
+          "exampleJa": "例えば研究室では、後輩からプログラムのエラーや環境構築について、よく相談を受けます。私は原因がわかるまで一緒にログを確認し、最後まで付き合います。そのため、「困ったら〇〇さんに聞けば安心だ」と言ってもらえます。"
+        },
+        {
+          "labelJa": "アルバイト先の例",
+          "labelEn": "Example 2: at your part-time job",
+          "sec": 11,
+          "sayEn": "Add a second voice from a different place, such as your part-time manager, with their words as a quotation and one fact that backs them up (for example, you were trusted with training new staff). Two short sentences are enough.",
+          "starterJa": "また、【相手：アルバイト先の店長】からは、「【言葉：仕事が丁寧だ】」と言われました。",
+          "exampleJa": "また、アルバイト先の店長からは、「仕事が丁寧だ」と言われました。新人の教育も任されるようになりました。"
+        },
+        {
+          "labelJa": "弱い面と工夫",
+          "labelEn": "A weak side and how you manage it",
+          "sec": 9,
+          "sayEn": "Add one honest weak side of the same trait and what you do about it now, in one sentence starting with 一方で (for example, being so careful that you sometimes take too long, so you now watch your speed). It must match your weakness answer, because interviewers compare the two.",
+          "starterJa": "一方で、【課題：丁寧すぎて時間がかかること】もあるため、今はスピードも意識しています。",
+          "exampleJa": "一方で、丁寧すぎて時間がかかることもあるため、今はスピードも意識しています。"
+        },
+        {
+          "labelJa": "仕事との関係",
+          "labelEn": "Link to work",
+          "sec": 9,
+          "sayEn": "End with one sentence on how this side of you will help a team at work, using the same trait (for example, solving problems to the end and becoming an engineer the team trusts). One sentence is enough.",
+          "starterJa": "入社後も、【行動：問題を最後まで解決し】、チームに信頼されるエンジニアになりたいです。",
+          "exampleJa": "入社後も、問題を最後まで解決し、チームに信頼されるエンジニアになりたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "targetSec": 60,
+      "approachEn": "This question checks self-management: whether you notice your own stress and have a healthy, repeatable way of handling it. Give your method first, then one work-like situation where you really felt stress, what you did about the cause (sorting out the tasks, asking for advice early) and one healthy way to refresh. The most important thing is to show that you act on the cause: 'I never feel stress' or only a hobby is a weak answer.",
+      "thinkFirstEn": [
+        "In what work-like situation do you really feel stress (deadlines, failed experiments, presenting in Japanese)?",
+        "What do you do about the cause of the stress, not only about the feeling?",
+        "How did that situation end, and why does your method work for you?",
+        "What healthy habit helps you reset (exercise, sleep, talking with someone)?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Your way of coping",
+          "sec": 7,
+          "sayEn": "Say your main method in one sentence, starting with what you do about the cause (for example, you first write the causes down on paper). Do not start by saying that you never feel stress, which sounds unrealistic.",
+          "starterJa": "私は、ストレスを感じたときは、まず【方法：原因を紙に書き出す】ようにしています。",
+          "exampleJa": "私は、ストレスを感じたときは、まず原因を紙に書き出すようにしています。"
+        },
+        {
+          "labelJa": "場面と行動",
+          "labelEn": "Example: situation and what you did",
+          "sec": 23,
+          "sayEn": "Give one work-like situation (for example, experiments, presentation preparation and coursework coming together before a conference), then two things you did about the cause, such as listing every task by deadline and asking your professor to adjust the schedule. Do not make a person the cause of your stress, because interviewers would worry about your relationships.",
+          "starterJa": "例えば、【場面：国内学会の前に、実験と発表準備と授業の課題が重なった】ことがありました。",
+          "exampleJa": "例えば、国内学会の前に、実験と発表準備と授業の課題が重なったことがありました。そのときは、やることをすべて書き出し、締め切りが近い順に並べました。そして、一人では間に合わない作業は、先生に相談して日程を調整しました。"
+        },
+        {
+          "labelJa": "結果と効果",
+          "labelEn": "Result and why it works",
+          "sec": 13,
+          "sayEn": "Say how it ended, in one sentence (for example, you finished the preparation on schedule), then why the method works for you: once you can see the causes, you know where to start and you feel calmer. This shows that you solve the root problem, not only the feeling.",
+          "starterJa": "その結果、【結果：発表の準備を予定どおりに終える】ことができました。",
+          "exampleJa": "その結果、発表の準備を予定どおりに終えることができました。原因が見えると、何から始めればよいかがわかり、気持ちも落ち着きます。"
+        },
+        {
+          "labelJa": "気分転換",
+          "labelEn": "A healthy way to refresh",
+          "sec": 7,
+          "sayEn": "Add one healthy habit for refreshing, in one sentence (for example, jogging at the weekend). Do not mention unhealthy habits such as overeating, drinking or playing games late at night.",
+          "starterJa": "また、週末には【趣味：ジョギング】をして、気分を切り替えています。",
+          "exampleJa": "また、週末には【趣味：ジョギング】をして、気分を切り替えています。"
+        },
+        {
+          "labelJa": "仕事での姿勢",
+          "labelEn": "Your attitude at work",
+          "sec": 10,
+          "sayEn": "Finish with one sentence on how you will handle pressure at work: not holding problems alone, consulting early and working calmly. Do not add a new method here.",
+          "starterJa": "入社後も、一人で抱え込まず、早めに相談しながら、落ち着いて仕事を進めたいと考えております。",
+          "exampleJa": "入社後も、一人で抱え込まず、早めに相談しながら、落ち着いて仕事を進めたいと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to see whether you can explain technical work logically and briefly: what the problem is, what you did and how much it changed. Follow a fixed order (theme, difficulty, methods, model and hardware, results) and name only the one or two ideas that are your own contribution, because engineers will ask about every term you use. The most important thing is to give the results as numbers, say what each number measures, and stop at one minute; if the interviewer is not a specialist, switch to your plain-language version.",
+      "thinkFirstEn": [
+        "What is your research in one sentence that a first-year university student would understand?",
+        "What makes the problem difficult, in one or two plain sentences?",
+        "Which one or two ideas are really your own contribution, and can you explain every term in them?",
+        "What are your main results as numbers, what does each number measure, and under which conditions?"
+      ],
+      "steps": [
+        {
+          "labelJa": "テーマ",
+          "labelEn": "Theme",
+          "sec": 7,
+          "sayEn": "Say what you study in one plain sentence: the target and the goal (for example, detecting pedestrians in in-vehicle camera images at night and in rain). Do not read out your formal thesis title, because it is too long and too hard to follow by ear.",
+          "starterJa": "【研究内容：夜間や雨の日の車載カメラ画像から、歩行者を検出する】研究をしております。",
+          "exampleJa": "夜間や雨の日の車載カメラ画像から、歩行者を検出する研究をしております。"
+        },
+        {
+          "labelJa": "背景と課題",
+          "labelEn": "Why it is hard",
+          "sec": 11,
+          "sayEn": "Explain in one or two sentences why the problem is difficult (for example, night and rain images are dark with many reflections, so more pedestrians are missed, and night-time training data is scarce). Choose only the difficulties that your method answers, not the whole history of the field.",
+          "starterJa": "【条件：夜や雨の日】は、【原因：画像が暗く、光の反射も多い】ため、見落としが増えます。",
+          "exampleJa": "夜や雨の日は、画像が暗く、光の反射も多いため、歩行者の見落としが増えます。また、夜の学習データも不足しています。"
+        },
+        {
+          "labelJa": "手法",
+          "labelEn": "Methods",
+          "sec": 16,
+          "sayEn": "Announce the number of methods, then give each one in a sentence with a few plain words on what it does (for example, data augmentation that darkens daytime images or adds rain, and domain adaptation that reduces the gap between day and night images). Name only your key ideas, and be ready to explain every term, because each one may become a follow-up question.",
+          "starterJa": "そこで、【数：2】つの方法を組み合わせました。",
+          "exampleJa": "そこで、2つの方法を組み合わせました。1つ目は、昼の画像を暗くしたり雨を重ねたりする、データ拡張です。2つ目は、昼と夜の画像の差を小さくする、ドメイン適応です。"
+        },
+        {
+          "labelJa": "モデル",
+          "labelEn": "Model and hardware",
+          "sec": 8,
+          "sayEn": "Say in one sentence which model you chose and where you ran it (for example, a lightweight YOLO-family model on a Jetson embedded board). Include this when running on small hardware is part of your contribution, as it is for in-vehicle AI.",
+          "starterJa": "モデルには【モデル：軽量なYOLO系】を選び、【環境：Jetson】で動かしました。",
+          "exampleJa": "モデルには軽量なYOLO系を選び、組込みボードのJetsonで動かしました。"
+        },
+        {
+          "labelJa": "結果と発表",
+          "labelEn": "Results and presentation",
+          "sec": 18,
+          "sayEn": "Give your main results as numbers and say what each one measures and where (for example, mAP, which shows detection accuracy, rose by about 8 points at night, and the speed reached 25 FPS on the board), then end with an outside result such as a conference presentation. Say the numbers slowly and state the exact improvement without overclaiming.",
+          "starterJa": "その結果、【指標：検出精度を表すmAP】が、夜間で約【数値：8】ポイント上がりました。",
+          "exampleJa": "その結果、検出精度を表すmAPが、夜間で約【数値：8】ポイント上がりました。速度も、Jetson上で【数値：25】FPSを達成しました。この成果は、国内学会で発表いたしました。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "targetSec": 60,
+      "approachEn": "This question checks whether you can make technical content clear to someone outside your field, which is what a bridge engineer does with customers every day. Replace every technical term with everyday words, start from a scene the listener knows, and add one short comparison for your main idea. The most important thing is to use no jargon (no mAP, FPS or ドメイン適応): if a family member could not follow a sentence, rewrite it.",
+      "thinkFirstEn": [
+        "How would you explain your research to a family member in one sentence?",
+        "What everyday scene shows the problem you are solving?",
+        "What short comparison explains your main idea (for example, a driver practising on night roads)?",
+        "Which technical terms in your one-minute explanation need a plain-word replacement?"
+      ],
+      "steps": [
+        {
+          "labelJa": "一言で",
+          "labelEn": "In one plain sentence",
+          "sec": 9,
+          "sayEn": "Open with 一言で申し上げますと and say what your research does in everyday words, as if to a family member (for example, research that keeps a car's camera from missing people even at night or in rain). Use no technical terms in this first sentence.",
+          "starterJa": "一言で申し上げますと、【説明：夜でも車のカメラが人を見落とさないようにする研究】です。",
+          "exampleJa": "一言で申し上げますと、夜や雨の日でも、車のカメラが人を見落とさないようにする研究です。"
+        },
+        {
+          "labelJa": "身近な問題",
+          "labelEn": "The everyday problem",
+          "sec": 14,
+          "sayEn": "Describe the problem with a scene everyone knows: in the dark or in rain, even people find it hard to see pedestrians, and AI has the same trouble with dark images. Start from the listener's own experience, not from the technology.",
+          "starterJa": "人の目でも、【場面：暗い場所や雨の中】では、【問題：歩行者が見えにくく】なります。",
+          "exampleJa": "人の目でも、暗い場所や雨の中では、歩行者が見えにくくなります。AIも同じで、暗い画像や光の反射が多い画像では、人を見落としやすくなります。"
+        },
+        {
+          "labelJa": "工夫をやさしく",
+          "labelEn": "Your idea in simple words",
+          "sec": 24,
+          "sayEn": "Explain your main idea without its technical name, then add one short comparison starting with たとえると (for example, editing daytime photos to look like night or rain gives the AI more practice photos, like a driver who only knows daytime roads practising at night). Keep a second idea, such as making the AI lighter for a small computer in the car, to one plain sentence.",
+          "starterJa": "そこで、【工夫：昼の写真を夜や雨のように加工して】、AIの練習用の写真を増やしました。",
+          "exampleJa": "そこで、昼の写真を夜や雨のように加工して、AIの練習用の写真を増やしました。たとえると、昼の道しか知らない運転手に、夜の道でも練習してもらうようなものです。また、車に載せる小さなコンピューターでも速く動くように、AIを軽くしました。"
+        },
+        {
+          "labelJa": "成果",
+          "labelEn": "Result in plain words",
+          "sec": 7,
+          "sayEn": "Give one result in words the listener can picture, with at most one number (for example, the accuracy of finding people at night rose by about 8 points). Do not use metric names such as mAP here, and do not simplify so much that the result becomes untrue.",
+          "starterJa": "その結果、【成果：夜に人を見つける精度】が、約【数値：8】ポイント上がりました。",
+          "exampleJa": "その結果、夜に人を見つける精度が、約【数値：8】ポイント上がりました。"
+        },
+        {
+          "labelJa": "意義",
+          "labelEn": "How it helps",
+          "sec": 6,
+          "sayEn": "Finish with the benefit for ordinary people, such as fewer traffic accidents at night, as something you want to work towards. Use one sentence, because this is what a non-specialist will remember.",
+          "starterJa": "将来は、【効果：夜の交通事故を減らす】技術につなげたいと考えております。",
+          "exampleJa": "将来は、夜の交通事故を減らす技術につなげたいと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "targetSec": 75,
+      "approachEn": "Engineers ask this to see how you think when things do not work: how you look for the cause, what you try and what you learn. Choose a technical difficulty that you solved mainly through your own analysis and can tell with three numbers (start, target, final); if you can, use a different story from your self-PR, and be honest about any advice you received. The most important thing is the reasoning between the problem and the solution, because 'I tried many things and finally it worked' is the weakest answer.",
+      "thinkFirstEn": [
+        "Where were you stuck the longest, and which numbers show it (the start, the target and the final result)?",
+        "What did you measure or compare to find the cause?",
+        "What did you try first, what new problem did it cause, and why did you choose your final solution?",
+        "Which parts did you do yourself, who gave you advice, and what one lesson did you take away?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "The hardest point",
+          "sec": 5,
+          "sayEn": "Name the hardest point in one sentence, as a technical problem (for example, achieving both accuracy and speed). Do not choose something outside your control, such as a strict professor or a lack of equipment.",
+          "starterJa": "一番苦労したのは、【苦労：精度と速度を両立させること】です。",
+          "exampleJa": "一番苦労したのは、精度と速度を両立させることです。"
+        },
+        {
+          "labelJa": "状況と目標",
+          "labelEn": "Starting point and target",
+          "sec": 15,
+          "sayEn": "Show the gap with numbers: where you started and what the target was (for example, the first model was accurate but reached only 10 FPS on the Jetson, and the target was at least 20 FPS). 'It was hard' is not enough; the numbers make the difficulty clear.",
+          "starterJa": "最初のモデルは、【環境：Jetson上】では【数値：10】FPSしか出ませんでした。",
+          "exampleJa": "最初のモデルは、精度は高かったのですが、Jetson上では【数値：10】FPSしか出ませんでした。目標は、【数値：20】FPS以上でした。"
+        },
+        {
+          "labelJa": "原因の分析",
+          "labelEn": "Finding the cause",
+          "sec": 12,
+          "sayEn": "Say what you measured or compared to find the cause, then what you found (for example, you measured the processing time of each part and found that the model's computation was the main cause). Engineers care most about this step, so do not jump straight from the problem to the solution.",
+          "starterJa": "そこで、まず【分析：処理時間を細かく測り、どこが遅いかを調べ】ました。",
+          "exampleJa": "そこで、まず処理時間を細かく測り、どこが遅いかを調べました。その結果、モデルの計算が一番の原因だとわかりました。"
+        },
+        {
+          "labelJa": "対策と新しい問題",
+          "labelEn": "Fixes, and the new problem",
+          "sec": 28,
+          "sayEn": "Tell it in order: your first fix, the new problem it caused, your next fix and why you chose it (for example, a lighter model with smaller images missed small, distant pedestrians, so you restored the image size and used FP16 with TensorRT, and you dropped INT8 because night-time accuracy fell). Saying what did not work shows your process honestly.",
+          "starterJa": "次に、【対策：軽いYOLO系のモデルに変え、入力画像も小さくし】ました。",
+          "exampleJa": "次に、軽いYOLO系のモデルに変え、入力画像も小さくしました。しかし、遠くの小さな歩行者の見落としが増えました。対策として、画像のサイズを元に戻し、TensorRTでFP16に変換しました。INT8も試しましたが、夜間の精度が下がったため、FP16を選びました。"
+        },
+        {
+          "labelJa": "結果と学び",
+          "labelEn": "Result and lesson",
+          "sec": 15,
+          "sayEn": "Give the final number against the target and what you kept (for example, 25 FPS with almost the same accuracy), then one lesson starting with この経験から. Choose a lesson that also applies to engineering work, such as finding the best balance within constraints.",
+          "starterJa": "最終的に、【条件：精度をほぼ保ったまま】、【数値：25】FPSを達成しました。",
+          "exampleJa": "最終的に、精度をほぼ保ったまま、【数値：25】FPSを達成しました。この経験から、制約の中で最適なバランスを探す大切さを学びました。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to see that you chose your work for your own reasons and that your interest connects to this job. Give two reasons: a personal or social one with the real experience behind it, and one about the theme itself (what is still unsolved), then close by linking the theme to the career you want. The most important thing is honesty: if your professor suggested the theme, say so and add what made you want to take it on, because 'I was told to do it' alone sounds passive, and 'AI is popular' is not a reason.",
+      "thinkFirstEn": [
+        "What first made you interested in this area (a class, an experience, a news story)?",
+        "Who decided the theme, and which part of it did you decide yourself?",
+        "What about this theme is still unsolved or technically interesting to you?",
+        "How does that interest connect to wanting to work on AI for cars?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: how many reasons",
+          "sec": 5,
+          "sayEn": "Start by saying how many reasons you have (理由は2つあります), so the listener can follow the structure. Two reasons are enough for one minute; do not give three or more.",
+          "starterJa": "理由は【数：2】つあります。",
+          "exampleJa": "理由は2つあります。"
+        },
+        {
+          "labelJa": "理由1：きっかけ",
+          "labelEn": "Reason 1: a personal trigger",
+          "sec": 22,
+          "sayEn": "Give your first reason in one sentence ending in 〜からです, then the real experience behind it (for example, you wanted research that protects lives: on dark roads in Japan you wondered whether drivers could see you, and you then learned that serious pedestrian accidents are common at night). Keep facts general, and quote statistics only if you know their source.",
+          "starterJa": "1つ目は、【理由：技術で人の命を守る研究がしたいと考えた】からです。",
+          "exampleJa": "1つ目は、技術で人の命を守る研究がしたいと考えたからです。日本に来てから、夜の暗い道で、車から自分が見えているか不安になったことがあります。調べてみると、夜間は歩行者の重大な事故が多いと知りました。"
+        },
+        {
+          "labelJa": "理由2：未解決の課題",
+          "labelEn": "Reason 2: an unsolved problem",
+          "sec": 19,
+          "sayEn": "Give a second reason about the theme itself, ending in 〜からです (for example, you wanted to take on a problem that is not yet solved), then show what is solved and what is not, such as accurate daytime detection but low accuracy at night and in rain. If your professor taught you this or suggested the theme, say so honestly, as the model does.",
+          "starterJa": "2つ目は、【理由：まだ解決されていない課題に挑戦したかった】からです。",
+          "exampleJa": "2つ目は、まだ解決されていない課題に挑戦したかったからです。昼間の歩行者検出は、すでに高い精度が出ています。一方で、夜や雨の日は、まだ精度が低いと先生から教わりました。"
+        },
+        {
+          "labelJa": "まとめと将来",
+          "labelEn": "Your choice and your career goal",
+          "sec": 14,
+          "sayEn": "Restate your choice in one short sentence (この2つの理由から、このテーマを選びました), then say what kind of engineer this research has made you want to become. This turns a question about your past into a reason to hire you.",
+          "starterJa": "この【数：2】つの理由から、このテーマを選びました。",
+          "exampleJa": "この2つの理由から、このテーマを選びました。この研究を通して、自動車の安全に関わるAIエンジニアを目指すようになりました。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to know whether you understand the job and can connect your research to it realistically. Do not promise to continue your own research theme; choose up to three things that carry over to the company's real work (knowledge and experience), and check that work in your FPT Prep tab instead of guessing. The most important thing is to link each point to a concrete kind of work and to be honest about what you still need to learn, which also fits the 'Lifelong Learning' value in your FPT Prep tab.",
+      "thinkFirstEn": [
+        "Which technical knowledge from your research would still be useful if the project were on a different topic?",
+        "Which experiences beyond knowledge can you offer (for example, making a model run fast on small hardware, or keeping data quality consistent in a team)?",
+        "Which kind of work listed in your FPT Prep tab fits each of those points?",
+        "What will you need to learn after joining (for example, functional safety and quality processes), and how do you plan to learn it?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: how many points",
+          "sec": 5,
+          "sayEn": "Answer directly by saying how many points you will give (for example, 3つの点で活かせると考えております). Three is the maximum for one minute, and two well-explained points are better than three thin ones.",
+          "starterJa": "【数：3】つの点で活かせると考えております。",
+          "exampleJa": "3つの点で活かせると考えております。"
+        },
+        {
+          "labelJa": "1つ目：知識",
+          "labelEn": "First: knowledge",
+          "sec": 12,
+          "sayEn": "Name the first point, your technical knowledge, in one short sentence, then link it to a concrete kind of work (for example, your experience of building and evaluating object-detection models is useful for developing ADAS perception functions). Take the kind of work from the sourced facts in your FPT Prep tab, and never invent projects, customers or products.",
+          "starterJa": "1つ目は、【知識：画像認識の知識】です。",
+          "exampleJa": "1つ目は、画像認識の知識です。物体検出のモデルを作り、評価してきた経験は、ADASの認識機能の開発に役立つと思います。"
+        },
+        {
+          "labelJa": "2つ目：数字のある経験",
+          "labelEn": "Second: an experience with a number",
+          "sec": 17,
+          "sayEn": "Name the second point as an experience, prove it with one fact and a number, then say where it is useful (for example, you made the model lighter and reached 25 FPS on a Jetson, which fits in-vehicle development, where AI must run on limited computing resources). Use the same order for every point: the point, the fact, where it helps.",
+          "starterJa": "2つ目は、【経験：精度と速度を両立させた経験】です。",
+          "exampleJa": "2つ目は、精度と速度を両立させた経験です。モデルを軽量化し、Jetson上で【数値：25】FPSを達成しました。限られた計算資源でAIを動かす、車載の開発に活かせます。"
+        },
+        {
+          "labelJa": "3つ目：別の経験",
+          "labelEn": "Third: another experience",
+          "sec": 12,
+          "sayEn": "Give a third point from a different side of your work, such as quality or teamwork, with one fact (for example, you made annotation rules for the dataset and kept quality consistent across the team). Choose something that still helps when the project topic is different from your research.",
+          "starterJa": "3つ目は、【経験：データの品質を管理した経験】です。",
+          "exampleJa": "3つ目は、データの品質を管理した経験です。データセット作りでは、アノテーションのルールを作り、チームで品質をそろえました。"
+        },
+        {
+          "labelJa": "これから学ぶこと",
+          "labelEn": "What you still need to learn",
+          "sec": 14,
+          "sayEn": "Show realism: start with もちろん and say what you still need to learn in real work (for example, functional safety and quality processes), then end with your aim to learn the basics quickly and become useful in the field. Do not claim that you can contribute to everything at once, because interviewers trust new graduates who know their gaps.",
+          "starterJa": "もちろん、実務では【分野：機能安全や品質のプロセス】など、学ぶことが多いと理解しております。",
+          "exampleJa": "もちろん、実務では機能安全や品質のプロセスなど、学ぶことが多いと理解しております。まずは基礎を早く身につけ、現場で役立つエンジニアになりたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "targetSec": 60,
+      "approachEn": "HR asks this to judge your motivation and whether you will stay long term. Give reasons to WORK in Japan, not reasons to live here, and build the answer as two reasons plus your future: one reason from your specialty (why Japan is the place to use it), one from your own experience of working here, then your long-term goal. The most important thing is a work reason tied to your field, such as Japan's automotive industry, not safety, food or anime, and no negative comparison with your home country.",
+      "thinkFirstEn": [
+        "What is your career reason for working in Japan, tied to your field (for example, Japan's automotive industry)?",
+        "What do you respect about how Japan's industry works, and how does it connect to your own research?",
+        "What have you experienced in your lab or part-time job that makes you feel the Japanese way of working suits you?",
+        "How long do you want to work in Japan, and what role do you want in the future?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: how many reasons",
+          "sec": 5,
+          "sayEn": "Announce the number of reasons first (理由は2つあります), so the listener can follow. Both reasons must be about working in Japan, not about living here.",
+          "starterJa": "理由は【数：2】つあります。",
+          "exampleJa": "理由は2つあります。"
+        },
+        {
+          "labelJa": "理由1：専門を活かす",
+          "labelEn": "Reason 1: use your specialty in Japan",
+          "sec": 23,
+          "sayEn": "Give a career reason tied to your field in one sentence ending in 〜からです (for example, you want to use the in-vehicle AI skills from your research in Japan, where the automotive industry is strong). Then support it with one or two things you respect about Japan's industry, such as its attitude to safety and quality, and one sentence that links them to your own work.",
+          "starterJa": "1つ目は、【専門：車載AIの技術】を、【特徴：自動車産業が盛んな】日本で活かしたいからです。",
+          "exampleJa": "1つ目は、研究で学んだ車載AIの技術を、自動車産業が盛んな日本で活かしたいからです。日本の自動車メーカーは、世界で高く評価されています。安全や品質への意識も、非常に高いと感じます。私も研究で、車の安全を守るAIに取り組んできました。"
+        },
+        {
+          "labelJa": "理由2：働き方が合う",
+          "labelEn": "Reason 2: the work style suits you",
+          "sec": 20,
+          "sayEn": "Give a second reason from your own experience in Japan (for example, the Japanese way of working suits you: in two years of part-time work you learned to value preparation and checking in advance). Then connect what you learned to the job, such as the carefulness needed in in-vehicle development, where safety comes first.",
+          "starterJa": "2つ目は、【理由：日本の仕事の進め方が、自分に合っていると感じた】からです。",
+          "exampleJa": "2つ目は、日本の仕事の進め方が、自分に合っていると感じたからです。【年数：2】年間のアルバイトで、事前の準備や確認を大切にする働き方を学びました。この丁寧さは、安全が第一の車載開発にも必要だと思います。"
+        },
+        {
+          "labelJa": "将来",
+          "labelEn": "Your future in Japan",
+          "sec": 12,
+          "sayEn": "Show that you are thinking long term: say that you want to build experience in Japan for a long time, then the role you want in the future (for example, an engineer who connects Japanese customers and overseas development teams). HR listens here for whether you will stay, so be clear and sincere.",
+          "starterJa": "日本で長く経験を積みたいと考えております。",
+          "exampleJa": "日本で長く経験を積みたいと考えております。将来は、日本のお客様と海外の開発チームをつなぐエンジニアになりたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q31",
+      "targetSec": 60,
+      "approachEn": "The interviewer can already hear your Japanese, so this question is really about self-awareness and about how you prevent misunderstandings at work. Do not answer 'no worries at all' and do not only list weaknesses: admit one specific gap first, then balance it with proof that you can already work in Japanese, your daily practice and the way you confirm things at work. The most important thing is that confirming habit, because careful listening and checking matter more to interviewers than perfect grammar, above all in a bridge role.",
+      "thinkFirstEn": [
+        "Which exact part of Japanese is still hard for you (keigo, speaking speed, technical explanations, phone calls)?",
+        "What proof do you have that you can already work in Japanese (JLPT level, part-time job, presentations, lab meetings)?",
+        "What do you really do every day or every week to improve it?",
+        "How will you make sure nothing is misunderstood at work (rephrasing to confirm, keeping a written record)?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Honest answer",
+          "sec": 14,
+          "sayEn": "Answer honestly and exactly: admit one gap in a sentence starting with 正直に申し上げますと, then name the precise situation (for example, when you must speak quickly in keigo, the words do not come out at once). Do not say 'no worries at all', and do not say only 'my Japanese is not good', which is too vague and too negative.",
+          "starterJa": "正直に申し上げますと、【課題：話す力】には、まだ課題があると感じております。",
+          "exampleJa": "正直に申し上げますと、話す力には、まだ課題があると感じております。特に、敬語で速く話す場面では、言葉がすぐに出ないことがあります。"
+        },
+        {
+          "labelJa": "根拠",
+          "labelEn": "What you can already do",
+          "sec": 20,
+          "sayEn": "Balance the gap with proof that you can already work in Japanese: start with ただ, then give facts such as your JLPT level, the skills you are confident in, and how long you have served customers in Japanese. Facts and numbers convince more than saying 'I am confident'.",
+          "starterJa": "ただ、仕事に必要な基礎は身につけております。",
+          "exampleJa": "ただ、仕事に必要な基礎は身につけております。日本語能力試験のN2に合格し、読むことと聞くことには自信があります。また、【年数：2】年間、アルバイトで日本語の接客を続けてまいりました。"
+        },
+        {
+          "labelJa": "今の練習",
+          "labelEn": "Daily practice",
+          "sec": 7,
+          "sayEn": "Say what you are doing now to close the gap, as a concrete routine in one sentence (for example, reading aloud every day, and recording your own answers and correcting them). Name only practice you really do, because an action you already take is stronger than a promise.",
+          "starterJa": "現在は、【練習：毎日の音読と、自分の回答を録音して直す練習】を続けております。",
+          "exampleJa": "現在は、毎日の音読と、自分の回答を録音して直す練習を続けております。"
+        },
+        {
+          "labelJa": "仕事での工夫",
+          "labelEn": "At work",
+          "sec": 13,
+          "sayEn": "Explain how you will prevent misunderstandings at work: rephrasing what the other person said in your own words to confirm it, and keeping important points in writing by email or chat. This is exactly what a bridge engineer must do between a Japanese customer and the development team.",
+          "starterJa": "仕事では、【工夫：相手の話を自分の言葉で言い換えて】、必ず確認いたします。",
+          "exampleJa": "仕事では、相手の話を自分の言葉で言い換えて、必ず確認いたします。大切な内容は、メールやチャットでも残すようにいたします。"
+        },
+        {
+          "labelJa": "目標",
+          "labelEn": "Your next goal",
+          "sec": 6,
+          "sayEn": "Close with one concrete goal that you are really working towards (for example, passing N1) and say that you will keep studying after joining. Do not promise a goal you are not actually preparing for.",
+          "starterJa": "入社後も勉強を続け、【目標：N1合格】を目指します。",
+          "exampleJa": "入社後も勉強を続け、【目標：N1合格】を目指します。"
+        }
+      ]
+    },
+    {
+      "id": "q32",
+      "targetSec": 60,
+      "approachEn": "HR asks this because training and placing a new graduate takes years, so they want to know whether you plan to stay; a vague reply worries them most. Answer both parts directly at the start, then give a career reason for staying, your picture of five and ten years from now, and a closing commitment to the company. The most important thing is to be clear and honest: say 'as long as possible' only if you mean it, and never promise 'forever' or a number of years just to please the interviewer.",
+      "thinkFirstEn": [
+        "Honestly, how long do you want to work in Japan, and why?",
+        "What do you want to be doing in Japan in five years, and in ten?",
+        "Since when have you been thinking about working in Japan, and what made you decide?",
+        "If you have ties to your home country, how can they fit with a long career at this company, for example by working with an overseas team from the Japan side?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Direct answer",
+          "sec": 11,
+          "sayEn": "Answer both questions at the start, in two short sentences: whether you plan to return (今のところ、帰国する予定はございません), and how long you want to work in Japan. If you honestly cannot give a number of years, できるだけ長く is honest and enough, but do not avoid the question.",
+          "starterJa": "今のところ、帰国する予定はございません。",
+          "exampleJa": "今のところ、帰国する予定はございません。日本で、【期間：できるだけ長く】働きたいと考えております。"
+        },
+        {
+          "labelJa": "理由",
+          "labelEn": "Career reason",
+          "sec": 16,
+          "sayEn": "Give a career reason for staying, not a lifestyle reason, in a sentence starting with 理由は (for example, becoming a fully competent in-vehicle AI engineer takes a long time). Then add what has to be built up over those years besides technology, such as the thinking behind safety and quality, and the customer's trust.",
+          "starterJa": "理由は、【目標：車載AIの技術者として一人前になる】には、長い時間が必要だからです。",
+          "exampleJa": "理由は、車載AIの技術者として一人前になるには、長い時間が必要だからです。技術に加えて、安全や品質の考え方、そしてお客様との信頼も欠かせません。"
+        },
+        {
+          "labelJa": "将来像",
+          "labelEn": "Your career in Japan",
+          "sec": 20,
+          "sayEn": "Describe your career in Japan in three short sentences: what you will do first, the role you want in five years and your goal in ten years (for example, learning the basics on site, then connecting Japanese customers and overseas development teams, then being trusted with a whole project). Concrete roles make it sound like a plan, not only a wish.",
+          "starterJa": "まずは【場所：日本の現場】で、基礎をしっかり身につけます。",
+          "exampleJa": "まずは日本の現場で、基礎をしっかり身につけます。5年後には、日本のお客様と海外の開発チームをつなぐ役割を担いたいです。10年後には、プロジェクト全体を任されるエンジニアになることが目標です。"
+        },
+        {
+          "labelJa": "まとめ",
+          "labelEn": "Commitment",
+          "sec": 13,
+          "sayEn": "Show that the plan is not new, then commit: say since when you have thought about working in Japan (for example, since you decided to study here), and close with your wish to work at this company for a long time and what you want to contribute to. Keep it sincere, and do not add conditions here.",
+          "starterJa": "日本で働くことは、【時期：留学を決めたとき】から考えておりました。",
+          "exampleJa": "日本で働くことは、留学を決めたときから考えておりました。御社で長く働き、日本の自動車業界に貢献したいと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q33",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to know whether you have noticed how Japanese workplaces operate and whether you can adapt, without looking down on either culture. Choose one difference you really experienced in Japan, such as careful preparation, punctuality, or reporting and consulting early (報連相), tell what you learned from it, and describe your home country's way positively. The most important thing is to speak from your own experience, stay positive about both sides, and end with how knowing both ways of working helps you in a bridge role.",
+      "thinkFirstEn": [
+        "What moment in your lab or part-time job surprised you about how people work in Japan?",
+        "Why do people in Japan do it that way, and what did you learn from it?",
+        "What is a strength of the way people work in your home country, said positively and without stereotypes?",
+        "How could knowing both ways of working help when a Japanese customer and an overseas team misunderstand each other?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "The difference",
+          "sec": 6,
+          "sayEn": "Say yes first, then name one difference in a short sentence (for example, the way work is carried out). Choose a difference about work, not about food or daily life, and choose only one.",
+          "starterJa": "はい、あります。一番大きな違いは、【違い：仕事の進め方】です。",
+          "exampleJa": "はい、あります。一番大きな違いは、仕事の進め方です。"
+        },
+        {
+          "labelJa": "日本での経験",
+          "labelEn": "What you saw in Japan",
+          "sec": 15,
+          "sayEn": "Describe what you noticed in Japan as your own impression (〜と感じます), then give a concrete scene from your part-time job or lab (for example, everyone checks the plan together before opening, and even small things are reported at once). Speak from your own experience and do not generalise about the whole country.",
+          "starterJa": "日本では、【特徴：事前の準備や確認を、とても丁寧に行う】と感じます。",
+          "exampleJa": "日本では、事前の準備や確認を、とても丁寧に行うと感じます。アルバイト先でも、開店前に全員で予定を確認し、小さなことでもすぐに報告します。"
+        },
+        {
+          "labelJa": "気づきと学び",
+          "labelEn": "What you realised and learned",
+          "sec": 15,
+          "sayEn": "Say honestly how it seemed at first, then why you came to value it (for example, it seemed slow, but you noticed that it reduces mistakes and leads to customer satisfaction), and what you learned, such as the importance of 報告・連絡・相談. This shows that you understood the reason and adapted, not only that you noticed a difference.",
+          "starterJa": "最初は【印象：時間がかかる】と思いましたが、【気づき：ミスが減る】と気づきました。",
+          "exampleJa": "最初は時間がかかると思いましたが、ミスが減り、お客様の満足につながると気づきました。この経験から、報告・連絡・相談の大切さを学びました。"
+        },
+        {
+          "labelJa": "母国の良さ",
+          "labelEn": "Your home country's strength",
+          "sec": 11,
+          "sayEn": "Describe your home country's way positively, as something you have heard or seen, in one sentence ending in 〜と聞いています (for example, many workplaces value acting first and moving fast). Present it as a strength, and do not criticise either country or say which is better.",
+          "starterJa": "一方で、母国では、【母国の特徴：速く進めること】を大切にする職場が多いと聞いています。",
+          "exampleJa": "一方で、母国では、【母国の特徴：まず行動して、速く進めること】を大切にする職場が多いと聞いています。"
+        },
+        {
+          "labelJa": "仕事に活かす",
+          "labelEn": "Use in the bridge role",
+          "sec": 13,
+          "sayEn": "Say that both ways have their strengths (どちらにも良さがあると思います), then how understanding both will help in this job, for example when you connect Japanese and overseas teams. This turns the difference into your strength.",
+          "starterJa": "どちらにも良さがあると思います。",
+          "exampleJa": "どちらにも良さがあると思います。両方を理解していることを、日本と海外のチームをつなぐ場面で活かしたいと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q34",
+      "targetSec": 60,
+      "approachEn": "This is a practical check: the company wants to know whether it can place you where the work is, and in a bridge role that may mean a customer's site in another city or a business trip to the development team overseas. Answer in your first sentence, be as flexible as you honestly can, and give a positive, work-related reason. The most important thing is honesty: state a real constraint briefly and clearly now, and present a preference as a hope, not as a condition.",
+      "thinkFirstEn": [
+        "Can you really work in any city in Japan, or do you have a real constraint (family, health, visa procedures)?",
+        "How do you feel about working at a customer's site, or moving to another city after a few years?",
+        "Would overseas business trips, including to the development team's country, be a problem or a chance for you?",
+        "If you have a preferred location, what is your work-related reason for it?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Direct answer",
+          "sec": 11,
+          "sayEn": "Answer first: if it is true, say that you have no particular constraints, then add that you can work flexibly at any office or at a customer's site. If you do have a real constraint, say it here in one calm sentence with its reason and time frame, because a constraint revealed after the offer damages trust.",
+          "starterJa": "勤務地や転勤について、特に制約はございません。",
+          "exampleJa": "勤務地や転勤について、特に制約はございません。御社の各拠点でも、お客様先でも、柔軟に対応いたします。"
+        },
+        {
+          "labelJa": "前向きな理由",
+          "labelEn": "Positive reason",
+          "sec": 22,
+          "sayEn": "Give a positive, work-related reason why different locations are welcome, starting with むしろ (for example, working near carmakers is a big chance to grow), and support it with your own experience (in your research, many problems became clear only when you looked at real road images). 'Anywhere is fine' alone is not convincing; the reason is what makes it believable.",
+          "starterJa": "むしろ、【場所：自動車メーカーの近く】で働くことは、大きな成長の機会だと考えております。",
+          "exampleJa": "むしろ、自動車メーカーの近くで働くことは、大きな成長の機会だと考えております。研究でも、実際の道路の画像を見て、初めてわかる課題が多くありました。そのため、お客様の現場に近い場所で、実際の開発を学びたいです。"
+        },
+        {
+          "labelJa": "希望の地域",
+          "labelEn": "A location you hope to experience",
+          "sec": 8,
+          "sayEn": "If you name a place, present it as a hope linked to your work, not as a condition (for example, you would like to experience working in a region where the automotive industry is concentrated). Check the locations listed in your FPT Prep tab before you name a place, and never give lifestyle reasons such as a big city or friends nearby.",
+          "starterJa": "【地域：名古屋】など、自動車産業が集まる地域での勤務も、ぜひ経験したいです。",
+          "exampleJa": "【地域：名古屋】など、自動車産業が集まる地域での勤務も、ぜひ経験したいです。"
+        },
+        {
+          "labelJa": "海外出張",
+          "labelEn": "Overseas trips",
+          "sec": 12,
+          "sayEn": "Say clearly that overseas business trips are no problem, then why you welcome them (for example, you can use English, so a trip is a good chance to talk directly with the overseas development team). If there is something you must check first, such as visa procedures, mention it briefly.",
+          "starterJa": "海外出張も、問題ございません。",
+          "exampleJa": "海外出張も、問題ございません。英語も使えますので、海外の開発チームと直接話せる、良い機会だと考えております。"
+        },
+        {
+          "labelJa": "締め",
+          "labelEn": "Commitment",
+          "sec": 7,
+          "sayEn": "Close with one sentence of commitment: wherever you are placed, you will first work hard to earn trust there. Keep it short, and do not add conditions after it.",
+          "starterJa": "どの勤務地でも、まずはその場所で信頼されるよう、全力で取り組みます。",
+          "exampleJa": "どの勤務地でも、まずはその場所で信頼されるよう、全力で取り組みます。"
+        }
+      ]
+    },
+    {
+      "id": "q35",
+      "targetSec": 60,
+      "approachEn": "For a bridge role this is one of the most important questions: the interviewer wants concrete habits that prevent misunderstanding, not general words such as 'I use keigo correctly'. Choose two or three habits you really practise (the model gives three: conclusion first, rephrasing to confirm, and reporting bad news early) and give a reason or a short real example for each. The most important thing is to describe what you actually do, with examples from your lab or part-time job.",
+      "thinkFirstEn": [
+        "Which two or three concrete communication habits do you really practise in your lab or part-time job?",
+        "What do you do to check that you have understood correctly, and what real example shows that it works?",
+        "When and how do you report a problem or a delay, and what experience taught you to do so?",
+        "How would these habits help when you stand between a Japanese customer and a development team overseas?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: how many points",
+          "sec": 5,
+          "sayEn": "Announce the number of points in one sentence (for example, 3つあります), so the listener knows the structure of your answer. Choose habits about understanding each other correctly, not general words such as using keigo correctly.",
+          "starterJa": "私が気をつけていることは、【数：3】つあります。",
+          "exampleJa": "私が気をつけていることは、3つあります。"
+        },
+        {
+          "labelJa": "1つ目：結論から",
+          "labelEn": "First: conclusion first",
+          "sec": 11,
+          "sayEn": "Name the first habit in a short sentence ending in 〜ことです, then say why and how you do it (for example, speaking briefly from the conclusion: to respect the other person's time, you give the conclusion first and the reasons after). Describe a concrete action, not an attitude.",
+          "starterJa": "1つ目は、【習慣：結論から短く話すこと】です。",
+          "exampleJa": "1つ目は、結論から短く話すことです。相手の時間を大切にするため、まず結論を伝え、その後に理由を説明します。"
+        },
+        {
+          "labelJa": "2つ目：言い換えて確認",
+          "labelEn": "Second: rephrase to confirm",
+          "sec": 19,
+          "sayEn": "Name the second habit, then prove it with a short real example and its result (for example, you rephrase what you understood in your own words to confirm it: at your part-time job you always repeated customers' orders, and order mistakes almost disappeared). Confirming is valued in Japanese workplaces, so never say that you avoid asking questions to be polite.",
+          "starterJa": "2つ目は、【習慣：理解したことを自分の言葉で言い換えて、確認すること】です。",
+          "exampleJa": "2つ目は、理解したことを自分の言葉で言い換えて、確認することです。アルバイトでは、お客様の注文を、必ず繰り返して確認していました。その結果、注文の間違いがほとんどなくなりました。"
+        },
+        {
+          "labelJa": "3つ目：早めの報告",
+          "labelEn": "Third: report bad news early",
+          "sec": 13,
+          "sayEn": "Name the third habit, reporting bad news early, which is the heart of 報連相, and say where you learned it (for example, after failing in your research by keeping a problem to yourself, you now report, inform and consult early). Take this example from a different situation than the second habit, so the answer does not sound like one story told twice.",
+          "starterJa": "3つ目は、【習慣：悪い情報ほど早く報告すること】です。",
+          "exampleJa": "3つ目は、悪い情報ほど早く報告することです。研究で、問題を一人で抱えて失敗した経験から、早めの報告・連絡・相談を心がけております。"
+        },
+        {
+          "labelJa": "入社後",
+          "labelEn": "As a bridge engineer",
+          "sec": 12,
+          "sayEn": "Link the habits to the job in two short sentences: first the situation you expect (for example, often standing between customers and the development team), then your commitment to keep these habits and become an engineer people trust. Do not add a new habit here.",
+          "starterJa": "入社後は、【場面：お客様と開発チームの間に立つ場面】も多いと思います。",
+          "exampleJa": "入社後は、お客様と開発チームの間に立つ場面も多いと思います。この3つを徹底し、信頼されるエンジニアになりたいです。"
+        }
+      ]
+    }
+  ]
+}

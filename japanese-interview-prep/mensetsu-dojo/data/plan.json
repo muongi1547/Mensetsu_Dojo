@@ -1,0 +1,1531 @@
+{
+ "overview": {
+  "goal": "Interview-ready means that after 8 weeks you can go through a 30-60 minute Japanese interview for a new-graduate AI engineer role in FPT Japan's automotive business, online or in person, without notes. You open and close with correct manners and interview keigo. You give every core answer (自己紹介, 自己PR, ガクチカ, research, why Japan, why automotive AI, why FPT, career plan, technical basics, tricky questions and 逆質問) conclusion first, in a 30-second and a 1-minute version that match your ES. You can explain your research to both an engineer and a non-specialist, and you handle 2-3 follow-up questions, or a question you have not prepared, after a short polite pause instead of freezing. On your recordings this means about 250-300 characters per minute on practised answers, at most 3 fillers per minute, at most 1 keigo error per answer, and a full mock interview scored 3.5 out of 5 or higher by a person.",
+  "principles": [
+   {
+    "title": "Speak aloud every day, in short sessions",
+    "detail": "Spend at least 20 minutes a day speaking aloud; reading and writing only support it. Short daily practice beats one long weekend session, and repeating the same answer on different days is what makes it stick."
+   },
+   {
+    "title": "Conclusion first, short sentences",
+    "detail": "Every answer opens with a one-sentence point, then a reason, an example and a link back to the role (PREP). Keep sentences to about 45 characters with one idea each: simple, correct Japanese spoken clearly beats complex grammar with errors."
+   },
+   {
+    "title": "One cycle for every answer",
+    "detail": "Draft in My answer, get it corrected (AI first, then a person), simplify it, shadow it with Listen, cut it down to keywords, then answer without notes and handle random 深掘り. Word-for-word memorising is only a middle step, because interviewers notice recited answers."
+   },
+   {
+    "title": "Retell under time pressure",
+    "detail": "Tell the same answer in shrinking time: about 90, 60 and 30 seconds, or 3 minutes, 1 minute and 30 seconds for your research. Repeating the same content under a tighter limit is what turns slow, careful speech into fluent speech."
+   },
+   {
+    "title": "Record, check, fix one thing",
+    "detail": "Record at least one answer a day, count fillers, long pauses and keigo errors, and check what you said with the ai-correct prompt. Fix the biggest problem first; the corrected script becomes tomorrow's shadowing script."
+   },
+   {
+    "title": "Hint first, then correct yourself",
+    "detail": "Ask AI tools and people to give you a hint before the right answer, and try the fix yourself first. Correcting yourself builds accuracy faster than only hearing the corrected sentence."
+   },
+   {
+    "title": "Real conditions, real people, real rest",
+    "detail": "Listen to questions instead of reading them, practise asking for repetition politely, and rehearse with the camera on. Book human mock interviews early. Take a lighter day when you need one, and protect your sleep, especially before interviews."
+   }
+  ],
+  "assumptions": [
+   "The plan starts on the Monday you pick with the date picker (default: Monday 30 Nov 2026). With the default, week 4 is the last week before the year-end closures and week 5 falls on 年末年始, when career centers and Hello Work offices are usually closed, so week 5 is built for self-study and AI mocks. If you change the start date, move the human sessions to weeks when offices are open.",
+   "Your reading and listening are at N2 level, but your speaking starts around N3: the gap is fast, accurate output under pressure, keigo, and explaining technical work. So the plan spends most of its time on speaking aloud, not on reading.",
+   "You can give about 60 minutes on weekdays and up to 2 hours on a weekend day. In a heavy research week, switch to that week's light version without guilt. On a single busy day, do the 25-minute light routine and drop that day's lower-priority task, but keep mock interviews, human sessions and milestone tests.",
+   "FPT's selection flow for new-graduate engineers is not published. Reports suggest an ES and a web test, then about 3 interviews (early rounds online, the final in person with executives), and 28卒 selection was already running in November 2026, so check the recruiting pages early and often.",
+   "Model answers use one fictional persona (night-time pedestrian detection research). You replace every 【】 placeholder with your own true facts before practising, and keep them consistent with your ES/履歴書.",
+   "You have a phone or PC to record video, a browser with a Japanese text-to-speech voice, and a voice-capable AI assistant. In anything you paste into an AI tool, leave your name as 〇〇 and your university as 【大学名】, never paste unpublished research data, and check any fact an AI gives you. In a week with no person available, the AI prompts plus your own scored recordings cover the feedback."
+  ],
+  "weeklyTime": "About 8.5 h a week: 60 min Monday-Friday, about 2 h on Saturday (mock interview and weekly recording) and about 1.5 h on Sunday (preparing next week's answers, saying them aloud, reflection). Each day's tasks in the week card (the Daily task plus that day's tasks) are that day's practice time; the daily routine shows the usual shape of a practice hour and is what you do on a day without tasks. On a day whose tasks have no AI or human feedback, add 5 minutes: put one answer you said that day through ai-correct. Human sessions replace tasks instead of adding time. Light days or weeks: the 25-minute light routine, about 3 h a week.",
+  "phases": [
+   {
+    "weeks": "1-2",
+    "name": "Diagnose and script the core answers",
+    "nameJa": "現状診断と基本回答づくり",
+    "focus": "Baseline recording, interview keigo and survival phrases, 自己紹介, the international-student questions and your experience stories, each written, corrected and shadowed until you can say it without notes."
+   },
+   {
+    "weeks": "3-4",
+    "name": "Research and motivation",
+    "nameJa": "研究説明と志望動機",
+    "focus": "Explaining your research at several lengths and for non-specialists, an FPT-specific motivation and career plan, moving from full scripts to keyword notes, the first human mock interview and the mid benchmark before the holidays."
+   },
+   {
+    "weeks": "5-6",
+    "name": "Technical Japanese and quick thinking",
+    "nameJa": "技術質問と即答力",
+    "focus": "Machine-learning and automotive-AI questions in simple Japanese, honest 'I don't know yet' answers, random and unseen questions, and 深掘り chains. Week 5 works as self-study plus AI mocks if it falls on 年末年始."
+   },
+   {
+    "weeks": "7-8",
+    "name": "Simulation and polish",
+    "nameJa": "本番シミュレーションと仕上げ",
+    "focus": "Tricky questions, reverse questions, full HR, technical and executive mock interviews online and in person, then the final benchmark and interview-day readiness."
+   }
+  ]
+ },
+ "dailyRoutine": {
+  "weekday": [
+   {
+    "min": 10,
+    "activity": "Phrase warm-up and 瞬間作文",
+    "detail": "Open Words & Phrases and say this week's phrase categories aloud as full sentences, not single words. Then cover the Japanese, read the English, and say the Japanese within 3 seconds; repeat only the ones you missed. Add at most 10 new chunks a day."
+   },
+   {
+    "min": 15,
+    "activity": "Shadow one corrected answer",
+    "detail": "Take the answer you corrected most recently and press Listen on My answer. Go up the ladder: 0.8× reading along, 1.0× reading along, 1.0× without the script copying the rhythm and pauses, then without the script while thinking about the meaning. Do at least 3 full passes, and spread repeats of the same answer over 3 or more days."
+   },
+   {
+    "min": 15,
+    "activity": "Answer without notes, against the clock",
+    "detail": "Take today's main question (from today's task, or one of this week's focus questions). Answer it once from keyword notes and once with no notes, using the answer timer. Then retell it in shrinking time (about 90, 60 and 30 seconds). Record the 60-second version on your phone."
+   },
+   {
+    "min": 10,
+    "activity": "Drill mode and follow-ups",
+    "detail": "Let Drill mode read 3-5 random questions aloud without looking at the text. Answer each in 30 seconds, conclusion first. After one answer, ask yourself 「なぜですか」 and 「具体的には？」 and answer each in about 20 seconds."
+   },
+   {
+    "min": 10,
+    "activity": "Check with AI and fix one thing",
+    "detail": "Listen to today's recording once and tally fillers and long mid-sentence pauses. Say the answer once more into your phone's voice typing and paste the text into ai-correct (Tools tab). Read its English problem list and try to fix each sentence yourself before you look at its version. Save the result in My answer and update the self-rating; it is tomorrow's shadowing script."
+   }
+  ],
+  "weekend": [
+   {
+    "min": 10,
+    "activity": "Phrase warm-up",
+    "detail": "Same as on weekdays: this week's phrases aloud as full sentences, then 瞬間作文 on the ones you miss."
+   },
+   {
+    "min": 20,
+    "activity": "Spaced review",
+    "detail": "Answer this week's review questions without notes in their 30-second versions, and the 2 weakest in their 1-minute versions. Shadow the weakest one once at 1.0×."
+   },
+   {
+    "min": 40,
+    "activity": "Mock interview",
+    "detail": "Run this week's AI prompt from the Tools tab in voice mode for about 25-30 minutes, then spend 10 minutes copying the corrected sentences into My answer. A human mock or tutor session replaces this block when you have one."
+   },
+   {
+    "min": 20,
+    "activity": "Fix and re-record",
+    "detail": "Simplify the sentences the mock exposed (45 characters or fewer, one idea each), shadow the new version twice, and re-record the weakest answer."
+   },
+   {
+    "min": 20,
+    "activity": "Weekly recording and score",
+    "detail": "Record this week's milestone test (or the benchmark in weeks 1, 4 and 8), count the metrics, score the rubric and log the results in the Tools tab."
+   },
+   {
+    "min": 10,
+    "activity": "Reflect and plan",
+    "detail": "Answer the reflection questions, check your bookings and FPT's recruiting page, and choose next week's top 3 fixes."
+   }
+  ],
+  "light": [
+   {
+    "min": 5,
+    "activity": "Phrase warm-up",
+    "detail": "Say 10 phrases from this week's categories aloud as full sentences; do 瞬間作文 on any you miss."
+   },
+   {
+    "min": 10,
+    "activity": "Shadow one answer",
+    "detail": "Shadow your most important current answer with Listen at 1.0×: 3 passes, the last one without the script."
+   },
+   {
+    "min": 10,
+    "activity": "Drill and record",
+    "detail": "Let Drill mode read 3 random questions and answer each in 30 seconds without notes. Record one answer and tally the fillers."
+   }
+  ]
+ },
+ "weeks": [
+  {
+   "week": 1,
+   "theme": "Diagnose, self-introduction and interview keigo",
+   "themeJa": "現状診断・自己紹介・面接の敬語",
+   "summary": "Record a baseline before you practise anything, so you can measure progress honestly. Then build the answers every interview opens with: a 30-second and a 1-minute 自己紹介, and the three international-student questions (why Japan, working in Japanese, future plans). Learn the core interview keigo and the survival phrases for opening, asking again, buying time, recovering and closing.",
+   "goals": [
+    "Record the baseline benchmark (q01, q10, q20) on day 1 and log all 6 metrics in the Tools tab.",
+    "Say q01 without notes in a 30-second version (25-35 seconds) and a 1-minute version (55-65 seconds).",
+    "Answer q30, q31 and q32 in about 1 minute each from keyword notes, each starting with a one-sentence conclusion.",
+    "Say at least 10 survival phrases (open, clarify, time, recover, close) from English cues, each within 3 seconds.",
+    "Book human practice for weeks 4 and 7 (and week 8 if you can), and note each office's year-end closing days."
+   ],
+   "milestone": "Recorded with no notes: the 1-minute 自己紹介 (q01) in 55-65 seconds with at most 3 fillers and at most 1 keigo error, plus the 30-second version in 25-35 seconds; and 10 survival phrases said correctly from English cues without a miss.",
+   "focusQuestions": [
+    "q01",
+    "q30",
+    "q31",
+    "q32"
+   ],
+   "reviewQuestions": [],
+   "humanFeedback": "Book now, because slots fill up and offices close over 年末年始: a career-center 模擬面接 for week 4 and another for week 7 (and week 8 if possible); a consultation or interview practice at a 外国人雇用サービスセンター (Tokyo, Nagoya, Osaka or Fukuoka; some offer online sessions) or a 新卒応援ハローワーク 留学生コーナー (usually by appointment; bring your 在留カード); and, if possible, a weekly 30-minute tutor or Japanese lab-mate session. This week, ask one Japanese friend or lab mate to hear your 1-minute 自己紹介 and tell you which part was hardest to follow.",
+   "tasks": [
+    {
+     "id": "w1t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: in Words & Phrases, say the keigo set and the open, clarify, time, recover and close phrases aloud as full sentences. Then 瞬間作文: cover the Japanese, read the English, and say the Japanese within 3 seconds; repeat only the misses. Add at most 10 new chunks a day."
+    },
+    {
+     "id": "w1t02",
+     "day": "Mon",
+     "min": 30,
+     "type": "review",
+     "text": "Baseline benchmark first thing today, before the Daily task or any other practice: follow the procedure in the Tools tab (q01, q10 and q20, about 60 seconds each, no notes, video). It is fine if it goes badly; this is your 'before' recording. Transcribe the three answers, count the 6 metrics and fill in the benchmark log."
+    },
+    {
+     "id": "w1t03",
+     "day": "Mon",
+     "min": 20,
+     "type": "write",
+     "text": "Open q01 and press Listen on the model answer and its 30-second version. Copy both into My answer and replace every 【】 with your own facts (name, university, major, research in one sentence, one experience, closing greeting). Check the length (250-300 and 110-150 characters), then read both versions aloud 3 times."
+    },
+    {
+     "id": "w1t04",
+     "day": "Tue",
+     "min": 10,
+     "type": "feedback",
+     "text": "Book human practice now (see Human feedback): career-center 模擬面接 slots for weeks 4 and 7 (and week 8 if possible), an appointment at a 外国人雇用サービスセンター or 留学生コーナー if one is near you, and a tutor or lab mate for 30 minutes a week. Write down each office's year-end closing days."
+    },
+    {
+     "id": "w1t05",
+     "day": "Tue",
+     "min": 15,
+     "type": "feedback",
+     "text": "Paste your q01 draft into the ai-correct prompt (Tools tab) with your name as 〇〇 and your university as 【大学名】. Read its problem list and try your own fixes first, then compare them with its version. Keep only your true facts, and save the corrected 1-minute and 30-second versions and the keyword list in My answer."
+    },
+    {
+     "id": "w1t06",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow your corrected q01 with Listen on My answer: 0.8× reading along twice, 1.0× reading along twice, then twice without the script, copying the rhythm and pauses. Finish with 3 tries from the keywords only; record the last one and tally the fillers."
+    },
+    {
+     "id": "w1t07",
+     "day": "Wed",
+     "min": 25,
+     "type": "write",
+     "text": "Adapt the q30, q31 and q32 model answers with your own reasons. For q32, choose a long-term answer you can honestly defend in follow-up questions. Run all three through ai-correct, save the speakable versions and keywords, and read each one aloud once."
+    },
+    {
+     "id": "w1t08",
+     "day": "Wed",
+     "min": 25,
+     "type": "speak",
+     "text": "q01 without notes in shrinking time: about 90 seconds, then 60, then 30 (keep your name and your main point in every round). Record the 60-second round, score it with the rubric, and fix one sentence in My answer."
+    },
+    {
+     "id": "w1t09",
+     "day": "Thu",
+     "min": 50,
+     "type": "speak",
+     "text": "Shadow q30, q31 and q32 (Listen at 0.8× then 1.0×, 2 passes each; 15 min). Answer each from keywords, then without notes (15 min). Then use Drill mode with the week-1 questions at 1.0×, listening without reading: answer each in 30 seconds, and once say 「恐れ入りますが、もう一度おっしゃっていただけますか」 on purpose (20 min)."
+    },
+    {
+     "id": "w1t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "research",
+     "text": "First look at FPT: read the FPT Prep tab, then FPT Japan's new-graduate recruiting page, its FAQ and the HRMOS job list. Note which new-graduate engineer posting matches your graduation year (27卒 or 28卒), its Japanese requirement, any 説明会 or entry you can join, and the long-term AI/automotive internship. If nothing for your year is open yet, note where new postings will appear. Check every date yourself on the official pages."
+    },
+    {
+     "id": "w1t11",
+     "day": "Fri",
+     "min": 25,
+     "type": "listen",
+     "text": "Drill mode over all week-1 questions and their variants in random order: listen without reading and start answering within 3 seconds, using the 30-second versions. Then record q30 and q31 without notes and tally the fillers."
+    },
+    {
+     "id": "w1t12",
+     "day": "Sat",
+     "min": 50,
+     "type": "mock",
+     "text": "First AI mock interview (ai-hr): paste the prompt in text mode, then switch to voice. Set the 【今週の質問】 line to 自己紹介 and the three international questions, and go from greeting to closing (about 25 minutes). After each feedback, say the corrected answer once aloud. Save the corrected sentences into My answer."
+    },
+    {
+     "id": "w1t13",
+     "day": "Sat",
+     "min": 60,
+     "type": "review",
+     "text": "Milestone test and weekly recording: q01 in its 1-minute and 30-second versions with no notes, then q32. Count fillers and keigo errors, score the rubric and log the results. Then test the survival phrases from English cues and re-shadow any you missed."
+    },
+    {
+     "id": "w1t14",
+     "day": "Sun",
+     "min": 80,
+     "type": "write",
+     "text": "Prepare week 2 (55 min): adapt the q02, q03 and q04 model answers with your own episodes (the same team story and numbers as in your ES), run each through ai-correct, and save the speakable versions and keywords. Then 15 min aloud: shadow each new version twice with Listen at 0.8× and say its 30-second version once without looking. Then 10 min: answer the reflection questions."
+    }
+   ],
+   "lightVersion": "Busy week? Still do the baseline benchmark on day 1 (30 min) and the bookings (10 min). Then 25 minutes a day: 5 min survival phrases, 10 min shadowing q01, 10 min Drill mode with the week-1 questions. Keep the Saturday AI mock to 20 minutes and move the q30-q32 drafts to the weekend."
+  },
+  {
+   "week": 2,
+   "theme": "Telling your experience stories",
+   "themeJa": "経験を語る：自己PR・ガクチカ・長所と短所",
+   "summary": "Turn your experiences into short stories that start with the conclusion: self-PR, ガクチカ, strengths and weaknesses, a failure, your team role, how others see you, and handling stress. Build them from one small episode bank (the lab dataset team, your part-time job, your conference talk) so the same facts appear consistently in every answer and in your ES.",
+   "goals": [
+    "Draft, correct and shadow all 7 answers (q02-q08), each 1-minute version 250-300 characters with a one-sentence conclusion first.",
+    "Answer q02, q03 and q04 without notes in 55-65 seconds each.",
+    "Answer q05-q08 from keyword notes in 30-60 seconds each.",
+    "Answer 3 follow-up questions in a row on q03 (for example なぜ, 具体的には, what you learned) with no silence longer than 3 seconds.",
+    "Make your ES/履歴書 ガクチカ, 自己PR and strengths match the spoken versions (same episode, numbers and role)."
+   ],
+   "milestone": "Recorded without notes: q02 and q03 in 55-65 seconds each with at most 3 fillers per minute and at most 1 keigo error per answer, plus 2 follow-up questions on q03 answered in 20-30 seconds each; content checklist 3/4 or better on both.",
+   "focusQuestions": [
+    "q02",
+    "q03",
+    "q04",
+    "q05",
+    "q06",
+    "q07",
+    "q08"
+   ],
+   "reviewQuestions": [
+    "q01",
+    "q30",
+    "q31",
+    "q32"
+   ],
+   "humanFeedback": "Show your corrected q02 and q03 scripts to a career-center counselor, tutor or Japanese lab mate (ES 添削 slots are often easier to get than mock interviews), and ask: 「間違いがあったら、すぐに正解を言わずに、まずヒントをください。」 Then ask them to say 「なぜですか」 twice after your q03. Confirm your week-4 mock interview booking.",
+   "tasks": [
+    {
+     "id": "w2t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: say the connect phrases (まず, 次に, 具体的には, その結果, そのため, 一方で, 最後に) and the recover phrases aloud. Then 瞬間作文 with story frames filled with your own facts: 「私の強みは〜です」「〜に最も力を入れました」「その結果、〜」「この経験から〜を学びました」."
+    },
+    {
+     "id": "w2t02",
+     "day": "Mon",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q02 and q03 (corrected on Sunday) with Listen on My answer: 0.8× reading along, 1.0× reading along, then without the script; at least 3 passes each. End with q03 once from keywords only."
+    },
+    {
+     "id": "w2t03",
+     "day": "Mon",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q05 and q06 from the model answers with your own episodes (situation, your action, result with a number, what you learned). Reuse the same lab-team story and numbers as q03 where it fits. Correct both with ai-correct, save the speakable versions and keywords, and read each aloud once."
+    },
+    {
+     "id": "w2t04",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q04, q05 and q06 (2 passes each at 1.0×). Then say q02 from keywords, then with no notes; record the no-notes version and tally the fillers."
+    },
+    {
+     "id": "w2t05",
+     "day": "Tue",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q07 and q08 and correct them with ai-correct; for these two, the 30-second version is your main answer. For q08, give a healthy way to recover plus how you deal with the cause (for example, splitting the task and asking for advice early), never 'I don't feel stress'. Read both aloud twice."
+    },
+    {
+     "id": "w2t06",
+     "day": "Wed",
+     "min": 30,
+     "type": "mock",
+     "text": "深掘り drill on q03 (ai-deep, voice): 3 sets with hint-first correction, and in the last set say 「もう一回」 to get a third follow-up. When you need time, say 「少し考えてもよろしいでしょうか」 instead of going silent. Add any new fact you had to explain to your q03 keywords."
+    },
+    {
+     "id": "w2t07",
+     "day": "Wed",
+     "min": 20,
+     "type": "speak",
+     "text": "Shadow q07 and q08 once each. Then spaced review without notes: q01, q30, q31 and q32 in their 30-second versions, and the weakest one in its 1-minute version."
+    },
+    {
+     "id": "w2t08",
+     "day": "Thu",
+     "min": 25,
+     "type": "review",
+     "text": "ES/履歴書 consistency check: put your written ガクチカ, 自己PR and strengths next to q02, q03 and q04. Same episode, same numbers, same role? Fix whichever is weaker and list 5 facts you must never contradict. Then send q02 and q03 to your counselor, tutor or lab mate for comments."
+    },
+    {
+     "id": "w2t09",
+     "day": "Thu",
+     "min": 25,
+     "type": "speak",
+     "text": "Shrinking-time retell with no notes: q03 in about 2 minutes, then 1 minute, then 30 seconds; then the same for q02. Record both 1-minute versions."
+    },
+    {
+     "id": "w2t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "listen",
+     "text": "Drill mode with the week-1 questions, then the week-2 questions (variants included), at 1.0×, listening without reading. Answer each in 30 seconds, conclusion first, and mark any question where your first word took more than 3 seconds."
+    },
+    {
+     "id": "w2t11",
+     "day": "Fri",
+     "min": 25,
+     "type": "speak",
+     "text": "Cut q02-q08 down to 5-7 keywords each in My answer. Answer q04, q05 and q06 from keywords only, then record q04 without notes and score it with the rubric."
+    },
+    {
+     "id": "w2t12",
+     "day": "Sat",
+     "min": 60,
+     "type": "mock",
+     "text": "AI mock (ai-hr, voice, about 30 min): 自己紹介 plus 3-4 questions from q02-q08, with follow-ups; say each corrected answer once after the feedback. Spend the last 10 minutes moving corrected sentences into My answer and re-recording the weakest answer. A human session this week can replace this task."
+    },
+    {
+     "id": "w2t13",
+     "day": "Sat",
+     "min": 50,
+     "type": "review",
+     "text": "Milestone test and weekly recording: q02 and q03 without notes, then 2 follow-ups on q03 (Drill-mode variants, or ask a friend to say 「なぜですか」 and 「具体的には？」). Count the metrics, score the rubric, log the results and compare them with week 1."
+    },
+    {
+     "id": "w2t14",
+     "day": "Sun",
+     "min": 80,
+     "type": "write",
+     "text": "Prepare week 3 (55 min): using the q10 and q11 models, write your research explanation in 3 versions (1 minute, 30 seconds and a non-specialist version), then draft q12. Describe your research only at the level of a public abstract, correct everything with ai-correct and save the keywords; the 3-minute version comes on Wednesday, from a keyword card. Then 15 min aloud: shadow the 1-minute q10 twice at 0.8× and say the 30-second version 3 times without looking. Then 10 min: reflection questions."
+    }
+   ],
+   "lightVersion": "Busy week? Focus on q02, q03 and q04 only: 25 minutes a day (5 min connect phrases, 10 min shadowing one of the three, 10 min answering without notes and recording). Keep q05-q08 at the level of the 30-second models with your facts swapped in, and do a 20-minute AI mock on Saturday."
+  },
+  {
+   "week": 3,
+   "theme": "Explaining your research clearly",
+   "themeJa": "研究内容をわかりやすく説明する",
+   "summary": "Explain your research so that both an engineer and a non-specialist understand it: conclusion first, then purpose, method, result with numbers, and what it is useful for. Prepare 30-second, 1-minute and 3-minute versions plus a non-specialist version, get ready for 'why this method?' follow-ups, and talk about your programming with one thing you really built. Rehearse the online-interview setup before next week's human mock.",
+   "goals": [
+    "Explain your research in 30 seconds and 1 minute without notes, and in 3 minutes from a 5-keyword card, all with the same conclusion-first structure.",
+    "Give the non-specialist version (q11) with one everyday comparison and every technical word explained, so that a non-engineer can repeat your purpose and result.",
+    "Answer 3 engineer follow-ups (why this method, how you measured it, its limits) in 20-40 seconds each.",
+    "Say 15 research terms in short sentences with the pitch accent that OJAD shows.",
+    "Pass the online-interview tech rehearsal (camera, light, sound, display name, backup) on a recorded test call."
+   ],
+   "milestone": "Recorded without notes: the 1-minute research explanation (q10) in 55-65 seconds with at most 3 fillers per minute and at most 1 keigo error, and the non-specialist version (q11), after which a non-engineer listener (a friend, or an AI acting as one) can repeat your purpose and result in one sentence.",
+   "focusQuestions": [
+    "q10",
+    "q11",
+    "q12",
+    "q13",
+    "q14",
+    "q40"
+   ],
+   "reviewQuestions": [
+    "q01",
+    "q02",
+    "q03",
+    "q04",
+    "q06",
+    "q30"
+   ],
+   "humanFeedback": "Ask a Japanese friend or lab mate outside your field to listen to q11 and say back what they understood (5 minutes is enough). Ask your supervisor or a senior student whether your 1-minute summary is technically accurate. Confirm next week's mock interview, and send your ES in advance if they accept it.",
+   "tasks": [
+    {
+     "id": "w3t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: say the technical words from your research and the technical list in Words & Phrases, each in a short sentence (for example 「データ拡張を使いました」「推論速度を測りました」). Then 瞬間作文 from the English glosses of your q10 sentences. Before Friday, add the online phrases."
+    },
+    {
+     "id": "w3t02",
+     "day": "Mon",
+     "min": 30,
+     "type": "write",
+     "text": "Draft q13, q14 and q40 from the models and correct them with ai-correct. In q14, link your research to FPT's work only with facts from the FPT Prep tab. In q40, name one thing you really built and add one sentence on why you chose each tool. Read each aloud once."
+    },
+    {
+     "id": "w3t03",
+     "day": "Mon",
+     "min": 20,
+     "type": "speak",
+     "text": "Shadow the 1-minute q10 with Listen on My answer (4 passes, moving from reading along to no script). Then say the 30-second version without notes 3 times."
+    },
+    {
+     "id": "w3t04",
+     "day": "Tue",
+     "min": 15,
+     "type": "vocab",
+     "text": "OJAD check: paste your q10 script into OJAD's スズキクン, look at the accent marks, and practise the katakana and technical words (アノテーション, データ, 歩行者検出, 軽量化) slowly, then at normal speed. Do not copy OJAD audio into other apps. Optional for Vietnamese speakers: also drill long and short vowels and small っ (おばさん/おばあさん, きて/きって)."
+    },
+    {
+     "id": "w3t05",
+     "day": "Tue",
+     "min": 35,
+     "type": "speak",
+     "text": "Shadow q11 and q12 (3 passes each). Then answer q13 from keywords, then without notes, and record it."
+    },
+    {
+     "id": "w3t06",
+     "day": "Wed",
+     "min": 25,
+     "type": "speak",
+     "text": "Shrinking-time research talk, recorded: first write a 5-keyword card for a 3-minute version (background, purpose, method, result with numbers, next step). Talk for 3 minutes from the card, then for 1 minute and 30 seconds with no notes. After each round, check that it opens with the conclusion (what you did and the result). Keep the best 1-minute recording."
+    },
+    {
+     "id": "w3t07",
+     "day": "Wed",
+     "min": 25,
+     "type": "mock",
+     "text": "Non-specialist test: paste your q11 into ai-deep and add 「専門外の人事担当者として、わからない言葉があれば質問してください。」, or explain it to a non-engineer friend. They should be able to repeat your purpose and result in one sentence. Replace every word they did not understand."
+    },
+    {
+     "id": "w3t08",
+     "day": "Thu",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q14 and q40 (2-3 passes each). Then answer 3 'why this tool?' questions aloud in 2-3 sentences each (for the example persona: why PyTorch, why a YOLO-family model, why Jetson; use your own tools), because engineers ask why, not only what."
+    },
+    {
+     "id": "w3t09",
+     "day": "Thu",
+     "min": 25,
+     "type": "review",
+     "text": "Spaced review without notes: q01, q02, q03, q04, q06 and q30 in their 30-second versions, and the 2 weakest in full. Shadow the weakest one once at 1.0×."
+    },
+    {
+     "id": "w3t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "review",
+     "text": "Online-interview tech rehearsal with the online phrases, the Online manners list in Words & Phrases and the checklists in Tools: camera at eye level, light in front of you, a quiet room, a plain background, the app updated, display name and picture checked, headset tested, phone ready as a backup. Record a 3-minute test call (q01 and q10) and watch it: do you look at the camera, is your voice loud enough, are your nods visible? The same setup works for a recorded video interview (録画面接), where you answer each question in one take."
+    },
+    {
+     "id": "w3t11",
+     "day": "Fri",
+     "min": 25,
+     "type": "listen",
+     "text": "Drill mode with the week-3 questions and their variants (for example 研究の概要を教えてください／一般のエンジニアにもわかるように説明してください) at 1.0×, listening without reading. Start each answer within 3 seconds. FPT has reportedly asked a new-graduate candidate to explain their research so that general engineers understand."
+    },
+    {
+     "id": "w3t12",
+     "day": "Sat",
+     "min": 60,
+     "type": "mock",
+     "text": "Technical AI mock (ai-tech, voice, about 30 min) with the 【今日の範囲】 line set to 研究内容とプログラミング (q10-q14, q40), with follow-ups. Afterwards, list the follow-ups you could not answer well and write 2-3 sentence answers for them in My answer."
+    },
+    {
+     "id": "w3t13",
+     "day": "Sat",
+     "min": 50,
+     "type": "review",
+     "text": "Milestone test and weekly recording: q10 (1 minute) and q11 without notes, then ask a non-engineer (a friend, or the AI acting as one) to repeat your purpose and result. Count the metrics, score the rubric and log the results."
+    },
+    {
+     "id": "w3t14",
+     "day": "Sun",
+     "min": 80,
+     "type": "research",
+     "text": "Prepare week 4 (55 min): read the FPT Prep tab, the FPT Automotive site and FPT Japan's new-graduate page, and pick 3 facts you will quote, each with its year and source (say 「約」 with numbers). Adapt the q20, q21 and q22 models with your own reasons, correct them with ai-correct, and check every FPT fact against its source. Then 15 min aloud: shadow q20 twice at 0.8× and say q21 and q22 in their 30-second versions. Then 10 min: reflection questions."
+    }
+   ],
+   "lightVersion": "Busy research week? Focus on q10 only: 25 minutes a day (5 min technical words, 10 min shadowing the 1-minute version, 10 min saying the 30-second and 1-minute versions without notes and recording one). Do the online tech rehearsal anyway (25 min), because next week's mock interview depends on it."
+  },
+  {
+   "week": 4,
+   "theme": "Why FPT, why automotive AI, career plan (mid-point check)",
+   "themeJa": "志望動機とキャリアプラン（中間チェック）",
+   "summary": "Build a motivation story that only fits FPT: why automotive AI, why an AI engineer, why FPT (with 2-3 verified facts), what you want to do there, and a 5- and 10-year plan that matches FPT's direction. Do your first human mock interview and the mid-point benchmark before the year-end holidays, and check where FPT's selection stands for your graduation year.",
+   "goals": [
+    "Answer q20 in about 1 minute without notes, citing at least 2 verified FPT facts with their year and linking them to your research.",
+    "Answer q21-q25 from keyword notes in 30-60 seconds each, and q26 in a calm, honest 30-second version.",
+    "Complete one human mock interview and write down every comment.",
+    "Mid benchmark: fillers per minute at least 30% lower than in week 1 (or 3 or fewer), and at most 1 keigo error per answer.",
+    "Write down your next FPT selection step (説明会, ES, web test or internship) and any deadline you actually found."
+   ],
+   "milestone": "Mid benchmark recorded (q01, q10, q20, no notes): each answer 50-70 seconds, at most 3 fillers per minute, at most 1 keigo error per answer, and q20 names at least 2 FPT facts with their year; plus one human mock interview completed with written feedback.",
+   "focusQuestions": [
+    "q20",
+    "q21",
+    "q22",
+    "q23",
+    "q24",
+    "q25",
+    "q26"
+   ],
+   "reviewQuestions": [
+    "q02",
+    "q03",
+    "q05",
+    "q07",
+    "q10",
+    "q11",
+    "q12",
+    "q31",
+    "q32"
+   ],
+   "humanFeedback": "This is the key human week: do your first 模擬面接 (30-45 minutes) at the career center, a 外国人雇用サービスセンター or a 留学生コーナー (appointment, 在留カード), or with a business-Japanese tutor. Bring your ES and ask for a full run from entering to leaving, with feedback on manners and keigo. Book week 7's session now if you have not, and confirm opening days, because many offices close from late December.",
+   "tasks": [
+    {
+     "id": "w4t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: say motivation chunks aloud (「〜に魅力を感じました」「〜と考えております」「〜に貢献したいと考えております」「御社のホームページで〜と拝見しました」) and FPT words with their readings (SDV, ADAS エーダス, AUTOSAR オートザー). 瞬間作文: say your 3 FPT facts, with their years, from English cues."
+    },
+    {
+     "id": "w4t02",
+     "day": "Mon",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q23, q24 and q25 from the models and correct them with ai-correct. q23 uses only facts from the FPT Prep tab, each with its year. q25 links your 5- and 10-year plan to FPT's direction (for example, edge AI for ADAS, or becoming a bridge between Japanese customers and the development team). Delete any fact you cannot find in a source."
+    },
+    {
+     "id": "w4t03",
+     "day": "Mon",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q20 (4 passes with Listen on My answer), then answer it from keywords, then without notes. Record the no-notes version."
+    },
+    {
+     "id": "w4t04",
+     "day": "Tue",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q26 in a 30-second style (the industries and job types you are applying to, your stage, and why FPT comes first; there is no need to name every company, and never lie) and correct it. Then make your ES 志望動機 match q20: same reasons, same facts."
+    },
+    {
+     "id": "w4t05",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q21 and q22. After each, ask yourself 「なぜですか」 twice and answer each 'why' aloud in about 20 seconds, so the deeper reasons are ready."
+    },
+    {
+     "id": "w4t06",
+     "day": "Wed",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q23, q24 and q25 (2 passes each), cut each one to 5-7 keywords, and answer from the keywords only."
+    },
+    {
+     "id": "w4t07",
+     "day": "Wed",
+     "min": 25,
+     "type": "research",
+     "text": "FPT status check on the recruiting page, the HRMOS list and the キャリタス internship page: write down your next step (説明会, ES, web test or internship) and any deadline you actually find, and put it in your calendar. Reports mention a web test whose type is not published; if your flow has one, plan separate practice outside this plan."
+    },
+    {
+     "id": "w4t08",
+     "day": "Thu",
+     "min": 50,
+     "type": "feedback",
+     "text": "First human mock interview (career center, 外国人雇用サービスセンター/留学生コーナー or tutor; move this task to the day you booked). Warm up for 10 minutes: walk through the interview flow script in Words & Phrases once (knock, 「失礼いたします」, school and name, sit only when invited), then shadow q01 and q20. Ask for one full run: entering, 自己紹介, 志望動機, research, 逆質問, leaving. Right after, write every comment down and mark the top 3."
+    },
+    {
+     "id": "w4t09",
+     "day": "Fri",
+     "min": 25,
+     "type": "speak",
+     "text": "Fix the top 3 problems from the human mock: rewrite those sentences in My answer, shadow the new versions 3 times, and re-record the answers they belong to."
+    },
+    {
+     "id": "w4t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "listen",
+     "text": "Drill mode for 10 minutes on the week-4 questions and their variants (志望動機を教えてください／なぜ当社なのですか／当社でなければならない理由は何ですか). Then 15 minutes of spaced review: this week's review questions without notes, in their 30-second versions."
+    },
+    {
+     "id": "w4t11",
+     "day": "Sat",
+     "min": 60,
+     "type": "review",
+     "text": "Mid benchmark first thing today, before the Daily task or any other practice, with the same procedure as in week 1: q01, q10 and q20, no notes, video. Count all the metrics, score the rubric, log the results and compare them with week 1. Choose the 3 biggest fixes for weeks 5-6."
+    },
+    {
+     "id": "w4t12",
+     "day": "Sat",
+     "min": 50,
+     "type": "mock",
+     "text": "AI final-style mock (ai-final, voice, about 30 min) focused on q20-q26. Mark every answer that sounded generic (it could fit any company) and add one FPT-specific fact or personal reason to it."
+    },
+    {
+     "id": "w4t13",
+     "day": "Sun",
+     "min": 80,
+     "type": "write",
+     "text": "Prepare week 5 (55 min): adapt the q41, q42, q43 and q45 models with your own examples (your metrics, how you handled scarce night-time images, how you made the model fast), correct them with ai-correct, and add 15 technical words with readings to your list. If next week falls on 年末年始, choose 2 rest days now. Then 15 min aloud: shadow q41 and q45 twice each at 0.8× and say each new word in a short sentence. Then 10 min: reflection questions."
+    }
+   ],
+   "lightVersion": "Busy week? Keep the human mock and the mid benchmark no matter what. Otherwise do 25 minutes a day on q20 and q21 only (shadow, answer without notes, record), and use the q23-q25 model answers with your facts swapped in."
+  },
+  {
+   "week": 5,
+   "theme": "Technical Japanese I: machine-learning basics",
+   "themeJa": "技術質問の日本語（機械学習の基礎）",
+   "summary": "Learn to answer core machine-learning questions in simple, correct Japanese: overfitting, metrics, scarce or imbalanced data, CNN vs Transformer, making models light and fast for cars, explaining AI limits to customers, and team development. Use one fixed pattern (definition, why it matters, 2-3 methods, your example) and practise saying 'I don't know yet' honestly. The week works fully as self-study plus AI mocks, so it still fits if it falls on 年末年始, when offices are closed.",
+   "goals": [
+    "Answer q41-q45, q51 and q52 without notes in 30-90 seconds each, with the pattern: one-sentence definition, why it matters, 2-3 methods, one example from your research.",
+    "Say 30 technical terms with correct readings, each in a sentence (過学習, 汎化性能, 正則化, 交差検証, 適合率, 再現率, 量子化, 枝刈り, 知識蒸留, 推論 and others).",
+    "Answer 3 questions beyond your knowledge in 20-30 seconds each with the honest 'I don't know yet' pattern.",
+    "Complete one AI technical mock by voice with at least 6 questions and a score of 3/5 or higher.",
+    "If this week falls on 年末年始, take 2 full rest days and still practise on at least 4 days."
+   ],
+   "milestone": "Recorded without notes: q41, q42 and q45 within their time targets (about 1-1.5 minutes), each with a one-sentence definition first, at least 2 concrete methods and one example from your research, and at most 1 keigo error per answer; plus an AI technical mock scored 3/5 or higher.",
+   "focusQuestions": [
+    "q41",
+    "q42",
+    "q43",
+    "q44",
+    "q45",
+    "q51",
+    "q52"
+   ],
+   "reviewQuestions": [
+    "q01",
+    "q04",
+    "q08",
+    "q10",
+    "q13",
+    "q14",
+    "q40",
+    "q20",
+    "q21"
+   ],
+   "humanFeedback": "If this week falls on 年末年始, career centers and government offices are closed: use an online tutor (some offer holiday slots) or a Japanese lab mate on a video call for 30 minutes on q41-q45. Otherwise, ask a Japanese engineer friend or a senior student whether your technical terms sound natural. Check your career center's reopening day for weeks 6-7.",
+   "tasks": [
+    {
+     "id": "w5t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: say technical words (過学習, 汎化性能, 正則化, 交差検証, 評価指標, 適合率, 再現率, 不均衡, 量子化, 枝刈り, 知識蒸留, 推論) each in a short sentence, plus the time and recover phrases. 瞬間作文: read an English definition and say a one-sentence Japanese definition within 3 seconds."
+    },
+    {
+     "id": "w5t02",
+     "day": "Mon",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q44, q51 and q52 from the models and correct them with ai-correct. For q52, describe only what you really did with Git, code review and tests (branches, pull requests, review comments, unit tests), because interviewers dig into exaggeration. Read each aloud once."
+    },
+    {
+     "id": "w5t03",
+     "day": "Mon",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q41 and q42 (3 passes each). Then answer each in 30 seconds with the pattern: one-sentence definition, why it matters, 2-3 methods, one example from your research."
+    },
+    {
+     "id": "w5t04",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q43 and q45. For each method you mention (data augmentation, domain adaptation, quantization, pruning), say aloud in 2 sentences why you would choose it and what it costs (for example, accuracy against speed)."
+    },
+    {
+     "id": "w5t05",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "'I don't know yet' practice: answer 3 questions beyond your level (機能安全とSOTIFの違いは何ですか／AUTOSARとは何ですか／レベル2とレベル3の違いは何ですか) in 20-30 seconds each with an honest pattern, for example 「申し訳ございません。〜については、まだ詳しく存じません。ただ、〜ということは理解しております。入社までに、しっかり勉強いたします。」 Use the time and recover phrases, record, and listen once."
+    },
+    {
+     "id": "w5t06",
+     "day": "Wed",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q44 and q51. For q51, speak as if to a customer: no jargon, one everyday comparison and polite keigo. Check that a non-engineer would understand every word."
+    },
+    {
+     "id": "w5t07",
+     "day": "Wed",
+     "min": 25,
+     "type": "mock",
+     "text": "深掘り drill on q45 (ai-deep, voice): ask it to dig into the trade-off between accuracy and speed and how you measured speed on the board. Do 2-3 sets with hint-first correction."
+    },
+    {
+     "id": "w5t08",
+     "day": "Thu",
+     "min": 25,
+     "type": "review",
+     "text": "Spaced review without notes: q01, q04, q08, q10, q13, q14, q40, q20 and q21 in their 30-second versions, and the 2 weakest in full. Record those two and score them with the rubric."
+    },
+    {
+     "id": "w5t09",
+     "day": "Thu",
+     "min": 25,
+     "type": "listen",
+     "text": "Drill mode with the week-5 questions and their variants: first at 1.0×, then faster (about 1.2×) to get used to quick speakers. If your browser offers several Japanese voices, switch between them, because interviewers may not be native speakers. Answer each one definition-first in 30 seconds."
+    },
+    {
+     "id": "w5t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "speak",
+     "text": "Shrinking-time retell with no notes: q45 and q42 in about 90 seconds, then 60, then 30. Record the 60-second versions and tally the fillers and long pauses."
+    },
+    {
+     "id": "w5t11",
+     "day": "Fri",
+     "min": 25,
+     "type": "write",
+     "text": "Update the keyword notes for q41-q45, q51 and q52 (at most 6 keywords each). Make an acronym card with readings (ADAS エーダス, LiDAR ライダー, ONNX オニキス, CUDA クーダ, NVIDIA エヌビディア), check how your lab says YOLO and mAP, and say each one aloud in a sentence."
+    },
+    {
+     "id": "w5t12",
+     "day": "Sat",
+     "min": 60,
+     "type": "mock",
+     "text": "Technical AI mock (ai-tech, voice, about 30 min) with the 【今日の範囲】 line set to 機械学習の基礎とチーム開発: at least 6 questions from q41-q45, q51 and q52, plus follow-ups; an online tutor session can replace it. Save the corrections into My answer."
+    },
+    {
+     "id": "w5t13",
+     "day": "Sat",
+     "min": 50,
+     "type": "review",
+     "text": "Milestone test and weekly recording: q41, q42 and q45 without notes. Check each against the pattern (definition first, 2 or more methods, one research example) and its time target, count the metrics, score the rubric and log the results."
+    },
+    {
+     "id": "w5t14",
+     "day": "Sun",
+     "min": 80,
+     "type": "write",
+     "text": "Prepare week 6 (55 min): adapt the q46, q47, q48 and q33 models, correct them with ai-correct, and check every FPT fact against the FPT Prep sources. Then 15 min aloud: shadow q46 and q47 twice each at 0.8× and say the 30-second versions of q48 and q33. Then 10 min: reflection questions."
+    }
+   ],
+   "lightVersion": "If this week falls on 年末年始 or you travel: take 2 full rest days. On the other days do the 25-minute light routine with technical answers (shadow one, Drill three), plus one 20-minute ai-rapid drill limited to technical questions. Instead of drafting q44, q51 and q52, use the model answers with your facts swapped in."
+  },
+  {
+   "week": 6,
+   "theme": "Technical Japanese II: automotive AI and follow-up questions",
+   "themeJa": "車載AIの技術質問と深掘り対策",
+   "summary": "Add the automotive layer at a new-graduate level: AI safety (functional safety and SOTIF), sensor fusion, SDV, generative AI in cars and one recent AI news item, always separating what you know from what you would still learn. Finish the international questions (culture differences, location and relocation, communicating with Japanese colleagues and customers) and train 深掘り chains so unseen follow-ups no longer cause long silences.",
+   "goals": [
+    "Answer q46-q50 without notes within their time targets (about 1-1.5 minutes, or 30 seconds for the short version), definition first, with one link to FPT's automotive work and no unverified facts.",
+    "Answer q33-q35 in about 1 minute each with a concrete example (for example, ホウレンソウ or confirming understanding), and q34 with a clear, honest and flexible position.",
+    "Handle chains of 3 follow-up questions on 3 different answers with no silence longer than 3 seconds.",
+    "Answer 8 unseen technical questions with your first word within 3 seconds.",
+    "Confirm week 7's human mock interviews (HR style and, if possible, technical style)."
+   ],
+   "milestone": "A recorded AI technical mock (ai-tech) of at least 20 minutes with 6 or more questions, 2 of them unpractised: no silence longer than 3 seconds, at most 3 fillers per minute, at most 1 keigo error per answer, and a score of 3.5/5 or higher.",
+   "focusQuestions": [
+    "q46",
+    "q47",
+    "q48",
+    "q49",
+    "q50",
+    "q33",
+    "q34",
+    "q35"
+   ],
+   "reviewQuestions": [
+    "q06",
+    "q11",
+    "q20",
+    "q22",
+    "q23",
+    "q25",
+    "q26",
+    "q41",
+    "q42",
+    "q44",
+    "q51"
+   ],
+   "humanFeedback": "If the holidays are over and offices are open, ask your career center for a mock interview and whether an alumni engineer or technical counselor can join; otherwise ask a tutor or a Japanese engineer friend to ask 深掘り questions about your research and q46-q48. Confirm both week-7 sessions.",
+   "tasks": [
+    {
+     "id": "w6t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: say automotive words (機能安全, 性能限界, センサーフュージョン, 車載, 組込み, 自動運転, ADAS エーダス, LiDAR ライダー, AUTOSAR オートザー, SDV) and workplace words for q35 (報告, 連絡, 相談, 確認) each in a short sentence, plus the time and aizuchi phrases. 瞬間作文: one-sentence definitions from English cues."
+    },
+    {
+     "id": "w6t02",
+     "day": "Mon",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q34, q35 and q49 and correct them with ai-correct. For q34, decide your honest position on relocation, client sites and business trips before any interview. For q35, give one concrete habit (for example, confirming understanding and reporting early: ホウレンソウ). Read each aloud once."
+    },
+    {
+     "id": "w6t03",
+     "day": "Mon",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q46 and q47 (3 passes each), then answer each in 30-45 seconds from keywords. Stay at a new-graduate level: say what you know and what you would still need to learn."
+    },
+    {
+     "id": "w6t04",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q48 and q49, then answer from keywords. Link each to one verified FPT fact from the FPT Prep tab (for example, its SDV focus or its ISO 26262 and A-SPICE work), said with the year."
+    },
+    {
+     "id": "w6t05",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q33 and q35 (2-3 passes each), then answer q34 aloud in 30 seconds: positive first, then any real constraint, politely. Record q34 and check that it sounds honest, not evasive."
+    },
+    {
+     "id": "w6t06",
+     "day": "Wed",
+     "min": 30,
+     "type": "mock",
+     "text": "深掘り chains (ai-deep, voice) on 3 answers, q46, q20 and q34, one set each; say 「もう一回」 every time to get a third follow-up. Target: no silence longer than 3 seconds. When needed, say 「少し考えてもよろしいでしょうか」 or check the question with 「〜ということでしょうか」."
+    },
+    {
+     "id": "w6t07",
+     "day": "Wed",
+     "min": 20,
+     "type": "listen",
+     "text": "Drill mode over the whole bank at about 1.1-1.2×, in random order, listening without reading. Answer each in 30 seconds, note the questions that made you freeze, and answer those again at the end."
+    },
+    {
+     "id": "w6t08",
+     "day": "Thu",
+     "min": 25,
+     "type": "review",
+     "text": "Spaced review without notes: q06, q11, q20, q22, q23, q25, q26, q41, q42, q44 and q51 in their 30-second versions, and the 2 weakest in full."
+    },
+    {
+     "id": "w6t09",
+     "day": "Thu",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q50: choose one real AI or automotive news item you have read yourself in the last few months (FPT's newsroom or a major news site), and note the month, year and source. Build the answer as what happened, why it matters for cars and what you want to learn, correct it with ai-correct, and say it aloud twice. Start anything that is only reported in the media with 「報道によると」."
+    },
+    {
+     "id": "w6t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "mock",
+     "text": "Unseen-question drill (ai-rapid, voice) with the line 「車載AIと機械学習の技術質問だけにしてください。」 added: about 8 questions you have not prepared (for example, annotation quality, or level 2 against level 3). Say your first word within 3 seconds, and use the 'I don't know yet' pattern when you need it."
+    },
+    {
+     "id": "w6t11",
+     "day": "Fri",
+     "min": 25,
+     "type": "research",
+     "text": "FPT fact and consistency check: read the FPT Automotive service list (ADAS/AD, functional safety, validation), then check every answer that quotes FPT facts (q20, q23, q24, q48, q49) against the sources. Add the year and 「約」, delete anything you cannot verify, make sure the reasons match your ES, and say q48 aloud once with the checked facts."
+    },
+    {
+     "id": "w6t12",
+     "day": "Sat",
+     "min": 60,
+     "type": "mock",
+     "text": "Milestone mock (ai-tech, voice, at least 20 minutes, with the 【今日の範囲】 line set to 全部): 6 or more questions, including 2 you have not practised; a human technical session can replace it. Record the session, then fix the 3 weakest answers in My answer."
+    },
+    {
+     "id": "w6t13",
+     "day": "Sat",
+     "min": 50,
+     "type": "review",
+     "text": "Weekly recording: score the milestone mock with the rubric (fillers, silences over 3 seconds, keigo), then record q46, q34 and one random unseen Drill question and log the metrics. Confirm next week's human mock sessions."
+    },
+    {
+     "id": "w6t14",
+     "day": "Sun",
+     "min": 80,
+     "type": "write",
+     "text": "Prepare week 7 (55 min): draft q60 (6 reverse questions: 2 for an HR round, 2 for a manager round, 2 for an executive round), q70, q71 and q72. Correct them with ai-correct and check that the website does not already answer any of your reverse questions. Then 15 min aloud: shadow q70 and q71 twice at 0.8× and say each reverse question once with a lead-in. Then 10 min: reflection questions."
+    }
+   ],
+   "lightVersion": "Busy week? Prioritise q46, q48 and q34 plus one 20-minute 深掘り drill. Otherwise do 25 minutes a day (5 min automotive words, 10 min shadowing, 10 min Drill mode over the whole bank), and use the q47 and q49 model answers with your facts swapped in."
+  },
+  {
+   "week": 7,
+   "theme": "Pressure, tricky questions and full mock interviews",
+   "themeJa": "難しい質問・逆質問・模擬面接",
+   "summary": "Practise the questions that test conviction and flexibility (why hire you, why FPT instead of a large Japanese maker, an unwanted assignment, overtime, research vs real work) and prepare 6 reverse questions sorted by interview round. Run full mock interviews in three styles (HR first round, technical second round, executive final), with people and with AI, online and in person.",
+   "goals": [
+    "Answer q70-q74 in 30-60 seconds each, calm and positive, within 10 seconds of the target time.",
+    "Prepare 6 reverse questions (2 each for HR, manager and executive rounds) that the website does not answer, each with a lead-in and a thank-you line.",
+    "Complete 3 full mock interviews (HR, technical, final), at least one with a person and one with the full online setup, averaging 3.5/5 or higher on the rubric.",
+    "Do the in-person entering and leaving sequence twice without a mistake.",
+    "Keep to 3 or fewer fillers per minute and no silence over 3 seconds across the mock recordings."
+   ],
+   "milestone": "One full recorded mock interview of 25-30 minutes (human or AI, no notes) covering 自己紹介, 志望動機, research, 2 technical questions, 2 tricky questions and 2 reverse questions: rubric average 3.5 or higher, at most 3 fillers per minute, no keigo error repeated, and every answer within its time target.",
+   "focusQuestions": [
+    "q60",
+    "q61",
+    "q70",
+    "q71",
+    "q72",
+    "q73",
+    "q74"
+   ],
+   "reviewQuestions": [
+    "q01",
+    "q10",
+    "q20",
+    "q24",
+    "q32",
+    "q33",
+    "q34",
+    "q35",
+    "q43",
+    "q45",
+    "q46",
+    "q47",
+    "q52"
+   ],
+   "humanFeedback": "Do at least one human mock this week: a career-center 模擬面接 or the 外国人雇用サービスセンター/留学生コーナー (HR style, in person if possible, so you can practise entering and leaving), plus a tutor or Japanese engineer friend for a technical-style round online. Ask them directly whether any answer sounds memorised.",
+   "tasks": [
+    {
+     "id": "w7t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: say the reverse, close and aizuchi phrases, plus openers for hard questions (「おっしゃるとおり、〜」「正直に申し上げますと、〜」). 瞬間作文: your 3 strongest reasons for choosing FPT and why they should hire you, one sentence each."
+    },
+    {
+     "id": "w7t02",
+     "day": "Mon",
+     "min": 25,
+     "type": "write",
+     "text": "Draft q61, q73 and q74 and correct them with ai-correct. For q73, say you are willing and explain how you manage your time and health. For q74, agree first, then show how research habits (testing hypotheses, root-cause analysis) carry over to real work. Read each aloud once."
+    },
+    {
+     "id": "w7t03",
+     "day": "Mon",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q70 and q71 (3 passes each), then answer from keywords. Then answer the follow-up 「それは他の会社でもできるのではないですか」 in about 20 seconds with one FPT-specific fact."
+    },
+    {
+     "id": "w7t04",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Shadow q72, q73 and q74 (2 passes each), then answer each in 30 seconds without notes: calm, positive and not defensive. Then answer 3 questions that FPT candidates have reported, 30 seconds each, without preparing: 「当社では、海外の開発チームと一緒に働くことが多いですが、いかがですか」「英語を使う仕事もありますが、大丈夫ですか」「入社後は、自分でコードを書く時間が少なくなるかもしれません。それでも大丈夫ですか」."
+    },
+    {
+     "id": "w7t05",
+     "day": "Tue",
+     "min": 25,
+     "type": "speak",
+     "text": "Reverse questions (q60): choose 6 (2 per round) and practise each with a lead-in (「〜と拝見しましたが、〜について伺ってもよろしいでしょうか」) and a thank-you after the answer (「ありがとうございます。〜について、理解が深まりました」). Drop any question only about pay, holidays or overtime, and anything the website already answers."
+    },
+    {
+     "id": "w7t06",
+     "day": "Wed",
+     "min": 50,
+     "type": "mock",
+     "text": "Full mock 1, HR first round (ai-hr in 本番モード, voice), as if online: full tech setup, logged in 5 minutes early, camera at eye level, about 30 minutes from greeting to closing, ending with 2 reverse questions. Record the video and score it with the rubric."
+    },
+    {
+     "id": "w7t07",
+     "day": "Thu",
+     "min": 25,
+     "type": "review",
+     "text": "Spaced review without notes: q01, q10, q20, q24, q32, q33, q34, q35, q43, q45, q46, q47 and q52 in their 30-second versions, and the 2 weakest in full."
+    },
+    {
+     "id": "w7t08",
+     "day": "Thu",
+     "min": 25,
+     "type": "speak",
+     "text": "In-person manners rehearsal with the interview flow script and the manners list: knock, 「失礼いたします」, school and name, wait for 「どうぞおかけください」, sit upright, close with 「本日はありがとうございました」, and bow again at the door. Do the whole sequence twice and film it once."
+    },
+    {
+     "id": "w7t09",
+     "day": "Fri",
+     "min": 50,
+     "type": "mock",
+     "text": "Full mock 2, technical second round, with a tutor or Japanese engineer friend if possible (otherwise ai-tech in 本番モード with the 【今日の範囲】 line set to 全部): your research in 3 minutes, then 2-3 technical questions with follow-ups. Write down every follow-up you could not answer and prepare a 20-second answer for each."
+    },
+    {
+     "id": "w7t10",
+     "day": "Sat",
+     "min": 60,
+     "type": "feedback",
+     "text": "Human mock interview (career center or 外国人雇用サービスセンター/留学生コーナー, in person if possible; move it to the day you booked). If no human slot is available, run ai-final in 本番モード instead. Write down every comment right after and fix the top 3."
+    },
+    {
+     "id": "w7t11",
+     "day": "Sat",
+     "min": 50,
+     "type": "review",
+     "text": "Milestone check: take your best full mock recording of the week, count fillers, silences and keigo errors, score the rubric and check each answer's time. Update My answer for every answer you rate below 3, and write a 'top 5 fixes' list for week 8."
+    },
+    {
+     "id": "w7t12",
+     "day": "Sun",
+     "min": 80,
+     "type": "mock",
+     "text": "Full mock 3, executive final (ai-final in 本番モード, voice, about 30 minutes), starting from the knock (50 min including fixes). Then 20 minutes comparing your ES/履歴書 with q01, q02, q03, q20 and q25 once more, and 10 minutes on the reflection questions."
+    }
+   ],
+   "lightVersion": "Busy week? Keep one full mock (human if booked, otherwise ai-final) and the reverse questions. Otherwise do 25 minutes a day: shadow one of q70-q74, answer 3 Drill-mode questions from the whole bank, and make one recording."
+  },
+  {
+   "week": 8,
+   "theme": "Final polish and interview-day readiness",
+   "themeJa": "最終仕上げと面接当日の準備",
+   "summary": "No new questions this week: polish what is weak, starting with the six answers that decide most interviews (q01, q10, q20, q71, q26, q60), and keep everything else alive with Drill mode and a speed round. Fix only what was flagged more than once, run the final benchmark and compare it with week 1, and get your interview-day kit ready. The last weekend is lighter so that you arrive rested.",
+   "goals": [
+    "Final benchmark (q01, q10, q20) no worse than week 1 on any metric, with at most 3 fillers per minute and at most 1 keigo error per answer.",
+    "Answer 10 random Drill questions in a row without notes, first word within 3 seconds, 30-60 seconds each.",
+    "Every answer in the Question Bank self-rated 3/5 or higher, and q01, q10, q20, q71, q26 and q60 rated 4/5 or higher.",
+    "Interview-day kit complete: online and in-person checklists passed, a one-page FPT fact sheet, 6 reverse questions and a copy of your ES.",
+    "A written maintenance routine and pre-interview routine for the rest of the selection season."
+   ],
+   "milestone": "Final benchmark logged: on q01, q10 and q20, at most 3 fillers per minute, at most 2 long mid-sentence pauses per minute, at most 1 keigo error per answer, at least 250 characters per minute and content 4/4, with no metric worse than in week 1; plus 10 random Drill questions answered in a row without notes.",
+   "focusQuestions": [],
+   "reviewQuestions": [
+    "q01",
+    "q10",
+    "q20",
+    "q71",
+    "q26",
+    "q60",
+    "q02",
+    "q03",
+    "q04",
+    "q05",
+    "q06",
+    "q07",
+    "q08",
+    "q11",
+    "q12",
+    "q13",
+    "q14",
+    "q21",
+    "q22",
+    "q23",
+    "q24",
+    "q25",
+    "q30",
+    "q31",
+    "q32",
+    "q33",
+    "q34",
+    "q35",
+    "q40",
+    "q41",
+    "q42",
+    "q43",
+    "q44",
+    "q45",
+    "q46",
+    "q47",
+    "q48",
+    "q49",
+    "q50",
+    "q51",
+    "q52",
+    "q61",
+    "q70",
+    "q72",
+    "q73",
+    "q74"
+   ],
+   "humanFeedback": "Book one last human session early in the week (career center, 外国人雇用サービスセンター/留学生コーナー or tutor): a full final-style mock, in person if possible. Ask the person to score one recording with the rubric so you can check your self-scoring, and, if there is time, ask your career center to check your ES/履歴書 against your spoken answers.",
+   "tasks": [
+    {
+     "id": "w8t01",
+     "day": "Daily",
+     "min": 10,
+     "type": "vocab",
+     "text": "Every day, 10 min: one last pass through all phrase categories (open, clarify, time, recover, connect, aizuchi, online, close, reverse) and your personal common-mistakes list. Say each phrase once, slowly and clearly."
+    },
+    {
+     "id": "w8t02",
+     "day": "Mon",
+     "min": 25,
+     "type": "review",
+     "text": "Self-rating sweep: go through the Question Bank, update every self-rating honestly, and list each answer rated below 3. Pick the 5 weakest to fix this week, putting q01, q10, q20, q71, q26 and q60 first if any of them is weak."
+    },
+    {
+     "id": "w8t03",
+     "day": "Mon",
+     "min": 25,
+     "type": "speak",
+     "text": "Fix and shadow the 2 weakest answers: shorten long sentences, shadow 3 passes, answer from keywords, then without notes, and record the final versions."
+    },
+    {
+     "id": "w8t04",
+     "day": "Tue",
+     "min": 50,
+     "type": "feedback",
+     "text": "Last human mock (career center, 外国人雇用サービスセンター/留学生コーナー or tutor; move it to the day you booked): a full final-style run, in person if possible, otherwise ai-final in 本番モード. Fix only the problems that were also flagged in week 7, and leave answers that already work alone."
+    },
+    {
+     "id": "w8t05",
+     "day": "Wed",
+     "min": 25,
+     "type": "speak",
+     "text": "Fix and shadow the next 3 weakest answers the same way, and record the final versions."
+    },
+    {
+     "id": "w8t06",
+     "day": "Wed",
+     "min": 25,
+     "type": "listen",
+     "text": "Drill mode over the whole bank at 1.0-1.2×: 10 random questions in a row with no notes, first word within 3 seconds, 30-60 seconds each. Answer the ones you froze on again."
+    },
+    {
+     "id": "w8t07",
+     "day": "Thu",
+     "min": 25,
+     "type": "research",
+     "text": "Final FPT check: the latest FPT Japan and FPT Automotive news, any change on the recruiting page, and your own selection schedule. Update q23 and q50 with the year and 「約」, make a one-page fact sheet of 5 facts with sources, and say q23 and q71 aloud twice each with the updated facts."
+    },
+    {
+     "id": "w8t08",
+     "day": "Thu",
+     "min": 25,
+     "type": "review",
+     "text": "Interview-day kit: go through the Day before and On the day checklists in Tools and the Online and In person manners lists in Words & Phrases (PC charged, app updated, camera at eye level, light, background, display name, headset, backup device, the company's contact number, water; route, arriving 15 minutes early, ES copy, clothes, coat off before entering, phone off). Finish with a 5-minute test call answering q01 and q20."
+    },
+    {
+     "id": "w8t09",
+     "day": "Fri",
+     "min": 25,
+     "type": "speak",
+     "text": "30-second speed round: answer about 25 questions from the bank in their 30-second versions without notes, starting with the ones you have not said this week. Star any where you hesitated for one more shadowing pass."
+    },
+    {
+     "id": "w8t10",
+     "day": "Fri",
+     "min": 25,
+     "type": "review",
+     "text": "Final ES/履歴書 consistency check: read every document you have submitted or will submit, and make sure your spoken answers use the same facts, numbers and reasons. Prepare 20-second answers for the 3 lines in your ES that an interviewer is most likely to ask about, and say each aloud twice."
+    },
+    {
+     "id": "w8t11",
+     "day": "Sat",
+     "min": 60,
+     "type": "review",
+     "text": "Final benchmark first thing today, before the Daily task or any other practice, with the same procedure as in weeks 1 and 4: q01, q10 and q20, no notes, video. Log every metric, then listen to your week-1 and week-8 recordings back to back and write down 3 things that changed."
+    },
+    {
+     "id": "w8t12",
+     "day": "Sat",
+     "min": 50,
+     "type": "mock",
+     "text": "Dress rehearsal (ai-final in 本番モード, or a friend) in interview clothes with the full online setup, about 30 minutes. Afterwards, make only small fixes."
+    },
+    {
+     "id": "w8t13",
+     "day": "Sun",
+     "min": 40,
+     "type": "review",
+     "text": "Maintenance plan, then rest: write your routine for the selection season (the 25-minute light routine on interview weeks, plus one ai-rapid drill and one recording a week) and a pre-interview routine (the day before: shadow q01, q10 and q20 once, read the fact sheet, sleep early; on the day: a 5-minute phrase warm-up, then log in or arrive early). Add one after-interview step: within an hour, write down every question you were asked and prepare the ones you found hard. Answer the reflection questions, shadow q01, q10 and q20 once each, then take the rest of the day off."
+    }
+   ],
+   "lightVersion": "Real interviews or deadlines this week? Do the final benchmark and the interview-day kit, then only the 25-minute light routine with q01, q10, q20, q71, q26 and q60. Never cram the day before an interview: shadow q01, q10 and q20 once and go to bed early."
+  }
+ ],
+ "benchmark": {
+  "questions": [
+   {
+    "qid": "q01",
+    "why": "The opening of every interview and your most practised answer, so it shows how much fluency and keigo improve when the content is under control."
+   },
+   {
+    "qid": "q10",
+    "why": "Explaining your research is the most likely technical task (FPT reportedly asked a new-graduate candidate to explain research so that general engineers understand), so it tests technical Japanese under time pressure."
+   },
+   {
+    "qid": "q20",
+    "why": "Motivation matters in every round, especially the final, and it tests whether you can use FPT facts and personal reasons fluently. It is unprepared in week 1, so it also shows how much your improvised speech grows."
+   }
+  ],
+  "weeks": [
+   1,
+   4,
+   8
+  ],
+  "procedure": [
+   "Do it first thing on day 1 of week 1 (before any practice) and on the Saturday of weeks 4 and 8, under the same conditions: same room and time of day, camera at eye level, video recording on your phone or PC, no notes, timer visible.",
+   "Warm up for 2 minutes with the open and clarify phrases only. Do not rehearse the three benchmark answers before recording.",
+   "For each question, press Listen at 1.0× and treat it as the interviewer speaking. Answer once, aiming for 60 seconds. No restarts: if you get stuck, use a recover phrase and keep going.",
+   "Optional unseen check: let Drill mode pick one random question you have not practised that week, answer it in 60 seconds, and log it separately as 'unseen'.",
+   "Transcribe each answer exactly as you said it, including fillers and restarts, in normal kanji and kana as in your scripts (type it while listening, or use phone voice typing and then add the fillers and restarts it left out).",
+   "Count each metric as described in its 'how' field, score the rubric (1-5 for each criterion), and enter everything in the benchmark log in the Tools tab.",
+   "Compare the results with the previous benchmark, choose the 3 biggest problems, and add them to next week's plan. Keep all recordings so you can listen to week 1 and week 8 back to back.",
+   "In week 8, also ask a person (career-center counselor, tutor or Japanese friend) to score one recording with the rubric, to check your own scoring."
+  ],
+  "metrics": [
+   {
+    "key": "rate",
+    "name": "Speaking speed",
+    "how": "Count the characters in your transcript with your editor's character count, leaving out spaces, punctuation and fillers. Divide by the answer length in seconds and multiply by 60.",
+    "unit": "characters per minute",
+    "target": "250-300 on the benchmark answers; clarity comes first, so do not push past about 320."
+   },
+   {
+    "key": "fillers",
+    "name": "Fillers",
+    "how": "Listen once and tally every えー, あのー, えっと, なんか, まあ and その used as a filler. Divide by the answer length in minutes.",
+    "unit": "fillers per minute",
+    "target": "3 or fewer per minute, with no なんか or まあ."
+   },
+   {
+    "key": "pauses",
+    "name": "Long mid-sentence pauses",
+    "how": "Listen again and tally silences of about 1 second or more inside a sentence (not between sentences). Also note how many seconds pass before your first word.",
+    "unit": "pauses per minute",
+    "target": "2 or fewer per minute, and your first word within 3 seconds."
+   },
+   {
+    "key": "errors",
+    "name": "Grammar and word errors",
+    "how": "Underline the errors in your transcript (particles, verb forms, wrong words, unclear long vowels or small っ) and check doubtful ones with the ai-correct prompt. Divide the number of errors by the number of characters and multiply by 100.",
+    "unit": "errors per 100 characters",
+    "target": "1 or fewer per 100 characters."
+   },
+   {
+    "key": "keigo",
+    "name": "Keigo and register errors",
+    "how": "Count casual or wrong forms: 僕 or 自分 for 'I', mixing up 御社 and 貴社, 二重敬語 such as おっしゃられる, unnecessary させていただく, なので at the start of a sentence, 〜けど, ら抜き言葉 such as 見れる, and 了解しました.",
+    "unit": "errors per answer",
+    "target": "0-1 per answer, and never the same mistake twice."
+   },
+   {
+    "key": "content",
+    "name": "Content checklist",
+    "how": "Give 1 point each for: (1) the conclusion in the first sentence, (2) at least one concrete number or fact, (3) a clear link to FPT or the AI engineer role, (4) finishing within 60 seconds, plus or minus 10.",
+    "unit": "points out of 4",
+    "target": "4/4 on all three benchmark answers."
+   }
+  ]
+ },
+ "rubric": [
+  {
+   "criterion": "Structure (conclusion first)",
+   "criterionJa": "構成（結論ファースト）",
+   "l1": "Starts with background or a long preamble; the main point is unclear or comes only at the end.",
+   "l3": "States the point first, but the reason or example is thin or out of order, and the answer does not come back to the point.",
+   "l5": "Clear PREP: a one-sentence conclusion, a reason, a concrete example and a closing link to the role, each signposted with connectors such as まず and その結果."
+  },
+  {
+   "criterion": "Content and evidence",
+   "criterionJa": "内容・具体性",
+   "l1": "Only general adjectives; the answer could come from anyone, for any company.",
+   "l3": "One concrete episode or number, but your own role or the link to FPT is vague.",
+   "l5": "Specific facts and numbers, a clear personal role, a fit with FPT's work, and consistency with your ES."
+  },
+  {
+   "criterion": "Fluency",
+   "criterionJa": "流暢さ",
+   "l1": "Frequent long pauses and restarts, more than 6 fillers per minute, or reciting word for word.",
+   "l3": "3-5 fillers per minute and some mid-sentence pauses, but the answer keeps moving.",
+   "l5": "Smooth phrase-sized chunks, 3 or fewer fillers per minute, pauses only between sentences, about 250-300 characters per minute."
+  },
+  {
+   "criterion": "Accuracy: grammar, words and pronunciation",
+   "criterionJa": "正確さ（文法・語彙・発音）",
+   "l1": "Errors with particles, verb forms or word choice often make the meaning unclear.",
+   "l3": "About 2-3 errors per 100 characters, but the meaning is always clear.",
+   "l5": "1 or fewer errors per 100 characters; technical terms used correctly; long vowels, small っ and ん pronounced clearly."
+  },
+  {
+   "criterion": "Keigo and register",
+   "criterionJa": "敬語・言葉遣い",
+   "l1": "Casual forms (僕, 〜けど, なので at the start of a sentence, 〜って), です・ます not kept up, or 御社 and 貴社 mixed up.",
+   "l3": "Consistent です・ます and 御社, with 1-2 slips such as 二重敬語 or too much させていただく.",
+   "l5": "Natural interview keigo (申します, いたします, しております, 拝見しました) with no errors and without sounding over-polite."
+  },
+  {
+   "criterion": "Interaction and delivery",
+   "criterionJa": "対話力・話し方",
+   "l1": "Misses the point of the question without checking, freezes at follow-ups, avoids eye contact or the camera, or speaks too quietly.",
+   "l3": "Answers the question asked, buys time with a set phrase, handles 1 follow-up, and mostly keeps eye contact.",
+   "l5": "Clear voice and steady eye contact (the camera, online), checks unclear questions politely, handles 2-3 follow-ups calmly in short sentences, and keeps every answer within time."
+  }
+ ],
+ "aiPrompts": [
+  {
+   "id": "ai-hr",
+   "title": "HR first-round interview (一次面接)",
+   "use": "Weeks 1, 2 and 7, and any Saturday: an HR-style first round. Paste the prompt as text first, then switch to voice mode and speak. Change the 【今週の質問】 line to this week's questions. For a full run without interruptions (weeks 7-8), add the word 本番モード at the end before you send it. If your AI app allows it, turn off the use of your chats for training; write your name as 〇〇 and never paste other personal details.",
+   "prompt": "あなたは、FPTジャパンホールディングスの人事担当の面接官です。自動車分野（FPTオートモーティブ）の新卒AIエンジニア職について、オンラインで約30分の一次面接を行ってください。私は日本の大学院で情報系を専攻している留学生で、日本語での面接を練習しています。\n\nルール：\n1. 面接官として話すときは、面接官の言葉だけを、自然で丁寧な面接の日本語で話してください。会社のことは「当社」と言ってください。\n2. 質問は一度に一つだけにして、私が答えるまで待ってください。\n3. 私の回答ごとに、深掘りの質問を1〜2回してください。\n4. 深掘りが終わったら、英語でフィードバックをしてください。次の3点を指摘してください：(a) 不自然な日本語、(b) 敬語の誤り、(c) 内容（結論が最初にあるか、具体的か、当社とつながっているか）。そのあと、私の回答を直した日本語の例を、短い文で示してください。\n5. フィードバックのあと、私は直した答えを一度言い直します。まだ問題があれば一つだけ短く指摘して、次の質問に進んでください。\n6. 私が聞き返したとき（「もう一度おっしゃっていただけますか」など）は、同じ質問を少しやさしい言い方で、もう一度言ってください。\n7. 質問は、自己紹介、学生時代に力を入れたこと、自己PR、長所と短所、日本で働きたい理由、日本語で働くことへの不安、志望理由などから選んでください。今日は特に【今週の質問：自己紹介、日本で働きたい理由】を中心にしてください。\n8. 面接の最後には、「最後に、何か質問はありますか」と聞いてください。私の質問には、一般的な内容で短く答えてください。当社についての具体的な数字や事実は、作らないでください。\n9. このメッセージの最後か、私の最初の発言に「本番モード」とある場合は、途中でフィードバックをせず、本番と同じように面接を最後まで続けてください。\n10. 私が「終了」と言ったら、面接全体を5点満点で採点し、いちばん大事な改善点を3つ、英語で教えてください。本番モードのときは、そのあとで、回答ごとの短いフィードバックと、直した日本語の例を示してください。\n\n準備ができたら、面接官としてあいさつをして、最初の質問をしてください。"
+  },
+  {
+   "id": "ai-tech",
+   "title": "Technical interview: automotive AI (二次面接)",
+   "use": "Weeks 3, 5 and 6, and the technical mock in week 7. Replace the 【研究テーマ】 line with a one-sentence public summary of your own research (never unpublished data), and set the 【今日の範囲】 line: 研究内容とプログラミング in week 3, 機械学習の基礎とチーム開発 in week 5, 全部 from week 6. Add 本番モード at the end for a full run without interruptions. Check any technical fact the AI states before you memorise it.",
+   "prompt": "あなたは、FPTジャパンの自動車分野（FPTオートモーティブ）で、ADASや車載AIの開発チームを率いる部門長です。新卒AIエンジニア職の二次面接（技術面接）を、オンラインで約30分行ってください。私は大学院生で、研究テーマは【研究テーマ：夜間や雨の日の車載カメラ画像から歩行者を検出する研究】です。\n\nルール：\n1. 面接官として話すときは、面接官の言葉だけを話してください。質問は一度に一つだけにして、私が答えるまで待ってください。\n2. 最初に、研究内容を1分程度で説明するように求めてください。そのあとは、【今日の範囲：研究内容とプログラミング】の中から質問してください。範囲が「全部」のときは、評価指標、過学習、データが少ない場合や偏っている場合、CNNとTransformerの違い、車載向けの軽量化と高速化、センサーフュージョン、AIの安全性、SDV、生成AIの活用、チーム開発から選んでください。\n3. 私の回答ごとに、「なぜその方法を選んだのですか」「どのように評価しましたか」のような深掘りの質問を1〜2回してください。\n4. 新卒向けのレベルにしてください。私が知らないことを聞かれたときに、正直に答えて、学ぶ姿勢を示せるかどうかも見てください。\n5. 深掘りが終わったら、英語でフィードバックをしてください。次の3点を指摘してください：(a) 不自然な日本語、(b) 敬語の誤り、(c) 内容（技術的に正しいか、わかりやすいか、結論が最初にあるか）。そのあと、私の回答を直した日本語の例を、短い文で示してください。私がそれを一度言い直したら、次の質問に進んでください。\n6. 面接の最後には、「最後に、何か質問はありますか」と聞いてください。私の質問には、一般的な内容で短く答えてください。当社についての具体的な数字や事実は、作らないでください。\n7. このメッセージの最後か、私の最初の発言に「本番モード」とある場合は、途中でフィードバックをせず、面接を最後まで続けてください。\n8. 私が「終了」と言ったら、面接全体を5点満点で採点し、いちばん大事な改善点を3つ、英語で教えてください。本番モードのときは、そのあとで、回答ごとの短いフィードバックと、直した日本語の例を示してください。\n\n準備ができたら、面接官としてあいさつをして、最初の質問をしてください。"
+  },
+  {
+   "id": "ai-final",
+   "title": "Final interview with an executive (最終面接)",
+   "use": "Weeks 4, 7 and 8. Stand up and do the knock-and-enter sequence before you start, or keep the camera on for an online final. Add 本番モード at the end for a full run without interruptions (weeks 7-8). If every answer passes too easily, ask it to be stricter.",
+   "prompt": "あなたは、FPTジャパンホールディングスの役員です。自動車分野（FPTオートモーティブ）の新卒AIエンジニア職について、対面で約30分の最終面接を行ってください。最終面接なので、入社への意欲、当社のビジョンへの共感、長く活躍できるかどうかを特に確認してください。\n\nルール：\n1. 面接官として話すときは、面接官の言葉だけを話してください。質問は一度に一つだけにして、私が答えるまで待ってください。\n2. 次のような質問を中心にしてください：なぜ当社なのか、なぜ日本の大手自動車メーカーやサプライヤーではないのか、当社は第一志望か、5年後・10年後のキャリア、海外の開発チームや多国籍のメンバーと働くこと、希望と違う部署に配属されたらどうするか、忙しい時期にどう対応するか。\n3. 私の回答ごとに、少し厳しい深掘りの質問を1〜2回してください。答えが一般的なときは、「それは他の会社でもできるのではないですか」のように聞いてください。\n4. 深掘りが終わったら、英語でフィードバックをしてください。次の3点を指摘してください：(a) 不自然な日本語、(b) 敬語の誤り、(c) 内容（熱意、話の一貫性、具体性）。そのあと、私の回答を直した日本語の例を、短い文で示してください。私がそれを一度言い直したら、次の質問に進んでください。\n5. 面接の最後には、「最後に、何か質問はありますか」と聞いてください。私の質問には、一般的な内容で短く答えてください。当社についての具体的な数字や事実は、作らないでください。\n6. このメッセージの最後か、私の最初の発言に「本番モード」とある場合は、途中でフィードバックをせず、面接を最後まで続けてください。\n7. 私が「終了」と言ったら、面接全体を5点満点で採点し、いちばん大事な改善点を3つ、英語で教えてください。本番モードのときは、そのあとで、回答ごとの短いフィードバックと、直した日本語の例を示してください。\n\nでは、私がドアをノックしたところから、面接を始めてください。"
+  },
+  {
+   "id": "ai-deep",
+   "title": "深掘り drill on one answer",
+   "use": "Any week, once an answer has been corrected and shadowed (for example q03 in week 2, q11 in week 3, q45 in week 5, and q46, q20 and q34 in week 6). Change the 【質問】 line, paste only your own answer (name as 〇〇), and set the 【セット数】 line. Talk in voice mode so you practise thinking while speaking; say 「もう一回」 when you want a third follow-up in a set.",
+   "prompt": "あなたは、FPTジャパンの自動車分野（FPTオートモーティブ）の新卒AIエンジニア職の面接官です。私の回答を一つ貼りますので、それについて深掘りの練習をしたいです。\n\n【質問：研究で一番苦労したことは何ですか。】\n【私の回答：（ここに回答を貼る）】\n【セット数：3】\n\nルール：\n1. 回答を読んだら、面接官として深掘りの質問を一つだけしてください。私が答えるまで待ってください。\n2. 私の答えに対して、もう1回深掘りしてください（「なぜですか」「具体的には、どういうことですか」「ほかの方法は考えましたか」など）。私が「もう一回」と言ったときは、さらにもう1回深掘りしてください。ここまでを1セットとします。\n3. 1セットが終わるたびに、英語でフィードバックをしてください。次の3点を指摘してください：(a) 不自然な日本語、(b) 敬語の誤り、(c) 内容（質問に答えているか、元の回答と矛盾していないか）。\n4. 誤りを直すときは、まず英語でヒントだけを出してください。私が言い直したあとで、自然な日本語の答え方を示してください。\n5. 毎回ちがう角度から、セット数の分だけ行ってください。\n6. 私が「終了」と言ったら、5点満点で採点し、いちばん大事な改善点を3つ、英語で教えてください。"
+  },
+  {
+   "id": "ai-rapid",
+   "title": "Rapid random-question drill",
+   "use": "From week 2: 10-15 minutes on busy days or before a real interview. Add a line such as 「車載AIの技術質問だけにしてください。」 to narrow the topic. Voice mode only: start answering within 3 seconds and keep to about 30 seconds.",
+   "prompt": "あなたは、FPTジャパンの自動車分野（FPTオートモーティブ）の新卒AIエンジニア職の面接官です。質問にすぐ答える練習をしたいです。\n\nルール：\n1. 新卒の面接でよく聞かれる質問を、ランダムに一つずつ出してください。自己紹介、学生時代に力を入れたこと、研究、志望理由、日本で働く理由、AIの基本、答えにくい質問など、毎回ちがう種類にしてください。会社のことは「当社」と言ってください。\n2. 質問は一つだけ言って、私が答えるまで待ってください。私は30秒ぐらいで答えます。\n3. ときどき、同じ内容を別の言い方で聞いてください（例：「志望理由を教えてください」と「なぜ当社なのですか」）。\n4. 私の回答のあと、深掘りの質問を1回だけしてください。\n5. 深掘りへの答えのあと、英語で短くフィードバックをしてください。次の3点を指摘してください：(a) 不自然な日本語、(b) 敬語の誤り、(c) 内容。そのあと、直した日本語の短い例を一つ示して、すぐに次の質問に進んでください。\n6. 私が「終了」と言ったら、全体を5点満点で採点し、いちばん大事な改善点を3つ、英語で教えてください。\n\nでは、最初の質問をお願いします。"
+  },
+  {
+   "id": "ai-correct",
+   "title": "Correction-only mode for a written answer",
+   "use": "Every time you draft or change an answer in My answer (mostly on Sundays), and for the daily check of what you said (paste your voice-typed answer). Use text mode and change the 【質問】 and 【長さ】 lines. Write your name as 〇〇 and your university as 【大学名】. Keep your own facts, and delete anything the AI added that you did not say.",
+   "prompt": "あなたは、FPTジャパンの自動車分野（FPTオートモーティブ）で、新卒AIエンジニア職の面接を担当している面接官です。留学生の日本語指導にも詳しいです。私が書いた面接の回答を、面接官の視点で添削してください。今は面接の練習ではないので、質問はしないで、添削だけをしてください。\n\n【質問：自己紹介をお願いします。】\n【長さ：1分（250〜300字）】\n【私の回答：（ここに回答を貼る）】\n\n次の順番で答えてください。\n1. 英語で問題点を説明してください。次の3点です：(a) 不自然な日本語や文法の誤り、(b) 敬語の誤り（二重敬語、「させていただく」の使いすぎ、「御社」と「貴社」の使い分けなど）、(c) 内容（結論が最初にあるか、具体的か、FPTや職種とつながっているか、長さは合っているか）。\n2. 直した回答を書いてください。日本語能力試験N3レベルの人でも話しやすいように、一文は45字以内にして、一文に一つの内容だけにしてください。「まず」「具体的には」「その結果」などのつなぎ言葉を使ってください。敬語は、面接でよく使う基本的な形（「〜と申します」「〜しております」「〜いたします」など）にしてください。話すための回答なので、会社は「御社」と言ってください。私の事実や数字は変えないでください。新しい事実も足さないでください。〇〇や【】の部分は、そのまま残してください。ふりがなやローマ字は入れないでください。\n3. 30秒版（110〜150字）を書いてください。\n4. 話すときのメモとして、キーワードだけを5〜7個並べてください。\n5. この回答から聞かれそうな深掘りの質問を、3つ書いてください。\n6. 5点満点で採点し、いちばん大事な改善点を3つ、英語で教えてください。\n\n【私の回答】が、話した言葉を音声入力で文字にしたものの場合は、句読点や漢字変換の誤りは気にしないでください。ただし、発音のせいで違う言葉になったと思われるところは、英語で指摘してください。\n\nこのあと、別の回答を続けて貼ることがあります。私が「終了」と言ったら、今日のすべての回答をまとめて5点満点で採点し、よくある間違いのトップ3を英語で教えてください。"
+  }
+ ],
+ "resources": [
+  {
+   "name": "JASSO 外国人留学生のための就活ガイド2028",
+   "type": "website",
+   "url": "https://www.jasso.go.jp/ryugaku/after_study_j/job/guide.html",
+   "use": "Official job-hunting guide for international students: interview types and rounds, online and in-person manners, and expected questions such as why Japan and how long you plan to stay. Read the interview section in weeks 1 and 7.",
+   "cost": "free"
+  },
+  {
+   "name": "OJAD (Online Japanese Accent Dictionary) スズキクン",
+   "type": "tool",
+   "url": "https://www.gavo.t.u-tokyo.ac.jp/ojad/eng/pages/home",
+   "use": "Paste an answer script to see its pitch accent and hear it read aloud; check katakana and technical words in weeks 3, 5 and 6. It has a Vietnamese interface. Do not copy its audio into other apps or sites.",
+   "cost": "free"
+  },
+  {
+   "name": "シャドーイング 日本語を話そう！就職・アルバイト・進学面接編（英語・中国語・韓国語訳版）",
+   "type": "book",
+   "url": "https://ndlsearch.ndl.go.jp/en/books/R100000002-I027126669",
+   "use": "Interview shadowing textbook (Kurosio, ISBN 978-4-87424-677-1). Unit 3 covers job interviews, and its interviewer-only audio lets you answer in your own words. Use it for extra shadowing and listening.",
+   "cost": "paid"
+  },
+  {
+   "name": "シャドーイング 日本語を話そう！就職・アルバイト・進学面接編（インドネシア語・タイ語・ベトナム語訳版）",
+   "type": "book",
+   "url": "https://www.ehonnavi.net/ehon00.asp?no=218968",
+   "use": "The same book with Vietnamese, Indonesian and Thai translations and downloadable audio (ISBN 978-4-87424-946-8). Optional, for Vietnamese speakers.",
+   "cost": "paid"
+  },
+  {
+   "name": "中級レベル ロールプレイで学ぶビジネス日本語 就活から入社まで",
+   "type": "book",
+   "url": "https://ndlsearch.ndl.go.jp/en/books/R100000002-I029008272",
+   "use": "Role-plays from job hunting through interviews to the first months at work (3A Network, ISBN 978-4-88319-770-5). Good for workplace keigo such as reporting and asking, which a bridge-type AI engineer uses every day.",
+   "cost": "paid"
+  },
+  {
+   "name": "外国人雇用サービスセンター（東京・名古屋・大阪・福岡）",
+   "type": "service",
+   "url": "https://www.mhlw.go.jp/stf/newpage_12638.html",
+   "use": "Government employment centers for international students: consultation, seminars and job fairs; the Nagoya center mentions interview practice and the Fukuoka center online interview practice. Book in week 1; they close over 年末年始.",
+   "cost": "free"
+  },
+  {
+   "name": "新卒応援ハローワーク（留学生コーナー）",
+   "type": "service",
+   "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000184061.html",
+   "use": "Find your nearest 新卒応援ハローワーク. Some have a 留学生コーナー with mock interviews and document checks (usually by appointment; bring your 在留カード). Check your office's own page for what it offers.",
+   "cost": "free"
+  },
+  {
+   "name": "FPT Japan new-graduate recruiting page",
+   "type": "website",
+   "url": "https://recruit.fpt-software.jp/newgraduates/",
+   "use": "Official programs, values (One team, Challenge, Lifelong Learning) and training for new graduates. Check it in weeks 1, 4 and 8 for entries and events.",
+   "cost": "free"
+  },
+  {
+   "name": "FPT Japan recruiting FAQ",
+   "type": "website",
+   "url": "https://recruit.fpt-software.jp/faq/",
+   "use": "Time from application to offer, probation and goal-based (OKR) evaluation. Read it before writing reverse questions so that you do not ask what it already answers.",
+   "cost": "free"
+  },
+  {
+   "name": "FPT Japan job list (HRMOS)",
+   "type": "website",
+   "url": "https://hrmos.co/pages/fpt-japan/jobs",
+   "use": "All FPT Japan postings, including new-graduate engineer roles and FPT Automotive (FA) roles. Read the AI engineer and ADAS perception postings to learn the real work and its vocabulary.",
+   "cost": "free"
+  },
+  {
+   "name": "FPT Automotive official site",
+   "type": "website",
+   "url": "https://fpt.auto/",
+   "use": "Services (ADAS/AD, functional safety, AUTOSAR, validation), certifications and mission. A source for q23, q48 and q71; quote facts with their year.",
+   "cost": "free"
+  },
+  {
+   "name": "キャリタス就活: FPT Japan long-term engineer internship (AI, manufacturing, automotive)",
+   "type": "website",
+   "url": "https://job.career-tasu.jp/corp/00105422/intern/detail/2001/",
+   "use": "FPT Japan's long-term engineer internship for 28卒 and 29卒 during long holidays, listed as leading to early selection. Check eligibility and dates yourself.",
+   "cost": "free"
+  },
+  {
+   "name": "FPT Japan press release in Japanese (PR TIMES, November 2026)",
+   "type": "website",
+   "url": "https://prtimes.jp/main/html/rd/p/000000146.000017750.html",
+   "use": "Shows how FPT Japan describes itself in Japanese (AI First Company, 日本の元気をITから). Read it aloud to pick up company vocabulary for q20 and q23.",
+   "cost": "free"
+  },
+  {
+   "name": "マイナビ理系: how to explain your research in interviews",
+   "type": "website",
+   "url": "https://job.mynavi.jp/conts/2027/sci/rikeisemi/006.html",
+   "use": "Conclusion first, purpose then method then result, little jargon, and common mistakes. Read it in week 3.",
+   "cost": "free"
+  },
+  {
+   "name": "キャリタス就活: reverse questions (逆質問) guide",
+   "type": "website",
+   "url": "https://job.career-tasu.jp/guide/howto/035/",
+   "use": "Which reverse questions suit each interview round and which to avoid. Use it in week 7 for q60.",
+   "cost": "free"
+  },
+  {
+   "name": "リクナビ: keigo for job hunting, with common mistakes",
+   "type": "website",
+   "url": "https://job.rikunabi.com/contents/manners/32620/",
+   "use": "御社 and 貴社, 二重敬語, and part-time-job keigo (よろしかったでしょうか, 〜になります). Use it to build your common-mistakes list.",
+   "cost": "free"
+  },
+  {
+   "name": "文化庁「敬語の指針」",
+   "type": "website",
+   "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/sokai/sokai_6/pdf/keigo_tousin.pdf",
+   "use": "Official keigo guidance (PDF), including 二重敬語 and when 「させていただく」 fits. Your reference when an AI and a person disagree.",
+   "cost": "free"
+  },
+  {
+   "name": "KOTORA: machine-learning engineer interview topics",
+   "type": "website",
+   "url": "https://www.kotora.jp/c/199276-2/",
+   "use": "A Japanese list of common ML interview topics (overfitting, metrics, data bias, accuracy drops in production). Use it in weeks 5-6 to find unseen technical questions.",
+   "cost": "free"
+  },
+  {
+   "name": "italki (business Japanese tutors)",
+   "type": "service",
+   "url": "https://www.italki.com/en/teachers/business-japanese",
+   "use": "Online tutors for interview practice, useful over 年末年始 when offices are closed. Book a trial lesson and ask for hint-first correction.",
+   "cost": "paid"
+  },
+  {
+   "name": "HelloTalk (language exchange)",
+   "type": "app",
+   "url": "https://www.hellotalk.com/",
+   "use": "A language-exchange app for finding a Japanese partner for short listening and question practice. Partner quality varies, so use it alongside a tutor or a career center, not instead of them.",
+   "cost": "free + paid"
+  }
+ ],
+ "reflection": [
+  "Which answer improved most this week, and what exactly changed (speed, fillers, structure or keigo)?",
+  "Where did you freeze or pause longest, and which phrase or keyword would have helped you keep going?",
+  "Which mistake did the AI or a person correct more than once? Add it to your common-mistakes list and write how you will avoid it.",
+  "Did you speak aloud for at least 20 minutes on 5 days? If not, what got in the way, and when will you use the light routine instead?",
+  "Are your spoken answers still consistent with your ES and with each other (facts, numbers, reasons)?",
+  "What is your single top priority for next week, and which human session is booked?"
+ ]
+}

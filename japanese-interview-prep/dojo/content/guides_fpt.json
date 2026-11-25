@@ -1,0 +1,658 @@
+{
+  "guides": [
+    {
+      "id": "q20",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to know whether you fit this company and will stay, so a reason that could be said to any IT company does not work. Link three things: what you look for in a company (your axis), one or two verified facts about FPT that match it, and something you have really done. The most important thing is that link between 'what the company does' and 'what I have done': praising the company or listing facts is not a motivation.",
+      "thinkFirstEn": [
+        "What are the one or two things you look for in every company you apply to (your job-hunting axis, 就活の軸)?",
+        "Which one or two facts in the FPT Prep tab match those axes, from which year is each, and why do they matter to you personally?",
+        "Which part of your research or experience is closest to that work, and which number proves it?",
+        "If the interviewer asks 'Why not another company?', what is your one-sentence answer?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 10,
+          "sayEn": "Give your main reason in one sentence: the work you want to do, and that this company is the place to do it, for example developing in-vehicle AI in a job that connects Japan and other countries. Do not start with your background or with general praise such as 'a global company'.",
+          "starterJa": "御社を志望する理由は、【理由：車載AIの開発で、日本と海外をつなぐ仕事ができる】からです。",
+          "exampleJa": "御社を志望する理由は、車載AIの開発で、日本と海外をつなぐ仕事ができるからです。"
+        },
+        {
+          "labelJa": "就活の軸",
+          "labelEn": "Your job-hunting axes",
+          "sec": 10,
+          "sayEn": "Say the one or two things you look for in every company, for example supporting people's safety with AI and producing results in a diverse team (join two axes with 「〜ことと、〜ことです」). Choose axes that this company really satisfies, because the next step has to prove the match.",
+          "starterJa": "私の就職活動の軸は、【軸：AIで人の安全を支えること】です。",
+          "exampleJa": "私の就職活動の軸は、AIで人の安全を支えることと、多様なチームで成果を出すことです。"
+        },
+        {
+          "labelJa": "御社の事実",
+          "labelEn": "Facts about the company",
+          "sec": 17,
+          "sayEn": "Give one or two verified facts from the FPT Prep tab that match your axes (say the year for an announcement), then say in one short sentence that they match your axes. Say 御社グループ for a group-level announcement, never invent a fact, and do not recite a list of numbers.",
+          "starterJa": "御社グループは【事実：2024年に、AIや自動車を重点分野にする】と発表されました。",
+          "exampleJa": "御社グループは2024年に、AIや自動車を重点分野にすると発表されました。また、日本とベトナムの技術者が連携して開発していると拝見しました。この2点が、私の軸と重なります。"
+        },
+        {
+          "labelJa": "自分の経験",
+          "labelEn": "Your own experience",
+          "sec": 13,
+          "sayEn": "Connect yourself to those facts with one or two results from your research, each with a number, such as the accuracy gain and the speed on the board. Keep it short, because this is not the research question; the point is only that your experience is close to the company's work.",
+          "starterJa": "私は研究で、【研究テーマ：夜間の歩行者検出】の精度を約【数値：8】ポイント上げました。",
+          "exampleJa": "私は研究で、夜間の歩行者検出の精度を約【数値：8】ポイント上げました。モデルも軽量化し、Jetson上で【数値：25】FPSで動かしました。"
+        },
+        {
+          "labelJa": "貢献と将来",
+          "labelEn": "Contribution and future goal",
+          "sec": 10,
+          "sayEn": "Say how you will use that experience after joining, then close with the engineer you want to become; for this role, one who connects the customer and the development team. Talk about what you will give, not only what you will get, such as training.",
+          "starterJa": "この経験を生かし、【仕事：安全な車載AIの開発】に貢献したいです。",
+          "exampleJa": "この経験を生かし、安全な車載AIの開発に貢献したいです。将来は、お客様と開発チームをつなぐエンジニアになりたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "targetSec": 60,
+      "approachEn": "This question checks whether your interest in the automotive field is real: that it comes from your own experience and not from a general liking for cars, and that you know where the industry is going. Base the answer on something you actually did, which for most graduate students is the research, then show that you understand what makes in-vehicle AI special (safety, real-time speed, limited hardware) and add one industry trend such as SDVs. The most important thing is to answer from your own experience and not from industry news, and to end with what you want to do in this field.",
+      "thinkFirstEn": [
+        "When did you first become interested in cars or in-vehicle AI, and what exactly happened?",
+        "What did you find difficult or interesting about AI for cars, compared with AI for the web or other fields?",
+        "Which change in the car industry, such as software-defined vehicles (SDV), can you explain in one simple sentence?",
+        "Which problem on the road do you personally want to help solve?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 7,
+          "sayEn": "State your reason for choosing this field in one sentence, for example that it is a field where AI can directly protect people's lives. Choose a reason that you can prove with your own experience in the next step.",
+          "starterJa": "車載AIを選んだ理由は、【理由：AIの力で人の命を直接守れる分野だ】からです。",
+          "exampleJa": "車載AIを選んだ理由は、AIの力で人の命を直接守れる分野だからです。"
+        },
+        {
+          "labelJa": "きっかけ",
+          "labelEn": "What started your interest",
+          "sec": 20,
+          "sayEn": "Name the concrete experience that started your interest, such as your research, a class or an internship. Then say one thing you noticed there and what it made you think, for example that pedestrians are hard to see at night and in rain, so AI that helps the driver can reduce accidents.",
+          "starterJa": "きっかけは、【経験：車載カメラで歩行者を検出する研究】です。",
+          "exampleJa": "きっかけは、車載カメラで歩行者を検出する研究です。夜や雨の日の画像を集める中で、人の目でも歩行者が見えにくい場面が多いと実感しました。こうした場面でAIが運転者を助ければ、事故を減らせると考えました。"
+        },
+        {
+          "labelJa": "車載AIの魅力",
+          "labelEn": "What attracts you to in-vehicle AI",
+          "sec": 15,
+          "sayEn": "Show that you understand what is special about AI in a car: it must run in real time with limited computing resources. Then say where you met that difficulty in your own work, and that you found it rewarding as well as hard.",
+          "starterJa": "また、車載AIには、【条件：限られた計算資源で、リアルタイムに動くこと】が求められます。",
+          "exampleJa": "また、車載AIには、限られた計算資源で、リアルタイムに動くことが求められます。研究でも、Jetson上での精度と速度の両立に、難しさとやりがいを感じました。"
+        },
+        {
+          "labelJa": "業界の動き",
+          "labelEn": "Where the industry is going",
+          "sec": 13,
+          "sayEn": "Add one change in the industry that makes this field a good long-term choice, for example that SDVs, whose functions are updated by software, will spread and the role of AI will grow. Use only terms that you can explain in one simple sentence if the interviewer asks.",
+          "starterJa": "さらに今後は、【変化：ソフトウェアで機能を更新するSDV】が広がっていきます。",
+          "exampleJa": "さらに今後は、ソフトウェアで機能を更新するSDVが広がっていきます。その中で、AIの役割はますます大きくなると考えております。"
+        },
+        {
+          "labelJa": "まとめ",
+          "labelEn": "Wrap-up",
+          "sec": 5,
+          "sayEn": "Close in one short sentence: this is the field where you want to build your expertise. The detailed reason for choosing the company belongs in the 志望動機 answer, so do not repeat it here.",
+          "starterJa": "だからこそ、【目標：この分野で専門性を高めたい】です。",
+          "exampleJa": "だからこそ、この分野で専門性を高めたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "targetSec": 60,
+      "approachEn": "Interviewers check that you chose this job for a real reason and that you understand the work: at a company like FPT, an AI engineer also talks with customers, writes documents and checks quality, and does not only train models. Build the answer on one experience where you improved a model and found the work rewarding, then show that the job suits your strength. The most important thing is to explain why 'engineer', a person who builds AI that is really used as a product, and not only why you like AI.",
+      "thinkFirstEn": [
+        "When did AI work feel most rewarding to you, what exactly happened, and which part did you do yourself?",
+        "Why do you want to be an engineer who builds things for customers, and not a researcher?",
+        "Which of your strengths does this job need, and when did you use it?",
+        "Besides training models, what do you think an AI engineer at an IT services company does every day?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 10,
+          "sayEn": "Say in one sentence what attracts you to this job, for example that the results of trial and error show clearly in numbers. Do not give reasons such as 'AI is popular' or 'AI is the future'; they sound like following a trend.",
+          "starterJa": "AIエンジニアになりたい理由は、【理由：試行錯誤の成果が、数字で見える仕事だ】からです。",
+          "exampleJa": "AIエンジニアになりたい理由は、試行錯誤の成果が、数字ではっきり見える仕事だからです。"
+        },
+        {
+          "labelJa": "やりがいの経験",
+          "labelEn": "The experience behind it",
+          "sec": 28,
+          "sayEn": "Tell one piece of work in four short sentences: the problem, the cause you found, what you tried with the result as a number, and what you found rewarding about it. Choose work where you improved something yourself, and say clearly which part you did.",
+          "starterJa": "研究では、【課題：夜間の歩行者検出の精度が低い】という課題がありました。",
+          "exampleJa": "研究では、夜間の歩行者検出の精度が低いという課題がありました。原因を調べると、夜の学習データが少ないことが分かりました。そこで、データ拡張とドメイン適応を試し、精度を約【数値：8】ポイント上げました。仮説を立て、検証し、改善する流れに、大きなやりがいを感じました。"
+        },
+        {
+          "labelJa": "強みとの相性",
+          "labelEn": "Fit with your strength",
+          "sec": 8,
+          "sayEn": "Say in one sentence that this job also lets you use your strength, for example analysing causes one by one. This shows that you will be good at the job, not only that you like it.",
+          "starterJa": "この仕事では、【強み：原因を一つずつ分析する】私の強みも生かせると考えております。",
+          "exampleJa": "この仕事では、原因を一つずつ分析する私の強みも生かせると考えております。"
+        },
+        {
+          "labelJa": "将来",
+          "labelEn": "The engineer you want to be",
+          "sec": 14,
+          "sayEn": "First say why you want to build products and not only do research, for example that AI has real value only once it is used as a product. Then finish with the engineer you want to become, using 「そのため、〜エンジニアになりたいです」.",
+          "starterJa": "また、AIは【条件：製品として使われて】初めて、本当の価値が生まれます。",
+          "exampleJa": "また、AIは製品として使われて初めて、本当の価値が生まれます。そのため、社会で実際に使われるAIを作るエンジニアになりたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "targetSec": 60,
+      "approachEn": "This checks your company research and enthusiasm: the interviewer wants to hear that you understand the business correctly, including its business in Japan, and looked further than the top page of the website. Do not recite everything; announce three points that matter for the automotive AI role (the track record in Japan, automotive work, AI), back each with two or three verified facts, then say what attracts you most. The most important thing is accuracy: use only facts from the FPT Prep tab, say the year with numbers and 約 for rounded ones, and never guess.",
+      "thinkFirstEn": [
+        "Can you say in one sentence what kind of company FPT is and what it does in Japan?",
+        "Which three topics are closest to the job you are applying for, and which two or three facts in the FPT Prep tab will you use for each?",
+        "Where does each fact come from (official site, press release, job posting), and from which year?",
+        "Which point made you personally want to work there, and why?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Opening: three points",
+          "sec": 5,
+          "sayEn": "Say first that you are paying attention to three points, so that the interviewer can follow you easily. Do not start with small details such as office locations.",
+          "starterJa": "御社について、特に【数：3】つの点に注目しております。",
+          "exampleJa": "御社について、特に3つの点に注目しております。"
+        },
+        {
+          "labelJa": "1つ目：日本での実績",
+          "labelEn": "Point 1: track record in Japan",
+          "sec": 15,
+          "sayEn": "Name the first point in one short sentence, then give two or three verified facts from the FPT Prep tab in one or two sentences, such as when the business in Japan started, how many nationalities work there, and a revenue milestone with its year. Do not confuse FPT with FPT Industrial, an unrelated Italian engine maker.",
+          "starterJa": "1つ目は、【テーマ：日本での実績】です。",
+          "exampleJa": "1つ目は、日本での実績です。2005年から日本で事業を続け、37の国籍の社員が働いています。2026年には、日本での売上高が1,000億円に達したと発表されました。"
+        },
+        {
+          "labelJa": "2つ目：自動車分野",
+          "labelEn": "Point 2: automotive work",
+          "sec": 15,
+          "sayEn": "Name the second point, then give one or two verified facts about the automotive business, such as the number of automotive engineers (a figure for the whole group, so say グループ全体で and 約) and announced collaborations. Do not make a partnership sound bigger than announced: the DENSO agreement is an MoU (覚書), not a development contract.",
+          "starterJa": "2つ目は、【テーマ：自動車分野】です。",
+          "exampleJa": "2つ目は、自動車分野です。グループ全体で、車載ソフトウェアの技術者が約5,000人います。デンソーやスバルとの協業も、発表されています。"
+        },
+        {
+          "labelJa": "3つ目：AIへの投資",
+          "labelEn": "Point 3: investment in AI",
+          "sec": 18,
+          "sayEn": "Name the third point, then give one or two verified facts about AI, such as the AI Factory in Japan that uses NVIDIA GPUs. If you mention its supercomputer rank, always say 2025年6月, because later lists rank it lower, and skip any fact you could not explain in one more sentence.",
+          "starterJa": "3つ目は、【テーマ：AIへの投資】です。",
+          "exampleJa": "3つ目は、AIへの投資です。日本で、NVIDIAのGPUを使ったAIファクトリーを運営されています。2025年6月には、スーパーコンピューターの世界ランキングで36位に入りました。"
+        },
+        {
+          "labelJa": "まとめ",
+          "labelEn": "What attracts you most",
+          "sec": 7,
+          "sayEn": "End with the one thing that attracts you most, for example that the company puts effort into both AI and automotive. This turns a list of facts into motivation, so be ready to explain why it matters to you if you are asked.",
+          "starterJa": "特に、【特徴：AIと自動車の両方に力を入れている】点に、魅力を感じております。",
+          "exampleJa": "特に、AIと自動車の両方に力を入れている点に、魅力を感じております。"
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to see that you understand the real work and that your wish matches what the company can offer, without being fixed on only one thing. Name one concrete kind of work that exists in the company's automotive business, support it with a skill from your research, then show a realistic first step and the bridge role you will grow into. The most important thing is to be concrete but flexible: a new graduate who only wants to 'do AI research' sounds like a mismatch.",
+      "thinkFirstEn": [
+        "Which real work at this company (from the job posting or the FPT Prep tab) do you most want to do?",
+        "Which skill or result of yours shows that you can learn that work quickly?",
+        "What will you need to learn in your first year: functional safety, the quality process, business Japanese?",
+        "If that exact work is not available, which related work would you also be glad to do?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 10,
+          "sayEn": "Name one concrete kind of work in words close to the company's real business, for example developing image-recognition models for ADAS. Check the job posting or the FPT Prep tab first, so that you do not name work the company does not do.",
+          "starterJa": "入社後は、【仕事：ADAS向けの画像認識モデルの開発】に挑戦したいと考えております。",
+          "exampleJa": "入社後は、ADAS向けの画像認識モデルの開発に挑戦したいと考えております。"
+        },
+        {
+          "labelJa": "関心と理由",
+          "labelEn": "Your focus and the reason",
+          "sec": 15,
+          "sayEn": "Narrow it to the part that interests you most, such as making a model lighter and running it on an in-vehicle SoC, then give the reason: a result from your research that you can use there, with one number. The message is that you can start contributing sooner in this area.",
+          "starterJa": "特に、【仕事：モデルを軽量化し、車載のSoCで動かす仕事】に関心があります。",
+          "exampleJa": "特に、モデルを軽量化し、車載のSoCで動かす仕事に関心があります。研究で、Jetson上で【数値：25】FPSを実現した経験を生かせるからです。"
+        },
+        {
+          "labelJa": "まず取り組むこと",
+          "labelEn": "Your first step as a new hire",
+          "sec": 15,
+          "sayEn": "Show that you are realistic: first you will build the basics in training and learn functional safety and quality processes, then carry out solid tasks such as model evaluation and data preparation one by one. Do not name only a dream job, such as leading autonomous driving, with no first step.",
+          "starterJa": "まずは研修で基礎を固め、【学ぶこと：機能安全や品質プロセス】も学びます。",
+          "exampleJa": "まずは研修で基礎を固め、機能安全や品質プロセスも学びます。そのうえで、モデルの評価やデータの整備を、一つずつ確実に進めたいです。"
+        },
+        {
+          "labelJa": "次の目標",
+          "labelEn": "Next goal: the bridge role",
+          "sec": 20,
+          "sayEn": "Then turn to the bridge role: quote what the new-graduate page says about the goal of the training (check the wording in the FPT Prep tab), and say that you too want to understand the Japanese customer's requests correctly and explain them clearly to the overseas team. This shows that you do not want only research-like work.",
+          "starterJa": "また、御社の研修は、1年以内にお客様と開発チームの架け橋になることが目標だと拝見しました。",
+          "exampleJa": "また、御社の研修は、1年以内にお客様と開発チームの架け橋になることが目標だと拝見しました。私も、日本のお客様の要望を正しく理解し、海外のチームに分かりやすく伝えたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "targetSec": 60,
+      "approachEn": "Interviewers check whether your picture of the future fits the company's direction and whether you plan to grow there for a long time; they do not expect an exact prediction. State your overall goal first, give a role and skills for each point in time (after 5 years an engineer who can work independently, after 10 years someone who leads), connect the plan to a goal of the company, and finish with what you are doing now. The most important thing is that every stage can happen inside this company: plans such as starting your own business or going back to research make them doubt that you will stay.",
+      "thinkFirstEn": [
+        "What kind of engineer do you finally want to become, and in what order will you get there (for example technical depth first, then leading a team)?",
+        "What should you be able to do alone in 5 years that you cannot do today?",
+        "Which direction or goal of this company (see the FPT Prep tab) does your 10-year goal support?",
+        "What are you already studying or practising now for this plan, and can you say exactly what it is?"
+      ],
+      "steps": [
+        {
+          "labelJa": "将来の目標",
+          "labelEn": "Your overall goal",
+          "sec": 8,
+          "sayEn": "Start with the kind of engineer you finally want to become, in one sentence, so that the interviewer can follow the plan. A good goal for this role combines technology and people, for example a technical leader in in-vehicle AI whom customers trust.",
+          "starterJa": "私の目標は、【将来像：車載AIの分野で、お客様に信頼される技術リーダー】になることです。",
+          "exampleJa": "私の目標は、車載AIの分野で、お客様に信頼される技術リーダーになることです。"
+        },
+        {
+          "labelJa": "5年後",
+          "labelEn": "In 5 years",
+          "sec": 22,
+          "sayEn": "Say two or three things you want to be doing in year 5, for example handling everything from model development to implementation on in-vehicle devices alone, connecting customers and the overseas team, and leading a small team (add one real experience as the basis). Say what you will be able to do, not only a job title.",
+          "starterJa": "5年後には、【業務：モデル開発から車載機器への実装まで】、一人で担当したいです。",
+          "exampleJa": "5年後には、モデル開発から車載機器への実装まで、一人で担当できるようになりたいです。また、お客様と海外のチームをつなぐ役割も担いたいです。研究室で4人のチームをまとめた経験を生かし、小さなチームのリーダーも務めたいです。"
+        },
+        {
+          "labelJa": "10年後",
+          "labelEn": "In 10 years",
+          "sec": 10,
+          "sayEn": "Give a bigger role for year 10 in one sentence, for example leading AI work for SDVs from proposal to development and helping to train younger engineers. Keep the plan inside this company and consistent with what you said about working in Japan.",
+          "starterJa": "10年後には、【仕事：SDV向けAIの提案から開発まで】をリードしたいです。",
+          "exampleJa": "10年後には、SDV向けAIの提案から開発までをリードし、若手の育成にも関わりたいです。"
+        },
+        {
+          "labelJa": "御社とのつながり",
+          "labelEn": "Link to the company",
+          "sec": 13,
+          "sayEn": "Connect your plan to one verified goal or direction of the company from the FPT Prep tab, then say that you want to support that growth from your own field. Check the latest wording before you quote a goal such as the 2033 one; this step shows that your plan needs this company.",
+          "starterJa": "御社は、【御社の目標：2033年までに日本のIT企業トップ13に入ること】を目指されています。",
+          "exampleJa": "御社は、【御社の目標：2033年までに日本のIT企業トップ13に入ること】を目指されています。その成長を、車載AIの面から支えたいです。"
+        },
+        {
+          "labelJa": "今の努力",
+          "labelEn": "What you are doing now",
+          "sec": 7,
+          "sayEn": "Finish with what you are already studying to get there, such as the basics of functional safety and business Japanese; this shows the Lifelong Learning value without using the word. Mention only study you are really doing, because interviewers often ask exactly what you are studying now.",
+          "starterJa": "そのために、今は【勉強：機能安全の基礎とビジネス日本語】を学んでおります。",
+          "exampleJa": "そのために、今は【勉強：機能安全の基礎とビジネス日本語】を学んでおります。"
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "targetSec": 30,
+      "approachEn": "Interviewers ask this, often in the later rounds, to see whether your job search has a consistent axis and how likely you are to accept an offer. Answer the two questions in order and briefly: first your status (industry, number of companies and stage; you do not need to name every company), then the axis the companies share, then one reason why this company fits that axis best and a clear statement that it is your first choice. The most important thing is honesty and consistency: the companies you mention should match the axis in your 志望動機, and you must never invent an offer.",
+      "thinkFirstEn": [
+        "How many companies are you applying to now, in which industries and job types, and at which stage is each?",
+        "What is the common point (your axis) of all the companies you chose?",
+        "Honestly, is this company your first choice? If not yet, what would make it first?",
+        "What can this company offer that the others on your list cannot?"
+      ],
+      "steps": [
+        {
+          "labelJa": "選考状況",
+          "labelEn": "Your current status",
+          "sec": 13,
+          "sayEn": "Answer the first question with facts: the industry or type of company, the number of companies, and the furthest stage, for example that one company is at the second interview. Company names are not necessary; do not exaggerate, and do not hide an offer.",
+          "starterJa": "【業界：車載ソフトウェアやAI開発】の企業を中心に、【社数：3】社の選考を受けております。",
+          "exampleJa": "車載ソフトウェアやAI開発の企業を中心に、【社数：3】社の選考を受けております。そのうち【社数：1】社は、二次面接まで進んでおります。"
+        },
+        {
+          "labelJa": "共通の軸",
+          "labelEn": "The axis they share",
+          "sec": 6,
+          "sayEn": "Say in one sentence that you chose all of these companies by the same axis, for example supporting people's safety with AI. Use the same axis as in your 志望動機; a list of unrelated companies, such as banks, makes your search look random.",
+          "starterJa": "どの企業も、【軸：AIで人の安全を支える】という軸で選びました。",
+          "exampleJa": "どの企業も、AIで人の安全を支えるという軸で選びました。"
+        },
+        {
+          "labelJa": "第一志望",
+          "labelEn": "Why this company comes first",
+          "sec": 11,
+          "sayEn": "Give one reason that separates this company from the others, based on a verified fact, for example that teams in Japan and overseas develop together, and then say clearly that it is your first choice. If it is honestly not your first choice yet, say 「御社を強く志望しております」 with the reason; never criticise other companies or use salary as the reason.",
+          "starterJa": "中でも、【特徴：日本と海外のチームが連携して開発する】御社が、私の軸に最も合います。",
+          "exampleJa": "中でも、日本と海外のチームが連携して開発する御社が、私の軸に最も合います。そのため、御社が第一志望です。"
+        }
+      ]
+    },
+    {
+      "id": "q60",
+      "targetSec": 30,
+      "approachEn": "A reverse question is judged like an answer: it shows your motivation and preparation, and 「特にありません」 gets the lowest rating. Prepare 5 or 6 questions and ask 1 or 2, chosen for the person in front of you: HR for training and young employees, engineers and managers for daily work and team communication, executives for strategy and what they expect from new graduates. The most important thing is to add one short sentence of background before the question, so that your reason for asking is clear, and to listen and react to the answer; never ask only about salary, holidays or overtime, or about something the website already explains.",
+      "thinkFirstEn": [
+        "Who will probably interview you in this round (HR, an engineer or manager, an executive), and what can only that person answer?",
+        "What do you really want to know about daily work, for example how the Japan side and the overseas development team communicate?",
+        "Which fact in the FPT Prep tab can you turn into a question about the future, not about something already written on the website?",
+        "Do you have 5 or 6 questions ready (the FPT Prep tab lists examples for HR, technical and final interviews), in case the interviewer has already answered some of them?"
+      ],
+      "steps": [
+        {
+          "labelJa": "前置き",
+          "labelEn": "Lead-in",
+          "sec": 6,
+          "sayEn": "Thank the interviewer with 「ありがとうございます」, then say how many questions you have and ask permission, so that the interviewer can manage the time. One or two is the right number; never answer that you have nothing to ask.",
+          "starterJa": "ありがとうございます。【数：1】点、伺ってもよろしいでしょうか。",
+          "exampleJa": "ありがとうございます。1点、伺ってもよろしいでしょうか。"
+        },
+        {
+          "labelJa": "質問の背景",
+          "labelEn": "Background to your question",
+          "sec": 7,
+          "sayEn": "Before the question, give one sentence that shows why you are asking: a verified fact you read about the company (see the FPT Prep tab), ending with 〜と拝見しました. This makes the question sound prepared, not random.",
+          "starterJa": "御社では、【事実：日本とベトナムの技術者が連携して開発している】と拝見しました。",
+          "exampleJa": "御社では、日本とベトナムの技術者が連携して開発していると拝見しました。"
+        },
+        {
+          "labelJa": "質問",
+          "labelEn": "The question",
+          "sec": 9,
+          "sayEn": "Ask one clear question in one sentence, matched to the interviewer, for example what role new employees usually start with in a project; ending with 〜のでしょうか sounds polite. Avoid yes/no questions, several questions packed into one sentence, and anything already explained in the interview or on the website.",
+          "starterJa": "車載AIのプロジェクトでは、新入社員はどのような役割から始めることが多いのでしょうか。",
+          "exampleJa": "車載AIのプロジェクトでは、新入社員はどのような役割から始めることが多いのでしょうか。"
+        },
+        {
+          "labelJa": "お礼",
+          "labelEn": "Thanks and a short reaction",
+          "sec": 8,
+          "sayEn": "After the answer, thank the interviewer and add one short reaction that shows you listened, for example 「入社後の働き方が、具体的にイメージできました」. For a second question, repeat steps 2 to 4; when you have no more, say 「質問は以上です。ありがとうございました。」",
+          "starterJa": "ご説明いただき、ありがとうございます。",
+          "exampleJa": "ご説明いただき、ありがとうございます。入社後の働き方が、具体的にイメージできました。"
+        }
+      ]
+    },
+    {
+      "id": "q61",
+      "targetSec": 30,
+      "approachEn": "This is your last chance to leave an impression; the interviewer mainly checks your enthusiasm and whether you can sum yourself up briefly. Choose one message only, your strongest point for this role or something important that you could not say earlier, and put it between your wish to join and your thanks. The most important thing is to keep it to about 30 seconds: 「特にありません」 wastes the chance, and repeating your whole 自己PR is too long.",
+      "thinkFirstEn": [
+        "If the interviewer remembers only one thing about you, what should it be?",
+        "Which strong point did you not get to talk about today, for example teamwork or customer service in Japanese?",
+        "Was there an answer today that you want to correct or complete in one sentence?",
+        "What did you hear in today's interview that made you want to join even more?"
+      ],
+      "steps": [
+        {
+          "labelJa": "前置き",
+          "labelEn": "Lead-in: your wish to join",
+          "sec": 7,
+          "sayEn": "Begin with 「はい」 and one sentence saying that today's interview made your wish to work at the company even stronger; if you can, name what you heard, as in 「本日、〜のお話を伺い」. Never answer 「特にありません」.",
+          "starterJa": "はい。本日のお話を伺い、御社で働きたいという気持ちが、一層強くなりました。",
+          "exampleJa": "はい。本日のお話を伺い、御社で働きたいという気持ちが、一層強くなりました。"
+        },
+        {
+          "labelJa": "強みと根拠",
+          "labelEn": "One strength and its evidence",
+          "sec": 12,
+          "sayEn": "State the one strength you most want them to remember, chosen for this role, and prove it with one fact or number, such as a result from your research. Do not repeat your whole 自己PR; if the interview was mostly about research, a point about teamwork or communication adds something new.",
+          "starterJa": "私の強みは、【強み：原因を一つずつ分析し、改善を続ける粘り強さ】です。",
+          "exampleJa": "私の強みは、原因を一つずつ分析し、改善を続ける粘り強さです。研究では、夜間の歩行者検出の精度を約【数値：8】ポイント上げました。"
+        },
+        {
+          "labelJa": "貢献",
+          "labelEn": "Contribution",
+          "sec": 6,
+          "sayEn": "Say in one sentence how you will use this strength at the company, for example in developing safe in-vehicle AI. Repeat the key word of your strength, and end firmly with 貢献いたします.",
+          "starterJa": "この【強み：粘り強さ】を生かし、【仕事：安全な車載AIの開発】に貢献いたします。",
+          "exampleJa": "この粘り強さを生かし、安全な車載AIの開発に貢献いたします。"
+        },
+        {
+          "labelJa": "お礼",
+          "labelEn": "Thanks",
+          "sec": 5,
+          "sayEn": "Finish with a clear thank-you and a small bow, so that the interviewer knows you have finished. Do not add a new point after the thanks.",
+          "starterJa": "本日はありがとうございました。",
+          "exampleJa": "本日はありがとうございました。"
+        }
+      ]
+    },
+    {
+      "id": "q70",
+      "targetSec": 60,
+      "approachEn": "This question tests whether you can look at yourself from the company's side and state your value with confidence but without boasting. Choose two benefits that match this role, one technical (experience close to the automotive AI work) and one about people (producing results with diverse people, between Japanese customers and an international development team), and prove each with a fact. The most important thing is to talk about what the company gains: 'I work hard' or 'I want to grow' is not a benefit for them.",
+      "thinkFirstEn": [
+        "From the company's side, what becomes easier or better if you join? Write two things.",
+        "What evidence (a number, a result, a length of time) proves each of the two points?",
+        "Which combination of your points is rare among new graduates, for example in-vehicle AI research plus three languages?",
+        "Which skills in the job posting do you already have, and which will you learn after joining?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: two points",
+          "sec": 5,
+          "sayEn": "Say first that you can contribute in two ways, so that the listener knows what is coming. 貢献できる点 sounds more modest than メリット, and counting the points aloud keeps you on track when you are nervous.",
+          "starterJa": "私が御社に貢献できる点は、【数：2】つあると考えております。",
+          "exampleJa": "私が御社に貢献できる点は、2つあると考えております。"
+        },
+        {
+          "labelJa": "1つ目：技術",
+          "labelEn": "Benefit 1: technical experience",
+          "sec": 15,
+          "sayEn": "Give the technical benefit: experience that matches the company's real work, for example that you not only built a model but really ran it on an embedded board, with one number as proof. Say 'on a board', never 'in a car', and do not list every tool you have used.",
+          "starterJa": "1つ目は、【経験：AIモデルを作るだけでなく、組込みボードで実際に動かした経験】です。",
+          "exampleJa": "1つ目は、AIモデルを作るだけでなく、組込みボードで実際に動かした経験です。研究では、歩行者検出モデルを軽量化し、Jetson上で【数値：25】FPSで動かしました。"
+        },
+        {
+          "labelJa": "2つ目：協力する力",
+          "labelEn": "Benefit 2: working with diverse people",
+          "sec": 30,
+          "sayEn": "Give the people-side benefit, that you can produce results with diverse people, and prove it with two or three short facts: a team result, customer service in Japanese, and the languages you can use with overseas members. Be honest about your Japanese level; a Vietnamese speaker can add that they can talk directly with the offshore team.",
+          "starterJa": "2つ目は、【強み：多様な人と協力して、成果を出せること】です。",
+          "exampleJa": "2つ目は、多様な人と協力して、成果を出せることです。研究室では4人のチームをまとめ、データセットを予定どおりに完成させました。また、日本語での接客を【年数：2】年間続け、お客様の要望をくみ取る力を身につけました。母語と英語も使えるため、海外のメンバーとも円滑に協力できます。"
+        },
+        {
+          "labelJa": "貢献",
+          "labelEn": "How you will contribute",
+          "sec": 10,
+          "sayEn": "Put the two points together in one sentence about the role you will play, for example an AI engineer who connects Japanese customers and the development team. Promise solid basics and fast learning, not the results of an experienced engineer.",
+          "starterJa": "この2つを生かし、【役割：お客様と開発チームをつなぐAIエンジニア】として、貢献いたします。",
+          "exampleJa": "この2つを生かし、日本のお客様と開発チームをつなぐAIエンジニアとして、貢献いたします。"
+        }
+      ]
+    },
+    {
+      "id": "q71",
+      "targetSec": 60,
+      "approachEn": "This is the 'why not a competitor' follow-up: interviewers check that you understand the company's position as a software partner for many automakers and suppliers, not an automaker itself, and that it is not your second choice. Answer directly, briefly show respect for automakers, then give two differences that fit your own goal and axis, supported by verified facts, and close with the growing field. The most important thing is a positive reason that only this kind of company can satisfy; never criticise other companies or suggest that this one is easier to enter.",
+      "thinkFirstEn": [
+        "What is the real difference between working at an automaker and at a software partner like FPT? Say it in one sentence.",
+        "Which verified fact in the FPT Prep tab shows that difference, for example the number of customers of the group's automotive business?",
+        "Which of your own axes or strengths fits this kind of company best, for example producing results in a diverse team?",
+        "Are you also applying to automakers or suppliers? If yes, how will you explain that without contradicting yourself?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 10,
+          "sayEn": "Answer directly with the one or two differences that matter most to you; the model answer joins two: working on in-vehicle development for many customers, and a role that connects Japan and other countries. Do not begin with what is bad about automakers.",
+          "starterJa": "御社を選ぶ理由は、【理由：多くのお客様の車載開発に関われる】からです。",
+          "exampleJa": "御社を選ぶ理由は、多くのお客様の車載開発に関わり、日本と海外をつなぐ役割を担えるからです。"
+        },
+        {
+          "labelJa": "メーカーへの敬意",
+          "labelEn": "Respect for automakers",
+          "sec": 10,
+          "sayEn": "Before your reasons, say in one sentence what is attractive about automakers and suppliers, for example that they can develop their own products in depth. Never call them slow or traditional; show respect first, using the same word as the interviewer (メーカー, サプライヤー or ティアワン).",
+          "starterJa": "自動車メーカーやサプライヤーには、自社の製品を深く開発できる魅力があると思います。",
+          "exampleJa": "自動車メーカーやサプライヤーには、自社の製品を深く開発できる魅力があると思います。"
+        },
+        {
+          "labelJa": "理由1：幅広い技術",
+          "labelEn": "Reason 1: many customers, wide technology",
+          "sec": 15,
+          "sayEn": "Turn to this company with 一方で and give the first difference with one verified fact from the FPT Prep tab, such as the number of customers of the group's automotive business (re-check the number before you use it). Then say what it means for you: an environment where you can take on a wide range of technology.",
+          "starterJa": "一方で、御社グループの自動車事業は、【事実：150社以上のお客様とお取引がある】と拝見しました。",
+          "exampleJa": "一方で、御社グループの自動車事業は、150社以上のお客様とお取引があると拝見しました。ADASからコックピットまで、幅広い技術に挑戦できる環境だと考えております。"
+        },
+        {
+          "labelJa": "理由2：つなぐ体制",
+          "labelEn": "Reason 2: Japan and overseas develop together",
+          "sec": 15,
+          "sayEn": "Give the second difference: engineers in Japan and overseas develop together, and this fits your own axis best, for example producing results in a diverse team. Use the same axis as in your 志望動機; a Vietnamese speaker can add one sentence about connecting Japan and Vietnam, but the main reason should stay technical.",
+          "starterJa": "また、御社には、【事実：日本とベトナムの技術者が連携して開発を進める体制】があります。",
+          "exampleJa": "また、御社には、日本とベトナムの技術者が連携して開発を進める体制があります。多様なチームで成果を出すという私の軸に、最も合うのが御社です。"
+        },
+        {
+          "labelJa": "まとめ：成長分野",
+          "labelEn": "Close: a growing field",
+          "sec": 10,
+          "sayEn": "Close with one forward-looking point: AI and automotive are focus areas of the group (say 御社グループ), so you can take on challenges in a growing field from early in your career. This ending shows that you chose the company on purpose, not as a second choice.",
+          "starterJa": "さらに、【分野：AIと自動車】は、御社グループの重点分野です。",
+          "exampleJa": "さらに、AIと自動車は、御社グループの重点分野です。そのため、若手のうちから、成長分野で挑戦できると考えました。"
+        }
+      ]
+    },
+    {
+      "id": "q72",
+      "targetSec": 60,
+      "approachEn": "Interviewers check your flexibility and the risk that you quit early: the company decides placement, and at a company that serves many customers the project may not match your wish. Say clearly that you will work positively where you are placed, give a positive reason and one short example, then add that you will keep your wish and talk about it at the right time. The most important thing is balance: 'anything is fine' sounds as if you have no goal, and 'only AI' sounds inflexible.",
+      "thinkFirstEn": [
+        "Honestly, how would you feel, and what would you do in the first three months?",
+        "When did you do work you had not chosen or expected, and what did you learn from it?",
+        "What can any project at this company teach you that an AI engineer needs?",
+        "How and when would you tell your manager what you want to do in the future?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 10,
+          "sayEn": "Answer first that you will give your best to the work you are given in the department where you are placed, as a member of that team. Say it at once, because a long pause here looks as if you are unwilling.",
+          "starterJa": "まずは配属された部署で、チームの一員として、任された仕事に全力で取り組みます。",
+          "exampleJa": "まずは配属された部署で、チームの一員として、任された仕事に全力で取り組みます。"
+        },
+        {
+          "labelJa": "理由",
+          "labelEn": "Reason",
+          "sec": 20,
+          "sayEn": "Give a positive reason that looks to the future: every job teaches something that leads to your goal, here in-vehicle AI. Then give two short examples with 〜なら (testing work teaches how quality is handled; embedded work teaches the limits of hardware), and never say 'because I have no choice'.",
+          "starterJa": "どの仕事にも、【目標：将来の車載AI】につながる学びがあると考えるからです。",
+          "exampleJa": "どの仕事にも、将来の車載AIにつながる学びがあると考えるからです。例えば、テストや検証の仕事なら、車載ソフトウェアの品質の考え方を身につけられます。組込みの仕事なら、ハードウェアの制約を深く理解できます。"
+        },
+        {
+          "labelJa": "経験",
+          "labelEn": "A short example",
+          "sec": 20,
+          "sayEn": "Give one short example of plain, steady work (地道な仕事) that taught you something: what the work was, what you learned, and how that lesson helped later. For example, building a dataset in the lab taught you that data quality decides accuracy, which later helped you improve your model.",
+          "starterJa": "研究室でも、【仕事：データセット作り】という地道な仕事で、リーダーを務めました。",
+          "exampleJa": "研究室でも、データセット作りという地道な仕事で、リーダーを務めました。その経験から、データの質が精度を大きく左右すると学びました。この学びは、その後のモデルの改善にも役立ちました。"
+        },
+        {
+          "labelJa": "今後の希望",
+          "labelEn": "Your wish for the future",
+          "sec": 10,
+          "sayEn": "Do not give up your wish: say that, while producing results where you are placed, you will also tell your manager what you want to do at a proper time, such as a regular meeting. Do not say that you would ask for a transfer immediately or think about leaving.",
+          "starterJa": "そのうえで、成果を出しながら、【分野：車載AI】への希望も面談などで上司に伝えていきます。",
+          "exampleJa": "そのうえで、成果を出しながら、車載AIへの希望も面談などで上司に伝えていきます。"
+        }
+      ]
+    },
+    {
+      "id": "q73",
+      "targetSec": 30,
+      "approachEn": "Interviewers check your sense of responsibility, stress tolerance and self-management, and whether you understand that work for customers has deadlines and sometimes urgent requests. Say yes first, prove it with one short experience of meeting a deadline, then show how you manage yourself so that you can respond when it is needed; you do not have to promise unlimited overtime. The most important thing is to answer positively and at once: a long pause, or asking about overtime hours or pay at this moment, leaves a bad impression.",
+      "thinkFirstEn": [
+        "When did you work long or irregular hours to meet a deadline, and what was the result?",
+        "How do you plan your work so that a last-minute rush happens less often?",
+        "How do you keep your health and concentration in a busy period?",
+        "Is there a real limit the company needs to know about? If so, how can you say it briefly and honestly?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 6,
+          "sayEn": "Start with a clear yes, then add one short sentence saying that you will handle it responsibly when it is needed. Do not start with conditions; if you have a real limit, say it briefly and honestly after your yes.",
+          "starterJa": "はい、大丈夫です。必要な時は、責任を持って対応いたします。",
+          "exampleJa": "はい、大丈夫です。必要な時は、責任を持って対応いたします。"
+        },
+        {
+          "labelJa": "経験",
+          "labelEn": "Experience",
+          "sec": 16,
+          "sayEn": "Prove it with one time you worked hard before a deadline, in three short sentences: the situation, what you did (for example working in fixed time blocks and asking for advice early), and the result. End with the fact that you finished on time.",
+          "starterJa": "研究でも、【場面：学会の締め切り前】に、集中して実験を進めました。",
+          "exampleJa": "研究でも、学会の締め切り前に、集中して実験を進めました。その際は、時間を区切って作業し、早めに先生に相談しました。その結果、期限内に発表の準備を終えました。"
+        },
+        {
+          "labelJa": "自己管理",
+          "labelEn": "How you manage yourself",
+          "sec": 8,
+          "sayEn": "Finish with how you will prepare for urgent work on the job: checking priorities with your manager and taking care of your health. This shows self-management, so you do not need to promise unlimited overtime.",
+          "starterJa": "仕事でも、【工夫：優先順位を上司と確認し、体調管理にも努めて】、急な対応に備えます。",
+          "exampleJa": "仕事でも、優先順位を上司と確認し、体調管理にも努めて、急な対応に備えます。"
+        }
+      ]
+    },
+    {
+      "id": "q74",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to see realism and openness (素直さ): that you know work for a customer has safety and quality rules, deadlines and teamwork, and that you are ready to learn. Agree that the two are different, explain the difference concretely, then say which skills from research still help and what you will learn after joining. The most important thing is not to defend your research or say 'it is almost the same'; your attitude to learning is what is being judged.",
+      "thinkFirstEn": [
+        "What are the two biggest differences between your research and work done for a customer?",
+        "Which way of working from your research (not the topic itself) will still be useful at work?",
+        "What do you not know yet about real in-vehicle development: process, safety standards, communication with customers?",
+        "Have you had an experience close to real work, such as an internship, joint research with a company, or a part-time job with deadlines?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 6,
+          "sayEn": "Agree first in one sentence: say that you think research and work are very different. Do not start by explaining how advanced your research is, and never say that the two are almost the same.",
+          "starterJa": "はい、研究と業務には大きな違いがあると考えております。",
+          "exampleJa": "はい、研究と業務には大きな違いがあると考えております。"
+        },
+        {
+          "labelJa": "違いの理解",
+          "labelEn": "Explain the difference",
+          "sec": 25,
+          "sayEn": "Name the biggest difference in one short sentence, for example the goal, then contrast the two: in research you mainly raised accuracy on a dataset, while at work the goal is to meet the customer's requirements and deliver a safe product on time. Add one point that is special to in-vehicle AI, such as functional safety and quality processes.",
+          "starterJa": "一番の違いは、【違い：目的】です。",
+          "exampleJa": "一番の違いは、目的です。研究では、データセットでの精度を上げることが中心でした。一方、業務では、お客様の要求を満たし、安全に動く製品を期限内に届けることが目的です。特に車載AIでは、機能安全や品質のプロセスも欠かせません。"
+        },
+        {
+          "labelJa": "生かせること",
+          "labelEn": "What still helps",
+          "sec": 16,
+          "sayEn": "Turn with ただ and say that the skills you gained in research still help, then give one or two examples with 「例えば、〜や、〜です」: a way of working, such as analysing causes and improving, and one concrete experience. Do not speak badly of research.",
+          "starterJa": "ただ、研究で身につけた力も生かせると考えております。",
+          "exampleJa": "ただ、研究で身につけた力も生かせると考えております。例えば、原因を分析して改善する姿勢や、Jetson上で精度と速度を両立させた経験です。"
+        },
+        {
+          "labelJa": "学ぶ姿勢",
+          "labelEn": "Readiness to learn",
+          "sec": 13,
+          "sayEn": "Finish with what you will learn from scratch after joining, such as the customer's requirements and the approach to quality, and then say that you want to use your research experience in making products. This is a good place to show the Lifelong Learning value.",
+          "starterJa": "入社後は、【学ぶこと：お客様の要求や品質の考え方】を一から学びます。",
+          "exampleJa": "入社後は、お客様の要求や品質の考え方を一から学びます。そのうえで、研究の経験を製品づくりに生かしたいです。"
+        }
+      ]
+    }
+  ]
+}

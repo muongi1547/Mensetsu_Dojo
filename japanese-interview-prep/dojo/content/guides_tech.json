@@ -1,0 +1,661 @@
+{
+  "guides": [
+    {
+      "id": "q40",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to know your real coding level and whether you can describe your own work concretely; for an AI engineer the natural choice is usually Python. Pick the one language and the one piece of work you could answer three follow-up questions about, ideally code you wrote mostly yourself. The most important thing is to make clear which part YOU built and what it made possible, with a number, without making your level sound higher than it is.",
+      "thinkFirstEn": [
+        "Which language could you answer three 'why' or 'how' follow-up questions about without notes?",
+        "What is one thing you built mostly by yourself with it, and what does it do in one plain sentence?",
+        "Which part of the code did you design or write yourself, and what was the hardest point?",
+        "What number shows that it worked, and can other people run your code and get the same result (Git, Docker, a README)?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 7,
+          "sayEn": "Name one language in a single sentence, then add how long and where you have used it (for example, about three years in classes and research). Choose the language you know most deeply; do not list every language you have touched.",
+          "starterJa": "得意な言語は【言語：Python】です。",
+          "exampleJa": "得意な言語はPythonです。授業と研究で、【年数：3】年ほど使っております。"
+        },
+        {
+          "labelJa": "作ったもの",
+          "labelEn": "What I built",
+          "sec": 15,
+          "sayEn": "Say what you built in one plain sentence, reusing the interviewer's word 作ったもの, then add the main library and what the program does from start to finish. Pick one piece of work (research code, a tool or an app); listing several projects is a common mistake.",
+          "starterJa": "作ったものは、【作ったもの：夜間の歩行者検出モデルを学習・評価するプログラム】です。",
+          "exampleJa": "作ったものは、夜間の歩行者検出モデルを学習・評価するプログラムです。PyTorchを使い、データの読み込みから学習、評価までを、自動で行えるようにしました。"
+        },
+        {
+          "labelJa": "工夫と成果",
+          "labelEn": "Key idea and result",
+          "sec": 15,
+          "sayEn": "Describe one specific thing you designed yourself (for example, changing the experiment conditions just by editing a config file), then give its result with a number, such as how many experiments you could run. Say 'I', not 'we', and do not claim work that a teammate or a ready-made library did.",
+          "starterJa": "工夫した点は、【工夫：設定ファイルだけで実験の条件を変えられるようにしたこと】です。",
+          "exampleJa": "工夫した点は、設定ファイルを書き換えるだけで、実験の条件を変えられるようにしたことです。その結果、データ拡張の比較実験を、短期間で【数値：50】回以上行えました。"
+        },
+        {
+          "labelJa": "再現性",
+          "labelEn": "Reproducibility",
+          "sec": 13,
+          "sayEn": "Add one more thing you did so that other people can use your work, for example managing the code with Git and making the environment the same with Docker. Then say in one sentence what it made possible: lab members can reproduce the same results.",
+          "starterJa": "また、【ツール：Git】でコードを管理し、【ツール：Docker】で環境をそろえました。",
+          "exampleJa": "また、Gitでコードを管理し、Dockerで環境をそろえました。そのため、研究室のメンバーも同じ結果を再現できます。"
+        },
+        {
+          "labelJa": "ほかの言語",
+          "labelEn": "Other languages",
+          "sec": 10,
+          "sayEn": "Close with one honest sentence on another language you are learning and why, for example basic C++ for implementation on in-vehicle devices. 'Basic level, and I am still studying' is fine, while 'I can use it' invites hard follow-up questions or a coding test.",
+          "starterJa": "【別の言語：C++】は基礎レベルですが、現在も勉強を続けております。",
+          "exampleJa": "C++は基礎レベルですが、車載機器での実装に向けて、現在も勉強を続けております。"
+        }
+      ]
+    },
+    {
+      "id": "q41",
+      "targetSec": 60,
+      "approachEn": "This is a fundamentals check: interviewers want to see that you understand overfitting and can explain it in plain Japanese, not that you can list every technique. Give a one-sentence definition and the main cause first, then how you detect it, three ways to prevent it, and one case from your own research. The most important thing is a clear definition at the very start; if it is vague, the rest of the answer will not be trusted.",
+      "thinkFirstEn": [
+        "In your own project, did the training loss and the validation loss (or accuracy) ever move apart? What did you see?",
+        "What caused it in your case: too little data, a model that was too large, or training for too long?",
+        "Which prevention methods have you actually used (data augmentation, dropout, weight decay, early stopping), and did the added data match real conditions such as night and rain?",
+        "How did you split your data into training, validation and test sets, and which set did you use for tuning?"
+      ],
+      "steps": [
+        {
+          "labelJa": "定義と原因",
+          "labelEn": "Definition and cause",
+          "sec": 13,
+          "sayEn": "Define overfitting in one plain sentence: the model fits the training data too closely, so accuracy drops on new data. Then add the main cause in one sentence (the model is too complex for the amount of data); do not open with formulas or technique names.",
+          "starterJa": "過学習とは、学習データに合いすぎて、新しいデータでは精度が下がる状態です。",
+          "exampleJa": "過学習とは、学習データに合いすぎて、新しいデータでは精度が下がる状態です。主な原因は、データの量に比べて、モデルが複雑すぎることです。"
+        },
+        {
+          "labelJa": "見分け方",
+          "labelEn": "How to detect it",
+          "sec": 12,
+          "sayEn": "Say how you tell: you compare the training loss and the validation loss, and when the training loss keeps falling while the validation loss starts to rise, that is the sign. Say 検証 (validation) here, not テスト (test); mixing the two up is a common mistake.",
+          "starterJa": "過学習かどうかは、学習と検証の損失を比べて判断します。",
+          "exampleJa": "過学習かどうかは、学習と検証の損失を比べて判断します。学習の損失は下がるのに、検証の損失が上がり始めたら、過学習のサインです。"
+        },
+        {
+          "labelJa": "防ぐ方法",
+          "labelEn": "How to prevent it",
+          "sec": 20,
+          "sayEn": "Announce the number, then give one sentence for each method: more data, for example through data augmentation (データ拡張); regularisation (正則化) such as dropout or weight decay; and early stopping (早期終了), which stops training by watching the validation loss. Choose methods you have used; a long list of bare names is a common mistake.",
+          "starterJa": "防ぐ方法は、主に【数：3】つあります。",
+          "exampleJa": "防ぐ方法は、主に3つあります。1つ目は、データ拡張などでデータを増やすことです。2つ目は、ドロップアウトや重み減衰などの正則化です。3つ目は、検証の損失を見て学習を止める、早期終了です。"
+        },
+        {
+          "labelJa": "自分の経験",
+          "labelEn": "My experience",
+          "sec": 15,
+          "sayEn": "Give one real case from your own project in three short sentences: why overfitting happened, which methods you combined, and what changed, for example that the gap between training and validation became smaller. If you never had clear overfitting, say which method you used to prevent it; do not invent a story.",
+          "starterJa": "私の研究でも、【原因：夜間の画像が少なく】、過学習が起きました。",
+          "exampleJa": "私の研究でも、夜間の画像が少なく、過学習が起きました。そこで、データ拡張と早期終了を組み合わせました。その結果、学習と検証の差が小さくなりました。"
+        }
+      ]
+    },
+    {
+      "id": "q42",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to see that you choose metrics from the purpose of the system instead of always reporting accuracy; one anonymous report of an FPT new-graduate final interview mentions a question on metrics for time-series models. Start from the purpose and from which mistake costs more, show the idea with one task, add the overall metric and speed, and finish with how you evaluated separate conditions in your own research. The most important thing is the link between metric and purpose, because the same reasoning works for whatever task they ask about next.",
+      "thinkFirstEn": [
+        "Which metrics did you report in your own research or project, and why those?",
+        "In your task, which mistake is worse: missing something, or a false alarm? Why?",
+        "Did you evaluate separate conditions or classes, and did that show a weak point?",
+        "If the interviewer changes the task (for example to time-series prediction, or classification with imbalanced data), which metrics would you name, and why is accuracy alone not enough?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 10,
+          "sayEn": "State your rule in one sentence: you choose metrics by the purpose of the task and by which mistake causes more problems. Do not open with a list of metric names; names without a purpose are the common mistake here.",
+          "starterJa": "評価指標は、タスクの目的と、どの間違いがより問題になるかで選びます。",
+          "exampleJa": "評価指標は、タスクの目的と、どの間違いがより問題になるかで選びます。"
+        },
+        {
+          "labelJa": "具体例",
+          "labelEn": "Example: which error matters",
+          "sec": 20,
+          "sayEn": "Show the rule with one task you know well: name the worst mistake and the metric that follows from it (a missed pedestrian is the most dangerous, so recall, 再現率, comes first). Then give the opposite mistake and its metric: too many false detections cause needless braking, so you also check precision (適合率).",
+          "starterJa": "例えば、【タスク：歩行者検出】では、【間違い：歩行者を見逃すこと】が最も危険です。",
+          "exampleJa": "例えば、歩行者検出では、歩行者を見逃すことが最も危険です。そのため、再現率を重視します。一方で、誤検出が多すぎると、不要なブレーキにつながります。そこで、適合率も一緒に確認します。"
+        },
+        {
+          "labelJa": "総合性能と速度",
+          "labelEn": "Overall performance and speed",
+          "sec": 10,
+          "sayEn": "Name the metric you use to compare overall performance (mAP for object detection), then add speed: in a vehicle, FPS or processing time decides whether a model can be used at all. One sentence each is enough.",
+          "starterJa": "【タスク：物体検出】の総合的な性能は、【指標：mAP】で比べます。",
+          "exampleJa": "物体検出の総合的な性能は、mAPで比べます。車載では速度も大切なので、FPSや処理時間も測ります。"
+        },
+        {
+          "labelJa": "条件ごとの評価",
+          "labelEn": "Evaluating each condition",
+          "sec": 20,
+          "sayEn": "Say that an overall average can hide weak points, so you also evaluate each condition separately. Then give your own case: how you split the evaluation (day, night, rain), which weakness it showed, and that this led to an improvement.",
+          "starterJa": "また、全体の平均だけでなく、条件ごとに分けて評価することも大切です。",
+          "exampleJa": "また、全体の平均だけでなく、条件ごとに分けて評価することも大切です。私の研究では、昼、夜、雨の日に分けてmAPを測りました。その結果、夜間の小さな歩行者に弱いことが分かり、改善につながりました。"
+        }
+      ]
+    },
+    {
+      "id": "q43",
+      "targetSec": 75,
+      "approachEn": "Real project data is rarely large or balanced, so interviewers want to see a practical order of thinking: look at the data first, then choose a method. Cover both cases in the question (scarce and imbalanced) briefly, and spend the most time on one real case from your own work. The most important thing is that example with a number; method names alone sound like a textbook.",
+      "thinkFirstEn": [
+        "Which data was scarce or rare in your own project (a class, a condition such as night), and how many samples did you have?",
+        "What did you actually do about it (collect more, augment, use a pre-trained model, re-weight the loss), and were the augmented images realistic?",
+        "How did you check that it worked: which metric, for which class or condition, and not only the overall score?",
+        "If the data was collected or labelled by a team, what was your own role?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: analyse first",
+          "sec": 10,
+          "sayEn": "Start with your first action: you analyse the data to find out exactly what is missing (which class, which condition) before choosing any method. Then announce how many methods you combine, so the listener can follow.",
+          "starterJa": "まず、データを分析して、何が足りないのかを確認します。",
+          "exampleJa": "まず、データを分析して、何が足りないのかを確認します。そのうえで、主に3つの方法を組み合わせます。"
+        },
+        {
+          "labelJa": "データ拡張",
+          "labelEn": "Method 1: data augmentation",
+          "sec": 10,
+          "sayEn": "For scarce data, name data augmentation (データ拡張) first, then say in one sentence how it increases the data, for example by changing image brightness or adding noise. Choose a method you could explain in detail if asked 'how exactly?'.",
+          "starterJa": "1つ目は、データ拡張です。",
+          "exampleJa": "1つ目は、データ拡張です。画像の明るさを変えたり、ノイズを加えたりして、データを増やします。"
+        },
+        {
+          "labelJa": "転移学習",
+          "labelEn": "Method 2: transfer learning",
+          "sec": 10,
+          "sayEn": "Give a second method for scarce data: transfer learning (転移学習) with a pre-trained model, and add why it helps in one short sentence (training is stable even with little data). Name it only if you have used a pre-trained model yourself or can explain the idea.",
+          "starterJa": "2つ目は、事前学習済みモデルを使う転移学習です。",
+          "exampleJa": "2つ目は、事前学習済みモデルを使う転移学習です。少ないデータでも、学習が安定します。"
+        },
+        {
+          "labelJa": "偏りへの対策",
+          "labelEn": "Method 3: handling imbalance",
+          "sec": 15,
+          "sayEn": "Now answer the other half of the question, imbalanced data: say that the third method deals with imbalance, then give two concrete measures in one sentence, such as using the data of the rare class more often or giving that class a larger weight in the loss. Name only measures you could explain if the interviewer asks how they work.",
+          "starterJa": "3つ目は、偏りへの対策です。",
+          "exampleJa": "3つ目は、偏りへの対策です。少ないクラスのデータを多めに使ったり、そのクラスの損失の重みを大きくしたりします。"
+        },
+        {
+          "labelJa": "自分の経験",
+          "labelEn": "My experience",
+          "sec": 30,
+          "sayEn": "Tell one real case in three parts: what was scarce in your data, what you did about it (one or two actions), and what changed, with a number. If it was team work, say your own role clearly.",
+          "starterJa": "私の研究では、【足りないデータ：夜や雨の画像】が少ないことが課題でした。",
+          "exampleJa": "私の研究では、昼に比べて、夜や雨の画像が少ないことが課題でした。そこで、昼の画像を暗くしたり、雨を重ねたりするデータ拡張を行いました。さらに、昼と夜の差を小さくするために、ドメイン適応も使いました。その結果、夜間のmAPが約【数値：8】ポイント上がりました。"
+        }
+      ]
+    },
+    {
+      "id": "q44",
+      "targetSec": 75,
+      "approachEn": "The word 簡単に is the test: interviewers want the core difference in a few plain sentences, not a lecture. Contrast the two on one point (a CNN looks at an image one small area at a time, a Transformer looks at relations across the whole image), then say which one you chose in your own work and why. The most important thing is to stay simple and correct, and to be honest about which one you have actually used.",
+      "thinkFirstEn": [
+        "Which of the two have you actually used, and for what task?",
+        "Why did you or your lab choose that architecture: speed, amount of data, accuracy, available code?",
+        "Can you explain 'attention' in one plain sentence without a formula?",
+        "For an in-vehicle device with limited computing power, which would you try first, and why?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 5,
+          "sayEn": "Name the one point you will compare in a single short sentence: the biggest difference is how each model looks at an image. Opening with 画像認識では keeps the answer to images, and because the question says 簡単に, use no formulas and no history of the models.",
+          "starterJa": "画像認識では、一番の違いは、画像の見方です。",
+          "exampleJa": "画像認識では、一番の違いは、画像の見方です。"
+        },
+        {
+          "labelJa": "CNNの特徴",
+          "labelEn": "What a CNN does",
+          "sec": 20,
+          "sayEn": "Explain the CNN in three short sentences: small filters look at the image one small area at a time, so it is good at local features such as edges and shapes, and its computation is fairly light, which suits embedded devices. Stop there; do not explain the layers one by one.",
+          "starterJa": "CNNは、小さなフィルターを使って、画像を狭い範囲ごとに見ます。",
+          "exampleJa": "CNNは、小さなフィルターを使って、画像を狭い範囲ごとに見ます。そのため、エッジや形など、局所的な特徴をとらえるのが得意です。計算も比較的軽いので、組込み機器で使いやすいです。"
+        },
+        {
+          "labelJa": "Transformerの特徴",
+          "labelEn": "What a Transformer does",
+          "sec": 25,
+          "sayEn": "Explain the Transformer in the same way: it splits the image into small patches and, with a mechanism called attention, calculates how every patch relates to every other, so it also captures relations between distant parts. End with its cost in one sentence (it generally needs more training data and more computation), and stay away from jargon such as query, key and value.",
+          "starterJa": "一方、Transformerは、画像を小さなパッチに分けます。",
+          "exampleJa": "一方、Transformerは、画像を小さなパッチに分けます。そして、アテンションという仕組みで、すべてのパッチ同士の関係を計算します。これにより、画像の離れた部分の関係も、とらえやすくなります。ただし、一般に、多くの学習データと計算が必要です。"
+        },
+        {
+          "labelJa": "自分の選択",
+          "labelEn": "My choice and why",
+          "sec": 15,
+          "sayEn": "Give the condition your own project had (for example, it had to run in real time on a Jetson board), then the model you chose because of it, such as a CNN-based YOLO model. This shows that you choose by conditions, not by which model is 'better'; if you have used only one of the two, say so honestly.",
+          "starterJa": "私の研究では、【条件：Jetsonでリアルタイムに動かす】必要がありました。",
+          "exampleJa": "私の研究では、Jetsonでリアルタイムに動かす必要がありました。そこで、CNNベースのYOLO系モデルを選びました。"
+        },
+        {
+          "labelJa": "最近の動向",
+          "labelEn": "Recent trend",
+          "sec": 10,
+          "sayEn": "Close with one current trend and your interest in it: models that combine both are increasing, and you are watching how far they can be used in vehicles. Two short sentences are enough; do not claim Transformer experience you do not have.",
+          "starterJa": "最近は、両方を組み合わせたモデルも増えています。",
+          "exampleJa": "最近は、両方を組み合わせたモデルも増えています。車載でどこまで使えるか、注目しております。"
+        }
+      ]
+    },
+    {
+      "id": "q45",
+      "targetSec": 75,
+      "approachEn": "For an automotive AI role this is a core question: an in-vehicle device has limited computing power and memory, yet the system must respond in real time. Start from the target (the speed and memory use needed on the actual device) and a measurement on the real board, give three kinds of methods, then say what you really did and the number you reached. The most important thing is to show that you understand the trade-off between speed and accuracy and measure both on the real device.",
+      "thinkFirstEn": [
+        "Have you run a model on a small device or under a speed limit? Which device, and what speed did you reach?",
+        "What exactly did you change to make it faster (model size, input resolution, quantization, conversion to another format)?",
+        "How much accuracy did you keep or lose, and how did you measure it?",
+        "Which techniques do you know only from reading? Decide how you will say that honestly."
+      ],
+      "steps": [
+        {
+          "labelJa": "目標と測定",
+          "labelEn": "Target and measurement",
+          "sec": 10,
+          "sayEn": "Open with your first two actions: set the target (speed and memory use), then measure on the actual board to find where it is slow. Starting with a list of technique names is the common mistake.",
+          "starterJa": "まず、目標とする【指標：速度とメモリ使用量】を決めます。",
+          "exampleJa": "まず、目標とする速度とメモリ使用量を決めます。そして、実際のボードで計測して、どこが遅いかを確認します。"
+        },
+        {
+          "labelJa": "方法",
+          "labelEn": "Methods",
+          "sec": 30,
+          "sayEn": "Announce the number, then give one sentence for each method: choosing a light model structure and reviewing the input size; quantization (量子化), which uses fewer bits for the numbers; and pruning (枝刈り) or knowledge distillation (知識蒸留), which make the model itself smaller. Add one concrete example where you can, such as FP16 or INT8 in TensorRT, because a bare name is not enough.",
+          "starterJa": "そのうえで、主に【数：3】つの方法を使います。",
+          "exampleJa": "そのうえで、主に3つの方法を使います。\n1つ目は、軽いモデル構造を選び、入力画像のサイズも見直すことです。\n2つ目は、数値のビット数を減らす量子化です。例えば、TensorRTで、FP32の計算をFP16やINT8に変えます。\n3つ目は、枝刈りや知識蒸留で、モデル自体を小さくすることです。"
+        },
+        {
+          "labelJa": "自分の経験",
+          "labelEn": "My experience",
+          "sec": 25,
+          "sayEn": "Say what you actually did (for example, converting the model with TensorRT and running it in FP16), then the number you reached on the device. If you tried something and dropped it because accuracy fell, such as INT8, say so; it is the best proof that you check both speed and accuracy.",
+          "starterJa": "私の研究では、【モデル：YOLO系のモデル】を【ツール：TensorRT】に変換しました。",
+          "exampleJa": "私の研究では、YOLO系のモデルをTensorRTに変換し、FP16で動かしました。その結果、Jetson上で【数値：25】FPSを達成しました。INT8も試しましたが、夜間の精度が下がったため、FP16を選びました。"
+        },
+        {
+          "labelJa": "まとめ",
+          "labelEn": "Wrap-up: speed and accuracy",
+          "sec": 10,
+          "sayEn": "Close with the principle in one sentence: you always check the change in accuracy, not only the speed. Do not end on the speed number alone; the trade-off is what interviewers want to hear.",
+          "starterJa": "速度だけでなく、精度の変化も必ず確認することが大切だと考えております。",
+          "exampleJa": "速度だけでなく、精度の変化も必ず確認することが大切だと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q46",
+      "targetSec": 75,
+      "approachEn": "This is an opinion question about your attitude to safety; a new graduate is not expected to know the safety standards in depth. Take the position that an AI's judgement is not always correct, so safety must come from the whole system, and support it with three concrete points (standards, data and validation, redundancy and monitoring) and one fact from your own work. The most important thing is not to claim too much: do not promise perfect accuracy, and do not name a standard you cannot explain.",
+      "thinkFirstEn": [
+        "In your own work, in which conditions did your model fail or lose accuracy? Do you have numbers?",
+        "How did you test difficult or rare cases, and what would you test more if you had time?",
+        "Can you say in one sentence each what ISO 26262 (functional safety) and SOTIF cover? If not, plan to leave the names out.",
+        "When a model's output is uncertain, what should the system do (warn the driver, check another sensor, slow down)?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: the whole system",
+          "sec": 15,
+          "sayEn": "Start from one fact (an AI's judgement is not always 100% correct), then give your opinion: safety should be ensured by the whole system, without relying on the AI alone. Announce the number of points, and never say that you will raise the accuracy to 100%.",
+          "starterJa": "AIの判断は、100%正しいとは限りません。",
+          "exampleJa": "AIの判断は、100%正しいとは限りません。そのため、AIだけに頼らず、システム全体で安全を確保すべきだと考えております。ポイントは3つです。"
+        },
+        {
+          "labelJa": "規格に沿った開発",
+          "labelEn": "Point 1: standards",
+          "sec": 20,
+          "sayEn": "Point 1 is development that follows the standards, with the one-line difference between the two: ISO 26262 (functional safety) covers dangers caused by failures of electronic systems, and SOTIF covers dangers that come from performance limits even when nothing has failed. If you could not explain these in a follow-up question, drop this point; two solid points beat three weak ones.",
+          "starterJa": "1つ目は、規格に沿った開発です。",
+          "exampleJa": "1つ目は、規格に沿った開発です。電子システムの故障による危険は、ISO 26262の機能安全で扱います。故障がなくても、性能の限界で起きる危険は、SOTIFで考えます。"
+        },
+        {
+          "labelJa": "データと検証",
+          "labelEn": "Point 2: data and validation",
+          "sec": 15,
+          "sayEn": "Point 2 is data and validation: collect data from hard and rare scenes such as night and rain, then test thoroughly with real driving data and simulation. One sentence for the data and one for the testing are enough.",
+          "starterJa": "2つ目は、データと検証です。",
+          "exampleJa": "2つ目は、データと検証です。夜や雨、まれな場面のデータを集めます。そして、実際の走行データとシミュレーションで、十分にテストします。"
+        },
+        {
+          "labelJa": "冗長性と監視",
+          "labelEn": "Point 3: redundancy and monitoring",
+          "sec": 15,
+          "sayEn": "Point 3 is redundancy and monitoring: combine the AI with other sensors such as radar, and monitor the AI's confidence so that the system moves to the safe side when it is low. 安全側に倒す is a set phrase in safety engineering, so learn it as one piece.",
+          "starterJa": "3つ目は、冗長性と監視です。",
+          "exampleJa": "3つ目は、冗長性と監視です。レーダーなど、他のセンサーと組み合わせます。また、AIの信頼度を監視して、低いときは安全側に倒すようにします。"
+        },
+        {
+          "labelJa": "経験と姿勢",
+          "labelEn": "My experience and attitude",
+          "sec": 10,
+          "sayEn": "Add one fact from your own work that shows you have seen the limits of AI yourself, such as accuracy falling at night and in rain. Then close with what you want to learn in real work (designing with these limits in mind); do not present yourself as a safety expert.",
+          "starterJa": "私も研究で、【条件：夜や雨】では精度が下がることを経験しました。",
+          "exampleJa": "私も研究で、夜や雨では精度が下がることを経験しました。限界を知ったうえで設計する大切さを、実務でさらに学びたいです。"
+        }
+      ]
+    },
+    {
+      "id": "q47",
+      "targetSec": 60,
+      "approachEn": "Interviewers are checking basic automotive knowledge and whether you can explain a topic that may be outside your own research. Define it in one sentence, explain why it is needed by comparing the strong and weak points of camera, radar and LiDAR, then connect it honestly to the sensor data you have used. The most important thing is the 'why': every sensor is weak somewhere, and combining them covers the gaps.",
+      "thinkFirstEn": [
+        "Which sensor data have you actually worked with (camera images, LiDAR point clouds, radar), and what weakness of that sensor did you see in your own results?",
+        "Can you give one strong point and one weak point each for camera, radar and LiDAR in simple Japanese?",
+        "What makes fusion difficult (lining up the sensors' positions and timing, cost)? Prepare one sentence in case of a follow-up question.",
+        "If asked 'Have you done sensor fusion yourself?', what is your honest answer, and what do you want to learn?"
+      ],
+      "steps": [
+        {
+          "labelJa": "定義",
+          "labelEn": "Definition",
+          "sec": 15,
+          "sayEn": "Define it in one sentence (a technology that combines information from several sensors), then add what it achieves: the surroundings can be captured more accurately. Name the individual sensors in the next step, not here.",
+          "starterJa": "センサーフュージョンとは、複数のセンサーの情報を組み合わせる技術です。",
+          "exampleJa": "センサーフュージョンとは、複数のセンサーの情報を組み合わせる技術です。そうすることで、周りの状況をより正確にとらえられます。"
+        },
+        {
+          "labelJa": "得意・不得意",
+          "labelEn": "Strong and weak points",
+          "sec": 25,
+          "sayEn": "Say that each sensor has strong and weak points, then give one sentence per sensor: a camera sees colour and shape but is weak at night and in rain; radar is strong in bad weather and measures distance and speed but is poor at shape; LiDAR measures shape and distance in detail but costs more. Do not explain how each sensor works inside.",
+          "starterJa": "センサーには、それぞれ得意・不得意があります。",
+          "exampleJa": "センサーには、それぞれ得意・不得意があります。カメラは、色や形が分かりますが、夜や雨に弱いです。レーダーは、天候に強く、距離と速度を測れますが、形をとらえるのは苦手です。LiDARは、形と距離を細かく測れますが、比較的コストが高いです。"
+        },
+        {
+          "labelJa": "利点",
+          "labelEn": "Benefit",
+          "sec": 10,
+          "sayEn": "Give the two benefits of combining: the sensors cover each other's weak points, and recognition can continue with the other sensors when one fails. These two sentences are the 'why' of sensor fusion, so do not skip them.",
+          "starterJa": "組み合わせることで、苦手な部分を補い合えます。",
+          "exampleJa": "組み合わせることで、苦手な部分を補い合えます。また、1つのセンサーが故障しても、他のセンサーで認識を続けられます。"
+        },
+        {
+          "labelJa": "自分との関係",
+          "labelEn": "Link to my work",
+          "sec": 10,
+          "sayEn": "Connect it honestly to your own experience: which sensor you used and what weakness you saw, then which combination interests you. If you have never done fusion yourself, say so plainly (for example, that your research uses only a camera); pretending is quickly exposed by follow-up questions.",
+          "starterJa": "私の研究は【センサー：カメラ】だけですが、【苦手な場面：夜や雨】では精度が下がりました。",
+          "exampleJa": "私の研究はカメラだけですが、夜や雨では精度が下がりました。そのため、レーダーとの組み合わせに、強い関心があります。"
+        }
+      ]
+    },
+    {
+      "id": "q48",
+      "targetSec": 75,
+      "approachEn": "The question asks 知っていること, so interviewers want a correct basic understanding and real interest in the industry, not expert detail. Give a one-sentence definition, three key points (OTA updates, integration of ECUs, separation of hardware and software), and what SDV means for an AI engineer, including the safety and security of updates. The most important thing is accuracy: say only what you can explain, and if a follow-up question asks about the company's SDV work, use a sourced fact from your FPT Prep tab instead of inventing one.",
+      "thinkFirstEn": [
+        "Can you define SDV in one Japanese sentence in your own words?",
+        "Which of the three points can you explain if asked for more, and can you say in plain words what OTA and ECU mean?",
+        "What changes for an AI engineer when a car's software can be updated after sale, and what new risk comes with it?",
+        "For a follow-up question on the company's SDV work: which sourced fact (with its year) from your FPT Prep tab can you give, and what will you honestly say about things you do not know?"
+      ],
+      "steps": [
+        {
+          "labelJa": "定義",
+          "labelEn": "Definition",
+          "sec": 15,
+          "sayEn": "Define SDV in one sentence: a car whose functions are decided by software and keep being updated after it is sold. Then announce the number of points; 〜と理解しております is a modest way to say 'this is my understanding'.",
+          "starterJa": "SDVとは、ソフトウェアによって機能が決まり、販売後も更新されていく車のことです。",
+          "exampleJa": "SDVとは、ソフトウェアによって機能が決まり、販売後も更新されていく車のことです。ポイントは3つあると理解しております。"
+        },
+        {
+          "labelJa": "OTAによる更新",
+          "labelEn": "Point 1: OTA updates",
+          "sec": 15,
+          "sayEn": "Point 1 is OTA: name it and say at once what it means (wireless software updates), then give a familiar comparison, such as a smartphone getting new functions and bug fixes. Explain any abbreviation the first time you use it.",
+          "starterJa": "1つ目は、OTA、つまり無線でのソフトウェア更新です。",
+          "exampleJa": "1つ目は、OTA、つまり無線でのソフトウェア更新です。スマートフォンのように、機能の追加や不具合の修正ができます。"
+        },
+        {
+          "labelJa": "ECUの統合",
+          "labelEn": "Point 2: integrating ECUs",
+          "sec": 15,
+          "sayEn": "Point 2 is the integration of ECUs, told as before and after: until now a car had many ECUs, one for each function, and the trend is to combine them into a small number of high-performance computers. Leave this point out if you could not say what an ECU is.",
+          "starterJa": "2つ目は、ECUの統合です。",
+          "exampleJa": "2つ目は、ECUの統合です。これまでの車には、機能ごとに多くのECUがありました。それを、少数の高性能なコンピューターにまとめる流れです。"
+        },
+        {
+          "labelJa": "ハードとソフトの分離",
+          "labelEn": "Point 3: separating hardware and software",
+          "sec": 10,
+          "sayEn": "Point 3 is the separation of hardware and software. Add its effect in one sentence: software can be developed independently and reused more easily.",
+          "starterJa": "3つ目は、ハードウェアとソフトウェアの分離です。",
+          "exampleJa": "3つ目は、ハードウェアとソフトウェアの分離です。ソフトウェアを独立して開発でき、再利用もしやすくなります。"
+        },
+        {
+          "labelJa": "AIとの関係",
+          "labelEn": "Link to AI work",
+          "sec": 20,
+          "sayEn": "Say what SDV means for an AI engineer: models can be updated after sale, because recognition performance can keep improving with new data. Then give the other side in one sentence: the safety and security of updates become more important.",
+          "starterJa": "AIエンジニアにとっては、販売後もモデルを更新できる点が大きいと思います。",
+          "exampleJa": "AIエンジニアにとっては、販売後もモデルを更新できる点が大きいと思います。新しいデータで、認識の性能を上げ続けられるからです。一方で、更新の安全性やセキュリティも、より重要になると考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q49",
+      "targetSec": 60,
+      "approachEn": "This opinion question tests whether you follow the technology and can think about its business use realistically, including the risks; FPT Automotive's published AI engineer posting (for experienced hires) lists LLM knowledge and checking AI-generated output. Give three uses (in the car, in creating training data, in development work), then the risk and how to control it. The most important thing is balance: an answer with only benefits sounds unrealistic, so always add a risk and a check by a person or another mechanism.",
+      "thinkFirstEn": [
+        "Which generative AI tools have you used yourself, and for what (coding, writing, summarising papers)?",
+        "When did a generative AI tool give you a wrong answer, and how did you notice?",
+        "Which two or three uses in the car industry can you explain concretely, and which one is closest to your own research?",
+        "Which real example have you read about and checked, so that you can name it safely?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion",
+          "sec": 5,
+          "sayEn": "Give your opinion with a number first: you see three main areas where it can be used. Announcing the number makes the answer easy to follow, for you and for the listener.",
+          "starterJa": "主に【数：3】つの分野で、活用できると考えております。",
+          "exampleJa": "主に3つの分野で、活用できると考えております。"
+        },
+        {
+          "labelJa": "車内での活用",
+          "labelEn": "Use 1: in the car",
+          "sec": 15,
+          "sayEn": "Describe the in-car use in plain words: a voice assistant built on an LLM lets the driver operate navigation and car functions by natural conversation. You may add that such assistants have started to be introduced, but name a company or product only if you have checked it.",
+          "starterJa": "1つ目は、車内の音声アシスタントです。",
+          "exampleJa": "1つ目は、車内の音声アシスタントです。LLMを使えば、自然な会話で、ナビや車の機能を操作できます。実際に、LLMを使った音声アシスタントの導入も始まっています。"
+        },
+        {
+          "labelJa": "データの生成",
+          "labelEn": "Use 2: training data",
+          "sec": 15,
+          "sayEn": "Describe a use close to AI development: generating images of scenes that are hard to collect, such as rain at night. Link it to your own research in one sentence if you had a data shortage; skip this point if you could not explain how such data would be used.",
+          "starterJa": "2つ目は、学習データの生成です。",
+          "exampleJa": "2つ目は、学習データの生成です。夜の雨など、集めにくい場面の画像を作れます。私の研究でも、夜間データの不足が課題だったため、特に関心があります。"
+        },
+        {
+          "labelJa": "開発の効率化",
+          "labelEn": "Use 3: faster development",
+          "sec": 10,
+          "sayEn": "Describe the use in everyday development work in one sentence: writing code and test cases, or checking specification documents. Keep it short, because you still need time for the risk in the last step.",
+          "starterJa": "3つ目は、開発の効率化です。",
+          "exampleJa": "3つ目は、開発の効率化です。コードやテストケースの作成、仕様書の確認などに使えます。"
+        },
+        {
+          "labelJa": "注意点",
+          "labelEn": "Risk and control",
+          "sec": 15,
+          "sayEn": "End with the risk and how to control it: generative AI can make mistakes that sound right, so in safety-related parts a check by a person or another mechanism is essential. Never suggest that generative AI should control driving directly.",
+          "starterJa": "ただし、生成AIは、もっともらしい間違いをすることがあります。",
+          "exampleJa": "ただし、生成AIは、もっともらしい間違いをすることがあります。そのため、安全に関わる部分では、人や別の仕組みによる確認が欠かせないと考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q50",
+      "targetSec": 60,
+      "approachEn": "Interviewers want to see curiosity and a habit of learning, which matches FPT's value Lifelong Learning, and whether you can explain a technical topic simply. Choose ONE topic you have really read about or tried, close to your research or to automotive AI, and check its facts and date before the interview. The most important thing is your own reason and your own view, because follow-up questions usually ask why it interests you and how it works.",
+      "thinkFirstEn": [
+        "Which one AI topic from the last 6 to 12 months have you really read about or tried, and can you explain it in two sentences?",
+        "Why does it interest YOU: which part of your research or project does it touch?",
+        "What challenge or risk do you see in it? One point of your own opinion is enough.",
+        "What did you do to learn more (paper, code, experiment), and where do you usually get AI news?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: the topic",
+          "sec": 5,
+          "sayEn": "Name one technology or news item in a single sentence. Choose something you can explain and have looked into yourself; a fashionable word you cannot explain is the most common mistake.",
+          "starterJa": "最近注目しているのは、【技術名：エンドツーエンドの自動運転モデル】です。",
+          "exampleJa": "最近注目しているのは、【技術名：エンドツーエンドの自動運転モデル】です。"
+        },
+        {
+          "labelJa": "内容",
+          "labelEn": "What it is",
+          "sec": 15,
+          "sayEn": "Explain it in one or two plain sentences, as if to a non-specialist: what it does, and how it differs from the usual way until now. Say only what you have checked; leave out dates, company names and numbers you are not sure of.",
+          "starterJa": "これは、【内容：カメラの画像から運転の操作までを、1つのモデルで学習する】方法です。",
+          "exampleJa": "これは、カメラの画像から運転の操作までを、1つのモデルで学習する方法です。これまでは、認識、予測、計画を、別々に作るのが一般的でした。"
+        },
+        {
+          "labelJa": "注目する理由",
+          "labelEn": "Why I follow it",
+          "sec": 20,
+          "sayEn": "Give your own reason and tie it to your research or experience (for example, your research covers one part of this technology), then add one thing you think it will change, such as how data is collected and evaluated. 'Because it is popular' is not a reason.",
+          "starterJa": "注目している理由は、私が研究している【研究テーマ：歩行者検出】と関係が深いからです。",
+          "exampleJa": "注目している理由は、私が研究している歩行者検出が、まさに認識の部分にあたるからです。モデルが1つになると、データの集め方や評価の方法も、大きく変わると感じました。"
+        },
+        {
+          "labelJa": "自分の意見",
+          "labelEn": "My own view",
+          "sec": 15,
+          "sayEn": "Add one point of your own opinion, usually a challenge or risk you see (for example, its decisions are hard to explain, so its safety is hard to verify), and where that leads your interest, such as combining it with conventional methods. A balanced view shows that you think for yourself and do not only repeat the news.",
+          "starterJa": "一方で、【課題：安全性の検証が難しい】という課題もあります。",
+          "exampleJa": "一方で、判断の理由が分かりにくく、安全性の検証が難しいという課題もあります。そのため、従来の方法と組み合わせる考え方にも、関心があります。"
+        },
+        {
+          "labelJa": "現在の行動",
+          "labelEn": "What I am doing now",
+          "sec": 5,
+          "sayEn": "Close with what you are actually doing now to learn about it, such as reading papers and technical articles. Real action is the proof of a learning habit; do not claim an experiment you did not do.",
+          "starterJa": "現在は、【行動：関連する論文や技術記事を読んで】、理解を深めております。",
+          "exampleJa": "現在は、関連する論文や技術記事を読んで、理解を深めております。"
+        }
+      ]
+    },
+    {
+      "id": "q51",
+      "targetSec": 60,
+      "approachEn": "This question tests the bridge part of the role: explaining a technical limit to a Japanese customer in polite, plain language without losing their trust. Give your method first (no jargon, familiar examples, concrete numbers), then three limits in plain words, each with an everyday example or what it means in practice, and finish with how the limits are covered. The most important thing is to be honest about what AI cannot do and still end on the countermeasures, so the customer feels reassured.",
+      "thinkFirstEn": [
+        "When have you explained something technical to a non-specialist (a family member, a customer at a part-time job, a new lab member)? What worked?",
+        "Which everyday comparison would you use for 'AI is not 100% correct' (for example a weather forecast), and is it accurate and professional enough for a customer?",
+        "Which limit of your own model can you show with a number and a failure example?",
+        "For each limit, which countermeasure would you explain to the customer (testing in advance, checks after introduction, more data)?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: how I explain",
+          "sec": 10,
+          "sayEn": "Start with your method in one sentence: you avoid technical terms and explain with familiar examples and concrete numbers. Then announce that you will tell the customer three points; this is a 'how would you' question, so do not begin with a lecture on AI.",
+          "starterJa": "専門用語を使わずに、身近な例と具体的な数字で説明します。",
+          "exampleJa": "専門用語を使わずに、身近な例と具体的な数字で説明します。特に、3つの点をお伝えします。"
+        },
+        {
+          "labelJa": "100%ではない",
+          "labelEn": "Limit 1: not 100% correct",
+          "sec": 15,
+          "sayEn": "Limit 1: AI judges by probability, so it is not 100% correct. Follow it at once with an everyday comparison, such as a weather forecast: even with an 80% chance of rain, there are days when it does not rain.",
+          "starterJa": "1つ目は、AIの判断は確率にもとづくので、100%正しいわけではないことです。",
+          "exampleJa": "1つ目は、AIの判断は確率にもとづくので、100%正しいわけではないことです。天気予報で、降水確率が80%でも、雨が降らない日があるのと同じです。"
+        },
+        {
+          "labelJa": "データに左右される",
+          "labelEn": "Limit 2: depends on its data",
+          "sec": 15,
+          "sayEn": "Limit 2: an AI's performance depends heavily on the data it learned from. Make it concrete with one example from your own field (an AI trained only on daytime images is weak with night images) and one sentence of proof from your research.",
+          "starterJa": "2つ目は、AIの性能が、学習したデータに大きく左右されることです。",
+          "exampleJa": "2つ目は、AIの性能が、学習したデータに大きく左右されることです。例えば、昼の画像だけで学習したAIは、夜の画像が苦手です。実際に、私の研究でも、夜は精度が下がりました。"
+        },
+        {
+          "labelJa": "まれな状況に弱い",
+          "labelEn": "Limit 3: rare situations",
+          "sec": 10,
+          "sayEn": "Limit 3: AI is weak in rare situations. Say at once what this means in practice: testing in advance and checks after introduction are necessary.",
+          "starterJa": "3つ目は、まれな状況に弱いことです。",
+          "exampleJa": "3つ目は、まれな状況に弱いことです。そのため、事前のテストと、導入後の確認が必要です。"
+        },
+        {
+          "labelJa": "対策も伝える",
+          "labelEn": "Also explain the countermeasures",
+          "sec": 10,
+          "sayEn": "Do not stop at the limits: say that you also explain how to make up for them, and that this is what lets the customer feel reassured. Ending on the countermeasures turns bad news into a proposal.",
+          "starterJa": "最後に、限界をどう補うかも、一緒にお伝えします。",
+          "exampleJa": "最後に、限界をどう補うかも、一緒にお伝えします。そうすることで、お客様に安心していただけると考えております。"
+        }
+      ]
+    },
+    {
+      "id": "q52",
+      "targetSec": 75,
+      "approachEn": "Interviewers want to know whether you can develop by shared rules with other people, which matters in a team split between Japan and an offshore site. Answer 'yes' or 'no' first, then cover the three items the question names (Git, code review, testing) in that order with what you really did, and close with the result. The most important thing is honesty about scale: a small lab project described concretely is stronger than a big story you cannot defend in follow-up questions.",
+      "thinkFirstEn": [
+        "Where have you written code with other people (lab, class project, internship, hackathon)? How many people, and what was your role?",
+        "Which Git rules did you really follow (branches, commit messages, pull requests)? If you used Git only on your own, say so.",
+        "Did anyone review your code, or did you review someone else's? What kind of comments were made?",
+        "How did you check that the code worked (unit tests, scripts, manual checks), and what would you do better next time?"
+      ],
+      "steps": [
+        {
+          "labelJa": "結論",
+          "labelEn": "Conclusion: yes, and the team",
+          "sec": 17,
+          "sayEn": "Answer 'yes' in one short sentence before anything else, then say where, what you built, with how many people and your role, and add what code the team wrote together. If your team experience is small or only in the lab, say so plainly; if you have none, say what comes closest, such as sharing code with lab members.",
+          "starterJa": "はい、あります。",
+          "exampleJa": "はい、あります。研究室で、夜間画像のデータセットを、4人のチームで作りました。私はリーダーを務めました。また、データの変換や確認に使うツールも、チームで開発しました。"
+        },
+        {
+          "labelJa": "Gitの使い方",
+          "labelEn": "How we used Git",
+          "sec": 8,
+          "sayEn": "Give your team's Git rule in one sentence, for example one branch for each feature, with changes merged through pull requests. Describe what you really did, not the textbook workflow.",
+          "starterJa": "Gitでは、【ルール：機能ごとにブランチを作り】、変更はプルリクエストで取り込みました。",
+          "exampleJa": "Gitでは、機能ごとにブランチを作り、変更はプルリクエストで取り込みました。"
+        },
+        {
+          "labelJa": "コードレビュー",
+          "labelEn": "Code review",
+          "sec": 15,
+          "sayEn": "State the review rule (who checks and when, for example one other member before every merge), then what the reviews focused on, such as readability and error handling. If your reviews were informal, say how you checked each other's work.",
+          "starterJa": "コードレビューは、マージの前に、必ずほかのメンバー【人数：1】人が確認するルールにしました。",
+          "exampleJa": "コードレビューは、マージの前に、必ずほかのメンバー1人が確認するルールにしました。特に、読みやすさとエラー処理を重視しました。"
+        },
+        {
+          "labelJa": "テスト",
+          "labelEn": "Testing",
+          "sec": 15,
+          "sayEn": "Say what you tested and with which tool (for example, pytest tests that check the data format), then how the tests were run, such as automatically on every pull request. If your testing was weak or manual, admit it and say what you would improve; that honesty is valued more than a perfect story.",
+          "starterJa": "テストについては、【ツール：pytest】で、データの形式をチェックするテストを書きました。",
+          "exampleJa": "テストについては、pytestで、データの形式をチェックするテストを書きました。そして、プルリクエストのたびに、自動で実行されるようにしました。"
+        },
+        {
+          "labelJa": "結果と入社後",
+          "labelEn": "Result and next step",
+          "sec": 20,
+          "sayEn": "Give the result of working by shared rules (fewer data mistakes, finished on schedule), then stay modest about scale: development at a company is larger, and you want to learn how real work is done after joining. This keeps a lab project from sounding overstated.",
+          "starterJa": "その結果、【成果：データの間違いが減り】、予定どおりに完成させました。",
+          "exampleJa": "その結果、データの間違いが減り、予定どおりにデータセットを完成させました。企業での開発は、より大規模だと思います。入社後に、実務のやり方をしっかり学びたいと考えております。"
+        }
+      ]
+    }
+  ]
+}
